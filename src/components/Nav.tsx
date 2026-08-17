@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
 const LINKS = [
-  { label: 'THE MAP', href: '#map' },
-  { label: 'THE PLAYERS', href: '#players' },
-  { label: 'THE PATHS', href: '#paths' },
-  { label: 'THE MISSION', href: '#mission' },
+  { n: '01', label: 'THE MAP', href: '#map' },
+  { n: '02', label: 'THE PLAYERS', href: '#players' },
+  { n: '03', label: 'THE PATHS', href: '#paths' },
+  { n: '04', label: 'THE MISSION', href: '#mission' },
 ];
 
 const PARTNERS = [
@@ -15,6 +15,7 @@ const PARTNERS = [
 export default function Nav() {
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     let lastY = window.scrollY;
@@ -29,54 +30,110 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [open]);
+
   return (
-    <header className={`site-nav fixed top-0 left-0 right-0 z-[1000] ${hidden ? 'nav-hidden' : ''}`}>
+    <>
+      <header className={`site-nav fixed top-0 left-0 right-0 z-[1000] ${hidden && !open ? 'nav-hidden' : ''}`}>
+        <div
+          className={`mx-auto flex items-center justify-between px-5 md:px-10 py-4 transition-all duration-500 ${
+            scrolled || open ? 'backdrop-blur-md bg-[#0c0e16]/80 border-b border-[rgba(251,250,245,0.1)]' : ''
+          }`}
+        >
+          <a href="#top" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
+            <span className="block w-2.5 h-2.5 bg-[#d52b1e] group-hover:rotate-45 transition-transform duration-300" />
+            <span className="font-display text-lg md:text-xl tracking-wide uppercase">Builder Workshop</span>
+          </a>
+          <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
+            {LINKS.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="font-mono2 text-[11px] tracking-[0.18em] text-[#fbfaf5]/75 hover:text-[#fbfaf5] transition-colors"
+              >
+                {l.label}
+              </a>
+            ))}
+            <span className="hidden xl:block w-px h-5 bg-[rgba(251,250,245,0.15)]" />
+            {PARTNERS.map((p) => (
+              <a
+                key={p.href}
+                href={p.href}
+                target="_blank"
+                rel="noreferrer"
+                className="hidden xl:flex items-center gap-2 font-mono2 text-[10px] tracking-[0.14em] text-[#fbfaf5]/60 hover:text-[#fbfaf5] border border-[rgba(251,250,245,0.16)] hover:border-[#84bd00] px-3 py-2 transition-colors"
+              >
+                <img src={p.icon} alt="" className="w-3.5 h-3.5 object-contain" />
+                {p.label}
+              </a>
+            ))}
+            <a
+              href="mailto:these3remain@gmail.com?subject=Add%20a%20player%20to%20the%20map"
+              className="font-mono2 text-[11px] tracking-[0.18em] bg-[#fbfaf5] text-[#12141f] px-4 py-2 hover:bg-[#d52b1e] hover:text-[#fbfaf5] transition-colors"
+            >
+              ADD A PLAYER ↗
+            </a>
+          </nav>
+          <button
+            className="md:hidden font-mono2 text-[11px] tracking-[0.18em] bg-[#fbfaf5] text-[#12141f] px-3 py-2"
+            onClick={() => setOpen(!open)}
+            aria-expanded={open}
+            aria-label={open ? 'Close menu' : 'Open menu'}
+          >
+            {open ? 'CLOSE ✕' : 'MENU ☰'}
+          </button>
+        </div>
+      </header>
+
+      {/* full-screen mobile menu */}
       <div
-        className={`mx-auto flex items-center justify-between px-5 md:px-10 py-4 transition-all duration-500 ${
-          scrolled ? 'backdrop-blur-md bg-[#0c0e16]/80 border-b border-[rgba(251,250,245,0.1)]' : ''
+        className={`fixed inset-0 z-[990] bg-[#0c0e16] flex flex-col justify-between px-5 pt-24 pb-8 transition-opacity duration-300 md:hidden ${
+          open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
+        aria-hidden={!open}
       >
-        <a href="#top" className="flex items-center gap-3 group">
-          <span className="block w-2.5 h-2.5 bg-[#d52b1e] group-hover:rotate-45 transition-transform duration-300" />
-          <span className="font-display text-lg md:text-xl tracking-wide uppercase">Builder Workshop</span>
-        </a>
-        <nav className="hidden md:flex items-center gap-8">
+        <nav aria-label="Mobile">
           {LINKS.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="font-mono2 text-[11px] tracking-[0.18em] text-[#fbfaf5]/70 hover:text-[#fbfaf5] transition-colors"
+              onClick={() => setOpen(false)}
+              className="flex items-baseline gap-4 py-4 border-t border-[rgba(251,250,245,0.12)] last:border-b group"
             >
-              {l.label}
+              <span className="font-mono2 text-[11px] text-[#d52b1e]">{l.n}</span>
+              <span className="font-display uppercase text-4xl tracking-wide group-hover:text-[#d52b1e] transition-colors">
+                {l.label}
+              </span>
             </a>
           ))}
-          <span className="hidden xl:block w-px h-5 bg-[rgba(251,250,245,0.15)]" />
-          {PARTNERS.map((p) => (
-            <a
-              key={p.href}
-              href={p.href}
-              target="_blank"
-              rel="noreferrer"
-              className="hidden xl:flex items-center gap-2 font-mono2 text-[10px] tracking-[0.14em] text-[#fbfaf5]/60 hover:text-[#fbfaf5] border border-[rgba(251,250,245,0.16)] hover:border-[#84bd00] px-3 py-2 transition-colors"
-            >
-              <img src={p.icon} alt="" className="w-3.5 h-3.5 object-contain" />
-              {p.label}
-            </a>
-          ))}
-          <a
-            href="mailto:these3remain@gmail.com?subject=Add%20a%20player%20to%20the%20map"
-            className="font-mono2 text-[11px] tracking-[0.18em] bg-[#fbfaf5] text-[#12141f] px-4 py-2 hover:bg-[#d52b1e] hover:text-[#fbfaf5] transition-colors"
-          >
-            ADD A PLAYER ↗
-          </a>
         </nav>
-        <a
-          href="#map"
-          className="md:hidden font-mono2 text-[11px] tracking-[0.18em] bg-[#fbfaf5] text-[#12141f] px-3 py-2"
-        >
-          MAP ↓
-        </a>
+        <div>
+          <div className="font-mono2 text-[9.5px] tracking-[0.2em] text-[#fbfaf5]/40 uppercase mb-3">In the ecosystem</div>
+          <div className="flex flex-wrap gap-2">
+            {PARTNERS.map((p) => (
+              <a
+                key={p.href}
+                href={p.href}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 font-mono2 text-[10px] tracking-[0.14em] text-[#fbfaf5]/70 border border-[rgba(251,250,245,0.16)] px-3 py-2.5"
+              >
+                <img src={p.icon} alt="" className="w-3.5 h-3.5 object-contain" />
+                {p.label} ↗
+              </a>
+            ))}
+            <a
+              href="mailto:these3remain@gmail.com?subject=Add%20a%20player%20to%20the%20map"
+              className="flex items-center font-mono2 text-[10px] tracking-[0.14em] bg-[#d52b1e] text-[#fbfaf5] px-3 py-2.5"
+            >
+              ADD A PLAYER ↗
+            </a>
+          </div>
+        </div>
       </div>
-    </header>
+    </>
   );
 }
