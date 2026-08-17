@@ -13,28 +13,30 @@ Per the Design Field Manual: this file outranks the manual inside this repo.
 | Merge gates | Reviewer-enforced §8.8 (no CI yet) |
 | Out of scope | Webfont body text, FAB, shape-morph libs, dynamic colour from user context, WCAG 3.0 |
 
-## Decision: light-first with a user toggle (dark retained)
+## Decision: two intentional schemes, one system
 
-- The manual's §8.2 is explicit: emit light and dark values, switch on `prefers-color-scheme`, optionally overridable by a class. Light/dark is a user preference to honour, not a design direction.
-- The project is civic/public — open data, OpenStreetMap, map-first. The dominant pattern for that territory is a warm paper field with deep ink and one disciplined red accent; light reads *public*, dark reads *product*.
-- So: light is the default; dark is the toggle. Accents (flag red, golds, forest, green, salmon) are identical across schemes — only surfaces, ink and lines swap.
+The manual's §8.2 requires emitting light and dark values and switching on `prefers-color-scheme` with an optional manual override — so both schemes ship. But the earlier build's failure was not the light/dark axis; it was a missing *system*. This revision fixes the system:
+
+- **One accent, used sparingly.** Flag red is the only brand accent — the primary action, the brand mark, the eyebrow, the editorial emphasis. Everything else is ink and surface. This is the Apple-restraint layer (manual §0, §8.6 "one primary action per view").
+- **Category colour is a dot, not a flood.** The six categories get small marker dots and muted per-scheme text (`--cat-*`), tuned to AA on each surface. They differentiate without turning the page into a rainbow.
+- **Tonal elevation, not shadow.** Dark scheme raises surfaces by going *lighter* (`--bg-raise #14161d` over `--bg #0b0c10`), per manual §8.2 — not by stacking heavier shadows.
+- **Light = warm paper, ink text** (`--bg #f3efe6`, `--ink #15161a`, text-red `#a81e14` for AA). **Dark = near-black ink, off-white text** (`--bg #0b0c10`, `--ink #f3f1ea`, lifted red `#ee4a3d` for AA).
+- **Typography carries the hierarchy** — Anton display for editorial weight, IBM Plex Mono for data labels, IBM Plex Sans for body.
 
 ## Token architecture (manual §8.1)
 
 ref (raw, fixed) → sys (semantic, scheme-swapped) → components consume sys only.
 
-- ref: `--r-red/--r-gold/--r-forest/...` — the fixed brand values.
-- sys (light): `--bg #f6f2e7` warm paper, `--bg-raise #fff`, `--ink #16181d`, `--line` ink@14%.
-- sys (dark): `--bg #0c0e16`, `--bg-raise #12141f`, `--ink #fbfaf5`, `--line` cream@14%.
-- Category chips get per-scheme text tokens (`--cat-*`) so the 9.5px labels pass AA on both paper and ink.
-- Components reference `--bg/--ink/--line/--forest/...` — never raw hex.
+- ref: `--r-red/--r-red-hi/--r-forest/--r-gold/--r-cream/--r-ink` — fixed brand values.
+- sys: `--bg/--bg-raise/--bg-sink/--ink/--ink-soft/--ink-faint/--line/--line-strong/--brand/--brand-ink/--accent/--focus/--cat-*` — swap per scheme.
+- Components reference sys tokens only, never raw hex.
 
 ## Theme mechanics
 
-- Default: `prefers-color-scheme` (light wins ties via the boot script).
+- Default: `prefers-color-scheme`.
 - Toggle: `data-theme="light|dark"` on `<html>`, persisted to `localStorage('bw-theme')`, set pre-paint by an inline script in `index.html` (no flash).
-- `color-scheme: light dark` on `:root`; OSM tiles render natural in light (they're already a light basemap), filtered only in dark.
+- `color-scheme: light dark` on `:root`; OSM tiles natural in light, filtered in dark.
 
 ## What does NOT change
 
-Accent palette, Anton + IBM Plex type, layout, ticket cards, map interactions, data. Surfaces and ink only.
+Anton + IBM Plex type, layout, ticket cards, map interactions, data. Surfaces, ink, and the one-accent discipline only.
