@@ -45,7 +45,7 @@ export default function Pathways() {
   return (
     <section id="paths" className="relative bg-[#12141f] py-20 md:py-28 border-t border-[rgba(251,250,245,0.1)]">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
-        {/* The Stack — how to use this site with its partners */}
+        {/* The Stack — how to use this site with friends & collaborators */}
         <div className="mb-16 reveal">
           <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#84bd00] mb-4">HOW TO USE THIS</div>
           <h3 className="font-display uppercase text-3xl md:text-5xl leading-[0.95] max-w-3xl">
@@ -53,7 +53,7 @@ export default function Pathways() {
           </h3>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-[#fbfaf5]/60">
             Three tools, one journey — no overlap, no competition. This site maps the physical
-            ecosystem; the partners handle events, shipping and the national layer.
+            ecosystem; our friends &amp; collaborators handle events, shipping and the national layer.
           </p>
 
           <div className="mt-8 grid md:grid-cols-3 gap-4">
@@ -81,7 +81,7 @@ export default function Pathways() {
                         <span className="font-display uppercase text-base tracking-wide group-hover/p:text-[#cedc00] transition-colors">
                           {pt.name} ↗
                         </span>
-                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] border border-[#84bd00] text-[#84bd00] px-1.5 py-0.5">PARTNER</span>
+                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] border border-[#84bd00] text-[#84bd00] px-1.5 py-0.5">FRIEND</span>
                       </div>
                       <p className="mt-1 text-[12px] leading-relaxed text-[#fbfaf5]/55">{pt.note}</p>
                     </a>
