@@ -103,7 +103,7 @@ jobs:
 ## Adding / editing players
 
 All ecosystem data lives in one file: `src/data/assets.ts`.
-Each entry has a name, category, URL, blurb, location, optional `lat`/`lng` (entries with coordinates are pinned on the asset map; entries without appear in the directory only), and optional `capabilities` (equipment/facilities — these power the map's "Make something" filters). **Array order = the directory's numbered ranking (01–44).** Categories, their colors, capability labels and the Pathways trails are defined in the same file.
+Each entry has a name, category, URL, blurb, location, optional `lat`/`lng` (entries with coordinates are pinned on the asset map; entries without appear in the directory only), and optional `capabilities` (equipment/facilities — these power the map's "Make something" filters). **Array order = the directory's numbered ranking (01–46).** Categories, their colors, capability labels and the Pathways trails are defined in the same file.
 
 ## Credits
 
