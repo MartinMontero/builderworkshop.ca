@@ -35,7 +35,7 @@ export const CATEGORIES: Category[] = [
   'Capital & Venture',
 ];
 
-// Array order = directory ranking (01–42).
+// Array order = directory ranking (01–43).
 export const ASSETS: Asset[] = [
   {
     id: 'dctrl',
@@ -437,6 +437,15 @@ export const ASSETS: Asset[] = [
     blurb:
       "An 11-week accelerator built for women founders — cohorts of just six, landing podcast features, nailing the pitch, and winning grant funding ($850K+ secured) with zero equity taken.",
     location: 'Cohort-based · Vancouver',
+  },
+  {
+    id: 'foundedincanada',
+    name: 'FoundedIn Canada',
+    category: 'Community & Events',
+    url: 'https://foundedincanada.com/',
+    blurb:
+      "Sovereign intelligence infrastructure for Canada's innovation economy — founders, capital, talent, programs and government connected in context by its Arctyk AI, on Canadian models and compute that never leave the country.",
+    location: 'Vancouver · Nation-wide',
   },
   {
     id: 'zspace',
