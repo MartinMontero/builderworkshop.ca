@@ -201,7 +201,10 @@ export default function AssetMap() {
 
         {/* capability insight line */}
         {capInsight && (
-          <div className="mb-6 border-l-2 border-[#84bd00] pl-4 font-mono2 text-[11px] tracking-[0.06em] text-[#cedc00] leading-relaxed reveal">
+          <div
+            aria-live="polite"
+            className="mb-6 border-l-2 border-[#84bd00] pl-4 font-mono2 text-[11px] tracking-[0.06em] text-[#cedc00] leading-relaxed reveal"
+          >
             {capInsight}
           </div>
         )}
@@ -268,7 +271,11 @@ export default function AssetMap() {
           </div>
 
           {/* map */}
-          <div className="lg:col-span-8 order-1 lg:order-2 border border-[rgba(251,250,245,0.14)] relative">
+          <div
+            className="lg:col-span-8 order-1 lg:order-2 border border-[rgba(251,250,245,0.14)] relative"
+            role="region"
+            aria-label="Interactive map of British Columbia innovation venues on OpenStreetMap"
+          >
             {trail && (
               <div className="absolute top-3 right-3 z-[500] flex items-center gap-3 bg-[#0c0e16]/90 border border-[#d52b1e] px-4 py-2">
                 <span className="font-mono2 text-[10px] tracking-[0.16em] text-[#fbfaf5] uppercase">
