@@ -4,6 +4,13 @@ A practical map and directory of British Columbia's innovation ecosystem — the
 
 **Goal:** attract, support and retain talent, and foster homegrown innovation that drives prosperity, liberty and clear societal benefit — helping Canada take a global lead in human-centric innovation.
 
+## Features
+
+- **The Asset Map** — every physical venue pinned on OpenStreetMap, filterable by category and by *capability* (3D printing, laser cutting, CNC, woodshop, metalshop, electronics, robotics, glass, ceramics, recording, digitization) so a builder can answer "where can I actually make X?" in one click.
+- **The Players** — a ranked directory of ecosystem players; array order in `src/data/assets.ts` is the printed ranking.
+- **The Pathways** — curated walking trails that chain venues into routes (e.g. The Strathcona Maker Mile). Each pathway can be drawn live on the map as a route.
+- **Open data** — the whole directory is published as [`public/ecosystem.json`](public/ecosystem.json) (full directory, CC BY 4.0) and [`public/ecosystem.geojson`](public/ecosystem.geojson) (mapped venues as GeoJSON points), regenerated on every build by `scripts/export-data.mjs`. Take the data and build with it.
+
 ## Stack
 
 - React 19 + TypeScript + Vite 7
@@ -20,7 +27,7 @@ npm run dev
 ## Build
 
 ```bash
-npm run build   # outputs to dist/
+npm run build   # runs scripts/export-data.mjs (prebuild), then tsc + vite build → dist/
 ```
 
 ## Deploy
@@ -96,7 +103,7 @@ jobs:
 ## Adding / editing players
 
 All ecosystem data lives in one file: `src/data/assets.ts`.
-Each entry has a name, category, URL, blurb, location, and optional `lat`/`lng` — entries with coordinates are pinned on the OpenStreetMap asset map; entries without appear in the directory only. **Array order = the directory's numbered ranking (01–43).** Categories and their colors are defined in the same file.
+Each entry has a name, category, URL, blurb, location, optional `lat`/`lng` (entries with coordinates are pinned on the asset map; entries without appear in the directory only), and optional `capabilities` (equipment/facilities — these power the map's "Make something" filters). **Array order = the directory's numbered ranking (01–44).** Categories, their colors, capability labels and the Pathways trails are defined in the same file.
 
 ## Credits
 
