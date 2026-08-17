@@ -21,7 +21,7 @@ export const CATEGORY_COLORS: Record<Category, string> = {
   'Spaces & Places': '#d52b1e',
   'Programs & Accelerators': '#f5b800',
   'Learning & Talent': '#34c76b',
-  'Community & Events': '#4fc3f7',
+  'Community & Events': '#84bd00',
   'Media & Storytelling': '#ff8fa3',
   'Capital & Venture': '#e8ecf4',
 };
@@ -35,7 +35,7 @@ export const CATEGORIES: Category[] = [
   'Capital & Venture',
 ];
 
-// Array order = directory ranking (01–36).
+// Array order = directory ranking (01–41).
 export const ASSETS: Asset[] = [
   {
     id: 'dctrl',
@@ -71,17 +71,6 @@ export const ASSETS: Asset[] = [
     lng: -123.107943,
   },
   {
-    id: 'northhouse',
-    name: 'North House',
-    category: 'Spaces & Places',
-    url: 'https://www.joinnorthhouse.com/',
-    blurb:
-      "An 8,000 sq ft founder space in Mount Pleasant operated by League of Innovators — desks, booths, 24/7 access, and a community built around founders who 10x you.",
-    location: '111 E 5th Ave · Mount Pleasant',
-    lat: 49.266589,
-    lng: -123.1022425,
-  },
-  {
     id: 'dwebyvr',
     name: 'DWeb Vancouver',
     category: 'Community & Events',
@@ -91,26 +80,37 @@ export const ASSETS: Asset[] = [
     location: 'Around town · Lu.ma calendar',
   },
   {
-    id: 'vhs',
-    name: 'Vancouver Hack Space',
-    category: 'Spaces & Places',
-    url: 'https://vanhack.ca/',
+    id: 'internetarchive',
+    name: 'Internet Archive Canada',
+    category: 'Learning & Talent',
+    url: 'https://internetarchivecanada.org/',
     blurb:
-      'Community-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting, woodworking, machining, robotics, welding, electronics and more.',
-    location: '1601 Venables St · Grandview-Woodland',
-    lat: 49.2769261,
-    lng: -123.0725869,
+      'The Canadian arm of the Internet Archive — a non-profit digital library headquartered at The Permanent on West Pender, working with universities and memory institutions toward universal access to all knowledge.',
+    location: '330 W Pender St · Crosstown',
+    lat: 49.2832,
+    lng: -123.1149,
   },
   {
-    id: 'slice',
-    name: 'Slice of Life',
+    id: 'basecamp',
+    name: 'Basecamp',
     category: 'Spaces & Places',
-    url: 'https://www.slicevancouver.ca/',
+    url: 'https://basecampyvr.ca/',
     blurb:
-      'Art gallery, studios and clubhouse giving 100+ local artists room to exhibit — plus thrift, pinball, life drawing, clay club and coworking days. Open daily, free entry.',
-    location: '1636 Venables St · Grandview-Woodland',
-    lat: 49.2765511,
-    lng: -123.0704529,
+      'A live-and-build residency for creators, entrepreneurs and community builders at HI Jericho Beach — focused, affordable housing from $600/month so residents can ship a version one.',
+    location: '1515 Discovery St · Jericho Beach',
+    lat: 49.27295,
+    lng: -123.2032773,
+  },
+  {
+    id: 'ethoslab',
+    name: 'Ethọ́s Lab',
+    category: 'Learning & Talent',
+    url: 'https://ethoslab.ca/',
+    blurb:
+      'Non-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in Ubuntu, building the next generation of diverse creators.',
+    location: '177 E 3rd Ave · Mount Pleasant',
+    lat: 49.2683654,
+    lng: -123.1012334,
   },
   {
     id: 'funk',
@@ -124,15 +124,46 @@ export const ASSETS: Asset[] = [
     lng: -123.120525,
   },
   {
-    id: 'basecamp',
-    name: 'Basecamp',
+    id: 'slice',
+    name: 'Slice of Life',
     category: 'Spaces & Places',
-    url: 'https://basecampyvr.ca/',
+    url: 'https://www.slicevancouver.ca/',
     blurb:
-      'A live-and-build residency for creators, entrepreneurs and community builders at HI Jericho Beach — focused, affordable housing from $600/month so residents can ship a version one.',
-    location: '1515 Discovery St · Jericho Beach',
-    lat: 49.27295,
-    lng: -123.2032773,
+      'Art gallery, studios and clubhouse giving 100+ local artists room to exhibit — plus thrift, pinball, life drawing, clay club and coworking days. Open daily, free entry.',
+    location: '1636 Venables St · Grandview-Woodland',
+    lat: 49.2765511,
+    lng: -123.0704529,
+  },
+  {
+    id: 'vhs',
+    name: 'Vancouver Hack Space',
+    category: 'Spaces & Places',
+    url: 'https://vanhack.ca/',
+    blurb:
+      'Community-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting, woodworking, machining, robotics, welding, electronics and more.',
+    location: '1601 Venables St · Grandview-Woodland',
+    lat: 49.2769261,
+    lng: -123.0725869,
+  },
+  {
+    id: 'northhouse',
+    name: 'North House',
+    category: 'Spaces & Places',
+    url: 'https://www.joinnorthhouse.com/',
+    blurb:
+      "An 8,000 sq ft founder space in Mount Pleasant operated by League of Innovators — desks, booths, 24/7 access, and a community built around founders who 10x you.",
+    location: '111 E 5th Ave · Mount Pleasant',
+    lat: 49.266589,
+    lng: -123.1022425,
+  },
+  {
+    id: 'frontiercollective',
+    name: 'Frontier Collective',
+    category: 'Community & Events',
+    url: 'https://www.thefrontiercollective.com/',
+    blurb:
+      'Vancouver-headquartered global innovation platform for frontier tech — the Frontier Summit, Vancity Innovation House and global missions, with $950M+ raised across its network and a key role in landing Web Summit Vancouver.',
+    location: 'HQ Vancouver · Operating globally',
   },
   {
     id: 'venturelabs',
@@ -182,17 +213,6 @@ export const ASSETS: Asset[] = [
     location: 'Province-wide · HQ Victoria',
   },
   {
-    id: 'ethoslab',
-    name: 'Ethọ́s Lab',
-    category: 'Learning & Talent',
-    url: 'https://ethoslab.ca/',
-    blurb:
-      'Non-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in Ubuntu, building the next generation of diverse creators.',
-    location: '177 E 3rd Ave · Mount Pleasant',
-    lat: 49.2683654,
-    lng: -123.1012334,
-  },
-  {
     id: 'cdm',
     name: 'Centre for Digital Media',
     category: 'Learning & Talent',
@@ -202,6 +222,28 @@ export const ASSETS: Asset[] = [
     location: '685 Great Northern Way · False Creek Flats',
     lat: 49.2673151,
     lng: -123.089946,
+  },
+  {
+    id: 'sfusurrey',
+    name: 'SFU Surrey',
+    category: 'Learning & Talent',
+    url: 'https://www.sfu.ca/surrey/about/our-locations/sfu-surrey-plaza.html',
+    blurb:
+      "SFU's Surrey campus at Central City — the award-winning Bing Thom-designed hub for applied sciences, engineering, business and the Sustainable Energy Engineering school, anchoring one of Canada's fastest-growing city centres.",
+    location: '250–13450 102 Ave · Surrey Central',
+    lat: 49.1866,
+    lng: -122.849,
+  },
+  {
+    id: 'civicinnovationlab',
+    name: 'Civic Innovation Lab',
+    category: 'Programs & Accelerators',
+    url: 'https://civicinnovationlab.ca/',
+    blurb:
+      'A City of Burnaby × SFU research lab turning civic challenges — climate action, mobility, equity, reconciliation — into community-engaged research projects with real municipal impact.',
+    location: 'Christine Sinclair Community Centre · Burnaby',
+    lat: 49.2516823,
+    lng: -122.9677019,
   },
   {
     id: 'youngguns',
@@ -231,6 +273,15 @@ export const ASSETS: Asset[] = [
     location: 'Province-wide',
   },
   {
+    id: 'womentransformingcities',
+    name: 'Women Transforming Cities',
+    category: 'Community & Events',
+    url: 'https://www.womentransformingcities.org/',
+    blurb:
+      'Registered charity founded by former Vancouver city councillor Ellen Woodsworth — building civic power for equity-deserving genders through the Our City Hall campaign, Watch Council and advocacy training.',
+    location: 'Vancouver',
+  },
+  {
     id: 'buildrs',
     name: 'buildrs.dev',
     category: 'Community & Events',
@@ -238,17 +289,6 @@ export const ASSETS: Asset[] = [
     blurb:
       'Every tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of every product BC’s buildrs are shipping.',
     location: 'Online · Vancouver',
-  },
-  {
-    id: 'zspace',
-    name: 'Z-Space',
-    category: 'Spaces & Places',
-    url: 'https://z-space.ca/',
-    blurb:
-      'Non-profit arts and technology society in the historic Odd Fellows Hall — coworking, an event stage, media gallery and café for creative technologists and indie builders.',
-    location: '301–505 Hamilton St · Victory Square',
-    lat: 49.2819714,
-    lng: -123.1114556,
   },
   {
     id: 'aistartuphub',
@@ -388,6 +428,17 @@ export const ASSETS: Asset[] = [
     location: '4A–4476 Markham St · Saanich',
     lat: 48.4941015,
     lng: -123.4131897,
+  },
+  {
+    id: 'zspace',
+    name: 'Z-Space',
+    category: 'Spaces & Places',
+    url: 'https://z-space.ca/',
+    blurb:
+      'Non-profit arts and technology society in the historic Odd Fellows Hall — coworking, an event stage, media gallery and café for creative technologists and indie builders.',
+    location: '301–505 Hamilton St · Victory Square',
+    lat: 49.2819714,
+    lng: -123.1114556,
   },
   {
     id: 'makerspace-nanaimo',

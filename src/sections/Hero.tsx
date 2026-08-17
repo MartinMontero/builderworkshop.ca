@@ -1,6 +1,6 @@
 const STATS = [
-  { value: '36', label: 'ECOSYSTEM PLAYERS LISTED' },
-  { value: '24', label: 'VENUES ON THE ASSET MAP' },
+  { value: '41', label: 'ECOSYSTEM PLAYERS LISTED' },
+  { value: '27', label: 'VENUES ON THE ASSET MAP' },
   { value: '#2', label: 'AI TALENT CONCENTRATION IN CANADA' },
   { value: '500+', label: 'AI COMPANIES IN B.C.' },
 ];
@@ -36,7 +36,7 @@ export default function Hero() {
           <br />
           is a <span className="text-[#d52b1e]">workshop</span>
           <br />
-          for <span className="text-[#4fc3f7]">builders.</span>
+          for <span className="text-[#84bd00]">builders.</span>
         </h1>
 
         <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 items-end">
