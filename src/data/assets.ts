@@ -231,6 +231,15 @@ export const ASSETS: Asset[] = [
     location: 'Online · Vancouver',
   },
   {
+    id: 'dwebyvr',
+    name: 'DWeb Vancouver',
+    category: 'Community & Events',
+    url: 'https://dwebyvr.org/',
+    blurb:
+      'The official Vancouver node of the global DWeb movement sparked by the Internet Archive — volunteer-run meetups and a community calendar for tech built on human agency, mutual respect and distributed benefit.',
+    location: 'Around town · Lu.ma calendar',
+  },
+  {
     id: 'zspace',
     name: 'Z-Space',
     category: 'Spaces & Places',
@@ -240,15 +249,6 @@ export const ASSETS: Asset[] = [
     location: '301–505 Hamilton St · Victory Square',
     lat: 49.2819714,
     lng: -123.1114556,
-  },
-  {
-    id: 'dwebyvr',
-    name: 'DWeb Vancouver',
-    category: 'Community & Events',
-    url: 'https://dwebyvr.org/',
-    blurb:
-      'The official Vancouver node of the global DWeb movement sparked by the Internet Archive — volunteer-run meetups and a community calendar for tech built on human agency, mutual respect and distributed benefit.',
-    location: 'Around town · Lu.ma calendar',
   },
   {
     id: 'aistartuphub',
