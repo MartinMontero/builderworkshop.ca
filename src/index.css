@@ -5,35 +5,35 @@
 /* ---------- ref (raw brand, fixed) ---------- */
 :root {
   --r-red: #d52b1e;
-  --r-red-hi: #ee4a3d;      /* lifted flag red for dark text use */
-  --r-forest: #84bd00;
-  --r-forest-hi: #b8e000;   /* lifted for dark text use */
-  --r-gold: #f0a500;
+  --r-red-hi: #ee4a3d;
+  --r-forest: #4f7a00;
+  --r-forest-hi: #a5d400;
+  --r-gold: #b58900;
+  --r-gold-hi: #f0b429;
   --r-cream: #fbfaf5;
-  --r-ink: #0b0c10;
+  --r-ink: #141519;
 
   color-scheme: light dark;
 }
 
 /* ---------- sys (semantic, scheme-swapped) ---------- */
-/* LIGHT: warm paper field, true ink text, red reserved for action/brand. */
+/* LIGHT: a warm public commons — cream field, true ink, one red accent. */
 :root,
 :root[data-theme='light'] {
-  --bg: #f3efe6;            /* warm paper */
-  --bg-raise: #fbf9f3;      /* raised card */
-  --bg-sink: #eae5d9;       /* recessed strip */
-  --ink: #15161a;
-  --ink-soft: rgba(21, 22, 26, 0.72);
-  --ink-faint: rgba(21, 22, 26, 0.5);
-  --line: rgba(21, 22, 26, 0.14);
-  --line-strong: rgba(21, 22, 26, 0.32);
+  --bg: #f7f4ec;
+  --bg-raise: #fdfcf8;
+  --bg-sink: #eee9dd;
+  --ink: #17181d;
+  --ink-soft: rgba(23, 24, 29, 0.74);
+  --ink-faint: rgba(23, 24, 29, 0.52);
+  --line: rgba(23, 24, 29, 0.16);
+  --line-strong: rgba(23, 24, 29, 0.34);
 
-  --brand: var(--r-red);        /* primary action + brand mark */
-  --brand-ink: #ffffff;         /* text on the red */
-  --accent: #a81e14;            /* text red, AA on paper */
+  --brand: var(--r-red);
+  --brand-ink: #ffffff;
+  --accent: #a81e14;
   --focus: #a81e14;
 
-  /* categories: colour is a dot, not a flood */
   --cat-spaces: #a81e14;
   --cat-programs: #9a6f00;
   --cat-learning: #1e7a45;
@@ -44,23 +44,23 @@
   --selection-bg: var(--r-red);
   --selection-ink: #ffffff;
   --tile-filter: none;
-  --marker-ring: rgba(21, 22, 26, 0.92);
-  --nav-bg: rgba(243, 239, 230, 0.85);
+  --marker-ring: rgba(23, 24, 29, 0.92);
+  --nav-bg: rgba(247, 244, 236, 0.88);
   --pulse: rgba(213, 43, 30, 0.5);
-  --hero-glow: rgba(213, 43, 30, 0.12);
-  --grid-line: rgba(21, 22, 26, 0.06);
+  --hero-glow: rgba(213, 43, 30, 0.1);
+  --grid-line: rgba(23, 24, 29, 0.05);
 }
 
-/* DARK: one near-black surface family, off-white text, red + one warm accent. */
+/* DARK: a softened warm ink — not console black — off-white text, lifted red. */
 :root[data-theme='dark'] {
-  --bg: #0b0c10;
-  --bg-raise: #14161d;
-  --bg-sink: #08090d;
-  --ink: #f3f1ea;
-  --ink-soft: rgba(243, 241, 234, 0.74);
-  --ink-faint: rgba(243, 241, 234, 0.52);
-  --line: rgba(243, 241, 234, 0.13);
-  --line-strong: rgba(243, 241, 234, 0.3);
+  --bg: #16171c;
+  --bg-raise: #1e2026;
+  --bg-sink: #101116;
+  --ink: #f2efe8;
+  --ink-soft: rgba(242, 239, 232, 0.76);
+  --ink-faint: rgba(242, 239, 232, 0.54);
+  --line: rgba(242, 239, 232, 0.15);
+  --line-strong: rgba(242, 239, 232, 0.32);
 
   --brand: var(--r-red);
   --brand-ink: #ffffff;
@@ -76,12 +76,12 @@
 
   --selection-bg: var(--r-red);
   --selection-ink: #ffffff;
-  --tile-filter: grayscale(0.7) brightness(0.8) contrast(1.08) sepia(0.08);
-  --marker-ring: rgba(243, 241, 234, 0.88);
-  --nav-bg: rgba(11, 12, 16, 0.82);
+  --tile-filter: grayscale(0.55) brightness(0.85) contrast(1.04) sepia(0.06);
+  --marker-ring: rgba(242, 239, 232, 0.88);
+  --nav-bg: rgba(22, 23, 28, 0.86);
   --pulse: rgba(213, 43, 30, 0.5);
-  --hero-glow: rgba(213, 43, 30, 0.16);
-  --grid-line: rgba(243, 241, 234, 0.05);
+  --hero-glow: rgba(213, 43, 30, 0.14);
+  --grid-line: rgba(242, 239, 232, 0.05);
 }
 
 html {
@@ -128,6 +128,16 @@ body {
 
 .font-mono2 {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+/* Eyebrow labels — quiet sans caps, not console chrome */
+.eyebrow {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 /* ---------- noise texture ---------- */
@@ -202,9 +212,10 @@ a:hover .u-grow {
 
 /* ---------- theme toggle ---------- */
 .theme-toggle {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
   font-size: 10px;
-  letter-spacing: 0.14em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   color: var(--ink-soft);
   border: 1px solid var(--line);
   background: transparent;
@@ -217,12 +228,13 @@ a:hover .u-grow {
   color: var(--ink);
 }
 
-/* ---------- buttons (one primary per view, manual §8.6) ---------- */
+/* ---------- buttons ---------- */
 .btn-primary {
   display: inline-block;
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-size: 11px;
-  letter-spacing: 0.2em;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   background: var(--brand);
   color: var(--brand-ink);
   padding: 14px 24px;
@@ -234,9 +246,10 @@ a:hover .u-grow {
 }
 .btn-ghost {
   display: inline-block;
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-size: 11px;
-  letter-spacing: 0.2em;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   border: 1px solid var(--line-strong);
   color: var(--ink);
   padding: 14px 24px;
@@ -258,8 +271,8 @@ a:hover .u-grow {
 .leaflet-control-attribution {
   background: var(--nav-bg) !important;
   color: var(--ink-soft) !important;
-  font-family: 'IBM Plex Mono', monospace !important;
-  font-size: 10px !important;
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  font-size: 11px !important;
 }
 .leaflet-control-attribution a {
   color: var(--ink) !important;
@@ -273,8 +286,8 @@ a:hover .u-grow {
   background: var(--bg-raise) !important;
   color: var(--ink) !important;
   border: 1px solid var(--line);
-  border-radius: 2px !important;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28) !important;
 }
 .leaflet-popup-tip {
   background: var(--bg-raise) !important;
@@ -299,7 +312,7 @@ a:hover .u-grow {
   height: 16px;
   border-radius: 999px;
   border: 3px solid var(--bg);
-  box-shadow: 0 0 0 1.5px var(--marker-ring), 0 4px 14px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 0 1.5px var(--marker-ring), 0 4px 14px rgba(0, 0, 0, 0.3);
   transition: transform 0.25s ease;
 }
 .bw-marker.is-active {
