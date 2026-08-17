@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const LINKS = [
+  { n: '00', label: 'THE STACK', href: '#paths' },
   { n: '01', label: 'THE MAP', href: '#map' },
   { n: '02', label: 'THE PLAYERS', href: '#players' },
   { n: '03', label: 'THE PATHS', href: '#paths' },
