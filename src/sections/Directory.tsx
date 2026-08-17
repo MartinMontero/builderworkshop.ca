@@ -6,9 +6,9 @@ export default function Directory() {
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
           <div>
-            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#ff8f0c] mb-4">02 / THE PLAYERS</div>
+            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#ff3b30] mb-4">02 / THE PLAYERS</div>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.95]">
-              Twenty-five<br />ways in.
+              Thirty-six<br />ways in.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/60">
@@ -31,7 +31,7 @@ export default function Directory() {
                 {String(i + 1).padStart(2, '0')}
               </div>
               <div className="md:col-span-3">
-                <span className="font-display uppercase text-2xl md:text-3xl tracking-wide group-hover:text-[#ff8f0c] transition-colors duration-300">
+                <span className="font-display uppercase text-2xl md:text-3xl tracking-wide group-hover:text-[#ff3b30] transition-colors duration-300">
                   {a.name}
                 </span>
               </div>
@@ -54,7 +54,7 @@ export default function Directory() {
                 )}
               </div>
               <div className="md:col-span-3 text-[13px] leading-relaxed text-[#fbfaf5]/65">{a.blurb}</div>
-              <div className="md:col-span-1 md:text-right font-mono2 text-sm text-[#fbfaf5]/40 group-hover:text-[#ff8f0c] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300">
+              <div className="md:col-span-1 md:text-right font-mono2 text-sm text-[#fbfaf5]/40 group-hover:text-[#ff3b30] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300">
                 ↗
               </div>
             </a>

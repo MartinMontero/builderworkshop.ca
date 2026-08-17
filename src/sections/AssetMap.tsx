@@ -65,13 +65,13 @@ export default function AssetMap() {
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-10 reveal">
           <div>
-            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#ff8f0c] mb-4">01 / THE ASSET MAP</div>
+            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#ff3b30] mb-4">01 / THE ASSET MAP</div>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.95]">
               Where the work<br />gets done.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/60">
-            Fourteen physical venues pinned across the Lower Mainland — powered by OpenStreetMap.
+            Twenty-four physical venues pinned across British Columbia — powered by OpenStreetMap.
             Program-based and regional players are listed in the directory below.
           </p>
         </div>
@@ -176,7 +176,7 @@ export default function AssetMap() {
                         href={a.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="font-mono2 text-[10.5px] tracking-[0.14em] text-[#ff8f0c] inline-block mt-3 hover:text-[#f6c944]"
+                        className="font-mono2 text-[10.5px] tracking-[0.14em] text-[#ff3b30] inline-block mt-3 hover:text-[#4fc3f7]"
                       >
                         VISIT SITE ↗
                       </a>
