@@ -35,7 +35,7 @@ export const CATEGORIES: Category[] = [
   'Capital & Venture',
 ];
 
-// Array order = directory ranking (01–41).
+// Array order = directory ranking (01–42).
 export const ASSETS: Asset[] = [
   {
     id: 'dctrl',
@@ -428,6 +428,15 @@ export const ASSETS: Asset[] = [
     location: '4A–4476 Markham St · Saanich',
     lat: 48.4941015,
     lng: -123.4131897,
+  },
+  {
+    id: 'flowstatefounder',
+    name: 'Flow State Founder',
+    category: 'Programs & Accelerators',
+    url: 'https://flowstatefounder.ca/',
+    blurb:
+      "An 11-week accelerator built for women founders — cohorts of just six, landing podcast features, nailing the pitch, and winning grant funding ($850K+ secured) with zero equity taken.",
+    location: 'Cohort-based · Vancouver',
   },
   {
     id: 'zspace',
