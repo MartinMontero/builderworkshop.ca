@@ -96,7 +96,7 @@ jobs:
 ## Adding / editing players
 
 All ecosystem data lives in one file: `src/data/assets.ts`.
-Each entry has a name, category, URL, blurb, location, and optional `lat`/`lng` — entries with coordinates are pinned on the OpenStreetMap asset map; entries without appear in the directory only. **Array order = the directory's numbered ranking (01–41).** Categories and their colors are defined in the same file.
+Each entry has a name, category, URL, blurb, location, and optional `lat`/`lng` — entries with coordinates are pinned on the OpenStreetMap asset map; entries without appear in the directory only. **Array order = the directory's numbered ranking (01–42).** Categories and their colors are defined in the same file.
 
 ## Credits
 
