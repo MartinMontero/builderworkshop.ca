@@ -1,0 +1,285 @@
+export type Category =
+  | 'Spaces & Places'
+  | 'Programs & Accelerators'
+  | 'Learning & Talent'
+  | 'Community & Events'
+  | 'Media & Storytelling'
+  | 'Capital & Venture';
+
+export interface Asset {
+  id: string;
+  name: string;
+  category: Category;
+  url: string;
+  blurb: string;
+  location: string;
+  lat?: number;
+  lng?: number;
+}
+
+export const CATEGORY_COLORS: Record<Category, string> = {
+  'Spaces & Places': '#ff8f0c',
+  'Programs & Accelerators': '#f6c944',
+  'Learning & Talent': '#b39ddb',
+  'Community & Events': '#00d5e9',
+  'Media & Storytelling': '#ff5872',
+  'Capital & Venture': '#7feb00',
+};
+
+export const CATEGORIES: Category[] = [
+  'Spaces & Places',
+  'Programs & Accelerators',
+  'Learning & Talent',
+  'Community & Events',
+  'Media & Storytelling',
+  'Capital & Venture',
+];
+
+export const ASSETS: Asset[] = [
+  {
+    id: 'dctrl',
+    name: 'DCTRL',
+    category: 'Spaces & Places',
+    url: 'https://www.dctrl.wtf/',
+    blurb:
+      "Vancouver's longest-running home for Bitcoin, crypto and decentralized tech — a member-run, non-profit cypherpunk coworking and event studio operating since 2013.",
+    location: '328 W Hastings St · Gastown',
+    lat: 49.2829423,
+    lng: -123.1107804,
+  },
+  {
+    id: 'friendsquarters',
+    name: 'FriendsQuarters',
+    category: 'Spaces & Places',
+    url: 'https://www.friendsquarters.com/',
+    blurb:
+      "Vancouver's friendliest coworking, connection and media space — 5,500 sq ft with hot desks, a podcast room and an atrium, steps from Waterfront Station.",
+    location: '200–116 W Hastings St · Gastown',
+    lat: 49.2818562,
+    lng: -123.107943,
+  },
+  {
+    id: 'zspace',
+    name: 'Z-Space',
+    category: 'Spaces & Places',
+    url: 'https://z-space.ca/',
+    blurb:
+      'Non-profit arts and technology society in the historic Odd Fellows Hall — coworking, an event stage, media gallery and café for creative technologists and indie builders.',
+    location: '301–505 Hamilton St · Victory Square',
+    lat: 49.2819714,
+    lng: -123.1114556,
+  },
+  {
+    id: 'northhouse',
+    name: 'North House',
+    category: 'Spaces & Places',
+    url: 'https://www.joinnorthhouse.com/',
+    blurb:
+      "An 8,000 sq ft founder space in Mount Pleasant operated by League of Innovators — desks, booths, 24/7 access, and a community built around founders who 10x you.",
+    location: '111 E 5th Ave · Mount Pleasant',
+    lat: 49.266589,
+    lng: -123.1022425,
+  },
+  {
+    id: 'vhs',
+    name: 'Vancouver Hack Space',
+    category: 'Spaces & Places',
+    url: 'https://vanhack.ca/',
+    blurb:
+      'Community-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting, woodworking, machining, robotics, welding, electronics and more.',
+    location: '1601 Venables St · Grandview-Woodland',
+    lat: 49.2769261,
+    lng: -123.0725869,
+  },
+  {
+    id: 'slice',
+    name: 'Slice of Life',
+    category: 'Spaces & Places',
+    url: 'https://www.slicevancouver.ca/',
+    blurb:
+      'Art gallery, studios and clubhouse giving 100+ local artists room to exhibit — plus thrift, pinball, life drawing, clay club and coworking days. Open daily, free entry.',
+    location: '1636 Venables St · Grandview-Woodland',
+    lat: 49.2765511,
+    lng: -123.0704529,
+  },
+  {
+    id: 'funk',
+    name: 'FUNK Coffee Bar',
+    category: 'Spaces & Places',
+    url: 'https://funk.coffee',
+    blurb:
+      'Coffee-centric downtown bar from the House of Funk crew — the unofficial third place where half the ecosystem’s first meetings actually happen.',
+    location: '1025 Dunsmuir St · Downtown',
+    lat: 49.2863433,
+    lng: -123.120525,
+  },
+  {
+    id: 'basecamp',
+    name: 'Basecamp',
+    category: 'Spaces & Places',
+    url: 'https://basecampyvr.ca/',
+    blurb:
+      'A live-and-build residency for creators, entrepreneurs and community builders at HI Jericho Beach — focused, affordable housing from $600/month so residents can ship a version one.',
+    location: '1515 Discovery St · Jericho Beach',
+    lat: 49.27295,
+    lng: -123.2032773,
+  },
+  {
+    id: 'launch',
+    name: 'Launch Academy',
+    category: 'Programs & Accelerators',
+    url: 'https://www.launchacademy.ca/',
+    blurb:
+      'Non-profit incubator that has supported 6,000+ entrepreneurs since 2012 — alumni include Thinkific and have collectively raised over $1.2B. Home of LaunchPad, Maple and Startup Visa programs.',
+    location: '350–128 W Hastings St · Gastown',
+    lat: 49.2818936,
+    lng: -123.1081537,
+  },
+  {
+    id: 'venturelabs',
+    name: 'SFU VentureLabs',
+    category: 'Programs & Accelerators',
+    url: 'https://venturelabs.ca/',
+    blurb:
+      "Simon Fraser University's technology accelerator in Harbour Centre — scale-up programs, AccelerateIP, and coworking backed by university research capacity and networks.",
+    location: '1200–555 W Hastings St · Downtown',
+    lat: 49.2846668,
+    lng: -123.1119122,
+  },
+  {
+    id: 'althra',
+    name: 'Althra',
+    category: 'Programs & Accelerators',
+    url: 'https://althra.ca/',
+    blurb:
+      "Western Canada's full-time, in-person pre-seed incubator — $12.5K day-one investment with up to $50K follow-on, a 24/7 downtown workspace and an investor trip to San Francisco.",
+    location: 'Downtown Vancouver',
+  },
+  {
+    id: 'foundersboost',
+    name: 'FoundersBoost Vancouver',
+    category: 'Programs & Accelerators',
+    url: 'https://www.foundersboost.com/programs/vancouver',
+    blurb:
+      'The Vancouver chapter of a global 6-week pre-accelerator — no equity, no fees. 600+ alumni startups have raised $400M+ and gone on to Y Combinator, Techstars and a16z.',
+    location: 'Cohort-based · Vancouver',
+  },
+  {
+    id: 'foundersquest',
+    name: "Founder's Quest",
+    category: 'Programs & Accelerators',
+    url: 'https://foundersquest.ca/',
+    blurb:
+      'A gamified founder journey built on the Genesis Framework — validate real problems beat by beat, from the Call to Adventure to a launched venture.',
+    location: 'Vancouver',
+  },
+  {
+    id: 'alacrity',
+    name: 'Alacrity Canada',
+    category: 'Programs & Accelerators',
+    url: 'https://www.alacritycanada.com',
+    blurb:
+      'Scale-up programs and investment-readiness support for Canadian technology companies — its APEX program helps BC SMEs break into global markets.',
+    location: 'Province-wide · HQ Victoria',
+  },
+  {
+    id: 'ethoslab',
+    name: 'Ethọ́s Lab',
+    category: 'Learning & Talent',
+    url: 'https://ethoslab.ca/',
+    blurb:
+      'Non-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in Ubuntu, building the next generation of diverse creators.',
+    location: '177 E 3rd Ave · Mount Pleasant',
+    lat: 49.2683654,
+    lng: -123.1012334,
+  },
+  {
+    id: 'cdm',
+    name: 'Centre for Digital Media',
+    category: 'Learning & Talent',
+    url: 'https://thecdm.ca/',
+    blurb:
+      "Graduate institution on Great Northern Way Campus — the project-based Master of Digital Media program, jointly backed by UBC, SFU, Emily Carr and BCIT, feeding talent and startups into Vancouver's creative district.",
+    location: '685 Great Northern Way · False Creek Flats',
+    lat: 49.2673151,
+    lng: -123.089946,
+  },
+  {
+    id: 'youngguns',
+    name: 'Young Guns Studio',
+    category: 'Learning & Talent',
+    url: 'https://www.ygstudio.ca/',
+    blurb:
+      "Vancouver's premier art & design institute for ambitious students — portfolio programs and creative-intelligence training that have earned 900+ offers to top universities and $10M+ in scholarships.",
+    location: 'Vancouver',
+  },
+  {
+    id: 'vsw',
+    name: 'Vancouver Startup Week',
+    category: 'Community & Events',
+    url: 'https://www.vanstartupweek.ca/',
+    blurb:
+      "The annual week when BC's whole startup scene shows up — 85+ community-led events, thousands of founders, dreamers and doers, every spring across the city.",
+    location: 'Citywide · Annual',
+  },
+  {
+    id: 'bcai',
+    name: 'BC + AI Ecosystem',
+    category: 'Community & Events',
+    url: 'https://bc-ai.ca/',
+    blurb:
+      'Member-supported nonprofit AI community — recurring meetups, working groups and a public-interest voice for responsible, human-centric AI in British Columbia.',
+    location: 'Province-wide',
+  },
+  {
+    id: 'buildrs',
+    name: 'buildrs.dev',
+    category: 'Community & Events',
+    url: 'https://buildrs.dev/',
+    blurb:
+      'Every tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of every product BC’s buildrs are shipping.',
+    location: 'Online · Vancouver',
+  },
+  {
+    id: 'aistartuphub',
+    name: 'AI Startup Hub',
+    category: 'Community & Events',
+    url: 'https://www.linkedin.com/company/ai-startup-hub/',
+    blurb:
+      'A LinkedIn community connecting AI founders, builders and investors across the region — deal flow, demos and discussion for the local AI scene.',
+    location: 'Online · LinkedIn',
+  },
+  {
+    id: 'vtj',
+    name: 'Vancouver Tech Journal',
+    category: 'Media & Storytelling',
+    url: 'https://vantechjournal.com/',
+    blurb:
+      "The most complete coverage of Vancouver's innovation ecosystem — the Sunday Briefing, Midweek Memo and events reaching 25,000+ readers each week.",
+    location: '6060 Silver Dr · Burnaby',
+    lat: 49.2279909,
+    lng: -123.0027391,
+  },
+  {
+    id: 'mml',
+    name: 'Multimodal Media Lab',
+    category: 'Media & Storytelling',
+    url: 'https://www.themml.ca/',
+    blurb:
+      'AI film production studio, academy and pipeline tools — multimodal media at the intersection of AI and cinema, made in British Columbia.',
+    location: 'British Columbia',
+  },
+  {
+    id: 'vst',
+    name: 'Victory Square Technologies',
+    category: 'Capital & Venture',
+    url: 'https://victorysquare.com/',
+    blurb:
+      'Publicly traded venture builder (CSE: VST) investing in, developing and supporting companies across digital health, AI, Web3, VR/AR, gaming and climate tech.',
+    location: '800–1500 W Georgia St · Coal Harbour',
+    lat: 49.2901038,
+    lng: -123.1307386,
+  },
+];
+
+export const MAPPED = ASSETS.filter((a) => a.lat !== undefined);
