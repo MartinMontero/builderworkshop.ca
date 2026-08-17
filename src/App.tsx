@@ -48,13 +48,15 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0c0e16] text-[#fbfaf5]">
       <Nav />
-      <Hero />
-      <Marquee />
-      <AssetMap />
-      <Directory />
-      <Pathways />
-      <Mission />
-      <Contribute />
+      <main>
+        <Hero />
+        <Marquee />
+        <AssetMap />
+        <Directory />
+        <Pathways />
+        <Mission />
+        <Contribute />
+      </main>
       <Footer />
     </div>
   );
