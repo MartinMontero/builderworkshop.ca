@@ -20,7 +20,7 @@ export default function Mission() {
   return (
     <section id="mission" className="relative bg-[#fbfaf5] text-[#12141f] py-20 md:py-28">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
-        <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#a81e14] mb-4 reveal">03 / THE MISSION</div>
+        <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#a81e14] mb-4 reveal">04 / THE MISSION</div>
 
         <h2 className="font-display uppercase text-[11vw] md:text-[6.5vw] leading-[0.95] max-w-6xl reveal">
           Homegrown innovation,<span className="text-[#a81e14]"> built to last.</span>

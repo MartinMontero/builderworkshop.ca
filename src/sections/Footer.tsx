@@ -8,6 +8,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="#map" className="text-sm text-[#fbfaf5]/65 hover:text-[#fbfaf5] transition-colors">The Asset Map</a></li>
               <li><a href="#players" className="text-sm text-[#fbfaf5]/65 hover:text-[#fbfaf5] transition-colors">The Players</a></li>
+              <li><a href="#paths" className="text-sm text-[#fbfaf5]/65 hover:text-[#fbfaf5] transition-colors">The Pathways</a></li>
               <li><a href="#mission" className="text-sm text-[#fbfaf5]/65 hover:text-[#fbfaf5] transition-colors">The Mission</a></li>
             </ul>
           </div>
@@ -16,6 +17,12 @@ export default function Footer() {
             <p className="text-sm text-[#fbfaf5]/55 leading-relaxed">
               Map tiles &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[#fbfaf5]">OpenStreetMap</a> contributors.
               Geocoding via Nominatim. Ecosystem listings are community-sourced.
+            </p>
+            <p className="text-sm text-[#fbfaf5]/55 leading-relaxed mt-3">
+              Open data (CC BY 4.0):{' '}
+              <a href="/ecosystem.json" target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[#fbfaf5]">JSON</a>
+              {' · '}
+              <a href="/ecosystem.geojson" target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-[#fbfaf5]">GeoJSON</a>
             </p>
           </div>
           <div>

@@ -7,7 +7,7 @@ export default function Contribute() {
         style={{ background: 'radial-gradient(circle, #d52b1e 0%, transparent 65%)' }}
       />
       <div className="relative px-5 md:px-10 max-w-[1400px] mx-auto text-center">
-        <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#84bd00] mb-6 reveal">04 / CONTRIBUTE</div>
+        <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#84bd00] mb-6 reveal">05 / CONTRIBUTE</div>
         <h2 className="font-display uppercase text-[10vw] md:text-[5.5vw] leading-[0.95] reveal">
           This map is a<br />
           <span className="text-[#d52b1e]">living document.</span>
