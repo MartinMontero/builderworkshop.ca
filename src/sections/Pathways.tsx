@@ -23,7 +23,7 @@ const STACK = [
   },
   {
     stage: 'MVP → SCALE',
-    color: '#84bd00',
+    color: 'var(--forest)',
     items: [
       { name: 'Stay & grow here', here: true, note: 'The ecosystem you built in — accelerators, capital, media, and the map that keeps you rooted in BC.' },
     ],
@@ -43,24 +43,24 @@ export default function Pathways() {
   };
 
   return (
-    <section id="paths" className="relative bg-[#12141f] py-20 md:py-28 border-t border-[rgba(251,250,245,0.1)]">
+    <section id="paths" className="relative bg-[var(--bg-raise)] py-20 md:py-28 border-t border-[var(--line)]">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         {/* The Stack — how to use this site with friends & collaborators */}
         <div className="mb-16 reveal">
-          <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#84bd00] mb-4">HOW TO USE THIS</div>
+          <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--forest)] mb-4">HOW TO USE THIS</div>
           <h3 className="font-display uppercase text-3xl md:text-5xl leading-[0.95] max-w-3xl">
-            The builder's stack<span className="text-[#84bd00]">.</span>
+            The builder's stack<span className="text-[var(--forest)]">.</span>
           </h3>
-          <p className="mt-4 max-w-xl text-sm leading-relaxed text-[#fbfaf5]/60">
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--ink)]/60">
             Three tools, one journey — no overlap, no competition. This site maps the physical
-            ecosystem; our friends &amp; collaborators handle events, shipping and the national layer.
+            ecosystem; buildrs.dev and FoundedIn Canada handle events, shipping and the national layer.
           </p>
 
           <div className="mt-8 grid md:grid-cols-3 gap-4">
             {STACK.map((s) => (
-              <div key={s.stage} className="ticket border border-[rgba(251,250,245,0.14)] flex flex-col">
+              <div key={s.stage} className="ticket border border-[var(--line)] flex flex-col">
                 <div
-                  className="px-5 pt-4 pb-3 border-b border-dashed border-[rgba(251,250,245,0.18)] font-mono2 text-[10px] tracking-[0.2em]"
+                  className="px-5 pt-4 pb-3 border-b border-dashed border-[var(--line)] font-mono2 text-[10px] tracking-[0.2em]"
                   style={{ color: s.color }}
                 >
                   {s.stage}
@@ -70,20 +70,20 @@ export default function Pathways() {
                     <div key={it.name}>
                       <div className="flex items-center gap-2">
                         <span className="font-display uppercase text-base tracking-wide">{it.name}</span>
-                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] bg-[#d52b1e] text-[#fbfaf5] px-1.5 py-0.5">THIS SITE</span>
+                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] bg-[#d52b1e] text-[var(--ink)] px-1.5 py-0.5">THIS SITE</span>
                       </div>
-                      <p className="mt-1 text-[12px] leading-relaxed text-[#fbfaf5]/55">{it.note}</p>
+                      <p className="mt-1 text-[12px] leading-relaxed text-[var(--ink)]/55">{it.note}</p>
                     </div>
                   ))}
                   {s.partners.map((pt) => (
                     <a key={pt.name} href={pt.url} target="_blank" rel="noreferrer" className="group/p block">
                       <div className="flex items-center gap-2">
-                        <span className="font-display uppercase text-base tracking-wide group-hover/p:text-[#cedc00] transition-colors">
+                        <span className="font-display uppercase text-base tracking-wide group-hover/p:text-[var(--forest-hi)] transition-colors">
                           {pt.name} ↗
                         </span>
-                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] border border-[#84bd00] text-[#84bd00] px-1.5 py-0.5">FRIEND</span>
+                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] border border-[var(--forest)] text-[var(--forest)] px-1.5 py-0.5">FRIEND</span>
                       </div>
-                      <p className="mt-1 text-[12px] leading-relaxed text-[#fbfaf5]/55">{pt.note}</p>
+                      <p className="mt-1 text-[12px] leading-relaxed text-[var(--ink)]/55">{pt.note}</p>
                     </a>
                   ))}
                 </div>
@@ -99,7 +99,7 @@ export default function Pathways() {
               Walk in like<br />a local.
             </h2>
           </div>
-          <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/70">
+          <p className="max-w-sm text-sm leading-relaxed text-[var(--ink)]/70">
             The ecosystem isn't a list — it's a set of routes. Curated trails that chain the rooms,
             tools and people into one afternoon, one skill, or one first prototype.
           </p>
@@ -109,11 +109,11 @@ export default function Pathways() {
           {PATHWAYS.map((p, pi) => (
             <div
               key={p.id}
-              className="reveal ticket group border border-[rgba(251,250,245,0.14)] bg-[#12141f] flex flex-col hover:border-[rgba(251,250,245,0.4)] transition-colors duration-300"
+              className="reveal ticket group border border-[var(--line)] bg-[var(--bg-raise)] flex flex-col hover:border-[var(--line-strong)] transition-colors duration-300"
             >
               {/* ticket stub header */}
-              <div className="flex items-center justify-between px-6 md:px-8 pt-6 pb-4 border-b border-dashed border-[rgba(251,250,245,0.18)]">
-                <span className="font-mono2 text-[10px] tracking-[0.2em] text-[#fbfaf5]/55">
+              <div className="flex items-center justify-between px-6 md:px-8 pt-6 pb-4 border-b border-dashed border-[var(--line)]">
+                <span className="font-mono2 text-[10px] tracking-[0.2em] text-[var(--ink)]/55">
                   TRAIL P{String(pi + 1)} · {p.stops.length} STOPS
                 </span>
                 <span className="font-mono2 text-[10px] tracking-[0.2em] text-[#d52b1e]">BW·BC</span>
@@ -122,7 +122,7 @@ export default function Pathways() {
                 <h3 className="font-display uppercase text-2xl md:text-3xl tracking-wide leading-tight">
                   {p.name}
                 </h3>
-                <p className="mt-3 text-[13.5px] leading-relaxed text-[#fbfaf5]/70">{p.blurb}</p>
+                <p className="mt-3 text-[13.5px] leading-relaxed text-[var(--ink)]/70">{p.blurb}</p>
 
                 {/* route diagram */}
                 <ol className="mt-6 flex-1 relative">
@@ -133,7 +133,7 @@ export default function Pathways() {
                     return (
                       <li key={sid} className="flex items-baseline gap-4 py-1.5 relative">
                         <span
-                          className="relative z-10 block w-[19px] h-[19px] rounded-full border-2 border-[#d52b1e] bg-[#12141f] shrink-0 text-center font-mono2 text-[9px] leading-[15px] text-[#fbfaf5]/70"
+                          className="relative z-10 block w-[19px] h-[19px] rounded-full border-2 border-[#d52b1e] bg-[var(--bg-raise)] shrink-0 text-center font-mono2 text-[9px] leading-[15px] text-[var(--ink)]/70"
                         >
                           {si + 1}
                         </span>
@@ -141,11 +141,11 @@ export default function Pathways() {
                           href={a.url}
                           target="_blank"
                           rel="noreferrer"
-                          className="text-sm text-[#fbfaf5]/85 hover:text-[#cedc00] transition-colors"
+                          className="text-sm text-[var(--ink)]/85 hover:text-[var(--forest-hi)] transition-colors"
                         >
                           {a.name}
                         </a>
-                        <span className="hidden md:inline font-mono2 text-[9.5px] tracking-[0.06em] text-[#fbfaf5]/40 uppercase truncate">
+                        <span className="hidden md:inline font-mono2 text-[9.5px] tracking-[0.06em] text-[var(--ink)]/40 uppercase truncate">
                           {a.location}
                         </span>
                       </li>
@@ -155,7 +155,7 @@ export default function Pathways() {
 
                 <button
                   onClick={() => walk(p.id)}
-                  className="mt-7 self-start font-mono2 text-[10.5px] tracking-[0.18em] border border-[#d52b1e] text-[#d52b1e] px-5 py-2.5 hover:bg-[#d52b1e] hover:text-[#fbfaf5] transition-colors"
+                  className="mt-7 self-start font-mono2 text-[10.5px] tracking-[0.18em] border border-[#d52b1e] text-[#d52b1e] px-5 py-2.5 hover:bg-[#d52b1e] hover:text-[var(--ink)] transition-colors"
                 >
                   WALK IT ON THE MAP ↑
                 </button>
@@ -168,9 +168,9 @@ export default function Pathways() {
         <div className="mt-20 reveal">
           <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
             <h3 className="font-display uppercase text-3xl md:text-5xl leading-[0.95]">
-              The Orbit<span className="text-[#84bd00]">.</span>
+              The Orbit<span className="text-[var(--forest)]">.</span>
             </h3>
-            <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/60">
+            <p className="max-w-sm text-sm leading-relaxed text-[var(--ink)]/60">
               No front door, no pin — programs, communities and networks that move around or live online.
               This is how a builder actually plugs into each one.
             </p>
@@ -182,21 +182,21 @@ export default function Pathways() {
                 href={a.url}
                 target="_blank"
                 rel="noreferrer"
-                className="reveal ticket group border border-[rgba(251,250,245,0.14)] hover:border-[#84bd00] transition-colors duration-300 flex flex-col"
+                className="reveal ticket group border border-[var(--line)] hover:border-[var(--forest)] transition-colors duration-300 flex flex-col"
               >
-                <div className="flex items-center justify-between px-5 pt-4 pb-3 border-b border-dashed border-[rgba(251,250,245,0.18)]">
+                <div className="flex items-center justify-between px-5 pt-4 pb-3 border-b border-dashed border-[var(--line)]">
                   <span
                     className="font-mono2 text-[9px] tracking-[0.16em] uppercase"
                     style={{ color: CATEGORY_COLORS[a.category] }}
                   >
                     {a.category}
                   </span>
-                  <span className="font-mono2 text-[10px] text-[#fbfaf5]/40 group-hover:text-[#cedc00] transition-colors">↗</span>
+                  <span className="font-mono2 text-[10px] text-[var(--ink)]/40 group-hover:text-[var(--forest-hi)] transition-colors">↗</span>
                 </div>
                 <div className="p-5 flex flex-col flex-1">
                   <div className="font-display uppercase text-xl tracking-wide leading-tight">{a.name}</div>
-                  <p className="mt-2.5 text-[12.5px] leading-relaxed text-[#fbfaf5]/60 flex-1">{a.blurb}</p>
-                  <div className="mt-4 pt-3 border-t border-[rgba(251,250,245,0.08)] font-mono2 text-[9.5px] tracking-[0.12em] text-[#84bd00] uppercase">
+                  <p className="mt-2.5 text-[12.5px] leading-relaxed text-[var(--ink)]/60 flex-1">{a.blurb}</p>
+                  <div className="mt-4 pt-3 border-t border-[var(--line)] font-mono2 text-[9.5px] tracking-[0.12em] text-[var(--forest)] uppercase">
                     {a.location}
                   </div>
                 </div>
