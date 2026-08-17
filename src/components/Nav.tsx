@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 const LINKS = [
   { label: 'THE MAP', href: '#map' },
   { label: 'THE PLAYERS', href: '#players' },
+  { label: 'THE PATHS', href: '#paths' },
   { label: 'THE MISSION', href: '#mission' },
 ];
 

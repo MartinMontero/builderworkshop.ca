@@ -4,6 +4,7 @@ import Marquee from './components/Marquee';
 import Hero from './sections/Hero';
 import AssetMap from './sections/AssetMap';
 import Directory from './sections/Directory';
+import Pathways from './sections/Pathways';
 import Mission from './sections/Mission';
 import Contribute from './sections/Contribute';
 import Footer from './sections/Footer';
@@ -51,6 +52,7 @@ export default function App() {
       <Marquee />
       <AssetMap />
       <Directory />
+      <Pathways />
       <Mission />
       <Contribute />
       <Footer />
