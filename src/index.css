@@ -32,10 +32,10 @@ section[id] {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .marquee-track { animation: none; }
+  .marquee-track { animation: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .scroll-cue { animation: none; }
-  .bw-marker.is-active { animation: none; }
+  .scroll-cue { animation: none !important; }
+  .bw-marker.is-active { animation: none !important; }
   .player-row, .player-row:hover { transition: none; padding-left: 0.25rem; }
 }
 

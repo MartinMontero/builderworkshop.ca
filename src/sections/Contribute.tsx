@@ -14,7 +14,8 @@ export default function Contribute() {
         </h2>
         <p className="mt-8 max-w-xl mx-auto text-[15px] leading-relaxed text-[#fbfaf5]/75 reveal">
           Know a builder, space, program or community that belongs here? The ecosystem grows one
-          introduction at a time. Or take the whole dataset and build something we haven't imagined.
+          introduction at a time — or help us re-verify the oldest entries. Or take the whole dataset
+          and build something we haven't imagined.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4 reveal">
           <a
