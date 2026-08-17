@@ -31,7 +31,7 @@ export default function Nav() {
         }`}
       >
         <a href="#top" className="flex items-center gap-3 group">
-          <span className="block w-2.5 h-2.5 bg-[#ff3b30] group-hover:rotate-45 transition-transform duration-300" />
+          <span className="block w-2.5 h-2.5 bg-[#d52b1e] group-hover:rotate-45 transition-transform duration-300" />
           <span className="font-display text-lg md:text-xl tracking-wide uppercase">Builder Workshop</span>
         </a>
         <nav className="hidden md:flex items-center gap-8">
@@ -46,7 +46,7 @@ export default function Nav() {
           ))}
           <a
             href="mailto:these3remain@gmail.com?subject=Add%20a%20player%20to%20the%20map"
-            className="font-mono2 text-[11px] tracking-[0.18em] bg-[#fbfaf5] text-[#12141f] px-4 py-2 hover:bg-[#ff3b30] hover:text-[#fbfaf5] transition-colors"
+            className="font-mono2 text-[11px] tracking-[0.18em] bg-[#fbfaf5] text-[#12141f] px-4 py-2 hover:bg-[#d52b1e] hover:text-[#fbfaf5] transition-colors"
           >
             ADD A PLAYER ↗
           </a>

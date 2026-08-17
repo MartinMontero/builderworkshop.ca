@@ -17,7 +17,7 @@ const WORDS = [
 export default function Marquee() {
   const row = [...WORDS, ...WORDS];
   return (
-    <div className="bg-[#ff3b30] text-[#fbfaf5] overflow-hidden border-y border-[#12141f] py-3 select-none">
+    <div className="bg-[#d52b1e] text-[#fbfaf5] overflow-hidden border-y border-[#12141f] py-3 select-none">
       <div className="marquee-track">
         {row.map((w, i) => (
           <span key={i} className="flex items-center whitespace-nowrap">
