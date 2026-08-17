@@ -112,7 +112,7 @@ export default function Nav() {
           ))}
         </nav>
         <div>
-          <div className="font-mono2 text-[9.5px] tracking-[0.2em] text-[#fbfaf5]/40 uppercase mb-3">In the ecosystem</div>
+          <div className="font-mono2 text-[9.5px] tracking-[0.2em] text-[#fbfaf5]/40 uppercase mb-3">Friends &amp; collaborators</div>
           <div className="flex flex-wrap gap-2">
             {PARTNERS.map((p) => (
               <a
