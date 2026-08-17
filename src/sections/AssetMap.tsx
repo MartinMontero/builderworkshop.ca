@@ -108,6 +108,20 @@ export default function AssetMap() {
     return c;
   }, []);
 
+  const capInsight = useMemo(() => {
+    if (!cap) return null;
+    const venues = MAPPED.filter((a) => (a.capabilities ?? []).includes(cap));
+    const n = venues.length;
+    if (n === 0) return null;
+    const hoods: Record<string, number> = {};
+    for (const v of venues) {
+      const hood = v.location.split('·')[1]?.trim() ?? v.location;
+      hoods[hood] = (hoods[hood] ?? 0) + 1;
+    }
+    const top = Object.entries(hoods).sort((a, b) => b[1] - a[1])[0];
+    return `${CAPABILITY_LABELS[cap]}: ${n} venue${n === 1 ? '' : 's'}${top && top[1] > 1 ? ` — densest in ${top[0]}` : ''} — ${venues.map((v) => v.name).slice(0, 4).join(', ')}${n > 4 ? ` +${n - 4} more` : ''}`;
+  }, [cap]);
+
   const select = (a: Asset) => {
     setSelected(a);
     const m = markerRefs.current[a.id];
@@ -126,7 +140,7 @@ export default function AssetMap() {
               Where the work<br />gets done.
             </h2>
           </div>
-          <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/60">
+          <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/70">
             Twenty-seven physical venues pinned across British Columbia — powered by OpenStreetMap.
             Filter by what you want to make; program-based players are in the directory below.
           </p>
@@ -147,7 +161,7 @@ export default function AssetMap() {
                 className={`font-mono2 text-[10.5px] tracking-[0.14em] uppercase px-4 py-2 border transition-all duration-300 ${
                   active
                     ? 'bg-[#fbfaf5] text-[#12141f] border-[#fbfaf5]'
-                    : 'border-[rgba(251,250,245,0.2)] text-[#fbfaf5]/65 hover:border-[rgba(251,250,245,0.55)] hover:text-[#fbfaf5]'
+                    : 'border-[rgba(251,250,245,0.2)] text-[#fbfaf5]/75 hover:border-[rgba(251,250,245,0.55)] hover:text-[#fbfaf5]'
                 }`}
               >
                 <span
@@ -162,7 +176,7 @@ export default function AssetMap() {
 
         {/* capability chips */}
         <div className="flex flex-wrap items-center gap-2 mb-6 reveal">
-          <span className="font-mono2 text-[9.5px] tracking-[0.2em] text-[#fbfaf5]/40 uppercase mr-1">
+          <span className="font-mono2 text-[9.5px] tracking-[0.2em] text-[#fbfaf5]/55 uppercase mr-1">
             Make something:
           </span>
           {Object.keys(CAPABILITY_LABELS)
@@ -176,7 +190,7 @@ export default function AssetMap() {
                   className={`font-mono2 text-[9.5px] tracking-[0.12em] uppercase px-3 py-1.5 border transition-all duration-300 ${
                     active
                       ? 'bg-[#84bd00] text-[#12141f] border-[#84bd00]'
-                      : 'border-[rgba(251,250,245,0.16)] text-[#fbfaf5]/55 hover:border-[#84bd00] hover:text-[#cedc00]'
+                      : 'border-[rgba(251,250,245,0.16)] text-[#fbfaf5]/60 hover:border-[#84bd00] hover:text-[#cedc00]'
                   }`}
                 >
                   {CAPABILITY_LABELS[k]} <span className="opacity-50">({capCounts[k]})</span>
@@ -184,6 +198,13 @@ export default function AssetMap() {
               );
             })}
         </div>
+
+        {/* capability insight line */}
+        {capInsight && (
+          <div className="mb-6 border-l-2 border-[#84bd00] pl-4 font-mono2 text-[11px] tracking-[0.06em] text-[#cedc00] leading-relaxed reveal">
+            {capInsight}
+          </div>
+        )}
 
         <div className="grid lg:grid-cols-12 gap-4 reveal">
           {/* list */}
@@ -198,7 +219,7 @@ export default function AssetMap() {
                     selected?.id === a.id ? 'is-active' : ''
                   }`}
                 >
-                  <span className="font-mono2 text-[10px] text-[#fbfaf5]/40 pt-1.5 shrink-0">
+                  <span className="font-mono2 text-[10px] text-[#fbfaf5]/55 pt-1.5 shrink-0">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <span
@@ -207,7 +228,7 @@ export default function AssetMap() {
                   />
                   <span className="min-w-0">
                     <span className="font-display uppercase text-lg tracking-wide block truncate">{a.name}</span>
-                    <span className="font-mono2 text-[10px] tracking-[0.08em] text-[#fbfaf5]/50 block mt-1">
+                    <span className="font-mono2 text-[10px] tracking-[0.08em] text-[#fbfaf5]/60 block mt-1">
                       {a.location}
                     </span>
                     {cap && (
@@ -219,13 +240,30 @@ export default function AssetMap() {
                 </button>
               ))}
               {filtered.length === 0 && (
-                <div className="px-4 py-8 font-mono2 text-[11px] tracking-[0.1em] text-[#fbfaf5]/40">
-                  NO VENUES MATCH — CLEAR A FILTER
+                <div className="px-4 py-8">
+                  <p className="font-mono2 text-[11px] tracking-[0.06em] text-[#fbfaf5]/70 leading-relaxed">
+                    No venues match that combination. Loosen one filter — or the capability you're after
+                    might not exist in BC yet. That's a gap worth filling.
+                  </p>
+                  <button
+                    onClick={() => { setFilter('All'); setCap(null); }}
+                    className="mt-4 font-mono2 text-[10px] tracking-[0.14em] border border-[#d52b1e] text-[#d52b1e] px-4 py-2 hover:bg-[#d52b1e] hover:text-[#fbfaf5] transition-colors"
+                  >
+                    CLEAR BOTH FILTERS
+                  </button>
                 </div>
               )}
             </div>
-            <div className="font-mono2 text-[10px] tracking-[0.1em] text-[#fbfaf5]/40 mt-3 px-1">
-              CLICK A ROW TO FLY TO ITS PIN · {filtered.length} SHOWN
+            <div className="font-mono2 text-[10px] tracking-[0.1em] text-[#fbfaf5]/55 mt-3 px-1 flex items-center justify-between gap-3">
+              <span>CLICK A ROW TO FLY TO ITS PIN · {filtered.length} SHOWN</span>
+              {(filter !== 'All' || cap || trail) && (
+                <button
+                  onClick={() => { setFilter('All'); setCap(null); setTrailId(null); setSelected(null); }}
+                  className="font-mono2 text-[10px] tracking-[0.14em] text-[#d52b1e] hover:text-[#fbfaf5] transition-colors shrink-0"
+                >
+                  RESET ✕
+                </button>
+              )}
             </div>
           </div>
 
