@@ -8,7 +8,7 @@ A practical map and directory of British Columbia's innovation ecosystem — the
 
 - **The Asset Map** — every physical venue pinned on OpenStreetMap, filterable by category and by *capability* (3D printing, laser cutting, CNC, woodshop, metalshop, electronics, robotics, glass, ceramics, recording, digitization) so a builder can answer "where can I actually make X?" in one click.
 - **The Players** — a ranked directory of ecosystem players; array order in `src/data/assets.ts` is the printed ranking.
-- **The Pathways** — curated walking trails that chain venues into routes (e.g. The Strathcona Maker Mile). Each pathway can be drawn live on the map as a route.
+- **The Pathways** — curated walking trails that chain venues into routes (e.g. The Strathcona Maker Mile), drawable on the map; plus **The Orbit** — the players with no fixed venue, and how to plug into each.
 - **Open data** — the whole directory is published as [`public/ecosystem.json`](public/ecosystem.json) (full directory, CC BY 4.0) and [`public/ecosystem.geojson`](public/ecosystem.geojson) (mapped venues as GeoJSON points), regenerated on every build by `scripts/export-data.mjs`. Take the data and build with it.
 
 ## Stack
@@ -40,6 +40,8 @@ This is a static Vite build — a host must run `npm run build` before serving (
 2. Build command: `npm run build` · Output directory: `dist`
 3. **Custom domains → Set up a custom domain** → `builderworkshop.ca` (add `www.builderworkshop.ca` too). Because the zone lives in the same Cloudflare account, the DNS records and SSL are created automatically — nothing to add by hand.
 4. Every push to `main` auto-deploys.
+
+**Rollback:** revert the offending commit and push — Workers Builds redeploys the prior state automatically. Or, in the Cloudflare dashboard → Workers → builderworkshop-ca → Deployments, redeploy a previous version directly (instant, no rebuild).
 
 If you previously enabled GitHub Pages on this repo, turn it off to avoid confusion (Settings → Pages → Source → None) — DNS will point at Cloudflare, not GitHub.
 
@@ -103,7 +105,13 @@ jobs:
 ## Adding / editing players
 
 All ecosystem data lives in one file: `src/data/assets.ts`.
-Each entry has a name, category, URL, blurb, location, optional `lat`/`lng` (entries with coordinates are pinned on the asset map; entries without appear in the directory only), and optional `capabilities` (equipment/facilities — these power the map's "Make something" filters). **Array order = the directory's numbered ranking (01–46).** Categories, their colors, capability labels and the Pathways trails are defined in the same file.
+Each entry has a name, category, URL, blurb, location, optional `lat`/`lng` (entries with coordinates are pinned on the asset map; entries without appear in the directory only), optional `capabilities` (equipment/facilities — these power the map's "Make something" filters), and a `verified` stamp (`YYYY-MM`). **Array order = the directory's numbered ranking (01–46).** Categories, their colors, capability labels and the Pathways trails are defined in the same file.
+
+**Freshness:** the directory is re-verified monthly. Each entry's `verified` stamp is bumped to the current month when it's re-checked; the oldest stamps are re-visited first. If a listing is wrong or has closed, email these3remain@gmail.com or open a PR.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Credits
 
