@@ -2,7 +2,7 @@ import { ASSETS, CATEGORY_COLORS } from '../data/assets';
 
 export default function Directory() {
   return (
-    <section id="players" className="relative bg-[#0c0e16] py-20 md:py-28 border-t border-[rgba(251,250,245,0.1)]">
+    <section id="players" className="relative bg-[var(--bg)] py-20 md:py-28 border-t border-[var(--line)]">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
           <div>
@@ -11,14 +11,14 @@ export default function Directory() {
               Forty-six<br />ways in.
             </h2>
           </div>
-          <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/70">
+          <p className="max-w-sm text-sm leading-relaxed text-[var(--ink)]/70">
             Spaces to sit down and build. Programs that back you early. Schools that grow the next
             generation. Communities that show up. People telling the story, and capital to fuel it —
             one ranked list, in the order we'd walk in the door.
           </p>
         </div>
 
-        <div className="divide-y divide-[rgba(251,250,245,0.08)] border-t border-b border-[rgba(251,250,245,0.12)]">
+        <div className="divide-y divide-[var(--line)] border-t border-b border-[var(--line)]">
           {ASSETS.map((a, i) => {
             const podium = i < 10;
             const tail = i >= 26;
@@ -32,7 +32,7 @@ export default function Directory() {
               >
                 <div
                   className={`md:col-span-1 font-mono2 ${
-                    podium ? 'text-sm text-[#d52b1e]' : 'text-[10px] text-[#fbfaf5]/55'
+                    podium ? 'text-sm text-[#d52b1e]' : 'text-[10px] text-[var(--ink)]/55'
                   }`}
                 >
                   {String(i + 1).padStart(2, '0')}
@@ -60,21 +60,21 @@ export default function Directory() {
                   />
                   {a.category}
                 </div>
-                <div className="md:col-span-2 font-mono2 text-[10.5px] tracking-[0.08em] text-[#fbfaf5]/60 uppercase">
+                <div className="md:col-span-2 font-mono2 text-[10.5px] tracking-[0.08em] text-[var(--ink)]/60 uppercase">
                   {a.location}
                   {a.lat === undefined && (
-                    <span className="block text-[#fbfaf5]/50 normal-case tracking-normal mt-0.5">
+                    <span className="block text-[var(--ink)]/50 normal-case tracking-normal mt-0.5">
                       program / network — no fixed venue
                     </span>
                   )}
                   {a.verified && (
-                    <span className="block text-[#fbfaf5]/40 normal-case tracking-normal mt-0.5">
+                    <span className="block text-[var(--ink)]/40 normal-case tracking-normal mt-0.5">
                       verified {a.verified}
                     </span>
                   )}
                 </div>
-                <div className="md:col-span-3 text-[13px] leading-relaxed text-[#fbfaf5]/70">{a.blurb}</div>
-                <div className="md:col-span-1 md:text-right font-mono2 text-sm text-[#fbfaf5]/55 group-hover:text-[#d52b1e] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300">
+                <div className="md:col-span-3 text-[13px] leading-relaxed text-[var(--ink)]/70">{a.blurb}</div>
+                <div className="md:col-span-1 md:text-right font-mono2 text-sm text-[var(--ink)]/55 group-hover:text-[#d52b1e] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300">
                   ↗
                 </div>
               </a>
