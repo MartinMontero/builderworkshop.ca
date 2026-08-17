@@ -8,7 +8,8 @@ A practical map and directory of British Columbia's innovation ecosystem — the
 
 - **The Asset Map** — every physical venue pinned on OpenStreetMap, filterable by category and by *capability* (3D printing, laser cutting, CNC, woodshop, metalshop, electronics, robotics, glass, ceramics, recording, digitization) so a builder can answer "where can I actually make X?" in one click.
 - **The Players** — a ranked directory of ecosystem players; array order in `src/data/assets.ts` is the printed ranking.
-- **The Pathways** — curated walking trails that chain venues into routes (e.g. The Strathcona Maker Mile), drawable on the map; plus **The Orbit** — the players with no fixed venue, and how to plug into each.
+- **The Pathways** — curated walking trails that chain venues into routes (e.g. The Strathcona Maker Mile), drawable on the map; plus **The Orbit** — the players with no fixed venue, and how to plug into each. And **The Builder's Stack** — how to use this site alongside friends & collaborators (buildrs.dev for events/shipping, FoundedIn Canada for funding/the national layer), zero → one → MVP → scale.
+- **Light / dark themes** — token-based, defaults to your OS `prefers-color-scheme`, manual toggle in the nav (persisted).
 - **Open data** — the whole directory is published as [`public/ecosystem.json`](public/ecosystem.json) (full directory, CC BY 4.0) and [`public/ecosystem.geojson`](public/ecosystem.geojson) (mapped venues as GeoJSON points), regenerated on every build by `scripts/export-data.mjs`. Take the data and build with it.
 
 ## Stack
@@ -16,6 +17,7 @@ A practical map and directory of British Columbia's innovation ecosystem — the
 - React 19 + TypeScript + Vite 7
 - Tailwind CSS 3.4
 - Leaflet / React-Leaflet with OpenStreetMap tiles for the interactive asset map
+- Token-based theming (see DESIGN.md): light-first, dark retained, user-toggleable
 
 ## Develop
 
@@ -118,3 +120,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - Map tiles © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; geocoding via Nominatim
 - Ecosystem listings are community-sourced
 - Built on the unceded territories of the xʷməθkwəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish) and səlilwətaɬ (Tsleil-Waututh) Nations
+- Built by [Martin Montero](https://www.linkedin.com/in/martinmontero) as a gift to builders
