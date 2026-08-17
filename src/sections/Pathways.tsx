@@ -1,5 +1,38 @@
 import { ASSETS, PATHWAYS, CATEGORY_COLORS } from '../data/assets';
 
+// The builder's stack — the journey, and which tool covers each stage.
+const STACK = [
+  {
+    stage: 'ZERO → ONE',
+    color: '#d52b1e',
+    items: [
+      { name: 'Find a room', here: true, note: 'The asset map + capability filters — where to sit down and start, free or cheap.' },
+      { name: 'Walk a trail', here: true, note: 'The pathways — a curated first afternoon, not a blank directory.' },
+      { name: 'Learn & meet', here: true, note: 'The directory + The Orbit — schools, communities, programs that back you early.' },
+    ],
+    partners: [],
+  },
+  {
+    stage: 'ONE → MVP',
+    color: '#f0a500',
+    items: [],
+    partners: [
+      { name: 'buildrs.dev', url: 'https://buildrs.dev/', note: 'Every tech event on one calendar, partner drops (Linear, GitHub, Tally), and the product directory to ship into.' },
+      { name: 'FoundedIn Canada', url: 'https://foundedincanada.com/', note: 'Funding & grant discovery, the SR&ED estimator, investor-readiness scorecard, name/trademark check.' },
+    ],
+  },
+  {
+    stage: 'MVP → SCALE',
+    color: '#84bd00',
+    items: [
+      { name: 'Stay & grow here', here: true, note: 'The ecosystem you built in — accelerators, capital, media, and the map that keeps you rooted in BC.' },
+    ],
+    partners: [
+      { name: 'FoundedIn Canada', url: 'https://foundedincanada.com/', note: 'The national intelligence layer — federal programs, ecosystem connections, scaling beyond BC.' },
+    ],
+  },
+];
+
 export default function Pathways() {
   const byId = Object.fromEntries(ASSETS.map((a) => [a.id, a]));
   const orbit = ASSETS.filter((a) => a.lat === undefined);
@@ -12,6 +45,53 @@ export default function Pathways() {
   return (
     <section id="paths" className="relative bg-[#12141f] py-20 md:py-28 border-t border-[rgba(251,250,245,0.1)]">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
+        {/* The Stack — how to use this site with its partners */}
+        <div className="mb-16 reveal">
+          <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#84bd00] mb-4">HOW TO USE THIS</div>
+          <h3 className="font-display uppercase text-3xl md:text-5xl leading-[0.95] max-w-3xl">
+            The builder's stack<span className="text-[#84bd00]">.</span>
+          </h3>
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-[#fbfaf5]/60">
+            Three tools, one journey — no overlap, no competition. This site maps the physical
+            ecosystem; the partners handle events, shipping and the national layer.
+          </p>
+
+          <div className="mt-8 grid md:grid-cols-3 gap-4">
+            {STACK.map((s) => (
+              <div key={s.stage} className="ticket border border-[rgba(251,250,245,0.14)] flex flex-col">
+                <div
+                  className="px-5 pt-4 pb-3 border-b border-dashed border-[rgba(251,250,245,0.18)] font-mono2 text-[10px] tracking-[0.2em]"
+                  style={{ color: s.color }}
+                >
+                  {s.stage}
+                </div>
+                <div className="p-5 flex flex-col gap-4 flex-1">
+                  {s.items.map((it) => (
+                    <div key={it.name}>
+                      <div className="flex items-center gap-2">
+                        <span className="font-display uppercase text-base tracking-wide">{it.name}</span>
+                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] bg-[#d52b1e] text-[#fbfaf5] px-1.5 py-0.5">THIS SITE</span>
+                      </div>
+                      <p className="mt-1 text-[12px] leading-relaxed text-[#fbfaf5]/55">{it.note}</p>
+                    </div>
+                  ))}
+                  {s.partners.map((pt) => (
+                    <a key={pt.name} href={pt.url} target="_blank" rel="noreferrer" className="group/p block">
+                      <div className="flex items-center gap-2">
+                        <span className="font-display uppercase text-base tracking-wide group-hover/p:text-[#cedc00] transition-colors">
+                          {pt.name} ↗
+                        </span>
+                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] border border-[#84bd00] text-[#84bd00] px-1.5 py-0.5">PARTNER</span>
+                      </div>
+                      <p className="mt-1 text-[12px] leading-relaxed text-[#fbfaf5]/55">{pt.note}</p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
           <div>
             <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#d52b1e] mb-4">03 / THE PATHWAYS</div>
