@@ -47,7 +47,7 @@ export default function Pathways() {
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         {/* The Stack — how to use this site with friends & collaborators */}
         <div className="mb-16 reveal">
-          <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)] mb-4">HOW TO USE THIS</div>
+          <div className="eyebrow mb-4">HOW TO USE THIS</div>
           <h3 className="font-display uppercase text-3xl md:text-5xl leading-[0.95] max-w-3xl">
             The builder's stack<span className="text-[var(--accent)]">.</span>
           </h3>
@@ -94,9 +94,9 @@ export default function Pathways() {
 
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
           <div>
-            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)] mb-4">03 / THE PATHWAYS</div>
+            <div className="eyebrow mb-4">PATHWAYS</div>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.95]">
-              Walk in like<br />a local.
+              Walk in like<br />you belong.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[var(--ink)]/70">
@@ -160,7 +160,7 @@ export default function Pathways() {
                   onClick={() => walk(p.id)}
                   className="mt-7 self-start font-mono2 text-[10.5px] tracking-[0.18em] border border-[var(--accent)] text-[var(--accent)] px-5 py-2.5 hover:bg-[var(--brand)] hover:text-[var(--brand-ink)] transition-colors"
                 >
-                  WALK IT ON THE MAP ↑
+                  See it on the map ↑
                 </button>
               </div>
             </div>

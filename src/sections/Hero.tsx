@@ -7,7 +7,6 @@ const INTENTS = [
     q: 'Back it early.',
     body: 'Programs that take you at the napkin stage — pre-seed incubators, accelerators, founder communities.',
     target: '#players',
-    filter: 'Programs & Accelerators',
   },
   {
     id: 'make',
@@ -15,7 +14,6 @@ const INTENTS = [
     q: 'Get your hands on tools.',
     body: 'Makerspaces, fabrication shops, studios and tool libraries — filter the map by the exact machine you need.',
     target: '#map',
-    filter: null,
   },
   {
     id: 'learn',
@@ -23,7 +21,6 @@ const INTENTS = [
     q: 'Level up.',
     body: 'Schools, STEAM academies, grad programs and free public labs across BC.',
     target: '#players',
-    filter: 'Learning & Talent',
   },
   {
     id: 'people',
@@ -31,7 +28,6 @@ const INTENTS = [
     q: 'Find the room.',
     body: 'Communities, meetups and the physical third-places where builders actually collide — start with a pathway.',
     target: '#paths',
-    filter: null,
   },
   {
     id: 'fund',
@@ -39,7 +35,6 @@ const INTENTS = [
     q: 'Fuel the build.',
     body: 'Capital, loans and venture builders — plus the funding tools our friends run.',
     target: '#players',
-    filter: 'Capital & Venture',
   },
 ];
 
@@ -51,8 +46,8 @@ export default function Hero() {
   return (
     <section id="top" className="relative bg-[var(--bg)] pt-28 pb-16 md:pt-36 md:pb-24">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
-        <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)] mb-6 reveal">
-          LOWER MAINLAND · BRITISH COLUMBIA — {ASSETS.length} PLAYERS · 4 PATHWAYS
+        <div className="eyebrow mb-6 reveal">
+          GREATER VANCOUVER & BRITISH COLUMBIA
         </div>
 
         <h1 className="font-display uppercase leading-[0.92] text-[12vw] md:text-[7.5vw] max-w-5xl reveal">
@@ -73,7 +68,7 @@ export default function Hero() {
               onClick={() => go(it.target)}
               className="group bg-[var(--bg)] hover:bg-[var(--bg-raise)] text-left p-5 md:p-6 transition-colors flex flex-col gap-3"
             >
-              <span className="font-mono2 text-[9.5px] tracking-[0.18em] text-[var(--accent)] uppercase">
+              <span className="eyebrow">
                 {it.q}
               </span>
               <span className="font-display uppercase text-xl md:text-2xl leading-tight tracking-wide group-hover:text-[var(--accent)] transition-colors">
