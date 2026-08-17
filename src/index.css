@@ -5,84 +5,83 @@
 /* ---------- ref (raw brand, fixed) ---------- */
 :root {
   --r-red: #d52b1e;
-  --r-red-deep: #a81e14;
-  --r-gold: #f0a500;
-  --r-gold-hi: #f5b800;
+  --r-red-hi: #ee4a3d;      /* lifted flag red for dark text use */
   --r-forest: #84bd00;
-  --r-forest-hi: #cedc00;
-  --r-green: #34c76b;
-  --r-salmon: #ff8fa3;
+  --r-forest-hi: #b8e000;   /* lifted for dark text use */
+  --r-gold: #f0a500;
   --r-cream: #fbfaf5;
-  --r-ink: #12141f;
-  --r-ink-deep: #0c0e16;
+  --r-ink: #0b0c10;
 
   color-scheme: light dark;
 }
 
 /* ---------- sys (semantic, scheme-swapped) ---------- */
+/* LIGHT: warm paper field, true ink text, red reserved for action/brand. */
 :root,
 :root[data-theme='light'] {
-  --bg: #f6f2e7;          /* warm paper */
-  --bg-raise: #ffffff;    /* raised surface */
-  --ink: #16181d;
-  --ink-soft: rgba(22, 24, 29, 0.68);
-  --ink-faint: rgba(22, 24, 29, 0.48);
-  --line: rgba(22, 24, 29, 0.14);
-  --line-strong: rgba(22, 24, 29, 0.28);
-  --red: var(--r-red);
-  --red-deep: var(--r-red-deep);
-  --gold: var(--r-gold);
-  --gold-hi: var(--r-gold-hi);
-  --forest: #5d8a00;      /* darkened for AA on paper */
-  --forest-hi: #6fa000;
-  --green: #1f9d55;       /* darkened for AA on paper */
-  --salmon: #e04a63;      /* darkened for AA on paper */
-  --selection-bg: var(--r-red);
-  --selection-ink: var(--r-cream);
-  --tile-filter: none;    /* OSM is already a light basemap */
-  --marker-ring: rgba(22, 24, 29, 0.9);
-  --nav-bg: rgba(246, 242, 231, 0.82);
-  --pulse: rgba(213, 43, 30, 0.55);
+  --bg: #f3efe6;            /* warm paper */
+  --bg-raise: #fbf9f3;      /* raised card */
+  --bg-sink: #eae5d9;       /* recessed strip */
+  --ink: #15161a;
+  --ink-soft: rgba(21, 22, 26, 0.72);
+  --ink-faint: rgba(21, 22, 26, 0.5);
+  --line: rgba(21, 22, 26, 0.14);
+  --line-strong: rgba(21, 22, 26, 0.32);
 
-  /* category text on paper (AA >= 4.5:1 for the 9.5px chips) */
+  --brand: var(--r-red);        /* primary action + brand mark */
+  --brand-ink: #ffffff;         /* text on the red */
+  --accent: #a81e14;            /* text red, AA on paper */
+  --focus: #a81e14;
+
+  /* categories: colour is a dot, not a flood */
   --cat-spaces: #a81e14;
-  --cat-programs: #a17300;
-  --cat-learning: #1f9d55;
-  --cat-community: #5d8a00;
-  --cat-media: #d63a56;
-  --cat-capital: #b58900;
+  --cat-programs: #9a6f00;
+  --cat-learning: #1e7a45;
+  --cat-community: #4f7a00;
+  --cat-media: #c23a52;
+  --cat-capital: #8a6800;
+
+  --selection-bg: var(--r-red);
+  --selection-ink: #ffffff;
+  --tile-filter: none;
+  --marker-ring: rgba(21, 22, 26, 0.92);
+  --nav-bg: rgba(243, 239, 230, 0.85);
+  --pulse: rgba(213, 43, 30, 0.5);
+  --hero-glow: rgba(213, 43, 30, 0.12);
+  --grid-line: rgba(21, 22, 26, 0.06);
 }
 
+/* DARK: one near-black surface family, off-white text, red + one warm accent. */
 :root[data-theme='dark'] {
-  --bg: #0c0e16;
-  --bg-raise: #12141f;
-  --ink: #fbfaf5;
-  --ink-soft: rgba(251, 250, 245, 0.7);
-  --ink-faint: rgba(251, 250, 245, 0.5);
-  --line: rgba(251, 250, 245, 0.14);
-  --line-strong: rgba(251, 250, 245, 0.28);
-  --red: #e0463a;         /* lifted for AA on ink */
-  --red-deep: var(--r-red);
-  --gold: var(--r-gold-hi);
-  --gold-hi: #ffd23f;
-  --forest: var(--r-forest);
-  --forest-hi: var(--r-forest-hi);
-  --green: var(--r-green);
-  --salmon: var(--r-salmon);
-  --selection-bg: var(--r-red);
-  --selection-ink: var(--r-cream);
-  --tile-filter: grayscale(0.72) brightness(0.82) contrast(1.08) sepia(0.1);
-  --marker-ring: rgba(251, 250, 245, 0.85);
-  --nav-bg: rgba(12, 14, 22, 0.8);
-  --pulse: rgba(213, 43, 30, 0.55);
+  --bg: #0b0c10;
+  --bg-raise: #14161d;
+  --bg-sink: #08090d;
+  --ink: #f3f1ea;
+  --ink-soft: rgba(243, 241, 234, 0.74);
+  --ink-faint: rgba(243, 241, 234, 0.52);
+  --line: rgba(243, 241, 234, 0.13);
+  --line-strong: rgba(243, 241, 234, 0.3);
 
-  /* category text on ink (originals pass AA on dark) */
-  --cat-spaces: #e0463a;
-  --cat-programs: #f5b800;
-  --cat-learning: #34c76b;
-  --cat-community: #84bd00;
-  --cat-media: #ff8fa3;
-  --cat-capital: #f5b800;
+  --brand: var(--r-red);
+  --brand-ink: #ffffff;
+  --accent: var(--r-red-hi);
+  --focus: var(--r-red-hi);
+
+  --cat-spaces: #ee4a3d;
+  --cat-programs: #f0b429;
+  --cat-learning: #4fd08a;
+  --cat-community: #a5d400;
+  --cat-media: #ff9ab0;
+  --cat-capital: #f0b429;
+
+  --selection-bg: var(--r-red);
+  --selection-ink: #ffffff;
+  --tile-filter: grayscale(0.7) brightness(0.8) contrast(1.08) sepia(0.08);
+  --marker-ring: rgba(243, 241, 234, 0.88);
+  --nav-bg: rgba(11, 12, 16, 0.82);
+  --pulse: rgba(213, 43, 30, 0.5);
+  --hero-glow: rgba(213, 43, 30, 0.16);
+  --grid-line: rgba(243, 241, 234, 0.05);
 }
 
 html {
@@ -94,17 +93,18 @@ section[id] {
 }
 
 :focus-visible {
-  outline: 2px solid var(--forest);
+  outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
   .marquee-track { animation: none !important; }
-  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .scroll-cue { animation: none !important; }
-  .bw-marker.is-active { animation: none !important; }
-  .player-row, .player-row:hover { transition: none; padding-left: 0.25rem; }
+  .reveal { opacity: 1 !important; transform: none !important; }
 }
 
 body {
@@ -136,7 +136,7 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.05;
+  opacity: 0.04;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
@@ -213,8 +213,37 @@ a:hover .u-grow {
   transition: border-color 0.3s ease, color 0.3s ease;
 }
 .theme-toggle:hover {
-  border-color: var(--forest);
+  border-color: var(--brand);
   color: var(--ink);
+}
+
+/* ---------- buttons (one primary per view, manual §8.6) ---------- */
+.btn-primary {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  background: var(--brand);
+  color: var(--brand-ink);
+  padding: 14px 24px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.btn-primary:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn-ghost {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  padding: 14px 24px;
+  transition: border-color 0.25s ease;
+}
+.btn-ghost:hover {
+  border-color: var(--ink);
 }
 
 /* ---------- leaflet overrides ---------- */
@@ -245,7 +274,7 @@ a:hover .u-grow {
   color: var(--ink) !important;
   border: 1px solid var(--line);
   border-radius: 2px !important;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28) !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3) !important;
 }
 .leaflet-popup-tip {
   background: var(--bg-raise) !important;
