@@ -22,21 +22,21 @@ export default function Hero() {
       <div
         aria-hidden
         className="absolute -top-40 right-[-10%] w-[60vw] h-[60vw] rounded-full opacity-25 blur-[120px]"
-        style={{ background: 'radial-gradient(circle, #d52b1e 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, var(--hero-glow) 0%, transparent 65%)' }}
       />
 
       <div className="relative px-5 md:px-10 pt-32 pb-10 md:pb-14 max-w-[1400px] w-full mx-auto">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8 reveal">
-          <span className="font-mono2 text-[11px] tracking-[0.22em] text-[#d52b1e]">LOWER MAINLAND · BRITISH COLUMBIA</span>
+          <span className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)]">LOWER MAINLAND · BRITISH COLUMBIA</span>
           <span className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--ink)]/45">49.2827°N — 123.1207°W</span>
         </div>
 
         <h1 className="font-display uppercase leading-[0.94] text-[13.5vw] md:text-[9.2vw] reveal">
           Greater Vancouver
           <br />
-          is a <span className="text-[#d52b1e]">workshop</span>
+          is a <span className="text-[var(--accent)]">workshop</span>
           <br />
-          for <span className="text-[var(--forest)]">builders.</span>
+          for <span className="text-[var(--accent)]">builders.</span>
         </h1>
 
         <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 items-end">
@@ -59,7 +59,7 @@ export default function Hero() {
         <div className="mt-12 flex items-center gap-4 reveal">
           <a
             href="#map"
-            className="font-mono2 text-[11px] tracking-[0.2em] bg-[#d52b1e] text-[var(--ink)] px-6 py-3.5 hover:bg-[var(--ink)] hover:text-[var(--bg)] transition-colors"
+            className="font-mono2 text-[11px] tracking-[0.2em] bg-[var(--brand)] text-[var(--brand-ink)] px-6 py-3.5 hover:bg-[var(--ink)] hover:text-[var(--bg)] transition-colors"
           >
             EXPLORE THE ASSET MAP
           </a>
@@ -70,7 +70,7 @@ export default function Hero() {
             MEET THE PLAYERS
           </a>
           <div className="hidden md:flex flex-1 justify-end">
-            <span className="scroll-cue block w-px h-14 bg-[#d52b1e]" />
+            <span className="scroll-cue block w-px h-14 bg-[var(--brand)]" />
           </div>
         </div>
       </div>
