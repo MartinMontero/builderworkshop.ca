@@ -71,7 +71,7 @@ export default function AssetMap() {
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/60">
-            Twenty-four physical venues pinned across British Columbia — powered by OpenStreetMap.
+            Twenty-seven physical venues pinned across British Columbia — powered by OpenStreetMap.
             Program-based and regional players are listed in the directory below.
           </p>
         </div>
@@ -176,7 +176,7 @@ export default function AssetMap() {
                         href={a.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="font-mono2 text-[10.5px] tracking-[0.14em] text-[#d52b1e] inline-block mt-3 hover:text-[#4fc3f7]"
+                        className="font-mono2 text-[10.5px] tracking-[0.14em] text-[#d52b1e] inline-block mt-3 hover:text-[#cedc00]"
                       >
                         VISIT SITE ↗
                       </a>

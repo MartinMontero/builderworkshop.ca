@@ -34,7 +34,7 @@ export default function Footer() {
               href="https://github.com/MartinMontero/builderworkshop.ca"
               target="_blank"
               rel="noreferrer"
-              className="font-mono2 text-[11px] tracking-[0.14em] text-[#d52b1e] inline-block mt-3 hover:text-[#4fc3f7] transition-colors"
+              className="font-mono2 text-[11px] tracking-[0.14em] text-[#d52b1e] inline-block mt-3 hover:text-[#cedc00] transition-colors"
             >
               GITHUB ↗
             </a>
