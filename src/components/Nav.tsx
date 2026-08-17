@@ -85,9 +85,9 @@ export default function Nav() {
             ))}
             <a
               href="mailto:these3remain@gmail.com?subject=Add%20a%20player%20to%20the%20map"
-              className="font-mono2 text-[11px] tracking-[0.18em] bg-[var(--ink)] text-[var(--bg)] px-4 py-2 hover:bg-[#d52b1e] hover:text-[var(--ink)] transition-colors"
+              className="font-mono2 text-[11px] tracking-[0.18em] bg-[var(--ink)] text-[var(--bg)] px-4 py-2 hover:bg-[var(--brand)] hover:text-[var(--brand-ink)] transition-colors"
             >
-              ADD A PLAYER ↗
+              Add a player ↗
             </a>
             <button
               onClick={toggleTheme}
@@ -124,8 +124,8 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               className="flex items-baseline gap-4 py-4 border-t border-[var(--line)] last:border-b group"
             >
-              <span className="font-mono2 text-[11px] text-[#d52b1e]">{l.n}</span>
-              <span className="font-display uppercase text-4xl tracking-wide group-hover:text-[#d52b1e] transition-colors">
+              <span className="font-mono2 text-[11px] text-[var(--accent)]">{l.n}</span>
+              <span className="font-display uppercase text-4xl tracking-wide group-hover:text-[var(--accent)] transition-colors">
                 {l.label}
               </span>
             </a>
@@ -150,7 +150,7 @@ export default function Nav() {
               href="mailto:these3remain@gmail.com?subject=Add%20a%20player%20to%20the%20map"
               className="flex items-center font-mono2 text-[10px] tracking-[0.14em] bg-[var(--ink)] text-[var(--bg)] px-3 py-2.5"
             >
-              ADD A PLAYER ↗
+              Add a player ↗
             </a>
             <button
               onClick={toggleTheme}
