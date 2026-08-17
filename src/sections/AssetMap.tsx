@@ -113,6 +113,7 @@ export default function AssetMap() {
     const venues = MAPPED.filter((a) => (a.capabilities ?? []).includes(cap));
     const n = venues.length;
     if (n === 0) return null;
+    // densest neighbourhood: most common location suffix after "·"
     const hoods: Record<string, number> = {};
     for (const v of venues) {
       const hood = v.location.split('·')[1]?.trim() ?? v.location;
@@ -131,7 +132,7 @@ export default function AssetMap() {
   const clearTrail = () => setTrailId(null);
 
   return (
-    <section id="map" className="relative bg-[#12141f] py-20 md:py-28">
+    <section id="map" className="relative bg-[var(--bg-raise)] py-20 md:py-28">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-10 reveal">
           <div>
@@ -140,7 +141,7 @@ export default function AssetMap() {
               Where the work<br />gets done.
             </h2>
           </div>
-          <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/70">
+          <p className="max-w-sm text-sm leading-relaxed text-[var(--ink)]/60">
             Twenty-seven physical venues pinned across British Columbia — powered by OpenStreetMap.
             Filter by what you want to make; program-based players are in the directory below.
           </p>
@@ -152,7 +153,7 @@ export default function AssetMap() {
             .filter((c) => c === 'All' || (counts[c] ?? 0) > 0)
             .map((c) => {
             const active = filter === c;
-            const color = c === 'All' ? '#fbfaf5' : CATEGORY_COLORS[c as Category];
+            const color = c === 'All' ? 'var(--ink)' : CATEGORY_COLORS[c as Category];
             const n = counts[c] ?? 0;
             return (
               <button
@@ -160,13 +161,13 @@ export default function AssetMap() {
                 onClick={() => { setFilter(c); setSelected(null); }}
                 className={`font-mono2 text-[10.5px] tracking-[0.14em] uppercase px-4 py-2 border transition-all duration-300 ${
                   active
-                    ? 'bg-[#fbfaf5] text-[#12141f] border-[#fbfaf5]'
-                    : 'border-[rgba(251,250,245,0.2)] text-[#fbfaf5]/75 hover:border-[rgba(251,250,245,0.55)] hover:text-[#fbfaf5]'
+                    ? 'bg-[var(--ink)] text-[var(--bg)] border-[var(--ink)]'
+                    : 'border-[var(--line)] text-[var(--ink)]/65 hover:border-[var(--line-strong)] hover:text-[var(--ink)]'
                 }`}
               >
                 <span
                   className="inline-block w-1.5 h-1.5 rounded-full mr-2 align-middle"
-                  style={{ background: active ? '#12141f' : color }}
+                  style={{ background: active ? 'var(--bg)' : color }}
                 />
                 {c} <span className="opacity-50">({String(n).padStart(2, '0')})</span>
               </button>
@@ -176,7 +177,7 @@ export default function AssetMap() {
 
         {/* capability chips */}
         <div className="flex flex-wrap items-center gap-2 mb-6 reveal">
-          <span className="font-mono2 text-[9.5px] tracking-[0.2em] text-[#fbfaf5]/55 uppercase mr-1">
+          <span className="font-mono2 text-[9.5px] tracking-[0.2em] text-[var(--ink)]/40 uppercase mr-1">
             Make something:
           </span>
           {Object.keys(CAPABILITY_LABELS)
@@ -189,8 +190,8 @@ export default function AssetMap() {
                   onClick={() => { setCap(active ? null : k); setSelected(null); setTrailId(null); }}
                   className={`font-mono2 text-[9.5px] tracking-[0.12em] uppercase px-3 py-1.5 border transition-all duration-300 ${
                     active
-                      ? 'bg-[#84bd00] text-[#12141f] border-[#84bd00]'
-                      : 'border-[rgba(251,250,245,0.16)] text-[#fbfaf5]/60 hover:border-[#84bd00] hover:text-[#cedc00]'
+                      ? 'bg-[var(--forest)] text-[var(--bg)] border-[var(--forest)]'
+                      : 'border-[var(--line)] text-[var(--ink)]/55 hover:border-[var(--forest)] hover:text-[var(--forest-hi)]'
                   }`}
                 >
                   {CAPABILITY_LABELS[k]} <span className="opacity-50">({capCounts[k]})</span>
@@ -203,7 +204,7 @@ export default function AssetMap() {
         {capInsight && (
           <div
             aria-live="polite"
-            className="mb-6 border-l-2 border-[#84bd00] pl-4 font-mono2 text-[11px] tracking-[0.06em] text-[#cedc00] leading-relaxed reveal"
+            className="mb-6 border-l-2 border-[var(--forest)] pl-4 font-mono2 text-[11px] tracking-[0.06em] text-[var(--forest)] leading-relaxed reveal"
           >
             {capInsight}
           </div>
@@ -212,7 +213,7 @@ export default function AssetMap() {
         <div className="grid lg:grid-cols-12 gap-4 reveal">
           {/* list */}
           <div className="lg:col-span-4 order-2 lg:order-1">
-            <div className="slim-scroll border border-[rgba(251,250,245,0.14)] lg:h-[72vh] lg:overflow-y-auto divide-y divide-[rgba(251,250,245,0.08)]">
+            <div className="slim-scroll border border-[var(--line)] lg:h-[72vh] lg:overflow-y-auto divide-y divide-[var(--line)]">
               {filtered.map((a, i) => (
                 <button
                   key={a.id}
@@ -222,7 +223,7 @@ export default function AssetMap() {
                     selected?.id === a.id ? 'is-active' : ''
                   }`}
                 >
-                  <span className="font-mono2 text-[10px] text-[#fbfaf5]/55 pt-1.5 shrink-0">
+                  <span className="font-mono2 text-[10px] text-[var(--ink)]/40 pt-1.5 shrink-0">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <span
@@ -231,11 +232,11 @@ export default function AssetMap() {
                   />
                   <span className="min-w-0">
                     <span className="font-display uppercase text-lg tracking-wide block truncate">{a.name}</span>
-                    <span className="font-mono2 text-[10px] tracking-[0.08em] text-[#fbfaf5]/60 block mt-1">
+                    <span className="font-mono2 text-[10px] tracking-[0.08em] text-[var(--ink)]/60 block mt-1">
                       {a.location}
                     </span>
                     {cap && (
-                      <span className="font-mono2 text-[9px] tracking-[0.1em] text-[#84bd00] block mt-1 uppercase">
+                      <span className="font-mono2 text-[9px] tracking-[0.1em] text-[var(--forest)] block mt-1 uppercase">
                         {(a.capabilities ?? []).map((k) => CAPABILITY_LABELS[k]).join(' · ')}
                       </span>
                     )}
@@ -244,25 +245,25 @@ export default function AssetMap() {
               ))}
               {filtered.length === 0 && (
                 <div className="px-4 py-8">
-                  <p className="font-mono2 text-[11px] tracking-[0.06em] text-[#fbfaf5]/70 leading-relaxed">
+                  <p className="font-mono2 text-[11px] tracking-[0.06em] text-[var(--ink)]/70 leading-relaxed">
                     No venues match that combination. Loosen one filter — or the capability you're after
                     might not exist in BC yet. That's a gap worth filling.
                   </p>
                   <button
                     onClick={() => { setFilter('All'); setCap(null); }}
-                    className="mt-4 font-mono2 text-[10px] tracking-[0.14em] border border-[#d52b1e] text-[#d52b1e] px-4 py-2 hover:bg-[#d52b1e] hover:text-[#fbfaf5] transition-colors"
+                    className="mt-4 font-mono2 text-[10px] tracking-[0.14em] border border-[#d52b1e] text-[#d52b1e] px-4 py-2 hover:bg-[#d52b1e] hover:text-[var(--ink)] transition-colors"
                   >
                     CLEAR BOTH FILTERS
                   </button>
                 </div>
               )}
             </div>
-            <div className="font-mono2 text-[10px] tracking-[0.1em] text-[#fbfaf5]/55 mt-3 px-1 flex items-center justify-between gap-3">
+            <div className="font-mono2 text-[10px] tracking-[0.1em] text-[var(--ink)]/55 mt-3 px-1 flex items-center justify-between gap-3">
               <span>CLICK A ROW TO FLY TO ITS PIN · {filtered.length} SHOWN</span>
               {(filter !== 'All' || cap || trail) && (
                 <button
                   onClick={() => { setFilter('All'); setCap(null); setTrailId(null); setSelected(null); }}
-                  className="font-mono2 text-[10px] tracking-[0.14em] text-[#d52b1e] hover:text-[#fbfaf5] transition-colors shrink-0"
+                  className="font-mono2 text-[10px] tracking-[0.14em] text-[#d52b1e] hover:text-[var(--ink)] transition-colors shrink-0"
                 >
                   RESET ✕
                 </button>
@@ -272,18 +273,18 @@ export default function AssetMap() {
 
           {/* map */}
           <div
-            className="lg:col-span-8 order-1 lg:order-2 border border-[rgba(251,250,245,0.14)] relative"
+            className="lg:col-span-8 order-1 lg:order-2 border border-[var(--line)] relative"
             role="region"
             aria-label="Interactive map of British Columbia innovation venues on OpenStreetMap"
           >
             {trail && (
-              <div className="absolute top-3 right-3 z-[500] flex items-center gap-3 bg-[#0c0e16]/90 border border-[#d52b1e] px-4 py-2">
-                <span className="font-mono2 text-[10px] tracking-[0.16em] text-[#fbfaf5] uppercase">
+              <div className="absolute top-3 right-3 z-[500] flex items-center gap-3 bg-[var(--bg)]/90 border border-[#d52b1e] px-4 py-2">
+                <span className="font-mono2 text-[10px] tracking-[0.16em] text-[var(--ink)] uppercase">
                   Walking: {trail.name}
                 </span>
                 <button
                   onClick={clearTrail}
-                  className="font-mono2 text-[11px] text-[#d52b1e] hover:text-[#fbfaf5] transition-colors"
+                  className="font-mono2 text-[11px] text-[#d52b1e] hover:text-[var(--ink)] transition-colors"
                   aria-label="Clear trail"
                 >
                   ✕
@@ -331,18 +332,18 @@ export default function AssetMap() {
                         {a.category}
                       </div>
                       <div className="font-display uppercase text-xl tracking-wide leading-tight">{a.name}</div>
-                      <div className="font-mono2 text-[10px] text-[#fbfaf5]/55 mt-1.5">{a.location}</div>
+                      <div className="font-mono2 text-[10px] text-[var(--ink)]/55 mt-1.5">{a.location}</div>
                       {a.capabilities && a.capabilities.length > 0 && (
-                        <div className="font-mono2 text-[9px] tracking-[0.08em] text-[#84bd00] uppercase mt-1.5">
+                        <div className="font-mono2 text-[9px] tracking-[0.08em] text-[var(--forest)] uppercase mt-1.5">
                           {a.capabilities.map((k) => CAPABILITY_LABELS[k]).join(' · ')}
                         </div>
                       )}
-                      <p className="text-[12.5px] leading-relaxed text-[#fbfaf5]/75 mt-2">{a.blurb}</p>
+                      <p className="text-[12.5px] leading-relaxed text-[var(--ink)]/75 mt-2">{a.blurb}</p>
                       <a
                         href={a.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="font-mono2 text-[10.5px] tracking-[0.14em] text-[#d52b1e] inline-block mt-3 hover:text-[#cedc00]"
+                        className="font-mono2 text-[10.5px] tracking-[0.14em] text-[#d52b1e] inline-block mt-3 hover:text-[var(--forest-hi)]"
                       >
                         VISIT SITE ↗
                       </a>
