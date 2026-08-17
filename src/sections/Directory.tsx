@@ -8,7 +8,7 @@ export default function Directory() {
           <div>
             <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#d52b1e] mb-4">02 / THE PLAYERS</div>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.95]">
-              Forty-four<br />ways in.
+              Forty-six<br />ways in.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/60">
