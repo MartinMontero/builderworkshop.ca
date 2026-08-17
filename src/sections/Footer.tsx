@@ -8,7 +8,6 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="#map" className="text-sm text-[#fbfaf5]/65 hover:text-[#fbfaf5] transition-colors">The Asset Map</a></li>
               <li><a href="#players" className="text-sm text-[#fbfaf5]/65 hover:text-[#fbfaf5] transition-colors">The Players</a></li>
-              <li><a href="#paths" className="text-sm text-[#fbfaf5]/65 hover:text-[#fbfaf5] transition-colors">The Pathways</a></li>
               <li><a href="#mission" className="text-sm text-[#fbfaf5]/65 hover:text-[#fbfaf5] transition-colors">The Mission</a></li>
             </ul>
           </div>
@@ -56,8 +55,19 @@ export default function Footer() {
       </div>
 
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-[rgba(251,250,245,0.1)] pt-6">
-        <span className="font-mono2 text-[10px] tracking-[0.14em] text-[#fbfaf5]/40">BUILDERWORKSHOP.CA — EST. 2026</span>
-        <span className="font-mono2 text-[10px] tracking-[0.14em] text-[#fbfaf5]/40">A WORKSHOP FOR BUILDERS · LOWER MAINLAND, BC</span>
+        <span className="font-mono2 text-[10px] tracking-[0.14em] text-[#fbfaf5]/55">
+          BUILT BY{' '}
+          <a
+            href="https://www.linkedin.com/in/martinmontero"
+            target="_blank"
+            rel="noreferrer"
+            className="text-[#fbfaf5]/80 underline underline-offset-2 hover:text-[#cedc00] transition-colors"
+          >
+            MARTIN MONTERO
+          </a>
+          {' '}· A GIFT TO BUILDERS
+        </span>
+        <span className="font-mono2 text-[10px] tracking-[0.14em] text-[#fbfaf5]/40">BUILDERWORKSHOP.CA — EST. 2026 · LOWER MAINLAND, BC</span>
       </div>
     </footer>
   );
