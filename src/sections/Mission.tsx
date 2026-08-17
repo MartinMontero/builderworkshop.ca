@@ -18,7 +18,7 @@ const PILLARS = [
 
 export default function Mission() {
   return (
-    <section id="mission" className="relative bg-[#fbfaf5] text-[#12141f] py-20 md:py-28">
+    <section id="mission" className="relative bg-[var(--bg-raise)] text-[var(--ink)] py-20 md:py-28">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#a81e14] mb-4 reveal">04 / THE MISSION</div>
 
@@ -33,7 +33,7 @@ export default function Mission() {
               galleries, cafés and capital — but the pieces have never been on one map. Builder Workshop
               puts them there.
             </p>
-            <p className="mt-6 text-[15px] leading-relaxed text-[#12141f]/70">
+            <p className="mt-6 text-[15px] leading-relaxed text-[var(--ink-soft)]">
               The goal: more homegrown innovation that drives prosperity, liberty and clear societal
               benefit — and a Canada that leads the world in human-centric innovation that moves
               humanity forward.
@@ -43,13 +43,13 @@ export default function Mission() {
             {PILLARS.map((p) => (
               <div
                 key={p.n}
-                className="grid grid-cols-12 gap-4 py-6 border-t border-[rgba(18,20,31,0.16)] last:border-b reveal"
+                className="grid grid-cols-12 gap-4 py-6 border-t border-[var(--line)] last:border-b reveal"
               >
                 <div className="col-span-2 md:col-span-1 font-mono2 text-[11px] text-[#a81e14] pt-1">({p.n})</div>
                 <div className="col-span-10 md:col-span-3 font-display uppercase text-2xl md:text-3xl tracking-wide">
                   {p.title}
                 </div>
-                <div className="col-span-12 md:col-span-8 text-[15px] leading-relaxed text-[#12141f]/75">
+                <div className="col-span-12 md:col-span-8 text-[15px] leading-relaxed text-[var(--ink-soft)]">
                   {p.body}
                 </div>
               </div>
