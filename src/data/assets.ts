@@ -18,7 +18,7 @@ export interface Asset {
 }
 
 export const CATEGORY_COLORS: Record<Category, string> = {
-  'Spaces & Places': '#ff3b30',
+  'Spaces & Places': '#d52b1e',
   'Programs & Accelerators': '#f5b800',
   'Learning & Talent': '#34c76b',
   'Community & Events': '#4fc3f7',
