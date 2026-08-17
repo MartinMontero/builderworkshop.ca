@@ -7,7 +7,7 @@ export default function Contribute() {
         style={{ background: 'radial-gradient(circle, var(--hero-glow) 0%, transparent 65%)' }}
       />
       <div className="relative px-5 md:px-10 max-w-[1400px] mx-auto text-center">
-        <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)] mb-6 reveal">05 / CONTRIBUTE</div>
+        <div className="eyebrow mb-6 reveal">CONTRIBUTE</div>
         <h2 className="font-display uppercase text-[10vw] md:text-[5.5vw] leading-[0.95] reveal">
           This map is a<br />
           <span className="text-[var(--accent)]">living document.</span>
@@ -22,7 +22,7 @@ export default function Contribute() {
             href="mailto:these3remain@gmail.com?subject=Add%20to%20Builder%20Workshop"
             className="inline-block font-mono2 text-[11px] tracking-[0.2em] bg-[var(--brand)] text-[var(--brand-ink)] px-8 py-4 hover:bg-[var(--ink)] hover:text-[var(--bg)] transition-colors"
           >
-            SUBMIT A PLAYER ↗
+            Submit a player ↗
           </a>
           <a
             href="/ecosystem.json"
@@ -30,7 +30,7 @@ export default function Contribute() {
             rel="noreferrer"
             className="inline-block font-mono2 text-[11px] tracking-[0.2em] border border-[var(--line-strong)] text-[var(--ink)] px-8 py-4 hover:border-[var(--ink)] transition-colors"
           >
-            TAKE THE DATA ↓
+            Take the data ↓
           </a>
         </div>
         <p className="mt-6 font-mono2 text-[9.5px] tracking-[0.14em] text-[var(--ink)]/45 reveal">
