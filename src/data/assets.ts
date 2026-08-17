@@ -26,13 +26,14 @@ export interface Pathway {
   stops: string[]; // asset ids, in walking order
 }
 
+// Category colors as CSS custom properties so they adapt to light/dark theme (see index.css).
 export const CATEGORY_COLORS: Record<Category, string> = {
-  'Spaces & Places': '#d52b1e',
-  'Programs & Accelerators': '#f0a500',
-  'Learning & Talent': '#34c76b',
-  'Community & Events': '#84bd00',
-  'Media & Storytelling': '#ff8fa3',
-  'Capital & Venture': '#f5b800',
+  'Spaces & Places': 'var(--cat-spaces)',
+  'Programs & Accelerators': 'var(--cat-programs)',
+  'Learning & Talent': 'var(--cat-learning)',
+  'Community & Events': 'var(--cat-community)',
+  'Media & Storytelling': 'var(--cat-media)',
+  'Capital & Venture': 'var(--cat-capital)',
 };
 
 export const CATEGORIES: Category[] = [
