@@ -21,6 +21,24 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 88px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--forest-hi);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .scroll-cue { animation: none; }
+  .bw-marker.is-active { animation: none; }
+  .player-row, .player-row:hover { transition: none; padding-left: 0.25rem; }
+}
+
 body {
   background: var(--ink-deep);
   color: var(--cream);
