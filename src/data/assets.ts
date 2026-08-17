@@ -82,6 +82,15 @@ export const ASSETS: Asset[] = [
     lng: -123.1022425,
   },
   {
+    id: 'dwebyvr',
+    name: 'DWeb Vancouver',
+    category: 'Community & Events',
+    url: 'https://dwebyvr.org/',
+    blurb:
+      'The official Vancouver node of the global DWeb movement sparked by the Internet Archive — volunteer-run meetups and a community calendar for tech built on human agency, mutual respect and distributed benefit.',
+    location: 'Around town · Lu.ma calendar',
+  },
+  {
     id: 'vhs',
     name: 'Vancouver Hack Space',
     category: 'Spaces & Places',
@@ -229,15 +238,6 @@ export const ASSETS: Asset[] = [
     blurb:
       'Every tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of every product BC’s buildrs are shipping.',
     location: 'Online · Vancouver',
-  },
-  {
-    id: 'dwebyvr',
-    name: 'DWeb Vancouver',
-    category: 'Community & Events',
-    url: 'https://dwebyvr.org/',
-    blurb:
-      'The official Vancouver node of the global DWeb movement sparked by the Internet Archive — volunteer-run meetups and a community calendar for tech built on human agency, mutual respect and distributed benefit.',
-    location: 'Around town · Lu.ma calendar',
   },
   {
     id: 'zspace',
