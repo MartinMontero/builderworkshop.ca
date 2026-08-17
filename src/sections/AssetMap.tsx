@@ -113,7 +113,6 @@ export default function AssetMap() {
     const venues = MAPPED.filter((a) => (a.capabilities ?? []).includes(cap));
     const n = venues.length;
     if (n === 0) return null;
-    // densest neighbourhood: most common location suffix after "·"
     const hoods: Record<string, number> = {};
     for (const v of venues) {
       const hood = v.location.split('·')[1]?.trim() ?? v.location;
@@ -136,9 +135,9 @@ export default function AssetMap() {
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-10 reveal">
           <div>
-            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#d52b1e] mb-4">01 / THE ASSET MAP</div>
+            <div className="eyebrow mb-4">THE MAP</div>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.95]">
-              Where the work<br />gets done.
+              Where the work<br />happens.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[var(--ink)]/60">
@@ -178,7 +177,7 @@ export default function AssetMap() {
         {/* capability chips */}
         <div className="flex flex-wrap items-center gap-2 mb-6 reveal">
           <span className="font-mono2 text-[9.5px] tracking-[0.2em] text-[var(--ink)]/40 uppercase mr-1">
-            Make something:
+            I want to make:
           </span>
           {Object.keys(CAPABILITY_LABELS)
             .filter((k) => (capCounts[k] ?? 0) > 0)
@@ -251,21 +250,21 @@ export default function AssetMap() {
                   </p>
                   <button
                     onClick={() => { setFilter('All'); setCap(null); }}
-                    className="mt-4 font-mono2 text-[10px] tracking-[0.14em] border border-[#d52b1e] text-[#d52b1e] px-4 py-2 hover:bg-[#d52b1e] hover:text-[var(--ink)] transition-colors"
+                    className="mt-4 font-mono2 text-[10px] tracking-[0.14em] border border-[var(--accent)] text-[var(--accent)] px-4 py-2 hover:bg-[var(--brand)] hover:text-[var(--brand-ink)] transition-colors"
                   >
-                    CLEAR BOTH FILTERS
+                    Clear both filters
                   </button>
                 </div>
               )}
             </div>
             <div className="font-mono2 text-[10px] tracking-[0.1em] text-[var(--ink)]/55 mt-3 px-1 flex items-center justify-between gap-3">
-              <span>CLICK A ROW TO FLY TO ITS PIN · {filtered.length} SHOWN</span>
+              <span>Click a row to fly to its pin · {filtered.length} shown</span>
               {(filter !== 'All' || cap || trail) && (
                 <button
                   onClick={() => { setFilter('All'); setCap(null); setTrailId(null); setSelected(null); }}
-                  className="font-mono2 text-[10px] tracking-[0.14em] text-[#d52b1e] hover:text-[var(--ink)] transition-colors shrink-0"
+                  className="font-mono2 text-[10px] tracking-[0.14em] text-[var(--accent)] hover:text-[var(--ink)] transition-colors shrink-0"
                 >
-                  RESET ✕
+                  Reset ✕
                 </button>
               )}
             </div>
@@ -278,13 +277,13 @@ export default function AssetMap() {
             aria-label="Interactive map of British Columbia innovation venues on OpenStreetMap"
           >
             {trail && (
-              <div className="absolute top-3 right-3 z-[500] flex items-center gap-3 bg-[var(--bg)]/90 border border-[#d52b1e] px-4 py-2">
+              <div className="absolute top-3 right-3 z-[500] flex items-center gap-3 bg-[var(--bg)]/90 border border-[var(--accent)] px-4 py-2">
                 <span className="font-mono2 text-[10px] tracking-[0.16em] text-[var(--ink)] uppercase">
                   Walking: {trail.name}
                 </span>
                 <button
                   onClick={clearTrail}
-                  className="font-mono2 text-[11px] text-[#d52b1e] hover:text-[var(--ink)] transition-colors"
+                  className="font-mono2 text-[11px] text-[var(--accent)] hover:text-[var(--ink)] transition-colors"
                   aria-label="Clear trail"
                 >
                   ✕
@@ -343,9 +342,9 @@ export default function AssetMap() {
                         href={a.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="font-mono2 text-[10.5px] tracking-[0.14em] text-[#d52b1e] inline-block mt-3 hover:text-[var(--forest-hi)]"
+                        className="font-mono2 text-[10.5px] tracking-[0.14em] text-[var(--accent)] inline-block mt-3 hover:text-[var(--forest-hi)]"
                       >
-                        VISIT SITE ↗
+                        Visit site ↗
                       </a>
                     </div>
                   </Popup>
