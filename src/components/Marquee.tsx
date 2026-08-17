@@ -10,6 +10,7 @@ const WORDS = [
   'MEDIA',
   'CAPITAL',
   'COMMUNITY',
+  'DECENTRALIZED WEB',
   'GALLERIES',
 ];
 

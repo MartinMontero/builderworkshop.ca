@@ -35,6 +35,7 @@ export const CATEGORIES: Category[] = [
   'Capital & Venture',
 ];
 
+// Array order = directory ranking (01–25).
 export const ASSETS: Asset[] = [
   {
     id: 'dctrl',
@@ -48,6 +49,17 @@ export const ASSETS: Asset[] = [
     lng: -123.1107804,
   },
   {
+    id: 'launch',
+    name: 'Launch Academy',
+    category: 'Programs & Accelerators',
+    url: 'https://www.launchacademy.ca/',
+    blurb:
+      'Non-profit incubator that has supported 6,000+ entrepreneurs since 2012 — alumni include Thinkific and have collectively raised over $1.2B. Home of LaunchPad, Maple and Startup Visa programs.',
+    location: '350–128 W Hastings St · Gastown',
+    lat: 49.2818936,
+    lng: -123.1081537,
+  },
+  {
     id: 'friendsquarters',
     name: 'FriendsQuarters',
     category: 'Spaces & Places',
@@ -57,17 +69,6 @@ export const ASSETS: Asset[] = [
     location: '200–116 W Hastings St · Gastown',
     lat: 49.2818562,
     lng: -123.107943,
-  },
-  {
-    id: 'zspace',
-    name: 'Z-Space',
-    category: 'Spaces & Places',
-    url: 'https://z-space.ca/',
-    blurb:
-      'Non-profit arts and technology society in the historic Odd Fellows Hall — coworking, an event stage, media gallery and café for creative technologists and indie builders.',
-    location: '301–505 Hamilton St · Victory Square',
-    lat: 49.2819714,
-    lng: -123.1114556,
   },
   {
     id: 'northhouse',
@@ -123,17 +124,6 @@ export const ASSETS: Asset[] = [
     location: '1515 Discovery St · Jericho Beach',
     lat: 49.27295,
     lng: -123.2032773,
-  },
-  {
-    id: 'launch',
-    name: 'Launch Academy',
-    category: 'Programs & Accelerators',
-    url: 'https://www.launchacademy.ca/',
-    blurb:
-      'Non-profit incubator that has supported 6,000+ entrepreneurs since 2012 — alumni include Thinkific and have collectively raised over $1.2B. Home of LaunchPad, Maple and Startup Visa programs.',
-    location: '350–128 W Hastings St · Gastown',
-    lat: 49.2818936,
-    lng: -123.1081537,
   },
   {
     id: 'venturelabs',
@@ -239,6 +229,26 @@ export const ASSETS: Asset[] = [
     blurb:
       'Every tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of every product BC’s buildrs are shipping.',
     location: 'Online · Vancouver',
+  },
+  {
+    id: 'zspace',
+    name: 'Z-Space',
+    category: 'Spaces & Places',
+    url: 'https://z-space.ca/',
+    blurb:
+      'Non-profit arts and technology society in the historic Odd Fellows Hall — coworking, an event stage, media gallery and café for creative technologists and indie builders.',
+    location: '301–505 Hamilton St · Victory Square',
+    lat: 49.2819714,
+    lng: -123.1114556,
+  },
+  {
+    id: 'dwebyvr',
+    name: 'DWeb Vancouver',
+    category: 'Community & Events',
+    url: 'https://dwebyvr.org/',
+    blurb:
+      'The official Vancouver node of the global DWeb movement sparked by the Internet Archive — volunteer-run meetups and a community calendar for tech built on human agency, mutual respect and distributed benefit.',
+    location: 'Around town · Lu.ma calendar',
   },
   {
     id: 'aistartuphub',
