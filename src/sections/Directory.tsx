@@ -6,7 +6,7 @@ export default function Directory() {
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
           <div>
-            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#d52b1e] mb-4">02 / THE PLAYERS</div>
+            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)] mb-4">02 / THE PLAYERS</div>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.95]">
               Forty-six<br />ways in.
             </h2>
@@ -32,14 +32,14 @@ export default function Directory() {
               >
                 <div
                   className={`md:col-span-1 font-mono2 ${
-                    podium ? 'text-sm text-[#d52b1e]' : 'text-[10px] text-[var(--ink)]/55'
+                    podium ? 'text-sm text-[var(--accent)]' : 'text-[10px] text-[var(--ink)]/55'
                   }`}
                 >
                   {String(i + 1).padStart(2, '0')}
                 </div>
                 <div className="md:col-span-3">
                   <span
-                    className={`font-display uppercase tracking-wide group-hover:text-[#d52b1e] transition-colors duration-300 ${
+                    className={`font-display uppercase tracking-wide group-hover:text-[var(--accent)] transition-colors duration-300 ${
                       podium
                         ? 'text-3xl md:text-4xl'
                         : tail
@@ -74,7 +74,7 @@ export default function Directory() {
                   )}
                 </div>
                 <div className="md:col-span-3 text-[13px] leading-relaxed text-[var(--ink)]/70">{a.blurb}</div>
-                <div className="md:col-span-1 md:text-right font-mono2 text-sm text-[var(--ink)]/55 group-hover:text-[#d52b1e] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300">
+                <div className="md:col-span-1 md:text-right font-mono2 text-sm text-[var(--ink)]/55 group-hover:text-[var(--accent)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300">
                   ↗
                 </div>
               </a>
