@@ -1,5 +1,5 @@
 const STATS = [
-  { value: '41', label: 'ECOSYSTEM PLAYERS LISTED' },
+  { value: '42', label: 'ECOSYSTEM PLAYERS LISTED' },
   { value: '27', label: 'VENUES ON THE ASSET MAP' },
   { value: '#2', label: 'AI TALENT CONCENTRATION IN CANADA' },
   { value: '500+', label: 'AI COMPANIES IN B.C.' },
