@@ -57,7 +57,7 @@ export const CAPABILITY_LABELS: Record<string, string> = {
   digitization: 'Digitization',
 };
 
-// Array order = directory ranking (01–44).
+// Array order = directory ranking (01–46).
 export const ASSETS: Asset[] = [
   {
     id: 'dctrl',
@@ -199,6 +199,15 @@ export const ASSETS: Asset[] = [
     location: '111 E 5th Ave · Mount Pleasant',
     lat: 49.266589,
     lng: -123.1022425,
+  },
+  {
+    id: 'bcfoundersday',
+    name: 'BC Founders Day',
+    category: 'Community & Events',
+    url: 'https://www.bcfoundersday.com/',
+    blurb:
+      'The annual founders-only day built by founders, for founders — master classes from operators like Clio and Koho, office hours with lei-wearing veteran founders, and a networking close. Free, thanks to Fasken, Google Cloud, RBCx and Launch.',
+    location: 'Vancouver Convention Centre · Annual',
   },
   {
     id: 'frontiercollective',
@@ -490,6 +499,15 @@ export const ASSETS: Asset[] = [
     blurb:
       "Vancouver's chapter of the global BitDevs network — monthly Socratic Seminars where Bitcoin and protocol developers, researchers and the curious dissect the latest in permissionless tech.",
     location: 'Monthly Socratic Seminar · Vancouver',
+  },
+  {
+    id: 'futurpreneur',
+    name: 'Futurpreneur',
+    category: 'Capital & Venture',
+    url: 'https://futurpreneur.ca/',
+    blurb:
+      'Canada’s launchpad for young founders since 1996 — up to $75K in collateral-free startup loans plus two years of hand-matched mentorship for entrepreneurs aged 18–39. 21,000+ founders backed, $259M lent, 80% five-year survival.',
+    location: 'Nation-wide · Serving BC',
   },
   {
     id: 'zspace',
