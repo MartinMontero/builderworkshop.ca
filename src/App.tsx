@@ -46,7 +46,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0c0e16] text-[#fbfaf5]">
+    <div className="min-h-screen bg-[var(--bg)] text-[var(--ink)]">
       <Nav />
       <main>
         <Hero />
