@@ -1,8 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { CATEGORIES, CATEGORY_COLORS, MAPPED, type Asset, type Category } from '../data/assets';
+import {
+  CATEGORIES,
+  CATEGORY_COLORS,
+  CAPABILITY_LABELS,
+  MAPPED,
+  PATHWAYS,
+  type Asset,
+  type Category,
+} from '../data/assets';
 
 type Filter = 'All' | Category;
 
@@ -38,14 +46,52 @@ function FitBounds({ items }: { items: Asset[] }) {
   return null;
 }
 
+function TrailFit({ points }: { points: [number, number][] }) {
+  const map = useMap();
+  useEffect(() => {
+    if (points.length > 1) {
+      map.flyToBounds(L.latLngBounds(points), { padding: [60, 60], duration: 1.2 });
+    }
+  }, [points, map]);
+  return null;
+}
+
 export default function AssetMap() {
   const [filter, setFilter] = useState<Filter>('All');
+  const [cap, setCap] = useState<string | null>(null);
   const [selected, setSelected] = useState<Asset | null>(null);
+  const [trailId, setTrailId] = useState<string | null>(null);
   const markerRefs = useRef<Record<string, L.Marker | null>>({});
 
+  // pathway cards dispatch bw:trail → draw the route here
+  useEffect(() => {
+    const onTrail = (e: Event) => {
+      setTrailId((e as CustomEvent<string>).detail);
+      setFilter('All');
+      setCap(null);
+      setSelected(null);
+    };
+    window.addEventListener('bw:trail', onTrail);
+    return () => window.removeEventListener('bw:trail', onTrail);
+  }, []);
+
+  const trail = useMemo(() => PATHWAYS.find((p) => p.id === trailId) ?? null, [trailId]);
+  const trailPoints = useMemo(() => {
+    if (!trail) return [] as [number, number][];
+    return trail.stops
+      .map((sid) => MAPPED.find((a) => a.id === sid))
+      .filter((a): a is Asset => !!a && a.lat !== undefined)
+      .map((a) => [a.lat!, a.lng!] as [number, number]);
+  }, [trail]);
+
   const filtered = useMemo(
-    () => MAPPED.filter((a) => filter === 'All' || a.category === filter),
-    [filter]
+    () =>
+      MAPPED.filter(
+        (a) =>
+          (filter === 'All' || a.category === filter) &&
+          (!cap || (a.capabilities ?? []).includes(cap))
+      ),
+    [filter, cap]
   );
 
   const counts = useMemo(() => {
@@ -54,11 +100,21 @@ export default function AssetMap() {
     return c;
   }, []);
 
+  const capCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    for (const a of MAPPED) {
+      for (const k of a.capabilities ?? []) c[k] = (c[k] ?? 0) + 1;
+    }
+    return c;
+  }, []);
+
   const select = (a: Asset) => {
     setSelected(a);
     const m = markerRefs.current[a.id];
     if (m) m.openPopup();
   };
+
+  const clearTrail = () => setTrailId(null);
 
   return (
     <section id="map" className="relative bg-[#12141f] py-20 md:py-28">
@@ -72,12 +128,12 @@ export default function AssetMap() {
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[#fbfaf5]/60">
             Twenty-seven physical venues pinned across British Columbia — powered by OpenStreetMap.
-            Program-based and regional players are listed in the directory below.
+            Filter by what you want to make; program-based players are in the directory below.
           </p>
         </div>
 
-        {/* filter pills */}
-        <div className="flex flex-wrap gap-2 mb-6 reveal">
+        {/* category pills */}
+        <div className="flex flex-wrap gap-2 mb-3 reveal">
           {(['All', ...CATEGORIES] as Filter[])
             .filter((c) => c === 'All' || (counts[c] ?? 0) > 0)
             .map((c) => {
@@ -102,6 +158,31 @@ export default function AssetMap() {
               </button>
             );
           })}
+        </div>
+
+        {/* capability chips */}
+        <div className="flex flex-wrap items-center gap-2 mb-6 reveal">
+          <span className="font-mono2 text-[9.5px] tracking-[0.2em] text-[#fbfaf5]/40 uppercase mr-1">
+            Make something:
+          </span>
+          {Object.keys(CAPABILITY_LABELS)
+            .filter((k) => (capCounts[k] ?? 0) > 0)
+            .map((k) => {
+              const active = cap === k;
+              return (
+                <button
+                  key={k}
+                  onClick={() => { setCap(active ? null : k); setSelected(null); setTrailId(null); }}
+                  className={`font-mono2 text-[9.5px] tracking-[0.12em] uppercase px-3 py-1.5 border transition-all duration-300 ${
+                    active
+                      ? 'bg-[#84bd00] text-[#12141f] border-[#84bd00]'
+                      : 'border-[rgba(251,250,245,0.16)] text-[#fbfaf5]/55 hover:border-[#84bd00] hover:text-[#cedc00]'
+                  }`}
+                >
+                  {CAPABILITY_LABELS[k]} <span className="opacity-50">({capCounts[k]})</span>
+                </button>
+              );
+            })}
         </div>
 
         <div className="grid lg:grid-cols-12 gap-4 reveal">
@@ -129,9 +210,19 @@ export default function AssetMap() {
                     <span className="font-mono2 text-[10px] tracking-[0.08em] text-[#fbfaf5]/50 block mt-1">
                       {a.location}
                     </span>
+                    {cap && (
+                      <span className="font-mono2 text-[9px] tracking-[0.1em] text-[#84bd00] block mt-1 uppercase">
+                        {(a.capabilities ?? []).map((k) => CAPABILITY_LABELS[k]).join(' · ')}
+                      </span>
+                    )}
                   </span>
                 </button>
               ))}
+              {filtered.length === 0 && (
+                <div className="px-4 py-8 font-mono2 text-[11px] tracking-[0.1em] text-[#fbfaf5]/40">
+                  NO VENUES MATCH — CLEAR A FILTER
+                </div>
+              )}
             </div>
             <div className="font-mono2 text-[10px] tracking-[0.1em] text-[#fbfaf5]/40 mt-3 px-1">
               CLICK A ROW TO FLY TO ITS PIN · {filtered.length} SHOWN
@@ -139,7 +230,21 @@ export default function AssetMap() {
           </div>
 
           {/* map */}
-          <div className="lg:col-span-8 order-1 lg:order-2 border border-[rgba(251,250,245,0.14)]">
+          <div className="lg:col-span-8 order-1 lg:order-2 border border-[rgba(251,250,245,0.14)] relative">
+            {trail && (
+              <div className="absolute top-3 right-3 z-[500] flex items-center gap-3 bg-[#0c0e16]/90 border border-[#d52b1e] px-4 py-2">
+                <span className="font-mono2 text-[10px] tracking-[0.16em] text-[#fbfaf5] uppercase">
+                  Walking: {trail.name}
+                </span>
+                <button
+                  onClick={clearTrail}
+                  className="font-mono2 text-[11px] text-[#d52b1e] hover:text-[#fbfaf5] transition-colors"
+                  aria-label="Clear trail"
+                >
+                  ✕
+                </button>
+              </div>
+            )}
             <MapContainer
               center={[49.26, -123.11]}
               zoom={11}
@@ -151,9 +256,20 @@ export default function AssetMap() {
                 url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
                 maxZoom={19}
               />
-              <FitBounds items={filtered} />
+              {trail ? <TrailFit points={trailPoints} /> : <FitBounds items={filtered} />}
               <FlyTo target={selected} />
-              {filtered.map((a) => (
+              {trail && trailPoints.length > 1 && (
+                <Polyline
+                  positions={trailPoints}
+                  pathOptions={{ color: '#d52b1e', weight: 3, dashArray: '1 9', lineCap: 'round', opacity: 0.9 }}
+                />
+              )}
+              {(trail
+                ? trail.stops
+                    .map((sid) => MAPPED.find((a) => a.id === sid))
+                    .filter((a): a is Asset => !!a && a.lat !== undefined)
+                : filtered
+              ).map((a) => (
                 <Marker
                   key={a.id}
                   position={[a.lat!, a.lng!]}
@@ -171,6 +287,11 @@ export default function AssetMap() {
                       </div>
                       <div className="font-display uppercase text-xl tracking-wide leading-tight">{a.name}</div>
                       <div className="font-mono2 text-[10px] text-[#fbfaf5]/55 mt-1.5">{a.location}</div>
+                      {a.capabilities && a.capabilities.length > 0 && (
+                        <div className="font-mono2 text-[9px] tracking-[0.08em] text-[#84bd00] uppercase mt-1.5">
+                          {a.capabilities.map((k) => CAPABILITY_LABELS[k]).join(' · ')}
+                        </div>
+                      )}
                       <p className="text-[12.5px] leading-relaxed text-[#fbfaf5]/75 mt-2">{a.blurb}</p>
                       <a
                         href={a.url}
