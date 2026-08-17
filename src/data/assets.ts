@@ -15,6 +15,14 @@ export interface Asset {
   location: string;
   lat?: number;
   lng?: number;
+  capabilities?: string[];
+}
+
+export interface Pathway {
+  id: string;
+  name: string;
+  blurb: string;
+  stops: string[]; // asset ids, in walking order
 }
 
 export const CATEGORY_COLORS: Record<Category, string> = {
@@ -35,7 +43,21 @@ export const CATEGORIES: Category[] = [
   'Capital & Venture',
 ];
 
-// Array order = directory ranking (01–43).
+export const CAPABILITY_LABELS: Record<string, string> = {
+  '3d-print': '3D Printing',
+  laser: 'Laser Cutting',
+  cnc: 'CNC',
+  wood: 'Woodshop',
+  metal: 'Metalshop',
+  electronics: 'Electronics',
+  robotics: 'Robotics',
+  glass: 'Glass',
+  ceramics: 'Ceramics',
+  recording: 'Recording & Podcast',
+  digitization: 'Digitization',
+};
+
+// Array order = directory ranking (01–44).
 export const ASSETS: Asset[] = [
   {
     id: 'dctrl',
@@ -69,6 +91,7 @@ export const ASSETS: Asset[] = [
     location: '200–116 W Hastings St · Gastown',
     lat: 49.2818562,
     lng: -123.107943,
+    capabilities: ['recording'],
   },
   {
     id: 'dwebyvr',
@@ -89,6 +112,7 @@ export const ASSETS: Asset[] = [
     location: '330 W Pender St · Crosstown',
     lat: 49.2832,
     lng: -123.1149,
+    capabilities: ['digitization'],
   },
   {
     id: 'basecamp',
@@ -111,6 +135,7 @@ export const ASSETS: Asset[] = [
     location: '177 E 3rd Ave · Mount Pleasant',
     lat: 49.2683654,
     lng: -123.1012334,
+    capabilities: ['3d-print', 'robotics'],
   },
   {
     id: 'funk',
@@ -144,6 +169,25 @@ export const ASSETS: Asset[] = [
     location: '1601 Venables St · Grandview-Woodland',
     lat: 49.2769261,
     lng: -123.0725869,
+    capabilities: ['3d-print', 'laser', 'wood', 'metal', 'electronics', 'robotics'],
+  },
+  {
+    id: 'flowstatefounder',
+    name: 'Flow State Founder',
+    category: 'Programs & Accelerators',
+    url: 'https://flowstatefounder.ca/',
+    blurb:
+      "An 11-week accelerator built for women founders — cohorts of just six, landing podcast features, nailing the pitch, and winning grant funding ($850K+ secured) with zero equity taken.",
+    location: 'Cohort-based · Vancouver',
+  },
+  {
+    id: 'bcai',
+    name: 'BC + AI Ecosystem',
+    category: 'Community & Events',
+    url: 'https://bc-ai.ca/',
+    blurb:
+      'Member-supported nonprofit AI community — recurring meetups, working groups and a public-interest voice for responsible, human-centric AI in British Columbia.',
+    location: 'Province-wide',
   },
   {
     id: 'northhouse',
@@ -264,15 +308,6 @@ export const ASSETS: Asset[] = [
     location: 'Citywide · Annual',
   },
   {
-    id: 'bcai',
-    name: 'BC + AI Ecosystem',
-    category: 'Community & Events',
-    url: 'https://bc-ai.ca/',
-    blurb:
-      'Member-supported nonprofit AI community — recurring meetups, working groups and a public-interest voice for responsible, human-centric AI in British Columbia.',
-    location: 'Province-wide',
-  },
-  {
     id: 'womentransformingcities',
     name: 'Women Transforming Cities',
     category: 'Community & Events',
@@ -340,6 +375,7 @@ export const ASSETS: Asset[] = [
     location: '780 E Cordova St · Strathcona',
     lat: 49.2818969,
     lng: -123.0875456,
+    capabilities: ['laser', 'cnc', '3d-print', 'wood', 'metal', 'ceramics'],
   },
   {
     id: 'makercube',
@@ -351,6 +387,7 @@ export const ASSETS: Asset[] = [
     location: '104B–5947 206A St · Langley',
     lat: 49.0889,
     lng: -122.6503,
+    capabilities: ['laser', 'cnc', '3d-print', 'wood', 'metal', 'ceramics'],
   },
   {
     id: 'vtl',
@@ -362,6 +399,7 @@ export const ASSETS: Asset[] = [
     location: '3448 Commercial St · The Drive',
     lat: 49.2536988,
     lng: -123.0678595,
+    capabilities: ['wood'],
   },
   {
     id: 'zenmakerlab',
@@ -373,6 +411,7 @@ export const ASSETS: Asset[] = [
     location: '224–125 Victory Ship Way · The Shipyards, North Van',
     lat: 49.30955,
     lng: -123.07851,
+    capabilities: ['3d-print', 'laser', 'robotics'],
   },
   {
     id: 'tcglass',
@@ -384,6 +423,7 @@ export const ASSETS: Asset[] = [
     location: '1191 Parker St · Strathcona',
     lat: 49.275975,
     lng: -123.0792044,
+    capabilities: ['glass'],
   },
   {
     id: 'inspirationlab',
@@ -395,6 +435,7 @@ export const ASSETS: Asset[] = [
     location: '350 W Georgia St · Downtown',
     lat: 49.279659,
     lng: -123.115614,
+    capabilities: ['recording', 'digitization'],
   },
   {
     id: 'vivo',
@@ -406,6 +447,7 @@ export const ASSETS: Asset[] = [
     location: '2625 Kaslo St · Renfrew-Collingwood',
     lat: 49.2608255,
     lng: -123.0476033,
+    capabilities: ['recording'],
   },
   {
     id: 'artsfactory',
@@ -417,6 +459,7 @@ export const ASSETS: Asset[] = [
     location: '281 Industrial Ave · Strathcona',
     lat: 49.2704431,
     lng: -123.0990799,
+    capabilities: ['wood', 'ceramics'],
   },
   {
     id: 'victoria-makerspace',
@@ -428,15 +471,7 @@ export const ASSETS: Asset[] = [
     location: '4A–4476 Markham St · Saanich',
     lat: 48.4941015,
     lng: -123.4131897,
-  },
-  {
-    id: 'flowstatefounder',
-    name: 'Flow State Founder',
-    category: 'Programs & Accelerators',
-    url: 'https://flowstatefounder.ca/',
-    blurb:
-      "An 11-week accelerator built for women founders — cohorts of just six, landing podcast features, nailing the pitch, and winning grant funding ($850K+ secured) with zero equity taken.",
-    location: 'Cohort-based · Vancouver',
+    capabilities: ['laser', 'cnc', '3d-print', 'wood', 'metal', 'electronics'],
   },
   {
     id: 'foundedincanada',
@@ -446,6 +481,15 @@ export const ASSETS: Asset[] = [
     blurb:
       "Sovereign intelligence infrastructure for Canada's innovation economy — founders, capital, talent, programs and government connected in context by its Arctyk AI, on Canadian models and compute that never leave the country.",
     location: 'Vancouver · Nation-wide',
+  },
+  {
+    id: 'bitdevs',
+    name: 'BitDevs Vancouver',
+    category: 'Community & Events',
+    url: 'https://bitdevs.ca/',
+    blurb:
+      "Vancouver's chapter of the global BitDevs network — monthly Socratic Seminars where Bitcoin and protocol developers, researchers and the curious dissect the latest in permissionless tech.",
+    location: 'Monthly Socratic Seminar · Vancouver',
   },
   {
     id: 'zspace',
@@ -468,6 +512,7 @@ export const ASSETS: Asset[] = [
     location: '2221A McGarrigle Rd · Nanaimo',
     lat: 49.1939,
     lng: -123.9834,
+    capabilities: ['3d-print', 'wood', 'metal', 'robotics'],
   },
   {
     id: 'zenlaunchpad',
@@ -481,3 +526,35 @@ export const ASSETS: Asset[] = [
 ];
 
 export const MAPPED = ASSETS.filter((a) => a.lat !== undefined);
+
+// Curated walking trails through the ecosystem — chained venues, not single stops.
+export const PATHWAYS: Pathway[] = [
+  {
+    id: 'gastown-crawl',
+    name: 'The Gastown Founder Crawl',
+    blurb:
+      'Five rooms, one afternoon: coworking, an incubator, the cypherpunk clubhouse, the national memory bank and the coffee bar where first meetings actually happen.',
+    stops: ['friendsquarters', 'launch', 'dctrl', 'internetarchive', 'funk'],
+  },
+  {
+    id: 'maker-mile',
+    name: 'The Strathcona Maker Mile',
+    blurb:
+      'The densest making corridor in BC — hack space to artist clubhouse to 26,000 sq ft of fabrication to a glass furnace to a warehouse of studios, all inside one square mile.',
+    stops: ['vhs', 'slice', 'makerlabs', 'tcglass', 'artsfactory'],
+  },
+  {
+    id: 'free-build',
+    name: 'The Free-Build Circuit',
+    blurb:
+      'Zero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Drive, then show your work at open hack night.',
+    stops: ['inspirationlab', 'vtl', 'vhs'],
+  },
+  {
+    id: 'island-run',
+    name: 'The Island Maker Run',
+    blurb:
+      "Vancouver Island's two community labs, one highway apart — Saanich's Technology Park to Nanaimo's 24/7 open workshop.",
+    stops: ['victoria-makerspace', 'makerspace-nanaimo'],
+  },
+];
