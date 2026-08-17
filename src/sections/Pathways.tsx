@@ -47,9 +47,9 @@ export default function Pathways() {
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         {/* The Stack — how to use this site with friends & collaborators */}
         <div className="mb-16 reveal">
-          <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--forest)] mb-4">HOW TO USE THIS</div>
+          <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)] mb-4">HOW TO USE THIS</div>
           <h3 className="font-display uppercase text-3xl md:text-5xl leading-[0.95] max-w-3xl">
-            The builder's stack<span className="text-[var(--forest)]">.</span>
+            The builder's stack<span className="text-[var(--accent)]">.</span>
           </h3>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--ink)]/60">
             Three tools, one journey — no overlap, no competition. This site maps the physical
@@ -70,7 +70,7 @@ export default function Pathways() {
                     <div key={it.name}>
                       <div className="flex items-center gap-2">
                         <span className="font-display uppercase text-base tracking-wide">{it.name}</span>
-                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] bg-[#d52b1e] text-[var(--ink)] px-1.5 py-0.5">THIS SITE</span>
+                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] bg-[var(--brand)] text-[var(--brand-ink)] px-1.5 py-0.5">THIS SITE</span>
                       </div>
                       <p className="mt-1 text-[12px] leading-relaxed text-[var(--ink)]/55">{it.note}</p>
                     </div>
@@ -78,10 +78,10 @@ export default function Pathways() {
                   {s.partners.map((pt) => (
                     <a key={pt.name} href={pt.url} target="_blank" rel="noreferrer" className="group/p block">
                       <div className="flex items-center gap-2">
-                        <span className="font-display uppercase text-base tracking-wide group-hover/p:text-[var(--forest-hi)] transition-colors">
+                        <span className="font-display uppercase text-base tracking-wide group-hover/p:text-[var(--accent)] transition-colors">
                           {pt.name} ↗
                         </span>
-                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] border border-[var(--forest)] text-[var(--forest)] px-1.5 py-0.5">FRIEND</span>
+                        <span className="font-mono2 text-[8.5px] tracking-[0.14em] border border-[var(--line-strong)] text-[var(--ink-soft)] px-1.5 py-0.5">FRIEND</span>
                       </div>
                       <p className="mt-1 text-[12px] leading-relaxed text-[var(--ink)]/55">{pt.note}</p>
                     </a>
@@ -94,7 +94,7 @@ export default function Pathways() {
 
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
           <div>
-            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[#d52b1e] mb-4">03 / THE PATHWAYS</div>
+            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)] mb-4">03 / THE PATHWAYS</div>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.95]">
               Walk in like<br />a local.
             </h2>
@@ -116,13 +116,16 @@ export default function Pathways() {
                 <span className="font-mono2 text-[10px] tracking-[0.2em] text-[var(--ink)]/55">
                   TRAIL P{String(pi + 1)} · {p.stops.length} STOPS
                 </span>
-                <span className="font-mono2 text-[10px] tracking-[0.2em] text-[#d52b1e]">BW·BC</span>
+                <span className="font-mono2 text-[10px] tracking-[0.2em] text-[var(--accent)]">BW·BC</span>
               </div>
               <div className="p-6 md:p-8 flex flex-col flex-1">
                 <h3 className="font-display uppercase text-2xl md:text-3xl tracking-wide leading-tight">
                   {p.name}
                 </h3>
                 <p className="mt-3 text-[13.5px] leading-relaxed text-[var(--ink)]/70">{p.blurb}</p>
+                <p className="mt-3 font-mono2 text-[10px] tracking-[0.08em] text-[var(--accent)] leading-relaxed">
+                  FIRST MOVE: walk in, say what you're making, ask who's around. These rooms expect it.
+                </p>
 
                 {/* route diagram */}
                 <ol className="mt-6 flex-1 relative">
@@ -141,7 +144,7 @@ export default function Pathways() {
                           href={a.url}
                           target="_blank"
                           rel="noreferrer"
-                          className="text-sm text-[var(--ink)]/85 hover:text-[var(--forest-hi)] transition-colors"
+                          className="text-sm text-[var(--ink)]/85 hover:text-[var(--accent)] transition-colors"
                         >
                           {a.name}
                         </a>
@@ -155,7 +158,7 @@ export default function Pathways() {
 
                 <button
                   onClick={() => walk(p.id)}
-                  className="mt-7 self-start font-mono2 text-[10.5px] tracking-[0.18em] border border-[#d52b1e] text-[#d52b1e] px-5 py-2.5 hover:bg-[#d52b1e] hover:text-[var(--ink)] transition-colors"
+                  className="mt-7 self-start font-mono2 text-[10.5px] tracking-[0.18em] border border-[var(--accent)] text-[var(--accent)] px-5 py-2.5 hover:bg-[var(--brand)] hover:text-[var(--brand-ink)] transition-colors"
                 >
                   WALK IT ON THE MAP ↑
                 </button>
@@ -168,7 +171,7 @@ export default function Pathways() {
         <div className="mt-20 reveal">
           <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
             <h3 className="font-display uppercase text-3xl md:text-5xl leading-[0.95]">
-              The Orbit<span className="text-[var(--forest)]">.</span>
+              The Orbit<span className="text-[var(--accent)]">.</span>
             </h3>
             <p className="max-w-sm text-sm leading-relaxed text-[var(--ink)]/60">
               No front door, no pin — programs, communities and networks that move around or live online.
@@ -182,7 +185,7 @@ export default function Pathways() {
                 href={a.url}
                 target="_blank"
                 rel="noreferrer"
-                className="reveal ticket group border border-[var(--line)] hover:border-[var(--forest)] transition-colors duration-300 flex flex-col"
+                className="reveal ticket group border border-[var(--line)] hover:border-[var(--line-strong)] transition-colors duration-300 flex flex-col"
               >
                 <div className="flex items-center justify-between px-5 pt-4 pb-3 border-b border-dashed border-[var(--line)]">
                   <span
@@ -191,12 +194,12 @@ export default function Pathways() {
                   >
                     {a.category}
                   </span>
-                  <span className="font-mono2 text-[10px] text-[var(--ink)]/40 group-hover:text-[var(--forest-hi)] transition-colors">↗</span>
+                  <span className="font-mono2 text-[10px] text-[var(--ink)]/40 group-hover:text-[var(--accent)] transition-colors">↗</span>
                 </div>
                 <div className="p-5 flex flex-col flex-1">
                   <div className="font-display uppercase text-xl tracking-wide leading-tight">{a.name}</div>
                   <p className="mt-2.5 text-[12.5px] leading-relaxed text-[var(--ink)]/60 flex-1">{a.blurb}</p>
-                  <div className="mt-4 pt-3 border-t border-[var(--line)] font-mono2 text-[9.5px] tracking-[0.12em] text-[var(--forest)] uppercase">
+                  <div className="mt-4 pt-3 border-t border-[var(--line)] font-mono2 text-[9.5px] tracking-[0.12em] text-[var(--accent)] uppercase">
                     {a.location}
                   </div>
                 </div>
