@@ -18,12 +18,12 @@ export interface Asset {
 }
 
 export const CATEGORY_COLORS: Record<Category, string> = {
-  'Spaces & Places': '#ff8f0c',
-  'Programs & Accelerators': '#f6c944',
-  'Learning & Talent': '#b39ddb',
-  'Community & Events': '#00d5e9',
-  'Media & Storytelling': '#ff5872',
-  'Capital & Venture': '#7feb00',
+  'Spaces & Places': '#ff3b30',
+  'Programs & Accelerators': '#f5b800',
+  'Learning & Talent': '#34c76b',
+  'Community & Events': '#4fc3f7',
+  'Media & Storytelling': '#ff8fa3',
+  'Capital & Venture': '#e8ecf4',
 };
 
 export const CATEGORIES: Category[] = [
@@ -35,7 +35,7 @@ export const CATEGORIES: Category[] = [
   'Capital & Venture',
 ];
 
-// Array order = directory ranking (01–25).
+// Array order = directory ranking (01–36).
 export const ASSETS: Asset[] = [
   {
     id: 'dctrl',
@@ -289,6 +289,125 @@ export const ASSETS: Asset[] = [
     location: '800–1500 W Georgia St · Coal Harbour',
     lat: 49.2901038,
     lng: -123.1307386,
+  },
+  {
+    id: 'makerlabs',
+    name: 'MakerLabs',
+    category: 'Spaces & Places',
+    url: 'https://www.makerlabs.com/',
+    blurb:
+      "Vancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, ceramics, CNC routers, laser cutters and a fab team that can build almost anything.",
+    location: '780 E Cordova St · Strathcona',
+    lat: 49.2818969,
+    lng: -123.0875456,
+  },
+  {
+    id: 'makercube',
+    name: 'Maker Cube',
+    category: 'Spaces & Places',
+    url: 'https://makercube.ca/',
+    blurb:
+      "Langley's premier makerspace — woodworking and welding shops, CNC and laser cutters, 3D printing, a ceramics studio, rentable studio 'cubes' and classes for every skill level.",
+    location: '104B–5947 206A St · Langley',
+    lat: 49.0889,
+    lng: -122.6503,
+  },
+  {
+    id: 'vtl',
+    name: 'Vancouver Tool Library',
+    category: 'Spaces & Places',
+    url: 'https://vancouvertoollibrary.com/',
+    blurb:
+      "Canada's original tool-lending library — a member-run co-op on the Drive lending 1,700+ tools for home repair, gardening and bike maintenance, plus affordable public workshops.",
+    location: '3448 Commercial St · The Drive',
+    lat: 49.2536988,
+    lng: -123.0678595,
+  },
+  {
+    id: 'zenmakerlab',
+    name: 'Zen Maker Lab',
+    category: 'Learning & Talent',
+    url: 'https://www.zenmakerlab.com/',
+    blurb:
+      'North Shore maker lab making technology accessible since 2013 — STEAM programs, camps and after-school clubs in coding, robotics, 3D printing and design for kids, youth and adults.',
+    location: '224–125 Victory Ship Way · The Shipyards, North Van',
+    lat: 49.30955,
+    lng: -123.07851,
+  },
+  {
+    id: 'tcglass',
+    name: 'Terminal City Glass Co-op',
+    category: 'Spaces & Places',
+    url: 'https://terminalcityglass.com/',
+    blurb:
+      "Canada's first non-profit co-operative glass studio — shared furnaces, kilns and cold-working gear plus public classes, keeping an expensive craft accessible in Strathcona.",
+    location: '1191 Parker St · Strathcona',
+    lat: 49.275975,
+    lng: -123.0792044,
+  },
+  {
+    id: 'inspirationlab',
+    name: 'VPL Inspiration Lab',
+    category: 'Spaces & Places',
+    url: 'https://www.vpl.ca/branches/central/level-3/inspiration-lab',
+    blurb:
+      "The city's free digital creation space on Level 3 of the Central Library — recording studios, digitization stations, video editing and self-publishing tools, open to everyone.",
+    location: '350 W Georgia St · Downtown',
+    lat: 49.279659,
+    lng: -123.115614,
+  },
+  {
+    id: 'vivo',
+    name: 'VIVO Media Arts',
+    category: 'Media & Storytelling',
+    url: 'https://www.vivomediaarts.com/',
+    blurb:
+      'Artist-run media arts centre since 1973 — production studios, equipment access, exhibitions, residencies and the Crista Dahl archive, stewarding five decades of Vancouver media art.',
+    location: '2625 Kaslo St · Renfrew-Collingwood',
+    lat: 49.2608255,
+    lng: -123.0476033,
+  },
+  {
+    id: 'artsfactory',
+    name: 'The Arts Factory',
+    category: 'Spaces & Places',
+    url: 'https://www.artsfactorysociety.ca/',
+    blurb:
+      'A 21,000 sq ft cultural hub in a transformed industrial warehouse — affordable studios, workshops and coworking for artists working in sculpture, paint, fabric, wood and ceramics.',
+    location: '281 Industrial Ave · Strathcona',
+    lat: 49.2704431,
+    lng: -123.0990799,
+  },
+  {
+    id: 'victoria-makerspace',
+    name: 'Victoria Makerspace',
+    category: 'Spaces & Places',
+    url: 'https://makerspace.ca/',
+    blurb:
+      "Vancouver Island's member-operated makerspace at the Technology Park — a collaborative workshop where makers of every background share tools, knowledge and 24/7 access.",
+    location: '4A–4476 Markham St · Saanich',
+    lat: 48.4941015,
+    lng: -123.4131897,
+  },
+  {
+    id: 'makerspace-nanaimo',
+    name: 'Makerspace Nanaimo',
+    category: 'Spaces & Places',
+    url: 'https://makerspacenanaimo.org/',
+    blurb:
+      "Mid-Island's open community lab since 2013 — workshop, studio and social hub with 24/7 member access, from 3D printing and robotics to woodworking and metal.",
+    location: '2221A McGarrigle Rd · Nanaimo',
+    lat: 49.1939,
+    lng: -123.9834,
+  },
+  {
+    id: 'zenlaunchpad',
+    name: 'Zen LaunchPad',
+    category: 'Programs & Accelerators',
+    url: 'https://www.zenlaunchpad.com/',
+    blurb:
+      'North Vancouver venture studio and incubator for robotics, IoT and AR/VR ventures — taking teams from idea to prototype, with Canada Startup Visa access and direct funding.',
+    location: 'North Vancouver',
   },
 ];
 

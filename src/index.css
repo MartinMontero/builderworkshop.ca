@@ -6,11 +6,12 @@
   --ink: #12141f;
   --ink-deep: #0c0e16;
   --cream: #fbfaf5;
-  --orange: #ff8f0c;
-  --yellow: #f6c944;
-  --cyan: #00d5e9;
-  --pink: #ff5872;
-  --green: #7feb00;
+  --red: #ff3b30;
+  --red-deep: #d52b1e;
+  --gold: #f5b800;
+  --blue: #4fc3f7;
+  --green: #34c76b;
+  --salmon: #ff8fa3;
   --line: rgba(251, 250, 245, 0.14);
   --line-dark: rgba(18, 20, 31, 0.16);
 }
@@ -29,8 +30,8 @@ body {
 }
 
 ::selection {
-  background: var(--orange);
-  color: var(--ink-deep);
+  background: var(--red);
+  color: var(--cream);
 }
 
 .font-display {
@@ -164,8 +165,8 @@ a:hover .u-grow {
   animation: bw-pulse 1.6s ease-out infinite;
 }
 @keyframes bw-pulse {
-  0% { box-shadow: 0 0 0 1.5px rgba(251,250,245,0.85), 0 0 0 0 rgba(255, 143, 12, 0.55); }
-  100% { box-shadow: 0 0 0 1.5px rgba(251,250,245,0.85), 0 0 0 18px rgba(255, 143, 12, 0); }
+  0% { box-shadow: 0 0 0 1.5px rgba(251,250,245,0.85), 0 0 0 0 rgba(255, 59, 48, 0.55); }
+  100% { box-shadow: 0 0 0 1.5px rgba(251,250,245,0.85), 0 0 0 18px rgba(255, 59, 48, 0); }
 }
 
 /* ---------- scroll cue ---------- */
