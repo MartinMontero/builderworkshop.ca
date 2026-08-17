@@ -6,9 +6,9 @@ export default function Directory() {
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
           <div>
-            <div className="font-mono2 text-[11px] tracking-[0.22em] text-[var(--accent)] mb-4">02 / THE PLAYERS</div>
+            <div className="eyebrow mb-4">THE PLAYERS</div>
             <h2 className="font-display uppercase text-5xl md:text-7xl leading-[0.95]">
-              Forty-six<br />ways in.
+              Forty-six<br />places to start.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-[var(--ink)]/70">
