@@ -267,6 +267,17 @@ export const ASSETS: Asset[] = [
     verified: '2026-08',
   },
   {
+    id: 'mitacs',
+    stages: ['ONE → MVP', 'MVP → SCALE'],
+    name: 'Mitacs',
+    category: 'Programs & Accelerators',
+    url: 'https://innovation.mitacs.ca/en/innovate-now',
+    blurb:
+      'National not-for-profit headquartered at UBC that co-funds applied R&D, pairing companies with graduate researchers and postdoctoral fellows to cut the cost and risk of building something new.',
+    location: '6190 Agronomy Rd · UBC, Vancouver',
+    verified: '2026-08',
+  },
+  {
     id: 'venturelabs',
     stages: ['MVP → SCALE'],
     name: 'SFU VentureLabs',
@@ -439,6 +450,17 @@ export const ASSETS: Asset[] = [
     blurb:
       'AI film production studio, academy and pipeline tools — multimodal media at the intersection of AI and cinema, made in British Columbia.',
     location: 'British Columbia',
+    verified: '2026-08',
+  },
+  {
+    id: 'panache',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
+    name: 'Panache Ventures',
+    category: 'Capital & Venture',
+    url: 'https://www.panache.vc/',
+    blurb:
+      "Canada's pre-seed fund, writing first cheques up to $1.5M from a $100M second fund — often the first institutional investor on the cap table. Vancouver is one of four offices, and they produce BC Founders Day.",
+    location: 'Vancouver office · national fund',
     verified: '2026-08',
   },
   {

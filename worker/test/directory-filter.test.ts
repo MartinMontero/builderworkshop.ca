@@ -1,11 +1,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { filterDirectory } from '../../src/lib/guide.ts';
-import { ASSETS } from '../../src/data/assets.ts';
+import { ACTIVE, ASSETS } from '../../src/data/assets.ts';
 
-test('clearing a query restores all 46 entries', () => {
-  assert.equal(ASSETS.length, 46);
-  assert.equal(filterDirectory(ASSETS, null, null).length, 46);
+// Derived from the data, never a literal — the directory grows and a hardcoded
+// count turns a correct addition into a red build.
+test('clearing a query restores every active entry', () => {
+  assert.ok(ACTIVE.length > 0);
+  assert.equal(filterDirectory(ACTIVE, null, null).length, ACTIVE.length);
+  assert.equal(ACTIVE.length, ASSETS.filter((a) => !a.closed).length);
 });
 
 test('an active query filters to the returned entries in rank order', () => {
