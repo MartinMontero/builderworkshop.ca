@@ -11,7 +11,7 @@ const result = await build({
   write: false,
 });
 const code = result.outputFiles[0].text;
-const { ASSETS, PATHWAYS, CATEGORIES, CATEGORY_COLORS } = await import(
+const { ASSETS, PATHWAYS, CATEGORIES, CATEGORY_COLORS, STAGES, STAGE_COLORS } = await import(
   'data:text/javascript;base64,' + Buffer.from(code).toString('base64')
 );
 
@@ -23,6 +23,7 @@ const players = ASSETS.map((a, i) => ({
   id: a.id,
   name: a.name,
   category: a.category,
+  stages: a.stages,
   url: a.url,
   blurb: a.blurb,
   location: a.location,
@@ -38,6 +39,8 @@ const dataset = {
   count: players.length,
   categories: CATEGORIES,
   categoryColors: CATEGORY_COLORS,
+  stages: STAGES,
+  stageColors: STAGE_COLORS,
   players,
   pathways: PATHWAYS.map((p) => ({
     id: p.id,
@@ -63,6 +66,7 @@ const geojson = {
         id: p.id,
         name: p.name,
         category: p.category,
+        stages: p.stages,
         url: p.url,
         location: p.location,
         ...(p.capabilities ? { capabilities: p.capabilities } : {}),

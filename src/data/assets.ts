@@ -6,10 +6,21 @@ export type Category =
   | 'Media & Storytelling'
   | 'Capital & Venture';
 
+export type Stage = 'ZERO → ONE' | 'ONE → MVP' | 'MVP → SCALE';
+
+export const STAGES: Stage[] = ['ZERO → ONE', 'ONE → MVP', 'MVP → SCALE'];
+
+export const STAGE_COLORS: Record<Stage, string> = {
+  'ZERO → ONE': '#d52b1e',
+  'ONE → MVP': '#f0a500',
+  'MVP → SCALE': 'var(--forest)',
+};
+
 export interface Asset {
   id: string;
   name: string;
   category: Category;
+  stages: Stage[];
   url: string;
   blurb: string;
   location: string;
@@ -63,6 +74,7 @@ export const CAPABILITY_LABELS: Record<string, string> = {
 export const ASSETS: Asset[] = [
   {
     id: 'dctrl',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'DCTRL',
     category: 'Spaces & Places',
     url: 'https://www.dctrl.wtf/',
@@ -75,6 +87,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'launch',
+    stages: ['ZERO → ONE', 'ONE → MVP', 'MVP → SCALE'],
     name: 'Launch Academy',
     category: 'Programs & Accelerators',
     url: 'https://www.launchacademy.ca/',
@@ -87,6 +100,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'friendsquarters',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'FriendsQuarters',
     category: 'Spaces & Places',
     url: 'https://www.friendsquarters.com/',
@@ -100,6 +114,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'dwebyvr',
+    stages: ['ZERO → ONE'],
     name: 'DWeb Vancouver',
     category: 'Community & Events',
     url: 'https://dwebyvr.org/',
@@ -110,6 +125,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'internetarchive',
+    stages: ['ZERO → ONE'],
     name: 'Internet Archive Canada',
     category: 'Learning & Talent',
     url: 'https://internetarchivecanada.org/',
@@ -123,6 +139,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'basecamp',
+    stages: ['ONE → MVP'],
     name: 'Basecamp',
     category: 'Spaces & Places',
     url: 'https://basecampyvr.ca/',
@@ -135,6 +152,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'ethoslab',
+    stages: ['ZERO → ONE'],
     name: 'Ethọ́s Lab',
     category: 'Learning & Talent',
     url: 'https://ethoslab.ca/',
@@ -148,6 +166,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'funk',
+    stages: ['ZERO → ONE'],
     name: 'FUNK Coffee Bar',
     category: 'Spaces & Places',
     url: 'https://funk.coffee',
@@ -160,6 +179,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'slice',
+    stages: ['ZERO → ONE'],
     name: 'Slice of Life',
     category: 'Spaces & Places',
     url: 'https://www.slicevancouver.ca/',
@@ -172,6 +192,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'vhs',
+    stages: ['ONE → MVP'],
     name: 'Vancouver Hack Space',
     category: 'Spaces & Places',
     url: 'https://vanhack.ca/',
@@ -185,6 +206,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'flowstatefounder',
+    stages: ['ONE → MVP', 'MVP → SCALE'],
     name: 'Flow State Founder',
     category: 'Programs & Accelerators',
     url: 'https://flowstatefounder.ca/',
@@ -195,6 +217,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'bcai',
+    stages: ['ZERO → ONE'],
     name: 'BC + AI Ecosystem',
     category: 'Community & Events',
     url: 'https://bc-ai.ca/',
@@ -205,6 +228,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'northhouse',
+    stages: ['ONE → MVP'],
     name: 'North House',
     category: 'Spaces & Places',
     url: 'https://www.joinnorthhouse.com/',
@@ -217,6 +241,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'bcfoundersday',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'BC Founders Day',
     category: 'Community & Events',
     url: 'https://www.bcfoundersday.com/',
@@ -227,6 +252,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'frontiercollective',
+    stages: ['MVP → SCALE'],
     name: 'Frontier Collective',
     category: 'Community & Events',
     url: 'https://www.thefrontiercollective.com/',
@@ -237,6 +263,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'venturelabs',
+    stages: ['MVP → SCALE'],
     name: 'SFU VentureLabs',
     category: 'Programs & Accelerators',
     url: 'https://venturelabs.ca/',
@@ -249,6 +276,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'althra',
+    stages: ['ONE → MVP'],
     name: 'Althra',
     category: 'Programs & Accelerators',
     url: 'https://althra.ca/',
@@ -259,6 +287,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'foundersboost',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'FoundersBoost Vancouver',
     category: 'Programs & Accelerators',
     url: 'https://www.foundersboost.com/programs/vancouver',
@@ -269,6 +298,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'foundersquest',
+    stages: ['ZERO → ONE'],
     name: "Founder's Quest",
     category: 'Programs & Accelerators',
     url: 'https://foundersquest.ca/',
@@ -279,6 +309,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'alacrity',
+    stages: ['MVP → SCALE'],
     name: 'Alacrity Canada',
     category: 'Programs & Accelerators',
     url: 'https://www.alacritycanada.com',
@@ -289,6 +320,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'cdm',
+    stages: ['ZERO → ONE'],
     name: 'Centre for Digital Media',
     category: 'Learning & Talent',
     url: 'https://thecdm.ca/',
@@ -301,6 +333,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'sfusurrey',
+    stages: ['ZERO → ONE'],
     name: 'SFU Surrey',
     category: 'Learning & Talent',
     url: 'https://www.sfu.ca/surrey/about/our-locations/sfu-surrey-plaza.html',
@@ -313,6 +346,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'civicinnovationlab',
+    stages: ['ZERO → ONE'],
     name: 'Civic Innovation Lab',
     category: 'Programs & Accelerators',
     url: 'https://civicinnovationlab.ca/',
@@ -325,6 +359,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'youngguns',
+    stages: ['ZERO → ONE'],
     name: 'Young Guns Studio',
     category: 'Learning & Talent',
     url: 'https://www.ygstudio.ca/',
@@ -335,6 +370,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'vsw',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'Vancouver Startup Week',
     category: 'Community & Events',
     url: 'https://www.vanstartupweek.ca/',
@@ -345,6 +381,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'womentransformingcities',
+    stages: ['ZERO → ONE'],
     name: 'Women Transforming Cities',
     category: 'Community & Events',
     url: 'https://www.womentransformingcities.org/',
@@ -355,6 +392,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'buildrs',
+    stages: ['ONE → MVP'],
     name: 'buildrs.dev',
     category: 'Community & Events',
     url: 'https://buildrs.dev/',
@@ -365,6 +403,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'aistartuphub',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'AI Startup Hub',
     category: 'Community & Events',
     url: 'https://www.linkedin.com/company/ai-startup-hub/',
@@ -375,6 +414,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'vtj',
+    stages: ['ONE → MVP', 'MVP → SCALE'],
     name: 'Vancouver Tech Journal',
     category: 'Media & Storytelling',
     url: 'https://vantechjournal.com/',
@@ -387,6 +427,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'mml',
+    stages: ['ONE → MVP'],
     name: 'Multimodal Media Lab',
     category: 'Media & Storytelling',
     url: 'https://www.themml.ca/',
@@ -397,6 +438,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'vst',
+    stages: ['MVP → SCALE'],
     name: 'Victory Square Technologies',
     category: 'Capital & Venture',
     url: 'https://victorysquare.com/',
@@ -409,6 +451,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'makerlabs',
+    stages: ['ONE → MVP'],
     name: 'MakerLabs',
     category: 'Spaces & Places',
     url: 'https://www.makerlabs.com/',
@@ -422,6 +465,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'makercube',
+    stages: ['ONE → MVP'],
     name: 'Maker Cube',
     category: 'Spaces & Places',
     url: 'https://makercube.ca/',
@@ -435,6 +479,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'vtl',
+    stages: ['ZERO → ONE'],
     name: 'Vancouver Tool Library',
     category: 'Spaces & Places',
     url: 'https://vancouvertoollibrary.com/',
@@ -448,6 +493,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'zenmakerlab',
+    stages: ['ZERO → ONE'],
     name: 'Zen Maker Lab',
     category: 'Learning & Talent',
     url: 'https://www.zenmakerlab.com/',
@@ -461,6 +507,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'tcglass',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'Terminal City Glass Co-op',
     category: 'Spaces & Places',
     url: 'https://terminalcityglass.com/',
@@ -474,6 +521,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'inspirationlab',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'VPL Inspiration Lab',
     category: 'Spaces & Places',
     url: 'https://www.vpl.ca/branches/central/level-3/inspiration-lab',
@@ -487,6 +535,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'vivo',
+    stages: ['ONE → MVP'],
     name: 'VIVO Media Arts',
     category: 'Media & Storytelling',
     url: 'https://www.vivomediaarts.com/',
@@ -500,6 +549,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'artsfactory',
+    stages: ['ONE → MVP'],
     name: 'The Arts Factory',
     category: 'Spaces & Places',
     url: 'https://www.artsfactorysociety.ca/',
@@ -513,6 +563,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'victoria-makerspace',
+    stages: ['ONE → MVP'],
     name: 'Victoria Makerspace',
     category: 'Spaces & Places',
     url: 'https://makerspace.ca/',
@@ -526,6 +577,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'foundedincanada',
+    stages: ['ONE → MVP', 'MVP → SCALE'],
     name: 'FoundedIn Canada',
     category: 'Community & Events',
     url: 'https://foundedincanada.com/',
@@ -536,6 +588,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'bitdevs',
+    stages: ['ZERO → ONE'],
     name: 'BitDevs Vancouver',
     category: 'Community & Events',
     url: 'https://bitdevs.ca/',
@@ -546,6 +599,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'futurpreneur',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'Futurpreneur',
     category: 'Capital & Venture',
     url: 'https://futurpreneur.ca/',
@@ -556,6 +610,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'zspace',
+    stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'Z-Space',
     category: 'Spaces & Places',
     url: 'https://z-space.ca/',
@@ -568,6 +623,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'makerspace-nanaimo',
+    stages: ['ONE → MVP'],
     name: 'Makerspace Nanaimo',
     category: 'Spaces & Places',
     url: 'https://makerspacenanaimo.org/',
@@ -581,6 +637,7 @@ export const ASSETS: Asset[] = [
   },
   {
     id: 'zenlaunchpad',
+    stages: ['ONE → MVP', 'MVP → SCALE'],
     name: 'Zen LaunchPad',
     category: 'Programs & Accelerators',
     url: 'https://www.zenlaunchpad.com/',
@@ -622,5 +679,53 @@ export const PATHWAYS: Pathway[] = [
     blurb:
       "Vancouver Island's two community labs, one highway apart — Saanich's Technology Park to Nanaimo's 24/7 open workshop.",
     stops: ['victoria-makerspace', 'makerspace-nanaimo'],
+  },
+];
+
+// The builder's stack — the journey, and which tool covers each stage.
+// Single source of truth; Pathways.tsx imports this.
+export interface StackItem {
+  name: string;
+  here?: boolean;
+  url?: string;
+  note: string;
+}
+
+export interface StackStage {
+  stage: Stage;
+  color: string;
+  items: StackItem[];
+  partners: StackItem[];
+}
+
+export const STACK: StackStage[] = [
+  {
+    stage: 'ZERO → ONE',
+    color: STAGE_COLORS['ZERO → ONE'],
+    items: [
+      { name: 'Find a room', here: true, note: 'The asset map + capability filters — where to sit down and start, free or cheap.' },
+      { name: 'Walk a trail', here: true, note: 'The pathways — a curated first afternoon, not a blank directory.' },
+      { name: 'Learn & meet', here: true, note: 'The directory + The Orbit — schools, communities, programs that back you early.' },
+    ],
+    partners: [],
+  },
+  {
+    stage: 'ONE → MVP',
+    color: STAGE_COLORS['ONE → MVP'],
+    items: [],
+    partners: [
+      { name: 'buildrs.dev', url: 'https://buildrs.dev/', note: 'Every tech event on one calendar, partner drops (Linear, GitHub, Tally), and the product directory to ship into.' },
+      { name: 'FoundedIn Canada', url: 'https://foundedincanada.com/', note: 'Funding & grant discovery, the SR&ED estimator, investor-readiness scorecard, name/trademark check.' },
+    ],
+  },
+  {
+    stage: 'MVP → SCALE',
+    color: STAGE_COLORS['MVP → SCALE'],
+    items: [
+      { name: 'Stay & grow here', here: true, note: 'The ecosystem you built in — accelerators, capital, media, and the map that keeps you rooted in BC.' },
+    ],
+    partners: [
+      { name: 'FoundedIn Canada', url: 'https://foundedincanada.com/', note: 'The national intelligence layer — federal programs, ecosystem connections, scaling beyond BC.' },
+    ],
   },
 ];

@@ -1,37 +1,4 @@
-import { ASSETS, PATHWAYS, CATEGORY_COLORS } from '../data/assets';
-
-// The builder's stack — the journey, and which tool covers each stage.
-const STACK = [
-  {
-    stage: 'ZERO → ONE',
-    color: '#d52b1e',
-    items: [
-      { name: 'Find a room', here: true, note: 'The asset map + capability filters — where to sit down and start, free or cheap.' },
-      { name: 'Walk a trail', here: true, note: 'The pathways — a curated first afternoon, not a blank directory.' },
-      { name: 'Learn & meet', here: true, note: 'The directory + The Orbit — schools, communities, programs that back you early.' },
-    ],
-    partners: [],
-  },
-  {
-    stage: 'ONE → MVP',
-    color: '#f0a500',
-    items: [],
-    partners: [
-      { name: 'buildrs.dev', url: 'https://buildrs.dev/', note: 'Every tech event on one calendar, partner drops (Linear, GitHub, Tally), and the product directory to ship into.' },
-      { name: 'FoundedIn Canada', url: 'https://foundedincanada.com/', note: 'Funding & grant discovery, the SR&ED estimator, investor-readiness scorecard, name/trademark check.' },
-    ],
-  },
-  {
-    stage: 'MVP → SCALE',
-    color: 'var(--forest)',
-    items: [
-      { name: 'Stay & grow here', here: true, note: 'The ecosystem you built in — accelerators, capital, media, and the map that keeps you rooted in BC.' },
-    ],
-    partners: [
-      { name: 'FoundedIn Canada', url: 'https://foundedincanada.com/', note: 'The national intelligence layer — federal programs, ecosystem connections, scaling beyond BC.' },
-    ],
-  },
-];
+import { ASSETS, PATHWAYS, CATEGORY_COLORS, STACK } from '../data/assets';
 
 export default function Pathways() {
   const byId = Object.fromEntries(ASSETS.map((a) => [a.id, a]));

@@ -1,6 +1,10 @@
-import { ASSETS, CATEGORY_COLORS } from '../data/assets';
+import { useState } from 'react';
+import { ASSETS, CATEGORY_COLORS, STAGES, STAGE_COLORS, type Stage } from '../data/assets';
 
 export default function Directory() {
+  const [stage, setStage] = useState<Stage | null>(null);
+  const shown = stage ? ASSETS.filter((a) => a.stages.includes(stage)) : ASSETS;
+
   return (
     <section id="players" className="relative bg-[var(--bg)] py-20 md:py-28 border-t border-[var(--line)]">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
@@ -18,8 +22,44 @@ export default function Directory() {
           </p>
         </div>
 
+        <div className="flex flex-wrap items-center gap-2 mb-8 reveal" role="group" aria-label="Filter players by builder stage">
+          <button
+            type="button"
+            onClick={() => setStage(null)}
+            aria-pressed={stage === null}
+            className={`font-mono2 text-[10px] tracking-[0.14em] uppercase px-3 py-1.5 border transition-colors duration-200 ${
+              stage === null
+                ? 'border-[var(--ink)] text-[var(--ink)]'
+                : 'border-[var(--line)] text-[var(--ink)]/55 hover:text-[var(--ink)]'
+            }`}
+          >
+            All stages
+          </button>
+          {STAGES.map((s) => (
+            <button
+              key={s}
+              type="button"
+              onClick={() => setStage(stage === s ? null : s)}
+              aria-pressed={stage === s}
+              className={`font-mono2 text-[10px] tracking-[0.14em] uppercase px-3 py-1.5 border transition-colors duration-200 ${
+                stage === s ? 'text-[var(--bg)]' : 'border-[var(--line)] text-[var(--ink)]/55 hover:text-[var(--ink)]'
+              }`}
+              style={
+                stage === s
+                  ? { background: STAGE_COLORS[s], borderColor: STAGE_COLORS[s] }
+                  : undefined
+              }
+            >
+              {s}
+            </button>
+          ))}
+          <span className="font-mono2 text-[10px] tracking-[0.08em] text-[var(--ink)]/50 ml-1" aria-live="polite">
+            {shown.length} of {ASSETS.length}
+          </span>
+        </div>
+
         <div className="divide-y divide-[var(--line)] border-t border-b border-[var(--line)]">
-          {ASSETS.map((a, i) => {
+          {shown.map((a, i) => {
             const podium = i < 10;
             const tail = i >= 26;
             return (
@@ -59,6 +99,17 @@ export default function Directory() {
                     style={{ background: CATEGORY_COLORS[a.category] }}
                   />
                   {a.category}
+                  <span className="flex flex-wrap gap-1 mt-1.5">
+                    {a.stages.map((st) => (
+                      <span
+                        key={st}
+                        className="inline-block text-[8.5px] tracking-[0.1em] px-1.5 py-0.5 border"
+                        style={{ color: STAGE_COLORS[st], borderColor: STAGE_COLORS[st] }}
+                      >
+                        {st}
+                      </span>
+                    ))}
+                  </span>
                 </div>
                 <div className="md:col-span-2 font-mono2 text-[10.5px] tracking-[0.08em] text-[var(--ink)]/60 uppercase">
                   {a.location}
