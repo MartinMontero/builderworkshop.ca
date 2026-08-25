@@ -4,3 +4,16 @@
   X-Frame-Options: DENY
   Permissions-Policy: geolocation=(), camera=(), microphone=()
   Content-Security-Policy: default-src 'self'; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://www.kimi.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'sha256-Vs/byaaj71rvAOADEIDSm/468H5mIeUMYcWIkcj1qn4=' 'sha256-bqXksTohoNwo0KbTo76koU5OQlLO4/Ks1sVE3sxb7Hk=' https://static.cloudflareinsights.com; connect-src 'self' https://static.cloudflareinsights.com https://builderworkshop-guide.these3remain.workers.dev; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+
+# ---------------------------------------------------------------------------
+# Open data (CC BY 4.0). These files are published for reuse, so they must be
+# readable cross-origin — without this header a browser fetches them and then
+# refuses to hand the response to the page, which is silent from the server's
+# side and looks like a client bug. LUME's city-mode venue picker reads
+# ecosystem.json directly from the browser.
+# ---------------------------------------------------------------------------
+/ecosystem.json
+  Access-Control-Allow-Origin: *
+
+/ecosystem.geojson
+  Access-Control-Allow-Origin: *
