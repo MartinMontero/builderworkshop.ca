@@ -23,7 +23,6 @@
 // ecosystem.json for the canonical URL rather than trusting the index.
 
 import { build } from 'esbuild';
-import { readFileSync } from 'node:fs';
 
 const DRY = process.argv.includes('--dry-run');
 const ACCOUNT = process.env.CF_ACCOUNT_ID;

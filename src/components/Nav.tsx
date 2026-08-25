@@ -17,17 +17,16 @@ export default function Nav() {
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState<string>('dark');
-
-  useEffect(() => {
-    setTheme(document.documentElement.getAttribute('data-theme') || 'dark');
-  }, []);
+  // the boot script in index.html has already stamped data-theme by now
+  const [theme, setTheme] = useState<string>(
+    () => document.documentElement.getAttribute('data-theme') || 'dark'
+  );
 
   const toggleTheme = () => {
     const next = theme === 'dark' ? 'light' : 'dark';
     setTheme(next);
     document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('bw-theme', next); } catch {}
+    try { localStorage.setItem('bw-theme', next); } catch { /* storage unavailable (private mode) — theme still applies for this visit */ }
   };
 
   useEffect(() => {

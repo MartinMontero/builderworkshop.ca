@@ -27,7 +27,7 @@ const mark=(qid,key)=>{const k=key.replace('.md','').replace(/^pathway-(.+)$/,'p
 let G=0,M=0,B=0,dead=0;
 console.log('query'.padEnd(11)+'n'.padEnd(4)+'results (+good ~marginal !bad)');
 for(const l of qlines){
- const [qid,qtext]=l.split('|');
+ const [qid]=l.split('|');
  const raw=fs.readFileSync(path.join(S,'final',qid+'.json'),'utf8');
  const m=raw.match(/\{[\s\S]*\}/);
  if(!m){console.log(qid.padEnd(11)+'ERR');continue}
