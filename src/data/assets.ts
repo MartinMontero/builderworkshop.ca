@@ -28,6 +28,11 @@ export interface Asset {
   lng?: number;
   capabilities?: string[];
   verified?: string; // YYYY-MM last re-verified
+  // A closed entry keeps its record instead of disappearing. Directories show
+  // what exists; this map also remembers what existed. Closed entries are
+  // excluded from every active surface and from the search index, but stay in
+  // the open-data export with the date and reason recorded.
+  closed?: { date: string; note: string }; // date = YYYY-MM we recorded it
 }
 
 export interface Pathway {
@@ -504,6 +509,10 @@ export const ASSETS: Asset[] = [
     lat: 49.30955,
     lng: -123.07851,
     capabilities: ['3d-print', 'laser', 'robotics'],
+    closed: {
+      date: '2026-08',
+      note: 'Permanently closed. The North Vancouver Shipyards location has shut and the website no longer resolves. Recorded 2026-08 after the link patrol returned 404 and closure was confirmed independently.',
+    },
   },
   {
     id: 'tcglass',
@@ -648,7 +657,13 @@ export const ASSETS: Asset[] = [
   },
 ];
 
-export const MAPPED = ASSETS.filter((a) => a.lat !== undefined);
+// Every active surface reads ACTIVE, never ASSETS. ASSETS is the full record
+// including closed entries, and is what the open-data export publishes.
+export const ACTIVE: Asset[] = ASSETS.filter((a) => !a.closed);
+
+export const CLOSED: Asset[] = ASSETS.filter((a) => a.closed);
+
+export const MAPPED = ACTIVE.filter((a) => a.lat !== undefined);
 
 // Curated walking trails through the ecosystem — chained venues, not single stops.
 export const PATHWAYS: Pathway[] = [

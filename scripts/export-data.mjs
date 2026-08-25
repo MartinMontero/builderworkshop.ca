@@ -27,16 +27,23 @@ const players = ASSETS.map((a, i) => ({
   url: a.url,
   blurb: a.blurb,
   location: a.location,
+  ...(a.verified ? { verified: a.verified } : {}),
   ...(a.lat !== undefined ? { lat: a.lat, lng: a.lng } : {}),
   ...(a.capabilities ? { capabilities: a.capabilities } : {}),
+  // Closed entries stay in the open data with the date and reason recorded.
+  // The map is what still exists; the export is what existed.
+  ...(a.closed ? { closed: a.closed } : {}),
 }));
+
+const active = players.filter((p) => !p.closed);
 
 const dataset = {
   name: 'Builder Workshop — BC innovation ecosystem directory',
   url: site,
   generated,
   license: 'CC BY 4.0 — credit builderworkshop.ca',
-  count: players.length,
+  count: active.length,
+  closedCount: players.length - active.length,
   categories: CATEGORIES,
   categoryColors: CATEGORY_COLORS,
   stages: STAGES,
@@ -56,7 +63,7 @@ const geojson = {
   type: 'FeatureCollection',
   name: 'builderworkshop.ca asset map',
   generated,
-  features: players
+  features: active
     .filter((p) => p.lat !== undefined)
     .map((p) => ({
       type: 'Feature',
@@ -75,4 +82,7 @@ const geojson = {
 };
 
 writeFileSync('public/ecosystem.geojson', JSON.stringify(geojson, null, 2) + '\n');
-console.log(`Wrote public/ecosystem.json (${players.length} players) and public/ecosystem.geojson (${geojson.features.length} points)`);
+console.log(
+  `Wrote public/ecosystem.json (${active.length} active + ${players.length - active.length} closed) ` +
+    `and public/ecosystem.geojson (${geojson.features.length} points)`
+);
