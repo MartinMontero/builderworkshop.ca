@@ -5,7 +5,7 @@
 // The static site must keep working when the Worker is down: askGuide()
 // failures surface as { status: 'error' } and never block the directory.
 
-import type { Asset, Stage } from '../data/assets';
+import type { Asset, Category, Stage } from '../data/assets';
 
 export const GUIDE_ORIGIN = 'https://builderworkshop-guide.these3remain.workers.dev';
 
@@ -26,8 +26,24 @@ export interface GuideGap {
   categories: string[]; // closest categories, from near-miss retrieval
 }
 
+// A card intent is deterministic navigation: no model call, no network, the
+// same result every time. It shares the Directory/AssetMap bus with query
+// results so there is one filtered-state mechanism, not two.
+export interface IntentState {
+  status: 'intent';
+  id: string;
+  label: string;
+  heading: string; // replaces the Directory heading while active
+  note: string; // one line under the heading
+  categories: Category[];
+  stage: Stage | null; // additionally require this stage
+  focus?: 'map'; // scroll target beyond #players
+  handoff?: { name: string; url: string; note: string }; // partner routing
+}
+
 export type QueryState =
   | { status: 'loading'; question: string }
+  | IntentState
   | {
       status: 'done';
       question: string;
@@ -40,6 +56,10 @@ export type QueryState =
     }
   | { status: 'error'; question: string }
   | null; // cleared
+
+export function dispatchIntent(intent: IntentState) {
+  window.dispatchEvent(new CustomEvent(QUERY_EVENT, { detail: intent }));
+}
 
 export function dispatchQuery(state: QueryState) {
   window.dispatchEvent(new CustomEvent(QUERY_EVENT, { detail: state }));
@@ -108,4 +128,20 @@ export function filterDirectory(
   if (!queryIds) return byStage;
   const allowed = new Map(byStage.map((a) => [a.id, a]));
   return queryIds.map((id) => allowed.get(id)).filter((a): a is Asset => a !== undefined);
+}
+
+// Pure intent filter: category membership, optionally narrowed by the intent's
+// own stage, then by the user's stage filter if one is set. Directory rank
+// order is preserved. Unit-tested — keep free of DOM/React.
+export function filterIntent(
+  assets: Asset[],
+  intent: IntentState,
+  stage: Stage | null
+): Asset[] {
+  return assets.filter((a) => {
+    if (!intent.categories.includes(a.category)) return false;
+    if (intent.stage && !a.stages.includes(intent.stage)) return false;
+    if (stage && !a.stages.includes(stage)) return false;
+    return true;
+  });
 }

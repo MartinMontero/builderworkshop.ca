@@ -23,6 +23,7 @@
 // ecosystem.json for the canonical URL rather than trusting the index.
 
 import { build } from 'esbuild';
+import { readFileSync } from 'node:fs';
 
 const DRY = process.argv.includes('--dry-run');
 const ACCOUNT = process.env.CF_ACCOUNT_ID;
@@ -128,20 +129,17 @@ async function cf(url, init = {}) {
 
 // 1. clear existing items so this is a clean re-sync
 console.log(`Listing existing items in "${INSTANCE}"...`);
-const PER_PAGE = 50; // API caps per_page at 50
 const existing = [];
-for (let page = 1; ; page++) {
+let cursor = null;
+do {
   const u = new URL(base);
-  u.searchParams.set('per_page', String(PER_PAGE));
-  u.searchParams.set('page', String(page));
-  const res = await cf(u.toString());
-  const items = Array.isArray(res.result) ? res.result : res.result?.items || [];
-  existing.push(...items);
-  // result_info is page-based - {count, page, per_page, total_count}, no cursor.
-  const total = res.result_info?.total_count;
-  if (items.length < PER_PAGE) break;
-  if (typeof total === 'number' && existing.length >= total) break;
-}
+  u.searchParams.set('per_page', '100');
+  if (cursor) u.searchParams.set('cursor', cursor);
+  const page = await cf(u.toString());
+  const items = page.result?.items || page.result || [];
+  existing.push(...(Array.isArray(items) ? items : []));
+  cursor = page.result_info?.cursor || null;
+} while (cursor);
 console.log(`  found ${existing.length}`);
 
 let deleted = 0;

@@ -1,42 +1,72 @@
 import { useRef, useState } from 'react';
-import { ASSETS, PATHWAYS } from '../data/assets';
-import { askGuide, dispatchQuery } from '../lib/guide';
+import { ACTIVE, MAPPED, PATHWAYS, STACK } from '../data/assets';
+import { askGuide, dispatchIntent, dispatchQuery, type IntentState } from '../lib/guide';
 
-const INTENTS = [
+// FoundedIn Canada's routing note lives in STACK — one source of truth for what
+// we say about a partner, so the card and The Builder's Stack cannot drift.
+const FIC = STACK.flatMap((s) => s.partners).find((p) => p.name === 'FoundedIn Canada');
+
+type Card = IntentState & { q: string; body: string };
+
+const INTENTS: Card[] = [
   {
+    status: 'intent',
     id: 'idea',
     label: 'I have an idea',
     q: 'Back it early.',
     body: 'Programs that take you at the napkin stage — pre-seed incubators, accelerators, founder communities.',
-    target: '#players',
+    heading: 'Who backs you at zero.',
+    note: 'Programs and communities that take you before there is anything to show.',
+    categories: ['Programs & Accelerators', 'Community & Events'],
+    stage: 'ZERO → ONE',
   },
   {
+    status: 'intent',
     id: 'make',
     label: 'I need to make something',
     q: 'Get your hands on tools.',
     body: 'Makerspaces, fabrication shops, studios and tool libraries — filter the map by the exact machine you need.',
-    target: '#map',
+    heading: 'Rooms with machines in them.',
+    note: 'Makerspaces, fabrication shops, studios and tool libraries. Filter the map by the exact machine.',
+    categories: ['Spaces & Places'],
+    stage: null,
+    focus: 'map',
   },
   {
+    status: 'intent',
     id: 'learn',
     label: 'I want to learn',
     q: 'Level up.',
     body: 'Schools, STEAM academies, grad programs and free public labs across BC.',
-    target: '#players',
+    heading: 'Where the skills come from.',
+    note: 'Schools, STEAM academies, grad programs and free public labs across BC.',
+    categories: ['Learning & Talent'],
+    stage: null,
   },
   {
+    status: 'intent',
     id: 'people',
     label: "I'm looking for my people",
     q: 'Find the room.',
     body: 'Communities, meetups and the physical third-places where builders actually collide — start with a pathway.',
-    target: '#paths',
+    heading: 'Where builders actually collide.',
+    note: 'Communities and meetups. For the physical third-places, walk a pathway below.',
+    categories: ['Community & Events'],
+    stage: null,
   },
   {
+    status: 'intent',
     id: 'fund',
     label: 'I need funding',
     q: 'Fuel the build.',
     body: 'Capital, loans and venture builders — plus the funding tools our friends run.',
-    target: '#players',
+    heading: 'The thin end of the map.',
+    note: 'BC capital is the sparsest category we carry. Everything we have is here — and the deeper funding tools are not ours.',
+    categories: ['Capital & Venture'],
+    stage: null,
+    handoff: FIC
+      ? { name: FIC.name, url: FIC.url ?? 'https://foundedincanada.com/', note: FIC.note }
+      : undefined,
   },
 ];
 
@@ -57,6 +87,23 @@ export default function Hero() {
 
   const go = (target: string) => {
     document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  // Cards are deterministic navigation — they dispatch a named filter state on
+  // the same bus the guide uses, with no model call and no network.
+  const pick = (card: Card) => {
+    dispatchIntent({
+      status: 'intent',
+      id: card.id,
+      label: card.label,
+      heading: card.heading,
+      note: card.note,
+      categories: card.categories,
+      stage: card.stage,
+      ...(card.focus ? { focus: card.focus } : {}),
+      ...(card.handoff ? { handoff: card.handoff } : {}),
+    });
+    go(card.focus === 'map' ? '#map' : '#players');
   };
 
   const ask = async (question: string) => {
@@ -149,7 +196,7 @@ export default function Hero() {
           {INTENTS.map((it) => (
             <button
               key={it.id}
-              onClick={() => go(it.target)}
+              onClick={() => pick(it)}
               className="group bg-[var(--bg)] hover:bg-[var(--bg-raise)] text-left p-5 md:p-6 transition-colors flex flex-col gap-3"
             >
               <span className="eyebrow">
@@ -167,8 +214,8 @@ export default function Hero() {
         </div>
 
         <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-2 font-mono2 text-[10px] tracking-[0.16em] text-[var(--ink-faint)] reveal">
-          <span>{ASSETS.length} ECOSYSTEM PLAYERS</span>
-          <span>27 VENUES ON THE MAP</span>
+          <span>{ACTIVE.length} ECOSYSTEM PLAYERS</span>
+          <span>{MAPPED.length} VENUES ON THE MAP</span>
           <span>{PATHWAYS.length} CURATED PATHWAYS</span>
           <span>OPEN DATA · CC BY 4.0</span>
         </div>
