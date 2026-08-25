@@ -8,7 +8,9 @@
     "prebuild": "node scripts/export-data.mjs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "index": "node --env-file-if-exists=.env scripts/index-ai-search.mjs",
+    "index:dry": "node scripts/index-ai-search.mjs --dry-run"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.22",
