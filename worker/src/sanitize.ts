@@ -20,7 +20,9 @@ const PATTERNS: Array<{ kind: string; re: RegExp }> = [
   // times
   { kind: 'time', re: /\b\d{1,2}:\d{2}\s?(a\.?m\.?|p\.?m\.?)?\b/i },
   { kind: 'time', re: /\b\d{1,2}\s?(a\.?m\.?|p\.?m\.?)\b/i },
-  // prices
+  // prices — take a leading "up to / from / at / for" with the amount so the
+  // strip doesn't leave grammatical debris ("up to  loans")
+  { kind: 'price', re: /\b(up to|from|at|for)\s+\$\s?\d[\d,.]*\s?[KkMm]?\b/i },
   { kind: 'price', re: /\$\s?\d[\d,.]*\s?[KkMm]?\b/ },
   { kind: 'price', re: /\b\d[\d,.]*\s?(dollars|CAD|USD)\b/i },
 ];
@@ -78,11 +80,18 @@ export function sanitizeWhy(
     out = out.replace(person, '').replace(/\s{2,}/g, ' ').trim();
   }
 
-  // If stripping gutted the sentence, fall back to a safe grounded template
-  // rather than shipping a fragment.
+  // Tidy what the strips left behind: orphaned punctuation, then any dangling
+  // conjunctions/articles the removed span was attached to ("...with the and.").
   out = out.replace(/\s+([,.;:])/g, '$1').replace(/[,;:\s]+$/, '').trim();
+  if (violations.length > 0) {
+    let prev;
+    do {
+      prev = out;
+      out = out.replace(/\s*\b(and|or|with|plus|the|a|an|for|to|in|at|on|of|every|each)\s*\.?$/i, '').trim();
+    } while (out !== prev);
+  }
   if (violations.length > 0 && out.length < 25) {
-    out = `A ${entity.category.toLowerCase()} fit for what you described.`;
+    out = 'A strong fit for this ask — the details are in the row.';
   }
   if (!/[.!?]$/.test(out)) out += '.';
 

@@ -99,6 +99,8 @@ export default {
             env.AI.run(MODEL, {
               messages: [{ role: 'user', content: prompt }],
               response_format: { type: 'json_schema', json_schema: ANSWER_SCHEMA },
+              // low temperature: the why lines should be steady, not creative
+              temperature: 0.3,
             }),
           logEvent: (row) => logEvent(env, row),
           remember: async (entry) => {

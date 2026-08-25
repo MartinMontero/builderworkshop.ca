@@ -58,6 +58,13 @@ test('a gutted sentence falls back to a safe template', () => {
   assert.ok(!/780|March|9:30|\$85/.test(r.why));
 });
 
+test('a strip never leaves a dangling conjunction or article', () => {
+  const r = sanitizeWhy('The journal reaches readers each week with the Sunday', entity, names);
+  assert.ok(r.violations.includes('date'));
+  assert.ok(!/\b(with|the|and)\.?$/i.test(r.why.replace(/\.$/, '')), `dangling tail in: ${r.why}`);
+  assert.ok(r.why.endsWith('.'));
+});
+
 test('a clean why passes through untouched apart from punctuation', () => {
   const r = sanitizeWhy('The largest fabrication studio on the map, with laser cutters you can book as a member', entity, names);
   assert.equal(r.violations.length, 0);
