@@ -9,6 +9,7 @@ export interface EcosystemEntry {
   stages: string[];
   url: string;
   location?: string;
+  verified?: string; // YYYY-MM, present once the site exports it
 }
 
 export interface EcosystemData {
@@ -16,14 +17,25 @@ export interface EcosystemData {
   byUrl: Map<string, EcosystemEntry>;
   names: string[];
   categories: string[];
+  stages: string[];
+  players: EcosystemEntry[];
 }
 
 export const ECOSYSTEM_URL = 'https://builderworkshop.ca/ecosystem.json';
 const TTL_MS = 5 * 60 * 1000;
 
 export function indexEcosystem(raw: {
-  players?: Array<{ id: string; name: string; category: string; stages: string[]; url: string; location?: string }>;
+  players?: Array<{
+    id: string;
+    name: string;
+    category: string;
+    stages: string[];
+    url: string;
+    location?: string;
+    verified?: string;
+  }>;
   categories?: string[];
+  stages?: string[];
 }): EcosystemData {
   const players = raw.players ?? [];
   if (players.length === 0) {
@@ -31,6 +43,7 @@ export function indexEcosystem(raw: {
   }
   const byId = new Map<string, EcosystemEntry>();
   const byUrl = new Map<string, EcosystemEntry>();
+  const entries: EcosystemEntry[] = [];
   for (const p of players) {
     const entry: EcosystemEntry = {
       id: p.id,
@@ -39,11 +52,20 @@ export function indexEcosystem(raw: {
       stages: p.stages ?? [],
       url: p.url,
       location: p.location,
+      verified: p.verified,
     };
+    entries.push(entry);
     byId.set(p.id, entry);
     byUrl.set(p.url, entry);
   }
-  return { byId, byUrl, names: players.map((p) => p.name), categories: raw.categories ?? [] };
+  return {
+    byId,
+    byUrl,
+    names: players.map((p) => p.name),
+    categories: raw.categories ?? [],
+    stages: raw.stages ?? [],
+    players: entries,
+  };
 }
 
 // "<id>.md" → entry. Missing keys are a contract violation between the index

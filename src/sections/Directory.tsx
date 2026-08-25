@@ -13,7 +13,8 @@ export default function Directory() {
   const queryIds = active ? active.results.map((r) => r.id) : null;
   const shown = filterDirectory(ASSETS, stage, queryIds);
   const loading = query?.status === 'loading';
-  const zero = active !== null && active.results.length === 0;
+  const correction = active?.correction ?? null;
+  const zero = active !== null && active.results.length === 0 && !correction;
 
   const clear = () => dispatchQuery(null);
 
@@ -107,6 +108,21 @@ export default function Directory() {
           </div>
         )}
 
+        {/* a correction was recorded — not a failed search */}
+        {!loading && correction && (
+          <div className="border border-[var(--line)] bg-[var(--bg-raise)] px-6 py-8 md:px-10">
+            <div className="eyebrow mb-3 text-[var(--accent)]">NOTED</div>
+            <p className="max-w-2xl text-[15px] leading-relaxed text-[var(--ink)]">{correction}</p>
+            <button
+              type="button"
+              onClick={clear}
+              className="mt-6 font-mono2 text-[10.5px] tracking-[0.18em] border border-[var(--line-strong)] text-[var(--ink)] px-6 py-3 hover:border-[var(--ink)] transition-colors uppercase"
+            >
+              Back to all {ASSETS.length}
+            </button>
+          </div>
+        )}
+
         {/* zero results is a finding, not a dead end */}
         {!loading && zero && (
           <div className="border border-[var(--line)] bg-[var(--bg-raise)] px-6 py-10 md:px-10">
@@ -140,7 +156,7 @@ export default function Directory() {
           </div>
         )}
 
-        {!loading && !zero && (
+        {!loading && !zero && !correction && (
           <div className="divide-y divide-[var(--line)] border-t border-b border-[var(--line)]">
             {shown.map((a, i) => {
               const podium = !active && i < 10;

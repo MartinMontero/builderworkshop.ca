@@ -55,6 +55,22 @@ function findPersonName(why: string, entityWords: Set<string>): string | null {
   return null;
 }
 
+// Used on a correction's stated reason: the queue needs the claim, not who
+// made it. Dates and places are left alone there — "they moved in March" is
+// exactly the sort of detail a reviewer needs.
+export function stripPersonNames(text: string, allEntityNames: string[]): string {
+  const entityWords = new Set(
+    allEntityNames.flatMap((n) => n.split(/\s+/)).filter((w) => /^[A-Z]/.test(w))
+  );
+  let out = text;
+  for (let i = 0; i < 4; i++) {
+    const person = findPersonName(out, entityWords);
+    if (!person) break;
+    out = out.replace(person, 'someone').replace(/\s{2,}/g, ' ').trim();
+  }
+  return out;
+}
+
 export function sanitizeWhy(
   why: string,
   entity: { name: string; category: string },

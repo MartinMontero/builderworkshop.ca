@@ -34,6 +34,9 @@ export type QueryState =
       queryClass: string;
       results: GuideResult[];
       gap: GuideGap | null;
+      // Set when the guide read the input as a correction rather than a
+      // question: nothing was searched, a diff was queued for review.
+      correction?: string;
     }
   | { status: 'error'; question: string }
   | null; // cleared
@@ -70,6 +73,8 @@ export async function askGuide(question: string): Promise<QueryState> {
       queryClass: string;
       results: GuideResult[];
       gap: GuideGap | null;
+      kind?: string;
+      reply?: string;
     };
     return {
       status: 'done',
@@ -77,6 +82,7 @@ export async function askGuide(question: string): Promise<QueryState> {
       queryClass: data.queryClass,
       results: (data.results ?? []).slice(0, 3),
       gap: data.gap ?? null,
+      ...(data.kind === 'correction' && data.reply ? { correction: data.reply } : {}),
     };
   } catch {
     return { status: 'error', question };

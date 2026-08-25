@@ -27,6 +27,7 @@ const players = ASSETS.map((a, i) => ({
   url: a.url,
   blurb: a.blurb,
   location: a.location,
+  ...(a.verified ? { verified: a.verified } : {}),
   ...(a.lat !== undefined ? { lat: a.lat, lng: a.lng } : {}),
   ...(a.capabilities ? { capabilities: a.capabilities } : {}),
 }));

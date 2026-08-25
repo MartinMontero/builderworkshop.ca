@@ -8,6 +8,15 @@
     "enabled": true,
     "logs": { "head_sampling_rate": 1 }
   },
+  // UTC. controller.cron is matched character-for-character in src/index.ts.
+  // Off-the-hour minutes: cron Workers run on underutilised capacity, so exact
+  // punctuality is not promised and round hours are the busiest.
+  "triggers": {
+    "crons": [
+      "17 9 * * MON", // weekly link patrol, Mondays 09:17 UTC
+      "40 9 1 * *" // monthly gap report, 1st at 09:40 UTC
+    ]
+  },
   "ai_search_namespaces": [
     { "binding": "AI_SEARCH", "namespace": "default", "remote": true }
   ],
