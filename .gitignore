@@ -4,3 +4,6 @@ dist
 *.log
 .env
 .env.*
+
+public/ecosystem.json
+public/ecosystem.geojson
