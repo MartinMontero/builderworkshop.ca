@@ -1,6 +1,6 @@
 export default function Contribute() {
   return (
-    <section className="noise relative bg-[var(--bg-raise)] py-20 md:py-28 border-t border-[var(--line)] overflow-hidden">
+    <section id="contribute" className="noise relative bg-[var(--bg-raise)] py-20 md:py-28 border-t border-[var(--line)] overflow-hidden">
       <div
         aria-hidden
         className="absolute bottom-[-30%] left-[-10%] w-[50vw] h-[50vw] rounded-full opacity-20 blur-[120px]"

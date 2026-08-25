@@ -1,4 +1,6 @@
+import { useRef, useState } from 'react';
 import { ASSETS, PATHWAYS } from '../data/assets';
+import { askGuide, dispatchQuery } from '../lib/guide';
 
 const INTENTS = [
   {
@@ -38,9 +40,42 @@ const INTENTS = [
   },
 ];
 
+// Starter questions, all verified answerable against the live index —
+// spanning capabilities, builder stages and categories in assets.ts.
+const STARTERS = [
+  'Where can I laser cut something?',
+  'I have an idea but no product yet — who helps?',
+  'My kid is 12 and into robotics',
+  'Who funds early-stage founders in BC?',
+];
+
 export default function Hero() {
+  const [q, setQ] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [offline, setOffline] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+
   const go = (target: string) => {
     document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const ask = async (question: string) => {
+    const trimmed = question.trim();
+    if (!trimmed || busy) return;
+    setQ(trimmed);
+    setBusy(true);
+    setOffline(false);
+    dispatchQuery({ status: 'loading', question: trimmed });
+    go('#players');
+    const result = await askGuide(trimmed);
+    setBusy(false);
+    if (result?.status === 'error') {
+      // The guide is down; the directory below keeps working untouched.
+      setOffline(true);
+      dispatchQuery(null);
+      return;
+    }
+    dispatchQuery(result);
   };
 
   return (
@@ -59,6 +94,55 @@ export default function Hero() {
           This isn't a directory to scroll — it's the shortest path from where you are to a room,
           a tool, and a person who can help. Pick where you're at.
         </p>
+
+        {/* ask the map — a search bar, not a chatbot */}
+        <form
+          role="search"
+          className="mt-10 max-w-2xl reveal"
+          onSubmit={(e) => {
+            e.preventDefault();
+            ask(q);
+          }}
+        >
+          <div className="flex border border-[var(--line-strong)] bg-[var(--bg-raise)] focus-within:border-[var(--ink)] transition-colors">
+            <input
+              ref={inputRef}
+              type="search"
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder="What are you trying to build?"
+              aria-label="Search the map — describe what you are trying to build"
+              disabled={busy}
+              className="flex-1 min-w-0 bg-transparent px-4 py-3.5 text-[15px] text-[var(--ink)] placeholder:text-[var(--ink-faint)] focus:outline-none disabled:opacity-60"
+            />
+            <button
+              type="submit"
+              disabled={busy || !q.trim()}
+              aria-label="Search"
+              className="font-mono2 text-[11px] tracking-[0.2em] px-5 md:px-7 bg-[var(--brand)] text-[var(--brand-ink)] hover:bg-[var(--ink)] hover:text-[var(--bg)] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {busy ? '…' : 'ASK →'}
+            </button>
+          </div>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {STARTERS.map((s) => (
+              <button
+                key={s}
+                type="button"
+                disabled={busy}
+                onClick={() => ask(s)}
+                className="font-mono2 text-[10px] tracking-[0.1em] px-3 py-1.5 border border-[var(--line)] text-[var(--ink)]/60 hover:border-[var(--line-strong)] hover:text-[var(--ink)] transition-colors disabled:opacity-50"
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+          {offline && (
+            <p className="mt-3 font-mono2 text-[10.5px] tracking-[0.08em] text-[var(--ink)]/60">
+              The guide is offline right now — the full directory below still works.
+            </p>
+          )}
+        </form>
 
         {/* intent router */}
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[var(--line)] border border-[var(--line)] reveal">

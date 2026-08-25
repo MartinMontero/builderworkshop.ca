@@ -1,0 +1,28 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "builderworkshop-guide",
+  "main": "src/index.ts",
+  // AI Search binding requires >= 2026-03-27; nodejs_compat is default at this date.
+  "compatibility_date": "2026-08-25",
+  "observability": {
+    "enabled": true,
+    "logs": { "head_sampling_rate": 1 }
+  },
+  "ai_search_namespaces": [
+    { "binding": "AI_SEARCH", "namespace": "default", "remote": true }
+  ],
+  "ai": { "binding": "AI" },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "builderworkshop-guide",
+      "database_id": "5daf1162-12a6-4413-8af3-9a704891d381"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [{ "name": "SESSION", "class_name": "Session" }]
+  },
+  // Legacy-form migration on purpose: the declarative "exports" field is newer
+  // than the pinned wrangler and the two forms are mutually exclusive.
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Session"] }]
+}

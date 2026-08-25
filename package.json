@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "index": "node --env-file-if-exists=.env scripts/index-ai-search.mjs",
-    "index:dry": "node scripts/index-ai-search.mjs --dry-run"
+    "index:dry": "node scripts/index-ai-search.mjs --dry-run",
+    "test": "node --test \"worker/test/*.test.ts\""
   },
   "dependencies": {
     "@types/leaflet": "^1.9.22",

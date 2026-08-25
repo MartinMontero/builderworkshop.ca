@@ -11,6 +11,7 @@ import {
   type Asset,
   type Category,
 } from '../data/assets';
+import { dispatchQuery, onQuery } from '../lib/guide';
 
 type Filter = 'All' | Category;
 
@@ -61,6 +62,7 @@ export default function AssetMap() {
   const [cap, setCap] = useState<string | null>(null);
   const [selected, setSelected] = useState<Asset | null>(null);
   const [trailId, setTrailId] = useState<string | null>(null);
+  const [queryIds, setQueryIds] = useState<string[] | null>(null);
   const markerRefs = useRef<Record<string, L.Marker | null>>({});
 
   // pathway cards dispatch bw:trail → draw the route here
@@ -75,6 +77,23 @@ export default function AssetMap() {
     return () => window.removeEventListener('bw:trail', onTrail);
   }, []);
 
+  // an answered question pins only its results (those with coordinates)
+  useEffect(
+    () =>
+      onQuery((state) => {
+        if (state?.status === 'done') {
+          setQueryIds(state.results.map((r) => r.id));
+          setFilter('All');
+          setCap(null);
+          setTrailId(null);
+          setSelected(null);
+        } else if (state === null) {
+          setQueryIds(null);
+        }
+      }),
+    []
+  );
+
   const trail = useMemo(() => PATHWAYS.find((p) => p.id === trailId) ?? null, [trailId]);
   const trailPoints = useMemo(() => {
     if (!trail) return [] as [number, number][];
@@ -88,10 +107,11 @@ export default function AssetMap() {
     () =>
       MAPPED.filter(
         (a) =>
+          (!queryIds || queryIds.includes(a.id)) &&
           (filter === 'All' || a.category === filter) &&
           (!cap || (a.capabilities ?? []).includes(cap))
       ),
-    [filter, cap]
+    [filter, cap, queryIds]
   );
 
   const counts = useMemo(() => {
@@ -259,9 +279,15 @@ export default function AssetMap() {
             </div>
             <div className="font-mono2 text-[10px] tracking-[0.1em] text-[var(--ink)]/55 mt-3 px-1 flex items-center justify-between gap-3">
               <span>Click a row to fly to its pin · {filtered.length} shown</span>
-              {(filter !== 'All' || cap || trail) && (
+              {(filter !== 'All' || cap || trail || queryIds) && (
                 <button
-                  onClick={() => { setFilter('All'); setCap(null); setTrailId(null); setSelected(null); }}
+                  onClick={() => {
+                    setFilter('All');
+                    setCap(null);
+                    setTrailId(null);
+                    setSelected(null);
+                    if (queryIds) dispatchQuery(null);
+                  }}
                   className="font-mono2 text-[10px] tracking-[0.14em] text-[var(--accent)] hover:text-[var(--ink)] transition-colors shrink-0"
                 >
                   Reset ✕
