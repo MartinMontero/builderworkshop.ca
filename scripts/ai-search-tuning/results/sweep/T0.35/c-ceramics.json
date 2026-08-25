@@ -1,0 +1,142 @@
+{
+  "query_kind": "text",
+  "search_query": "I want to try pottery, where do I go",
+  "chunks": [
+    {
+      "id": "c5f4b3b2fe373e653508fc1a3bcbf652d4f9969a03b25e96bdd3b055bfeb02f4",
+      "type": "text",
+      "score": 0.38899845,
+      "text": "# The Free-Build Circuit\n\nType: Pathway - a curated route through several venues\nStops in order: VPL Inspiration Lab -> Vancouver Tool Library -> Vancouver Hack Space\n\nZero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Drive, then show your work at open hack night.",
+      "item": {
+        "key": "pathway-free-build.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.38899845
+      }
+    },
+    {
+      "id": "87d0d637075a8657dd0348e9b8519de1c7e91343eaca90c99226d67dd83b2b0d",
+      "type": "text",
+      "score": 0.38753203,
+      "text": "# The Island Maker Run\n\nType: Pathway - a curated route through several venues\nStops in order: Victoria Makerspace -> Makerspace Nanaimo\n\nVancouver Island's two community labs, one highway apart — Saanich's Technology Park to Nanaimo's 24/7 open workshop.",
+      "item": {
+        "key": "pathway-island-run.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.38753203
+      }
+    },
+    {
+      "id": "8a9aafca8d4619b06d97358a3f4fefd02a20fac38dba55593fcacb960b0666ad",
+      "type": "text",
+      "score": 0.38428473,
+      "text": "# The Gastown Founder Crawl\n\nType: Pathway - a curated route through several venues\nStops in order: FriendsQuarters -> Launch Academy -> DCTRL -> Internet Archive Canada -> FUNK Coffee Bar\n\nFive rooms, one afternoon: coworking, an incubator, the cypherpunk clubhouse, the national memory bank and the coffee bar where first meetings actually happen.",
+      "item": {
+        "key": "pathway-gastown-crawl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.38428473
+      }
+    },
+    {
+      "id": "2a1a105e0e3c674e164725e405ba6760b6405bd1c17d836aafcfd254ab739e50",
+      "type": "text",
+      "score": 0.37624413,
+      "text": "# Vancouver Tool Library\nType: Spaces & Places\nBuilder stage: ZERO → ONE\nLocation: 3448 Commercial St · The Drive\nFixed venue: yes - you can walk in\nCoordinates: 49.2536988, -123.0678595\nEquipment and facilities on site: Woodshop\nWebsite: https://vancouvertoollibrary.com/\nDirectory rank: 34 of 46\nLast verified: 2026-08\nCanada's original tool-lending library — a member-run co-op on the Drive lending 1,700+ tools for home repair, gardening and bike maintenance, plus affordable public workshops.",
+      "item": {
+        "key": "vtl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.37624413
+      }
+    },
+    {
+      "id": "91aac0aaa892964c678611e13c432f6fd473cd77efae130364151d47c230e183",
+      "type": "text",
+      "score": 0.37064472,
+      "text": "# The Arts Factory\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 281 Industrial Ave · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2704431, -123.0990799\nEquipment and facilities on site: Woodshop, Ceramics\nWebsite: https://www.artsfactorysociety.ca/\nDirectory rank: 39 of 46\nLast verified: 2026-08\nA 21,000 sq ft cultural hub in a transformed industrial warehouse — affordable studios, workshops and coworking for artists working in sculpture, paint, fabric, wood and ceramics.",
+      "item": {
+        "key": "artsfactory.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.37064472
+      }
+    },
+    {
+      "id": "b4c93142e577a5dbd4af1accc8c1992cbb27ce5aa7222ae9290f67773c997b5a",
+      "type": "text",
+      "score": 0.36683077,
+      "text": "# Terminal City Glass Co-op\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 1191 Parker St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.275975, -123.0792044\nEquipment and facilities on site: Glass\nWebsite: https://terminalcityglass.com/\nDirectory rank: 36 of 46\nLast verified: 2026-08\nCanada's first non-profit co-operative glass studio — shared furnaces, kilns and cold-working gear plus public classes, keeping an expensive craft accessible in Strathcona.",
+      "item": {
+        "key": "tcglass.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.36683077
+      }
+    },
+    {
+      "id": "a8635e46ab03156d19f6670ff09e72fcba9622ca5c018a3b4063265857b40bde",
+      "type": "text",
+      "score": 0.36572272,
+      "text": "# VPL Inspiration Lab\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 350 W Georgia St · Downtown\nFixed venue: yes - you can walk in\nCoordinates: 49.279659, -123.115614\nEquipment and facilities on site: Recording & Podcast, Digitization\nWebsite: https://www.vpl.ca/branches/central/level-3/inspiration-lab\nDirectory rank: 37 of 46\nLast verified: 2026-08\nThe city's free digital creation space on Level 3 of the Central Library — recording studios, digitization stations, video editing and self-publishing tools, open to everyone.",
+      "item": {
+        "key": "inspirationlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.36572272
+      }
+    },
+    {
+      "id": "123eb08cf70ac3ff361684cb930a4038cb5a9548d6eeabe07f1251d2cabd4b87",
+      "type": "text",
+      "score": 0.36167735,
+      "text": "# MakerLabs\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 780 E Cordova St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2818969, -123.0875456\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://www.makerlabs.com/\nDirectory rank: 32 of 46\nLast verified: 2026-08\nVancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, ceramics, CNC routers, laser cutters and a fab team that can build almost anything.",
+      "item": {
+        "key": "makerlabs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.36167735
+      }
+    }
+  ]
+}

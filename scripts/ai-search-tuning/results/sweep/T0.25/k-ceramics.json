@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "ceramics studio",
+  "chunks": [
+    {
+      "id": "91aac0aaa892964c678611e13c432f6fd473cd77efae130364151d47c230e183",
+      "type": "text",
+      "score": 0.49384296,
+      "text": "# The Arts Factory\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 281 Industrial Ave · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2704431, -123.0990799\nEquipment and facilities on site: Woodshop, Ceramics\nWebsite: https://www.artsfactorysociety.ca/\nDirectory rank: 39 of 46\nLast verified: 2026-08\nA 21,000 sq ft cultural hub in a transformed industrial warehouse — affordable studios, workshops and coworking for artists working in sculpture, paint, fabric, wood and ceramics.",
+      "item": {
+        "key": "artsfactory.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.49384296
+      }
+    },
+    {
+      "id": "123eb08cf70ac3ff361684cb930a4038cb5a9548d6eeabe07f1251d2cabd4b87",
+      "type": "text",
+      "score": 0.4846175,
+      "text": "# MakerLabs\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 780 E Cordova St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2818969, -123.0875456\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://www.makerlabs.com/\nDirectory rank: 32 of 46\nLast verified: 2026-08\nVancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, ceramics, CNC routers, laser cutters and a fab team that can build almost anything.",
+      "item": {
+        "key": "makerlabs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4846175
+      }
+    },
+    {
+      "id": "938fd0422f02172c5b5cebd41c36e00b7071c03c824740cc71a3a03814dfaf64",
+      "type": "text",
+      "score": 0.45620835,
+      "text": "# Maker Cube\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 104B–5947 206A St · Langley\nFixed venue: yes - you can walk in\nCoordinates: 49.0889, -122.6503\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://makercube.ca/\nDirectory rank: 33 of 46\nLast verified: 2026-08\nLangley's premier makerspace — woodworking and welding shops, CNC and laser cutters, 3D printing, a ceramics studio, rentable studio 'cubes' and classes for every skill level.",
+      "item": {
+        "key": "makercube.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.45620835
+      }
+    },
+    {
+      "id": "b4c93142e577a5dbd4af1accc8c1992cbb27ce5aa7222ae9290f67773c997b5a",
+      "type": "text",
+      "score": 0.45074597,
+      "text": "# Terminal City Glass Co-op\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 1191 Parker St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.275975, -123.0792044\nEquipment and facilities on site: Glass\nWebsite: https://terminalcityglass.com/\nDirectory rank: 36 of 46\nLast verified: 2026-08\nCanada's first non-profit co-operative glass studio — shared furnaces, kilns and cold-working gear plus public classes, keeping an expensive craft accessible in Strathcona.",
+      "item": {
+        "key": "tcglass.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.45074597
+      }
+    },
+    {
+      "id": "86d2ce0ca3898404b4ef687183fd08b16d4285eb17844f480b562f7a3b099c63",
+      "type": "text",
+      "score": 0.43052387,
+      "text": "# Zen Maker Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 224–125 Victory Ship Way · The Shipyards, North Van\nFixed venue: yes - you can walk in\nCoordinates: 49.30955, -123.07851\nEquipment and facilities on site: 3D Printing, Laser Cutting, Robotics\nWebsite: https://www.zenmakerlab.com/\nDirectory rank: 35 of 46\nLast verified: 2026-08\nNorth Shore maker lab making technology accessible since 2013 — STEAM programs, camps and after-school clubs in coding, robotics, 3D printing and design for kids, youth and adults.",
+      "item": {
+        "key": "zenmakerlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.43052387
+      }
+    },
+    {
+      "id": "84f9097ebd4b11ae39a4559af8b08337ae1854c17ffa4a24d118bf21cebe3d15",
+      "type": "text",
+      "score": 0.42556053,
+      "text": "# The Strathcona Maker Mile\n\nType: Pathway - a curated route through several venues\nStops in order: Vancouver Hack Space -> Slice of Life -> MakerLabs -> Terminal City Glass Co-op -> The Arts Factory\n\nThe densest making corridor in BC — hack space to artist clubhouse to 26,000 sq ft of fabrication to a glass furnace to a warehouse of studios, all inside one square mile.",
+      "item": {
+        "key": "pathway-maker-mile.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.42556053
+      }
+    },
+    {
+      "id": "aa951a06bcbf31dca75308cd2254120dfeeb848120d99e05841af5a6b4995c73",
+      "type": "text",
+      "score": 0.41879508,
+      "text": "# Victoria Makerspace\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 4A–4476 Markham St · Saanich\nFixed venue: yes - you can walk in\nCoordinates: 48.4941015, -123.4131897\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Electronics\nWebsite: https://makerspace.ca/\nDirectory rank: 40 of 46\nLast verified: 2026-08\nVancouver Island's member-operated makerspace at the Technology Park — a collaborative workshop where makers of every background share tools, knowledge and 24/7 access.",
+      "item": {
+        "key": "victoria-makerspace.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.41879508
+      }
+    },
+    {
+      "id": "87d0d637075a8657dd0348e9b8519de1c7e91343eaca90c99226d67dd83b2b0d",
+      "type": "text",
+      "score": 0.41869077,
+      "text": "# The Island Maker Run\n\nType: Pathway - a curated route through several venues\nStops in order: Victoria Makerspace -> Makerspace Nanaimo\n\nVancouver Island's two community labs, one highway apart — Saanich's Technology Park to Nanaimo's 24/7 open workshop.",
+      "item": {
+        "key": "pathway-island-run.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.41869077
+      }
+    },
+    {
+      "id": "a8635e46ab03156d19f6670ff09e72fcba9622ca5c018a3b4063265857b40bde",
+      "type": "text",
+      "score": 0.41496697,
+      "text": "# VPL Inspiration Lab\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 350 W Georgia St · Downtown\nFixed venue: yes - you can walk in\nCoordinates: 49.279659, -123.115614\nEquipment and facilities on site: Recording & Podcast, Digitization\nWebsite: https://www.vpl.ca/branches/central/level-3/inspiration-lab\nDirectory rank: 37 of 46\nLast verified: 2026-08\nThe city's free digital creation space on Level 3 of the Central Library — recording studios, digitization stations, video editing and self-publishing tools, open to everyone.",
+      "item": {
+        "key": "inspirationlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.41496697
+      }
+    },
+    {
+      "id": "a91701b261394c203473b9ee9d15f801e5e8c4ad5c22a7c0781f1fef78a57628",
+      "type": "text",
+      "score": 0.40331173,
+      "text": "# Makerspace Nanaimo\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 2221A McGarrigle Rd · Nanaimo\nFixed venue: yes - you can walk in\nCoordinates: 49.1939, -123.9834\nEquipment and facilities on site: 3D Printing, Woodshop, Metalshop, Robotics\nWebsite: https://makerspacenanaimo.org/\nDirectory rank: 45 of 46\nLast verified: 2026-08\nMid-Island's open community lab since 2013 — workshop, studio and social hub with 24/7 member access, from 3D printing and robotics to woodworking and metal.",
+      "item": {
+        "key": "makerspace-nanaimo.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40331173
+      }
+    }
+  ]
+}

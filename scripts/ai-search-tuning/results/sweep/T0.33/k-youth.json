@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "youth STEAM programs",
+  "chunks": [
+    {
+      "id": "5d11193865bf5f7b780f965fc506bcdd58f16f099cb32fee43722cbb3e9e3b00",
+      "type": "text",
+      "score": 0.49779838,
+      "text": "# Young Guns Studio\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.ygstudio.ca/\nDirectory rank: 24 of 46\nLast verified: 2026-08\nVancouver's premier art & design institute for ambitious students — portfolio programs and creative-intelligence training that have earned 900+ offers to top universities and $10M+ in scholarships.",
+      "item": {
+        "key": "youngguns.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.49779838
+      }
+    },
+    {
+      "id": "5544db0bc06d1609cc0a5863edb079f50547bd3ccde3601329855c72409b8900",
+      "type": "text",
+      "score": 0.4482346,
+      "text": "# Ethọ́s Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 177 E 3rd Ave · Mount Pleasant\nFixed venue: yes - you can walk in\nCoordinates: 49.2683654, -123.1012334\nEquipment and facilities on site: 3D Printing, Robotics\nWebsite: https://ethoslab.ca/\nDirectory rank: 7 of 46\nLast verified: 2026-08\nNon-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in Ubuntu, building the next generation of diverse creators.",
+      "item": {
+        "key": "ethoslab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4482346
+      }
+    },
+    {
+      "id": "84182b323bade0f9a19e46359084a1c56bc611564b514365de488bf2c6ed4ca7",
+      "type": "text",
+      "score": 0.41585547,
+      "text": "# Founder's Quest\nType: Programs & Accelerators\nBuilder stage: ZERO → ONE\nLocation: Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundersquest.ca/\nDirectory rank: 19 of 46\nLast verified: 2026-08\nA gamified founder journey built on the Genesis Framework — validate real problems beat by beat, from the Call to Adventure to a launched venture.",
+      "item": {
+        "key": "foundersquest.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.41585547
+      }
+    },
+    {
+      "id": "8e12a231d1311f9c4f7e202446313822099f97fc7b5a95a9df5a46f07ebca957",
+      "type": "text",
+      "score": 0.40958756,
+      "text": "# Futurpreneur\nType: Capital & Venture\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: Nation-wide · Serving BC\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://futurpreneur.ca/\nDirectory rank: 43 of 46\nLast verified: 2026-08\nCanada’s launchpad for young founders since 1996 — up to $75K in collateral-free startup loans plus two years of hand-matched mentorship for entrepreneurs aged 18–39. 21,000+ founders backed, $259M lent, 80% five-year survival.",
+      "item": {
+        "key": "futurpreneur.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40958756
+      }
+    },
+    {
+      "id": "a09d7595d91efbe09ac7b71fbdebabe2c342dce7bdd46a0c1ff18fc1f3b51ef2",
+      "type": "text",
+      "score": 0.40867686,
+      "text": "# Zen LaunchPad\nType: Programs & Accelerators\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: North Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.zenlaunchpad.com/\nDirectory rank: 46 of 46\nLast verified: 2026-08\nNorth Vancouver venture studio and incubator for robotics, IoT and AR/VR ventures — taking teams from idea to prototype, with Canada Startup Visa access and direct funding.",
+      "item": {
+        "key": "zenlaunchpad.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40867686
+      }
+    },
+    {
+      "id": "07ba733789450124058a8a5677a87c4344a813a9215fa9f5d2e0c5932db8700b",
+      "type": "text",
+      "score": 0.4069731,
+      "text": "# BC + AI Ecosystem\nType: Community & Events\nBuilder stage: ZERO → ONE\nLocation: Province-wide\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://bc-ai.ca/\nDirectory rank: 12 of 46\nLast verified: 2026-08\nMember-supported nonprofit AI community — recurring meetups, working groups and a public-interest voice for responsible, human-centric AI in British Columbia.",
+      "item": {
+        "key": "bcai.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4069731
+      }
+    },
+    {
+      "id": "5f5d318ce06109b0b085bfa10583aad5135c1e18a13d783827ae0bfe46fd630c",
+      "type": "text",
+      "score": 0.40382153,
+      "text": "# Multimodal Media Lab\nType: Media & Storytelling\nBuilder stage: ONE → MVP\nLocation: British Columbia\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.themml.ca/\nDirectory rank: 30 of 46\nLast verified: 2026-08\nAI film production studio, academy and pipeline tools — multimodal media at the intersection of AI and cinema, made in British Columbia.",
+      "item": {
+        "key": "mml.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40382153
+      }
+    },
+    {
+      "id": "fa2f18ff18aa04eeb2f09cbe9aea7874da8e05ce3677730818e42d18b92322cb",
+      "type": "text",
+      "score": 0.4035784,
+      "text": "# Althra\nType: Programs & Accelerators\nBuilder stage: ONE → MVP\nLocation: Downtown Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://althra.ca/\nDirectory rank: 17 of 46\nLast verified: 2026-08\nWestern Canada's full-time, in-person pre-seed incubator — $12.5K day-one investment with up to $50K follow-on, a 24/7 downtown workspace and an investor trip to San Francisco.",
+      "item": {
+        "key": "althra.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4035784
+      }
+    },
+    {
+      "id": "9298a2306a362a0af613ebc3c12425f7fb7067593949e33b58b4f22094d67055",
+      "type": "text",
+      "score": 0.4026149,
+      "text": "# Launch Academy\nType: Programs & Accelerators\nBuilder stage: ZERO → ONE, ONE → MVP, MVP → SCALE\nLocation: 350–128 W Hastings St · Gastown\nFixed venue: yes - you can walk in\nCoordinates: 49.2818936, -123.1081537\nWebsite: https://www.launchacademy.ca/\nDirectory rank: 2 of 46\nLast verified: 2026-08\nNon-profit incubator that has supported 6,000+ entrepreneurs since 2012 — alumni include Thinkific and have collectively raised over $1.2B. Home of LaunchPad, Maple and Startup Visa programs.",
+      "item": {
+        "key": "launch.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4026149
+      }
+    },
+    {
+      "id": "3efa7c3fcdf71b23dd605e256c2fd6bba3cf4e608144423f2340cd57883d7097",
+      "type": "text",
+      "score": 0.3993836,
+      "text": "# Flow State Founder\nType: Programs & Accelerators\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: Cohort-based · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://flowstatefounder.ca/\nDirectory rank: 11 of 46\nLast verified: 2026-08\nAn 11-week accelerator built for women founders — cohorts of just six, landing podcast features, nailing the pitch, and winning grant funding ($850K+ secured) with zero equity taken.",
+      "item": {
+        "key": "flowstatefounder.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3993836
+      }
+    }
+  ]
+}

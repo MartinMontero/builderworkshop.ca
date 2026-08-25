@@ -1,0 +1,168 @@
+{
+  "query_kind": "text",
+  "search_query": "3D printing",
+  "chunks": [
+    {
+      "id": "5544db0bc06d1609cc0a5863edb079f50547bd3ccde3601329855c72409b8900",
+      "type": "text",
+      "score": 0.8206226825714111,
+      "text": "# Ethọ́s Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 177 E 3rd Ave · Mount Pleasant\nFixed venue: yes - you can walk in\nCoordinates: 49.2683654, -123.1012334\nEquipment and facilities on site: 3D Printing, Robotics\nWebsite: https://ethoslab.ca/\nDirectory rank: 7 of 46\nLast verified: 2026-08\nNon-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in Ubuntu, building the next generation of diverse creators.",
+      "item": {
+        "key": "ethoslab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.35364664,
+        "keyword_score": 7.459177555805413,
+        "vector_rank": 10,
+        "keyword_rank": 5,
+        "fusion_method": "rrf",
+        "reranking_score": 0.8206226825714111
+      }
+    },
+    {
+      "id": "86d2ce0ca3898404b4ef687183fd08b16d4285eb17844f480b562f7a3b099c63",
+      "type": "text",
+      "score": 0.812149703502655,
+      "text": "# Zen Maker Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 224–125 Victory Ship Way · The Shipyards, North Van\nFixed venue: yes - you can walk in\nCoordinates: 49.30955, -123.07851\nEquipment and facilities on site: 3D Printing, Laser Cutting, Robotics\nWebsite: https://www.zenmakerlab.com/\nDirectory rank: 35 of 46\nLast verified: 2026-08\nNorth Shore maker lab making technology accessible since 2013 — STEAM programs, camps and after-school clubs in coding, robotics, 3D printing and design for kids, youth and adults.",
+      "item": {
+        "key": "zenmakerlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4545113,
+        "keyword_score": 9.906188018926844,
+        "vector_rank": 2,
+        "keyword_rank": 4,
+        "fusion_method": "rrf",
+        "reranking_score": 0.812149703502655
+      }
+    },
+    {
+      "id": "5e196d4b42f6b8809e37bc18b7c99f5275d198e7a5da67b2a24d55f5fb42996c",
+      "type": "text",
+      "score": 0.7541210651397705,
+      "text": "# Vancouver Hack Space\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 1601 Venables St · Grandview-Woodland\nFixed venue: yes - you can walk in\nCoordinates: 49.2769261, -123.0725869\nEquipment and facilities on site: 3D Printing, Laser Cutting, Woodshop, Metalshop, Electronics, Robotics\nWebsite: https://vanhack.ca/\nDirectory rank: 10 of 46\nLast verified: 2026-08\nCommunity-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting, woodworking, machining, robotics, welding, electronics and more.",
+      "item": {
+        "key": "vhs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.42635593,
+        "keyword_score": 10.132690226485046,
+        "vector_rank": 4,
+        "keyword_rank": 2,
+        "fusion_method": "rrf",
+        "reranking_score": 0.7541210651397705
+      }
+    },
+    {
+      "id": "938fd0422f02172c5b5cebd41c36e00b7071c03c824740cc71a3a03814dfaf64",
+      "type": "text",
+      "score": 0.7036654353141785,
+      "text": "# Maker Cube\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 104B–5947 206A St · Langley\nFixed venue: yes - you can walk in\nCoordinates: 49.0889, -122.6503\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://makercube.ca/\nDirectory rank: 33 of 46\nLast verified: 2026-08\nLangley's premier makerspace — woodworking and welding shops, CNC and laser cutters, 3D printing, a ceramics studio, rentable studio 'cubes' and classes for every skill level.",
+      "item": {
+        "key": "makercube.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4555866,
+        "keyword_score": 10.094223296255526,
+        "vector_rank": 1,
+        "keyword_rank": 3,
+        "fusion_method": "rrf",
+        "reranking_score": 0.7036654353141785
+      }
+    },
+    {
+      "id": "a91701b261394c203473b9ee9d15f801e5e8c4ad5c22a7c0781f1fef78a57628",
+      "type": "text",
+      "score": 0.6838706731796265,
+      "text": "# Makerspace Nanaimo\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 2221A McGarrigle Rd · Nanaimo\nFixed venue: yes - you can walk in\nCoordinates: 49.1939, -123.9834\nEquipment and facilities on site: 3D Printing, Woodshop, Metalshop, Robotics\nWebsite: https://makerspacenanaimo.org/\nDirectory rank: 45 of 46\nLast verified: 2026-08\nMid-Island's open community lab since 2013 — workshop, studio and social hub with 24/7 member access, from 3D printing and robotics to woodworking and metal.",
+      "item": {
+        "key": "makerspace-nanaimo.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40668115,
+        "keyword_score": 10.210510377430605,
+        "vector_rank": 5,
+        "keyword_rank": 1,
+        "fusion_method": "rrf",
+        "reranking_score": 0.6838706731796265
+      }
+    },
+    {
+      "id": "123eb08cf70ac3ff361684cb930a4038cb5a9548d6eeabe07f1251d2cabd4b87",
+      "type": "text",
+      "score": 0.5827065110206604,
+      "text": "# MakerLabs\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 780 E Cordova St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2818969, -123.0875456\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://www.makerlabs.com/\nDirectory rank: 32 of 46\nLast verified: 2026-08\nVancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, ceramics, CNC routers, laser cutters and a fab team that can build almost anything.",
+      "item": {
+        "key": "makerlabs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4470097,
+        "keyword_score": 7.025581090507715,
+        "vector_rank": 3,
+        "keyword_rank": 7,
+        "fusion_method": "rrf",
+        "reranking_score": 0.5827065110206604
+      }
+    },
+    {
+      "id": "aa951a06bcbf31dca75308cd2254120dfeeb848120d99e05841af5a6b4995c73",
+      "type": "text",
+      "score": 0.5600091814994812,
+      "text": "# Victoria Makerspace\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 4A–4476 Markham St · Saanich\nFixed venue: yes - you can walk in\nCoordinates: 48.4941015, -123.4131897\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Electronics\nWebsite: https://makerspace.ca/\nDirectory rank: 40 of 46\nLast verified: 2026-08\nVancouver Island's member-operated makerspace at the Technology Park — a collaborative workshop where makers of every background share tools, knowledge and 24/7 access.",
+      "item": {
+        "key": "victoria-makerspace.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40577945,
+        "keyword_score": 7.295449596152209,
+        "vector_rank": 6,
+        "keyword_rank": 6,
+        "fusion_method": "rrf",
+        "reranking_score": 0.5600091814994812
+      }
+    }
+  ],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector",
+      "keyword"
+    ],
+    "vector_result_count": 49,
+    "keyword_result_count": 7
+  }
+}

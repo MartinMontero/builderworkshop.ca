@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "I need to prototype a hardware product",
+  "chunks": [
+    {
+      "id": "c5f4b3b2fe373e653508fc1a3bcbf652d4f9969a03b25e96bdd3b055bfeb02f4",
+      "type": "text",
+      "score": 0.45306966,
+      "text": "# The Free-Build Circuit\n\nType: Pathway - a curated route through several venues\nStops in order: VPL Inspiration Lab -> Vancouver Tool Library -> Vancouver Hack Space\n\nZero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Drive, then show your work at open hack night.",
+      "item": {
+        "key": "pathway-free-build.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.45306966
+      }
+    },
+    {
+      "id": "5544db0bc06d1609cc0a5863edb079f50547bd3ccde3601329855c72409b8900",
+      "type": "text",
+      "score": 0.3699328,
+      "text": "# Ethọ́s Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 177 E 3rd Ave · Mount Pleasant\nFixed venue: yes - you can walk in\nCoordinates: 49.2683654, -123.1012334\nEquipment and facilities on site: 3D Printing, Robotics\nWebsite: https://ethoslab.ca/\nDirectory rank: 7 of 46\nLast verified: 2026-08\nNon-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in Ubuntu, building the next generation of diverse creators.",
+      "item": {
+        "key": "ethoslab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3699328
+      }
+    },
+    {
+      "id": "5e196d4b42f6b8809e37bc18b7c99f5275d198e7a5da67b2a24d55f5fb42996c",
+      "type": "text",
+      "score": 0.36686996,
+      "text": "# Vancouver Hack Space\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 1601 Venables St · Grandview-Woodland\nFixed venue: yes - you can walk in\nCoordinates: 49.2769261, -123.0725869\nEquipment and facilities on site: 3D Printing, Laser Cutting, Woodshop, Metalshop, Electronics, Robotics\nWebsite: https://vanhack.ca/\nDirectory rank: 10 of 46\nLast verified: 2026-08\nCommunity-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting, woodworking, machining, robotics, welding, electronics and more.",
+      "item": {
+        "key": "vhs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.36686996
+      }
+    },
+    {
+      "id": "a09d7595d91efbe09ac7b71fbdebabe2c342dce7bdd46a0c1ff18fc1f3b51ef2",
+      "type": "text",
+      "score": 0.36416212,
+      "text": "# Zen LaunchPad\nType: Programs & Accelerators\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: North Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.zenlaunchpad.com/\nDirectory rank: 46 of 46\nLast verified: 2026-08\nNorth Vancouver venture studio and incubator for robotics, IoT and AR/VR ventures — taking teams from idea to prototype, with Canada Startup Visa access and direct funding.",
+      "item": {
+        "key": "zenlaunchpad.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.36416212
+      }
+    },
+    {
+      "id": "a8635e46ab03156d19f6670ff09e72fcba9622ca5c018a3b4063265857b40bde",
+      "type": "text",
+      "score": 0.34767836,
+      "text": "# VPL Inspiration Lab\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 350 W Georgia St · Downtown\nFixed venue: yes - you can walk in\nCoordinates: 49.279659, -123.115614\nEquipment and facilities on site: Recording & Podcast, Digitization\nWebsite: https://www.vpl.ca/branches/central/level-3/inspiration-lab\nDirectory rank: 37 of 46\nLast verified: 2026-08\nThe city's free digital creation space on Level 3 of the Central Library — recording studios, digitization stations, video editing and self-publishing tools, open to everyone.",
+      "item": {
+        "key": "inspirationlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.34767836
+      }
+    },
+    {
+      "id": "86d2ce0ca3898404b4ef687183fd08b16d4285eb17844f480b562f7a3b099c63",
+      "type": "text",
+      "score": 0.34518072,
+      "text": "# Zen Maker Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 224–125 Victory Ship Way · The Shipyards, North Van\nFixed venue: yes - you can walk in\nCoordinates: 49.30955, -123.07851\nEquipment and facilities on site: 3D Printing, Laser Cutting, Robotics\nWebsite: https://www.zenmakerlab.com/\nDirectory rank: 35 of 46\nLast verified: 2026-08\nNorth Shore maker lab making technology accessible since 2013 — STEAM programs, camps and after-school clubs in coding, robotics, 3D printing and design for kids, youth and adults.",
+      "item": {
+        "key": "zenmakerlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.34518072
+      }
+    },
+    {
+      "id": "1f116603ebb687e92283d0ca81bc385a69c4707925ae1df3114f93e04c6723ed",
+      "type": "text",
+      "score": 0.34265938,
+      "text": "# buildrs.dev\nType: Community & Events\nBuilder stage: ONE → MVP\nLocation: Online · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://buildrs.dev/\nDirectory rank: 27 of 46\nLast verified: 2026-08\nEvery tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of every product BC’s buildrs are shipping.\nFor what is actually happening in Vancouver tech week to week, and for the directory of products BC builders are shipping, go to buildrs.dev. It is the single calendar for the city and the place to list what you have built. builderworkshop.ca does not run an events calendar or a product directory.",
+      "item": {
+        "key": "buildrs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.34265938
+      }
+    },
+    {
+      "id": "84182b323bade0f9a19e46359084a1c56bc611564b514365de488bf2c6ed4ca7",
+      "type": "text",
+      "score": 0.33712938,
+      "text": "# Founder's Quest\nType: Programs & Accelerators\nBuilder stage: ZERO → ONE\nLocation: Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundersquest.ca/\nDirectory rank: 19 of 46\nLast verified: 2026-08\nA gamified founder journey built on the Genesis Framework — validate real problems beat by beat, from the Call to Adventure to a launched venture.",
+      "item": {
+        "key": "foundersquest.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.33712938
+      }
+    },
+    {
+      "id": "123eb08cf70ac3ff361684cb930a4038cb5a9548d6eeabe07f1251d2cabd4b87",
+      "type": "text",
+      "score": 0.33618224,
+      "text": "# MakerLabs\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 780 E Cordova St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2818969, -123.0875456\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://www.makerlabs.com/\nDirectory rank: 32 of 46\nLast verified: 2026-08\nVancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, ceramics, CNC routers, laser cutters and a fab team that can build almost anything.",
+      "item": {
+        "key": "makerlabs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.33618224
+      }
+    },
+    {
+      "id": "84f9097ebd4b11ae39a4559af8b08337ae1854c17ffa4a24d118bf21cebe3d15",
+      "type": "text",
+      "score": 0.32738847,
+      "text": "# The Strathcona Maker Mile\n\nType: Pathway - a curated route through several venues\nStops in order: Vancouver Hack Space -> Slice of Life -> MakerLabs -> Terminal City Glass Co-op -> The Arts Factory\n\nThe densest making corridor in BC — hack space to artist clubhouse to 26,000 sq ft of fabrication to a glass furnace to a warehouse of studios, all inside one square mile.",
+      "item": {
+        "key": "pathway-maker-mile.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.32738847
+      }
+    }
+  ]
+}

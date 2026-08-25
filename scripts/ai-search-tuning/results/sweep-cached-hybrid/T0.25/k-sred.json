@@ -1,0 +1,12 @@
+{
+  "query_kind": "text",
+  "search_query": "SR&ED tax credits",
+  "chunks": [],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector"
+    ],
+    "vector_result_count": 49,
+    "keyword_result_count": 0
+  }
+}

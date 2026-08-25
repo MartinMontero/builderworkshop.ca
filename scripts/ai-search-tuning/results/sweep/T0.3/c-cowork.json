@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "somewhere downtown to sit and work",
+  "chunks": [
+    {
+      "id": "8a9aafca8d4619b06d97358a3f4fefd02a20fac38dba55593fcacb960b0666ad",
+      "type": "text",
+      "score": 0.42546174,
+      "text": "# The Gastown Founder Crawl\n\nType: Pathway - a curated route through several venues\nStops in order: FriendsQuarters -> Launch Academy -> DCTRL -> Internet Archive Canada -> FUNK Coffee Bar\n\nFive rooms, one afternoon: coworking, an incubator, the cypherpunk clubhouse, the national memory bank and the coffee bar where first meetings actually happen.",
+      "item": {
+        "key": "pathway-gastown-crawl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.42546174
+      }
+    },
+    {
+      "id": "8daa3761c6b2964c70a83772d0c7db4638f17522e180ae18ae4dc766da211beb",
+      "type": "text",
+      "score": 0.40673482,
+      "text": "# FUNK Coffee Bar\nType: Spaces & Places\nBuilder stage: ZERO → ONE\nLocation: 1025 Dunsmuir St · Downtown\nFixed venue: yes - you can walk in\nCoordinates: 49.2863433, -123.120525\nWebsite: https://funk.coffee\nDirectory rank: 8 of 46\nLast verified: 2026-08\nCoffee-centric downtown bar from the House of Funk crew — the unofficial third place where half the ecosystem’s first meetings actually happen.",
+      "item": {
+        "key": "funk.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40673482
+      }
+    },
+    {
+      "id": "a8635e46ab03156d19f6670ff09e72fcba9622ca5c018a3b4063265857b40bde",
+      "type": "text",
+      "score": 0.4004786,
+      "text": "# VPL Inspiration Lab\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 350 W Georgia St · Downtown\nFixed venue: yes - you can walk in\nCoordinates: 49.279659, -123.115614\nEquipment and facilities on site: Recording & Podcast, Digitization\nWebsite: https://www.vpl.ca/branches/central/level-3/inspiration-lab\nDirectory rank: 37 of 46\nLast verified: 2026-08\nThe city's free digital creation space on Level 3 of the Central Library — recording studios, digitization stations, video editing and self-publishing tools, open to everyone.",
+      "item": {
+        "key": "inspirationlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4004786
+      }
+    },
+    {
+      "id": "fe8537f736dff9812625219e7f929e827d7b20194bb3397b8bc9b269ebc70ac7",
+      "type": "text",
+      "score": 0.3992339,
+      "text": "# DCTRL\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 328 W Hastings St · Gastown\nFixed venue: yes - you can walk in\nCoordinates: 49.2829423, -123.1107804\nWebsite: https://www.dctrl.wtf/\nDirectory rank: 1 of 46\nLast verified: 2026-08\nVancouver's longest-running home for Bitcoin, crypto and decentralized tech — a member-run, non-profit cypherpunk coworking and event studio operating since 2013.",
+      "item": {
+        "key": "dctrl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3992339
+      }
+    },
+    {
+      "id": "e15d0a674a38b3464b6009e9486f727403b8a84713cd8a25770f67d67fbbf8a4",
+      "type": "text",
+      "score": 0.3794805,
+      "text": "# FriendsQuarters\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 200–116 W Hastings St · Gastown\nFixed venue: yes - you can walk in\nCoordinates: 49.2818562, -123.107943\nEquipment and facilities on site: Recording & Podcast\nWebsite: https://www.friendsquarters.com/\nDirectory rank: 3 of 46\nLast verified: 2026-08\nVancouver's friendliest coworking, connection and media space — 5,500 sq ft with hot desks, a podcast room and an atrium, steps from Waterfront Station.",
+      "item": {
+        "key": "friendsquarters.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3794805
+      }
+    },
+    {
+      "id": "c5f4b3b2fe373e653508fc1a3bcbf652d4f9969a03b25e96bdd3b055bfeb02f4",
+      "type": "text",
+      "score": 0.37690046,
+      "text": "# The Free-Build Circuit\n\nType: Pathway - a curated route through several venues\nStops in order: VPL Inspiration Lab -> Vancouver Tool Library -> Vancouver Hack Space\n\nZero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Drive, then show your work at open hack night.",
+      "item": {
+        "key": "pathway-free-build.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.37690046
+      }
+    },
+    {
+      "id": "1f116603ebb687e92283d0ca81bc385a69c4707925ae1df3114f93e04c6723ed",
+      "type": "text",
+      "score": 0.368657,
+      "text": "# buildrs.dev\nType: Community & Events\nBuilder stage: ONE → MVP\nLocation: Online · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://buildrs.dev/\nDirectory rank: 27 of 46\nLast verified: 2026-08\nEvery tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of every product BC’s buildrs are shipping.\nFor what is actually happening in Vancouver tech week to week, and for the directory of products BC builders are shipping, go to buildrs.dev. It is the single calendar for the city and the place to list what you have built. builderworkshop.ca does not run an events calendar or a product directory.",
+      "item": {
+        "key": "buildrs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.368657
+      }
+    },
+    {
+      "id": "d6f42912f7c4b84337fab70b7989aa7b7e4030518211f92dd31205456e64dffd",
+      "type": "text",
+      "score": 0.35580537,
+      "text": "# Z-Space\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 301–505 Hamilton St · Victory Square\nFixed venue: yes - you can walk in\nCoordinates: 49.2819714, -123.1114556\nWebsite: https://z-space.ca/\nDirectory rank: 44 of 46\nLast verified: 2026-08\nNon-profit arts and technology society in the historic Odd Fellows Hall — coworking, an event stage, media gallery and café for creative technologists and indie builders.",
+      "item": {
+        "key": "zspace.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.35580537
+      }
+    },
+    {
+      "id": "84f9097ebd4b11ae39a4559af8b08337ae1854c17ffa4a24d118bf21cebe3d15",
+      "type": "text",
+      "score": 0.3539419,
+      "text": "# The Strathcona Maker Mile\n\nType: Pathway - a curated route through several venues\nStops in order: Vancouver Hack Space -> Slice of Life -> MakerLabs -> Terminal City Glass Co-op -> The Arts Factory\n\nThe densest making corridor in BC — hack space to artist clubhouse to 26,000 sq ft of fabrication to a glass furnace to a warehouse of studios, all inside one square mile.",
+      "item": {
+        "key": "pathway-maker-mile.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3539419
+      }
+    },
+    {
+      "id": "fd226f4052b1cc3146951d732e2eff2c60e2004993c4abcc5c12b7bb238cfa63",
+      "type": "text",
+      "score": 0.35040963,
+      "text": "# SFU Surrey\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 250–13450 102 Ave · Surrey Central\nFixed venue: yes - you can walk in\nCoordinates: 49.1866, -122.849\nWebsite: https://www.sfu.ca/surrey/about/our-locations/sfu-surrey-plaza.html\nDirectory rank: 22 of 46\nLast verified: 2026-08\nSFU's Surrey campus at Central City — the award-winning Bing Thom-designed hub for applied sciences, engineering, business and the Sustainable Energy Engineering school, anchoring one of Canada's fastest-growing city centres.",
+      "item": {
+        "key": "sfusurrey.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.35040963
+      }
+    }
+  ]
+}

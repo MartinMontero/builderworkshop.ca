@@ -1,0 +1,36 @@
+{
+  "query_kind": "text",
+  "search_query": "what tech events are happening this week",
+  "chunks": [
+    {
+      "id": "1f116603ebb687e92283d0ca81bc385a69c4707925ae1df3114f93e04c6723ed",
+      "type": "text",
+      "score": 0.7687211632728577,
+      "text": "# buildrs.dev\nType: Community & Events\nBuilder stage: ONE → MVP\nLocation: Online · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://buildrs.dev/\nDirectory rank: 27 of 46\nLast verified: 2026-08\nEvery tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of every product BC’s buildrs are shipping.\nFor what is actually happening in Vancouver tech week to week, and for the directory of products BC builders are shipping, go to buildrs.dev. It is the single calendar for the city and the place to list what you have built. builderworkshop.ca does not run an events calendar or a product directory.",
+      "item": {
+        "key": "buildrs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.49614385,
+        "keyword_score": 21.326582543577814,
+        "vector_rank": 1,
+        "keyword_rank": 1,
+        "fusion_method": "rrf",
+        "reranking_score": 0.7687211632728577
+      }
+    }
+  ],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector",
+      "keyword"
+    ],
+    "vector_result_count": 50,
+    "keyword_result_count": 1
+  }
+}

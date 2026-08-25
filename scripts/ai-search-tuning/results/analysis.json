@@ -1,0 +1,4660 @@
+{
+ "0.4": {
+  "k-laser": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "c-laser": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "k-ceramics": {
+   "n": 8,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.419,
+    0.419,
+    0.415
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.419,
+    0.419,
+    0.415
+   ]
+  },
+  "c-ceramics": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "k-preseed": {
+   "n": 7,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405
+   ]
+  },
+  "c-preseed": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "n": 3,
+   "top": 0.42546174,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "funk.md",
+    "inspirationlab.md"
+   ],
+   "rerank": [
+    0.425,
+    0.407,
+    0.4
+   ],
+   "vec": [
+    0.425,
+    0.407,
+    0.4
+   ]
+  },
+  "k-youth": {
+   "n": 9,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403
+   ]
+  },
+  "c-youth": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "k-glass": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 6,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406
+   ]
+  },
+  "c-proto": {
+   "n": 1,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.453
+   ],
+   "vec": [
+    0.453
+   ]
+  },
+  "c-events": {
+   "n": 4,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404
+   ]
+  },
+  "k-sred": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  }
+ },
+ "0.38": {
+  "k-laser": {
+   "n": 3,
+   "top": 0.4468045,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md"
+   ],
+   "rerank": [
+    0.447,
+    0.424,
+    0.403
+   ],
+   "vec": [
+    0.447,
+    0.424,
+    0.403
+   ]
+  },
+  "c-laser": {
+   "n": 4,
+   "top": 0.43927518,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md"
+   ],
+   "rerank": [
+    0.439,
+    0.422,
+    0.392,
+    0.391
+   ],
+   "vec": [
+    0.439,
+    0.422,
+    0.392,
+    0.391
+   ]
+  },
+  "k-ceramics": {
+   "n": 10,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "pathway-maker-mile.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md",
+    "makerspace-nanaimo.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ]
+  },
+  "c-ceramics": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "k-preseed": {
+   "n": 8,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md",
+    "venturelabs.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391
+   ]
+  },
+  "c-preseed": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "n": 4,
+   "top": 0.42546174,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "funk.md",
+    "inspirationlab.md",
+    "dctrl.md"
+   ],
+   "rerank": [
+    0.425,
+    0.407,
+    0.4,
+    0.399
+   ],
+   "vec": [
+    0.425,
+    0.407,
+    0.4,
+    0.399
+   ]
+  },
+  "k-youth": {
+   "n": 10,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md",
+    "flowstatefounder.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ]
+  },
+  "c-youth": {
+   "n": 1,
+   "top": 0.3994864,
+   "keys": [
+    "ethoslab.md"
+   ],
+   "rerank": [
+    0.399
+   ],
+   "vec": [
+    0.399
+   ]
+  },
+  "k-glass": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 6,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406
+   ]
+  },
+  "c-proto": {
+   "n": 1,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.453
+   ],
+   "vec": [
+    0.453
+   ]
+  },
+  "c-events": {
+   "n": 6,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md",
+    "vst.md",
+    "frontiercollective.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387
+   ]
+  },
+  "k-sred": {
+   "n": 0,
+   "top": null,
+   "keys": [],
+   "rerank": [],
+   "vec": []
+  }
+ },
+ "0.36": {
+  "k-laser": {
+   "n": 4,
+   "top": 0.4468045,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md"
+   ],
+   "rerank": [
+    0.447,
+    0.424,
+    0.403,
+    0.367
+   ],
+   "vec": [
+    0.447,
+    0.424,
+    0.403,
+    0.367
+   ]
+  },
+  "c-laser": {
+   "n": 6,
+   "top": 0.43927518,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361
+   ],
+   "vec": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361
+   ]
+  },
+  "k-ceramics": {
+   "n": 10,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "pathway-maker-mile.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md",
+    "makerspace-nanaimo.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ]
+  },
+  "c-ceramics": {
+   "n": 3,
+   "top": 0.38899845,
+   "keys": [
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-gastown-crawl.md"
+   ],
+   "rerank": [
+    0.389,
+    0.388,
+    0.384
+   ],
+   "vec": [
+    0.389,
+    0.388,
+    0.384
+   ]
+  },
+  "k-preseed": {
+   "n": 8,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md",
+    "venturelabs.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391
+   ]
+  },
+  "c-preseed": {
+   "n": 1,
+   "top": 0.37422806,
+   "keys": [
+    "foundersquest.md"
+   ],
+   "rerank": [
+    0.374
+   ],
+   "vec": [
+    0.374
+   ]
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "n": 7,
+   "top": 0.42546174,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "funk.md",
+    "inspirationlab.md",
+    "dctrl.md",
+    "friendsquarters.md",
+    "pathway-free-build.md",
+    "buildrs.md"
+   ],
+   "rerank": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369
+   ],
+   "vec": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369
+   ]
+  },
+  "k-youth": {
+   "n": 10,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md",
+    "flowstatefounder.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ]
+  },
+  "c-youth": {
+   "n": 1,
+   "top": 0.3994864,
+   "keys": [
+    "ethoslab.md"
+   ],
+   "rerank": [
+    0.399
+   ],
+   "vec": [
+    0.399
+   ]
+  },
+  "k-glass": {
+   "n": 1,
+   "top": 0.3641055,
+   "keys": [
+    "tcglass.md"
+   ],
+   "rerank": [
+    0.364
+   ],
+   "vec": [
+    0.364
+   ]
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 8,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md",
+    "pathway-maker-mile.md",
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364
+   ]
+  },
+  "c-proto": {
+   "n": 4,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md",
+    "ethoslab.md",
+    "vhs.md",
+    "zenlaunchpad.md"
+   ],
+   "rerank": [
+    0.453,
+    0.37,
+    0.367,
+    0.364
+   ],
+   "vec": [
+    0.453,
+    0.37,
+    0.367,
+    0.364
+   ]
+  },
+  "c-events": {
+   "n": 8,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md",
+    "vst.md",
+    "frontiercollective.md",
+    "dctrl.md",
+    "zenlaunchpad.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363
+   ]
+  },
+  "k-sred": {
+   "n": 1,
+   "top": 0.3717068,
+   "keys": [
+    "foundedincanada.md"
+   ],
+   "rerank": [
+    0.372
+   ],
+   "vec": [
+    0.372
+   ]
+  }
+ },
+ "0.35": {
+  "k-laser": {
+   "n": 5,
+   "top": 0.4468045,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md"
+   ],
+   "rerank": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358
+   ],
+   "vec": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358
+   ]
+  },
+  "c-laser": {
+   "n": 7,
+   "top": 0.43927518,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "vtl.md",
+    "slice.md"
+   ],
+   "rerank": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355
+   ],
+   "vec": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355
+   ]
+  },
+  "k-ceramics": {
+   "n": 10,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "pathway-maker-mile.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md",
+    "makerspace-nanaimo.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ]
+  },
+  "c-ceramics": {
+   "n": 8,
+   "top": 0.38899845,
+   "keys": [
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-gastown-crawl.md",
+    "vtl.md",
+    "artsfactory.md",
+    "tcglass.md",
+    "inspirationlab.md",
+    "makerlabs.md"
+   ],
+   "rerank": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362
+   ],
+   "vec": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362
+   ]
+  },
+  "k-preseed": {
+   "n": 10,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md",
+    "venturelabs.md",
+    "aistartuphub.md",
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ]
+  },
+  "c-preseed": {
+   "n": 3,
+   "top": 0.37422806,
+   "keys": [
+    "foundersquest.md",
+    "pathway-free-build.md",
+    "aistartuphub.md"
+   ],
+   "rerank": [
+    0.374,
+    0.358,
+    0.354
+   ],
+   "vec": [
+    0.374,
+    0.358,
+    0.354
+   ]
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "n": 10,
+   "top": 0.42546174,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "funk.md",
+    "inspirationlab.md",
+    "dctrl.md",
+    "friendsquarters.md",
+    "pathway-free-build.md",
+    "buildrs.md",
+    "zspace.md",
+    "pathway-maker-mile.md",
+    "sfusurrey.md"
+   ],
+   "rerank": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ],
+   "vec": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ]
+  },
+  "k-youth": {
+   "n": 10,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md",
+    "flowstatefounder.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ]
+  },
+  "c-youth": {
+   "n": 2,
+   "top": 0.3994864,
+   "keys": [
+    "ethoslab.md",
+    "zenmakerlab.md"
+   ],
+   "rerank": [
+    0.399,
+    0.352
+   ],
+   "vec": [
+    0.399,
+    0.352
+   ]
+  },
+  "k-glass": {
+   "n": 1,
+   "top": 0.3641055,
+   "keys": [
+    "tcglass.md"
+   ],
+   "rerank": [
+    0.364
+   ],
+   "vec": [
+    0.364
+   ]
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 10,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md",
+    "pathway-maker-mile.md",
+    "pathway-free-build.md",
+    "artsfactory.md",
+    "ethoslab.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ]
+  },
+  "c-proto": {
+   "n": 4,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md",
+    "ethoslab.md",
+    "vhs.md",
+    "zenlaunchpad.md"
+   ],
+   "rerank": [
+    0.453,
+    0.37,
+    0.367,
+    0.364
+   ],
+   "vec": [
+    0.453,
+    0.37,
+    0.367,
+    0.364
+   ]
+  },
+  "c-events": {
+   "n": 10,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md",
+    "vst.md",
+    "frontiercollective.md",
+    "dctrl.md",
+    "zenlaunchpad.md",
+    "aistartuphub.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ]
+  },
+  "k-sred": {
+   "n": 1,
+   "top": 0.3717068,
+   "keys": [
+    "foundedincanada.md"
+   ],
+   "rerank": [
+    0.372
+   ],
+   "vec": [
+    0.372
+   ]
+  }
+ },
+ "0.33": {
+  "k-laser": {
+   "n": 8,
+   "top": 0.4468045,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "pathway-free-build.md",
+    "pathway-maker-mile.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335
+   ],
+   "vec": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335
+   ]
+  },
+  "c-laser": {
+   "n": 8,
+   "top": 0.43927518,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "vtl.md",
+    "slice.md",
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347
+   ],
+   "vec": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347
+   ]
+  },
+  "k-ceramics": {
+   "n": 10,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "pathway-maker-mile.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md",
+    "makerspace-nanaimo.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ]
+  },
+  "c-ceramics": {
+   "n": 10,
+   "top": 0.38899845,
+   "keys": [
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-gastown-crawl.md",
+    "vtl.md",
+    "artsfactory.md",
+    "tcglass.md",
+    "inspirationlab.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md",
+    "makercube.md"
+   ],
+   "rerank": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ],
+   "vec": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ]
+  },
+  "k-preseed": {
+   "n": 10,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md",
+    "venturelabs.md",
+    "aistartuphub.md",
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ]
+  },
+  "c-preseed": {
+   "n": 6,
+   "top": 0.37422806,
+   "keys": [
+    "foundersquest.md",
+    "pathway-free-build.md",
+    "aistartuphub.md",
+    "foundedincanada.md",
+    "zenlaunchpad.md",
+    "futurpreneur.md"
+   ],
+   "rerank": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336
+   ],
+   "vec": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336
+   ]
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "n": 10,
+   "top": 0.42546174,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "funk.md",
+    "inspirationlab.md",
+    "dctrl.md",
+    "friendsquarters.md",
+    "pathway-free-build.md",
+    "buildrs.md",
+    "zspace.md",
+    "pathway-maker-mile.md",
+    "sfusurrey.md"
+   ],
+   "rerank": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ],
+   "vec": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ]
+  },
+  "k-youth": {
+   "n": 10,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md",
+    "flowstatefounder.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ]
+  },
+  "c-youth": {
+   "n": 3,
+   "top": 0.3994864,
+   "keys": [
+    "ethoslab.md",
+    "zenmakerlab.md",
+    "zenlaunchpad.md"
+   ],
+   "rerank": [
+    0.399,
+    0.352,
+    0.335
+   ],
+   "vec": [
+    0.399,
+    0.352,
+    0.335
+   ]
+  },
+  "k-glass": {
+   "n": 3,
+   "top": 0.3641055,
+   "keys": [
+    "tcglass.md",
+    "makerlabs.md",
+    "makercube.md"
+   ],
+   "rerank": [
+    0.364,
+    0.349,
+    0.338
+   ],
+   "vec": [
+    0.364,
+    0.349,
+    0.338
+   ]
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 10,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md",
+    "pathway-maker-mile.md",
+    "pathway-free-build.md",
+    "artsfactory.md",
+    "ethoslab.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ]
+  },
+  "c-proto": {
+   "n": 9,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md",
+    "ethoslab.md",
+    "vhs.md",
+    "zenlaunchpad.md",
+    "inspirationlab.md",
+    "zenmakerlab.md",
+    "buildrs.md",
+    "foundersquest.md",
+    "makerlabs.md"
+   ],
+   "rerank": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336
+   ],
+   "vec": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336
+   ]
+  },
+  "c-events": {
+   "n": 10,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md",
+    "vst.md",
+    "frontiercollective.md",
+    "dctrl.md",
+    "zenlaunchpad.md",
+    "aistartuphub.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ]
+  },
+  "k-sred": {
+   "n": 1,
+   "top": 0.3717068,
+   "keys": [
+    "foundedincanada.md"
+   ],
+   "rerank": [
+    0.372
+   ],
+   "vec": [
+    0.372
+   ]
+  }
+ },
+ "0.3": {
+  "k-laser": {
+   "n": 8,
+   "top": 0.4468045,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "pathway-free-build.md",
+    "pathway-maker-mile.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335
+   ],
+   "vec": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335
+   ]
+  },
+  "c-laser": {
+   "n": 10,
+   "top": 0.43927518,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "vtl.md",
+    "slice.md",
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-maker-mile.md"
+   ],
+   "rerank": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347,
+    0.328,
+    0.32
+   ],
+   "vec": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347,
+    0.328,
+    0.32
+   ]
+  },
+  "k-ceramics": {
+   "n": 10,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "pathway-maker-mile.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md",
+    "makerspace-nanaimo.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ]
+  },
+  "c-ceramics": {
+   "n": 10,
+   "top": 0.38899845,
+   "keys": [
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-gastown-crawl.md",
+    "vtl.md",
+    "artsfactory.md",
+    "tcglass.md",
+    "inspirationlab.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md",
+    "makercube.md"
+   ],
+   "rerank": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ],
+   "vec": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ]
+  },
+  "k-preseed": {
+   "n": 10,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md",
+    "venturelabs.md",
+    "aistartuphub.md",
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ]
+  },
+  "c-preseed": {
+   "n": 10,
+   "top": 0.37422806,
+   "keys": [
+    "foundersquest.md",
+    "pathway-free-build.md",
+    "aistartuphub.md",
+    "foundedincanada.md",
+    "zenlaunchpad.md",
+    "futurpreneur.md",
+    "inspirationlab.md",
+    "foundersboost.md",
+    "flowstatefounder.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336,
+    0.329,
+    0.321,
+    0.319,
+    0.304
+   ],
+   "vec": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336,
+    0.329,
+    0.321,
+    0.319,
+    0.304
+   ]
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "n": 10,
+   "top": 0.42546174,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "funk.md",
+    "inspirationlab.md",
+    "dctrl.md",
+    "friendsquarters.md",
+    "pathway-free-build.md",
+    "buildrs.md",
+    "zspace.md",
+    "pathway-maker-mile.md",
+    "sfusurrey.md"
+   ],
+   "rerank": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ],
+   "vec": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ]
+  },
+  "k-youth": {
+   "n": 10,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md",
+    "flowstatefounder.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ]
+  },
+  "c-youth": {
+   "n": 5,
+   "top": 0.3994864,
+   "keys": [
+    "ethoslab.md",
+    "zenmakerlab.md",
+    "zenlaunchpad.md",
+    "makerspace-nanaimo.md",
+    "buildrs.md"
+   ],
+   "rerank": [
+    0.399,
+    0.352,
+    0.335,
+    0.321,
+    0.32
+   ],
+   "vec": [
+    0.399,
+    0.352,
+    0.335,
+    0.321,
+    0.32
+   ]
+  },
+  "k-glass": {
+   "n": 9,
+   "top": 0.3641055,
+   "keys": [
+    "tcglass.md",
+    "makerlabs.md",
+    "makercube.md",
+    "pathway-maker-mile.md",
+    "buildrs.md",
+    "zenmakerlab.md",
+    "vhs.md",
+    "pathway-free-build.md",
+    "inspirationlab.md"
+   ],
+   "rerank": [
+    0.364,
+    0.349,
+    0.338,
+    0.326,
+    0.314,
+    0.309,
+    0.303,
+    0.301,
+    0.301
+   ],
+   "vec": [
+    0.364,
+    0.349,
+    0.338,
+    0.326,
+    0.314,
+    0.309,
+    0.303,
+    0.301,
+    0.301
+   ]
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 10,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md",
+    "pathway-maker-mile.md",
+    "pathway-free-build.md",
+    "artsfactory.md",
+    "ethoslab.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ]
+  },
+  "c-proto": {
+   "n": 10,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md",
+    "ethoslab.md",
+    "vhs.md",
+    "zenlaunchpad.md",
+    "inspirationlab.md",
+    "zenmakerlab.md",
+    "buildrs.md",
+    "foundersquest.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md"
+   ],
+   "rerank": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336,
+    0.327
+   ],
+   "vec": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336,
+    0.327
+   ]
+  },
+  "c-events": {
+   "n": 10,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md",
+    "vst.md",
+    "frontiercollective.md",
+    "dctrl.md",
+    "zenlaunchpad.md",
+    "aistartuphub.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ]
+  },
+  "k-sred": {
+   "n": 6,
+   "top": 0.3717068,
+   "keys": [
+    "foundedincanada.md",
+    "vst.md",
+    "sfusurrey.md",
+    "althra.md",
+    "dctrl.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.372,
+    0.325,
+    0.325,
+    0.317,
+    0.314,
+    0.313
+   ],
+   "vec": [
+    0.372,
+    0.325,
+    0.325,
+    0.317,
+    0.314,
+    0.313
+   ]
+  }
+ },
+ "0.25": {
+  "k-laser": {
+   "n": 10,
+   "top": 0.4468045,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "pathway-free-build.md",
+    "pathway-maker-mile.md",
+    "vtl.md",
+    "pathway-island-run.md",
+    "slice.md"
+   ],
+   "rerank": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335,
+    0.322,
+    0.3
+   ],
+   "vec": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335,
+    0.322,
+    0.3
+   ]
+  },
+  "c-laser": {
+   "n": 10,
+   "top": 0.43927518,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "vtl.md",
+    "slice.md",
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-maker-mile.md"
+   ],
+   "rerank": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347,
+    0.328,
+    0.32
+   ],
+   "vec": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347,
+    0.328,
+    0.32
+   ]
+  },
+  "k-ceramics": {
+   "n": 10,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "pathway-maker-mile.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md",
+    "makerspace-nanaimo.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ]
+  },
+  "c-ceramics": {
+   "n": 10,
+   "top": 0.38899845,
+   "keys": [
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-gastown-crawl.md",
+    "vtl.md",
+    "artsfactory.md",
+    "tcglass.md",
+    "inspirationlab.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md",
+    "makercube.md"
+   ],
+   "rerank": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ],
+   "vec": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ]
+  },
+  "k-preseed": {
+   "n": 10,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md",
+    "venturelabs.md",
+    "aistartuphub.md",
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ]
+  },
+  "c-preseed": {
+   "n": 10,
+   "top": 0.37422806,
+   "keys": [
+    "foundersquest.md",
+    "pathway-free-build.md",
+    "aistartuphub.md",
+    "foundedincanada.md",
+    "zenlaunchpad.md",
+    "futurpreneur.md",
+    "inspirationlab.md",
+    "foundersboost.md",
+    "flowstatefounder.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336,
+    0.329,
+    0.321,
+    0.319,
+    0.304
+   ],
+   "vec": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336,
+    0.329,
+    0.321,
+    0.319,
+    0.304
+   ]
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "parseFail": true
+  },
+  "k-youth": {
+   "n": 10,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md",
+    "flowstatefounder.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ]
+  },
+  "c-youth": {
+   "n": 10,
+   "top": 0.3994864,
+   "keys": [
+    "ethoslab.md",
+    "zenmakerlab.md",
+    "zenlaunchpad.md",
+    "makerspace-nanaimo.md",
+    "buildrs.md",
+    "makercube.md",
+    "pathway-free-build.md",
+    "bcai.md",
+    "vhs.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.399,
+    0.352,
+    0.335,
+    0.321,
+    0.32,
+    0.292,
+    0.283,
+    0.28,
+    0.266,
+    0.265
+   ],
+   "vec": [
+    0.399,
+    0.352,
+    0.335,
+    0.321,
+    0.32,
+    0.292,
+    0.283,
+    0.28,
+    0.266,
+    0.265
+   ]
+  },
+  "k-glass": {
+   "n": 10,
+   "top": 0.3641055,
+   "keys": [
+    "tcglass.md",
+    "makerlabs.md",
+    "makercube.md",
+    "pathway-maker-mile.md",
+    "buildrs.md",
+    "zenmakerlab.md",
+    "vhs.md",
+    "pathway-free-build.md",
+    "inspirationlab.md",
+    "mml.md"
+   ],
+   "rerank": [
+    0.364,
+    0.349,
+    0.338,
+    0.326,
+    0.314,
+    0.309,
+    0.303,
+    0.301,
+    0.301,
+    0.299
+   ],
+   "vec": [
+    0.364,
+    0.349,
+    0.338,
+    0.326,
+    0.314,
+    0.309,
+    0.303,
+    0.301,
+    0.301,
+    0.299
+   ]
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 10,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md",
+    "pathway-maker-mile.md",
+    "pathway-free-build.md",
+    "artsfactory.md",
+    "ethoslab.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ]
+  },
+  "c-proto": {
+   "n": 10,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md",
+    "ethoslab.md",
+    "vhs.md",
+    "zenlaunchpad.md",
+    "inspirationlab.md",
+    "zenmakerlab.md",
+    "buildrs.md",
+    "foundersquest.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md"
+   ],
+   "rerank": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336,
+    0.327
+   ],
+   "vec": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336,
+    0.327
+   ]
+  },
+  "c-events": {
+   "n": 10,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md",
+    "vst.md",
+    "frontiercollective.md",
+    "dctrl.md",
+    "zenlaunchpad.md",
+    "aistartuphub.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ]
+  },
+  "k-sred": {
+   "n": 10,
+   "top": 0.3717068,
+   "keys": [
+    "foundedincanada.md",
+    "vst.md",
+    "sfusurrey.md",
+    "althra.md",
+    "dctrl.md",
+    "alacrity.md",
+    "tcglass.md",
+    "basecamp.md",
+    "pathway-maker-mile.md",
+    "buildrs.md"
+   ],
+   "rerank": [
+    0.372,
+    0.325,
+    0.325,
+    0.317,
+    0.314,
+    0.313,
+    0.299,
+    0.298,
+    0.298,
+    0.295
+   ],
+   "vec": [
+    0.372,
+    0.325,
+    0.325,
+    0.317,
+    0.314,
+    0.313,
+    0.299,
+    0.298,
+    0.298,
+    0.295
+   ]
+  }
+ },
+ "0.2": {
+  "k-laser": {
+   "n": 10,
+   "top": 0.4468045,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "pathway-free-build.md",
+    "pathway-maker-mile.md",
+    "vtl.md",
+    "pathway-island-run.md",
+    "slice.md"
+   ],
+   "rerank": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335,
+    0.322,
+    0.3
+   ],
+   "vec": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335,
+    0.322,
+    0.3
+   ]
+  },
+  "c-laser": {
+   "n": 10,
+   "top": 0.43927518,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "vtl.md",
+    "slice.md",
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-maker-mile.md"
+   ],
+   "rerank": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347,
+    0.328,
+    0.32
+   ],
+   "vec": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347,
+    0.328,
+    0.32
+   ]
+  },
+  "k-ceramics": {
+   "n": 10,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "pathway-maker-mile.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md",
+    "makerspace-nanaimo.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ]
+  },
+  "c-ceramics": {
+   "n": 10,
+   "top": 0.38899845,
+   "keys": [
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-gastown-crawl.md",
+    "vtl.md",
+    "artsfactory.md",
+    "tcglass.md",
+    "inspirationlab.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md",
+    "makercube.md"
+   ],
+   "rerank": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ],
+   "vec": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ]
+  },
+  "k-preseed": {
+   "n": 10,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md",
+    "venturelabs.md",
+    "aistartuphub.md",
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ]
+  },
+  "c-preseed": {
+   "n": 10,
+   "top": 0.37422806,
+   "keys": [
+    "foundersquest.md",
+    "pathway-free-build.md",
+    "aistartuphub.md",
+    "foundedincanada.md",
+    "zenlaunchpad.md",
+    "futurpreneur.md",
+    "inspirationlab.md",
+    "foundersboost.md",
+    "flowstatefounder.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336,
+    0.329,
+    0.321,
+    0.319,
+    0.304
+   ],
+   "vec": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336,
+    0.329,
+    0.321,
+    0.319,
+    0.304
+   ]
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "n": 10,
+   "top": 0.42546174,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "funk.md",
+    "inspirationlab.md",
+    "dctrl.md",
+    "friendsquarters.md",
+    "pathway-free-build.md",
+    "buildrs.md",
+    "zspace.md",
+    "pathway-maker-mile.md",
+    "sfusurrey.md"
+   ],
+   "rerank": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ],
+   "vec": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ]
+  },
+  "k-youth": {
+   "n": 10,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md",
+    "flowstatefounder.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ]
+  },
+  "c-youth": {
+   "n": 10,
+   "top": 0.3994864,
+   "keys": [
+    "ethoslab.md",
+    "zenmakerlab.md",
+    "zenlaunchpad.md",
+    "makerspace-nanaimo.md",
+    "buildrs.md",
+    "makercube.md",
+    "pathway-free-build.md",
+    "bcai.md",
+    "vhs.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.399,
+    0.352,
+    0.335,
+    0.321,
+    0.32,
+    0.292,
+    0.283,
+    0.28,
+    0.266,
+    0.265
+   ],
+   "vec": [
+    0.399,
+    0.352,
+    0.335,
+    0.321,
+    0.32,
+    0.292,
+    0.283,
+    0.28,
+    0.266,
+    0.265
+   ]
+  },
+  "k-glass": {
+   "n": 10,
+   "top": 0.3641055,
+   "keys": [
+    "tcglass.md",
+    "makerlabs.md",
+    "makercube.md",
+    "pathway-maker-mile.md",
+    "buildrs.md",
+    "zenmakerlab.md",
+    "vhs.md",
+    "pathway-free-build.md",
+    "inspirationlab.md",
+    "mml.md"
+   ],
+   "rerank": [
+    0.364,
+    0.349,
+    0.338,
+    0.326,
+    0.314,
+    0.309,
+    0.303,
+    0.301,
+    0.301,
+    0.299
+   ],
+   "vec": [
+    0.364,
+    0.349,
+    0.338,
+    0.326,
+    0.314,
+    0.309,
+    0.303,
+    0.301,
+    0.301,
+    0.299
+   ]
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 10,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md",
+    "pathway-maker-mile.md",
+    "pathway-free-build.md",
+    "artsfactory.md",
+    "ethoslab.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ]
+  },
+  "c-proto": {
+   "n": 10,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md",
+    "ethoslab.md",
+    "vhs.md",
+    "zenlaunchpad.md",
+    "inspirationlab.md",
+    "zenmakerlab.md",
+    "buildrs.md",
+    "foundersquest.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md"
+   ],
+   "rerank": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336,
+    0.327
+   ],
+   "vec": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336,
+    0.327
+   ]
+  },
+  "c-events": {
+   "n": 10,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md",
+    "vst.md",
+    "frontiercollective.md",
+    "dctrl.md",
+    "zenlaunchpad.md",
+    "aistartuphub.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ]
+  },
+  "k-sred": {
+   "n": 10,
+   "top": 0.3717068,
+   "keys": [
+    "foundedincanada.md",
+    "vst.md",
+    "sfusurrey.md",
+    "althra.md",
+    "dctrl.md",
+    "alacrity.md",
+    "tcglass.md",
+    "basecamp.md",
+    "pathway-maker-mile.md",
+    "buildrs.md"
+   ],
+   "rerank": [
+    0.372,
+    0.325,
+    0.325,
+    0.317,
+    0.314,
+    0.313,
+    0.299,
+    0.298,
+    0.298,
+    0.295
+   ],
+   "vec": [
+    0.372,
+    0.325,
+    0.325,
+    0.317,
+    0.314,
+    0.313,
+    0.299,
+    0.298,
+    0.298,
+    0.295
+   ]
+  }
+ },
+ "0.15": {
+  "k-laser": {
+   "n": 10,
+   "top": 0.4468045,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "pathway-free-build.md",
+    "pathway-maker-mile.md",
+    "vtl.md",
+    "pathway-island-run.md",
+    "slice.md"
+   ],
+   "rerank": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335,
+    0.322,
+    0.3
+   ],
+   "vec": [
+    0.447,
+    0.424,
+    0.403,
+    0.367,
+    0.358,
+    0.348,
+    0.346,
+    0.335,
+    0.322,
+    0.3
+   ]
+  },
+  "c-laser": {
+   "n": 10,
+   "top": 0.43927518,
+   "keys": [
+    "makercube.md",
+    "makerlabs.md",
+    "victoria-makerspace.md",
+    "vhs.md",
+    "zenmakerlab.md",
+    "vtl.md",
+    "slice.md",
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-maker-mile.md"
+   ],
+   "rerank": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347,
+    0.328,
+    0.32
+   ],
+   "vec": [
+    0.439,
+    0.422,
+    0.392,
+    0.391,
+    0.367,
+    0.361,
+    0.355,
+    0.347,
+    0.328,
+    0.32
+   ]
+  },
+  "k-ceramics": {
+   "n": 10,
+   "top": 0.49384296,
+   "keys": [
+    "artsfactory.md",
+    "makerlabs.md",
+    "makercube.md",
+    "tcglass.md",
+    "zenmakerlab.md",
+    "pathway-maker-mile.md",
+    "victoria-makerspace.md",
+    "pathway-island-run.md",
+    "inspirationlab.md",
+    "makerspace-nanaimo.md"
+   ],
+   "rerank": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ],
+   "vec": [
+    0.494,
+    0.485,
+    0.456,
+    0.451,
+    0.431,
+    0.426,
+    0.419,
+    0.419,
+    0.415,
+    0.403
+   ]
+  },
+  "c-ceramics": {
+   "n": 10,
+   "top": 0.38899845,
+   "keys": [
+    "pathway-free-build.md",
+    "pathway-island-run.md",
+    "pathway-gastown-crawl.md",
+    "vtl.md",
+    "artsfactory.md",
+    "tcglass.md",
+    "inspirationlab.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md",
+    "makercube.md"
+   ],
+   "rerank": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ],
+   "vec": [
+    0.389,
+    0.388,
+    0.384,
+    0.376,
+    0.371,
+    0.367,
+    0.366,
+    0.362,
+    0.345,
+    0.341
+   ]
+  },
+  "k-preseed": {
+   "n": 10,
+   "top": 0.4529874,
+   "keys": [
+    "althra.md",
+    "foundersboost.md",
+    "alacrity.md",
+    "flowstatefounder.md",
+    "zenlaunchpad.md",
+    "foundersquest.md",
+    "launch.md",
+    "venturelabs.md",
+    "aistartuphub.md",
+    "pathway-free-build.md"
+   ],
+   "rerank": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ],
+   "vec": [
+    0.453,
+    0.447,
+    0.429,
+    0.422,
+    0.417,
+    0.41,
+    0.405,
+    0.391,
+    0.377,
+    0.373
+   ]
+  },
+  "c-preseed": {
+   "n": 10,
+   "top": 0.37422806,
+   "keys": [
+    "foundersquest.md",
+    "pathway-free-build.md",
+    "aistartuphub.md",
+    "foundedincanada.md",
+    "zenlaunchpad.md",
+    "futurpreneur.md",
+    "inspirationlab.md",
+    "foundersboost.md",
+    "flowstatefounder.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336,
+    0.329,
+    0.321,
+    0.319,
+    0.304
+   ],
+   "vec": [
+    0.374,
+    0.358,
+    0.354,
+    0.348,
+    0.348,
+    0.336,
+    0.329,
+    0.321,
+    0.319,
+    0.304
+   ]
+  },
+  "k-cowork": {
+   "n": 10,
+   "top": 0.65323377,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "friendsquarters.md",
+    "dctrl.md",
+    "funk.md",
+    "tcglass.md",
+    "pathway-maker-mile.md",
+    "zspace.md",
+    "northhouse.md",
+    "artsfactory.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ],
+   "vec": [
+    0.653,
+    0.567,
+    0.513,
+    0.51,
+    0.509,
+    0.498,
+    0.494,
+    0.491,
+    0.485,
+    0.477
+   ]
+  },
+  "c-cowork": {
+   "n": 10,
+   "top": 0.42546174,
+   "keys": [
+    "pathway-gastown-crawl.md",
+    "funk.md",
+    "inspirationlab.md",
+    "dctrl.md",
+    "friendsquarters.md",
+    "pathway-free-build.md",
+    "buildrs.md",
+    "zspace.md",
+    "pathway-maker-mile.md",
+    "sfusurrey.md"
+   ],
+   "rerank": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ],
+   "vec": [
+    0.425,
+    0.407,
+    0.4,
+    0.399,
+    0.379,
+    0.377,
+    0.369,
+    0.356,
+    0.354,
+    0.35
+   ]
+  },
+  "k-youth": {
+   "n": 10,
+   "top": 0.49779838,
+   "keys": [
+    "youngguns.md",
+    "ethoslab.md",
+    "foundersquest.md",
+    "futurpreneur.md",
+    "zenlaunchpad.md",
+    "bcai.md",
+    "mml.md",
+    "althra.md",
+    "launch.md",
+    "flowstatefounder.md"
+   ],
+   "rerank": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ],
+   "vec": [
+    0.498,
+    0.448,
+    0.416,
+    0.41,
+    0.409,
+    0.407,
+    0.404,
+    0.404,
+    0.403,
+    0.399
+   ]
+  },
+  "c-youth": {
+   "n": 10,
+   "top": 0.3994864,
+   "keys": [
+    "ethoslab.md",
+    "zenmakerlab.md",
+    "zenlaunchpad.md",
+    "makerspace-nanaimo.md",
+    "buildrs.md",
+    "makercube.md",
+    "pathway-free-build.md",
+    "bcai.md",
+    "vhs.md",
+    "vtl.md"
+   ],
+   "rerank": [
+    0.399,
+    0.352,
+    0.335,
+    0.321,
+    0.32,
+    0.292,
+    0.283,
+    0.28,
+    0.266,
+    0.265
+   ],
+   "vec": [
+    0.399,
+    0.352,
+    0.335,
+    0.321,
+    0.32,
+    0.292,
+    0.283,
+    0.28,
+    0.266,
+    0.265
+   ]
+  },
+  "k-glass": {
+   "n": 10,
+   "top": 0.3641055,
+   "keys": [
+    "tcglass.md",
+    "makerlabs.md",
+    "makercube.md",
+    "pathway-maker-mile.md",
+    "buildrs.md",
+    "zenmakerlab.md",
+    "vhs.md",
+    "pathway-free-build.md",
+    "inspirationlab.md",
+    "mml.md"
+   ],
+   "rerank": [
+    0.364,
+    0.349,
+    0.338,
+    0.326,
+    0.314,
+    0.309,
+    0.303,
+    0.301,
+    0.301,
+    0.299
+   ],
+   "vec": [
+    0.364,
+    0.349,
+    0.338,
+    0.326,
+    0.314,
+    0.309,
+    0.303,
+    0.301,
+    0.301,
+    0.299
+   ]
+  },
+  "c-fund": {
+   "n": 10,
+   "top": 0.6094937,
+   "keys": [
+    "foundersboost.md",
+    "foundedincanada.md",
+    "futurpreneur.md",
+    "bcfoundersday.md",
+    "foundersquest.md",
+    "althra.md",
+    "flowstatefounder.md",
+    "bcai.md",
+    "vsw.md",
+    "alacrity.md"
+   ],
+   "rerank": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ],
+   "vec": [
+    0.609,
+    0.59,
+    0.587,
+    0.554,
+    0.546,
+    0.541,
+    0.523,
+    0.523,
+    0.521,
+    0.491
+   ]
+  },
+  "k-3dprint": {
+   "n": 10,
+   "top": 0.4555866,
+   "keys": [
+    "makercube.md",
+    "zenmakerlab.md",
+    "makerlabs.md",
+    "vhs.md",
+    "makerspace-nanaimo.md",
+    "victoria-makerspace.md",
+    "pathway-maker-mile.md",
+    "pathway-free-build.md",
+    "artsfactory.md",
+    "ethoslab.md"
+   ],
+   "rerank": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ],
+   "vec": [
+    0.456,
+    0.455,
+    0.447,
+    0.426,
+    0.407,
+    0.406,
+    0.378,
+    0.364,
+    0.36,
+    0.354
+   ]
+  },
+  "c-proto": {
+   "n": 10,
+   "top": 0.45306966,
+   "keys": [
+    "pathway-free-build.md",
+    "ethoslab.md",
+    "vhs.md",
+    "zenlaunchpad.md",
+    "inspirationlab.md",
+    "zenmakerlab.md",
+    "buildrs.md",
+    "foundersquest.md",
+    "makerlabs.md",
+    "pathway-maker-mile.md"
+   ],
+   "rerank": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336,
+    0.327
+   ],
+   "vec": [
+    0.453,
+    0.37,
+    0.367,
+    0.364,
+    0.348,
+    0.345,
+    0.343,
+    0.337,
+    0.336,
+    0.327
+   ]
+  },
+  "c-events": {
+   "n": 10,
+   "top": 0.49614385,
+   "keys": [
+    "buildrs.md",
+    "vtj.md",
+    "vsw.md",
+    "bcai.md",
+    "vst.md",
+    "frontiercollective.md",
+    "dctrl.md",
+    "zenlaunchpad.md",
+    "aistartuphub.md",
+    "althra.md"
+   ],
+   "rerank": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ],
+   "vec": [
+    0.496,
+    0.446,
+    0.43,
+    0.404,
+    0.388,
+    0.387,
+    0.373,
+    0.363,
+    0.359,
+    0.352
+   ]
+  },
+  "k-sred": {
+   "n": 10,
+   "top": 0.3717068,
+   "keys": [
+    "foundedincanada.md",
+    "vst.md",
+    "sfusurrey.md",
+    "althra.md",
+    "dctrl.md",
+    "alacrity.md",
+    "tcglass.md",
+    "basecamp.md",
+    "pathway-maker-mile.md",
+    "buildrs.md"
+   ],
+   "rerank": [
+    0.372,
+    0.325,
+    0.325,
+    0.317,
+    0.314,
+    0.313,
+    0.299,
+    0.298,
+    0.298,
+    0.295
+   ],
+   "vec": [
+    0.372,
+    0.325,
+    0.325,
+    0.317,
+    0.314,
+    0.313,
+    0.299,
+    0.298,
+    0.298,
+    0.295
+   ]
+  }
+ }
+}

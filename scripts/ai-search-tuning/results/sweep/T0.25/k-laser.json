@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "laser cutting",
+  "chunks": [
+    {
+      "id": "938fd0422f02172c5b5cebd41c36e00b7071c03c824740cc71a3a03814dfaf64",
+      "type": "text",
+      "score": 0.4468045,
+      "text": "# Maker Cube\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 104B–5947 206A St · Langley\nFixed venue: yes - you can walk in\nCoordinates: 49.0889, -122.6503\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://makercube.ca/\nDirectory rank: 33 of 46\nLast verified: 2026-08\nLangley's premier makerspace — woodworking and welding shops, CNC and laser cutters, 3D printing, a ceramics studio, rentable studio 'cubes' and classes for every skill level.",
+      "item": {
+        "key": "makercube.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4468045
+      }
+    },
+    {
+      "id": "123eb08cf70ac3ff361684cb930a4038cb5a9548d6eeabe07f1251d2cabd4b87",
+      "type": "text",
+      "score": 0.42415962,
+      "text": "# MakerLabs\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 780 E Cordova St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2818969, -123.0875456\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://www.makerlabs.com/\nDirectory rank: 32 of 46\nLast verified: 2026-08\nVancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, ceramics, CNC routers, laser cutters and a fab team that can build almost anything.",
+      "item": {
+        "key": "makerlabs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.42415962
+      }
+    },
+    {
+      "id": "aa951a06bcbf31dca75308cd2254120dfeeb848120d99e05841af5a6b4995c73",
+      "type": "text",
+      "score": 0.40277982,
+      "text": "# Victoria Makerspace\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 4A–4476 Markham St · Saanich\nFixed venue: yes - you can walk in\nCoordinates: 48.4941015, -123.4131897\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Electronics\nWebsite: https://makerspace.ca/\nDirectory rank: 40 of 46\nLast verified: 2026-08\nVancouver Island's member-operated makerspace at the Technology Park — a collaborative workshop where makers of every background share tools, knowledge and 24/7 access.",
+      "item": {
+        "key": "victoria-makerspace.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40277982
+      }
+    },
+    {
+      "id": "5e196d4b42f6b8809e37bc18b7c99f5275d198e7a5da67b2a24d55f5fb42996c",
+      "type": "text",
+      "score": 0.36660984,
+      "text": "# Vancouver Hack Space\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 1601 Venables St · Grandview-Woodland\nFixed venue: yes - you can walk in\nCoordinates: 49.2769261, -123.0725869\nEquipment and facilities on site: 3D Printing, Laser Cutting, Woodshop, Metalshop, Electronics, Robotics\nWebsite: https://vanhack.ca/\nDirectory rank: 10 of 46\nLast verified: 2026-08\nCommunity-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting, woodworking, machining, robotics, welding, electronics and more.",
+      "item": {
+        "key": "vhs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.36660984
+      }
+    },
+    {
+      "id": "86d2ce0ca3898404b4ef687183fd08b16d4285eb17844f480b562f7a3b099c63",
+      "type": "text",
+      "score": 0.35783428,
+      "text": "# Zen Maker Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 224–125 Victory Ship Way · The Shipyards, North Van\nFixed venue: yes - you can walk in\nCoordinates: 49.30955, -123.07851\nEquipment and facilities on site: 3D Printing, Laser Cutting, Robotics\nWebsite: https://www.zenmakerlab.com/\nDirectory rank: 35 of 46\nLast verified: 2026-08\nNorth Shore maker lab making technology accessible since 2013 — STEAM programs, camps and after-school clubs in coding, robotics, 3D printing and design for kids, youth and adults.",
+      "item": {
+        "key": "zenmakerlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.35783428
+      }
+    },
+    {
+      "id": "c5f4b3b2fe373e653508fc1a3bcbf652d4f9969a03b25e96bdd3b055bfeb02f4",
+      "type": "text",
+      "score": 0.34835404,
+      "text": "# The Free-Build Circuit\n\nType: Pathway - a curated route through several venues\nStops in order: VPL Inspiration Lab -> Vancouver Tool Library -> Vancouver Hack Space\n\nZero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Drive, then show your work at open hack night.",
+      "item": {
+        "key": "pathway-free-build.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.34835404
+      }
+    },
+    {
+      "id": "84f9097ebd4b11ae39a4559af8b08337ae1854c17ffa4a24d118bf21cebe3d15",
+      "type": "text",
+      "score": 0.34587577,
+      "text": "# The Strathcona Maker Mile\n\nType: Pathway - a curated route through several venues\nStops in order: Vancouver Hack Space -> Slice of Life -> MakerLabs -> Terminal City Glass Co-op -> The Arts Factory\n\nThe densest making corridor in BC — hack space to artist clubhouse to 26,000 sq ft of fabrication to a glass furnace to a warehouse of studios, all inside one square mile.",
+      "item": {
+        "key": "pathway-maker-mile.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.34587577
+      }
+    },
+    {
+      "id": "2a1a105e0e3c674e164725e405ba6760b6405bd1c17d836aafcfd254ab739e50",
+      "type": "text",
+      "score": 0.3347526,
+      "text": "# Vancouver Tool Library\nType: Spaces & Places\nBuilder stage: ZERO → ONE\nLocation: 3448 Commercial St · The Drive\nFixed venue: yes - you can walk in\nCoordinates: 49.2536988, -123.0678595\nEquipment and facilities on site: Woodshop\nWebsite: https://vancouvertoollibrary.com/\nDirectory rank: 34 of 46\nLast verified: 2026-08\nCanada's original tool-lending library — a member-run co-op on the Drive lending 1,700+ tools for home repair, gardening and bike maintenance, plus affordable public workshops.",
+      "item": {
+        "key": "vtl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3347526
+      }
+    },
+    {
+      "id": "87d0d637075a8657dd0348e9b8519de1c7e91343eaca90c99226d67dd83b2b0d",
+      "type": "text",
+      "score": 0.32243425,
+      "text": "# The Island Maker Run\n\nType: Pathway - a curated route through several venues\nStops in order: Victoria Makerspace -> Makerspace Nanaimo\n\nVancouver Island's two community labs, one highway apart — Saanich's Technology Park to Nanaimo's 24/7 open workshop.",
+      "item": {
+        "key": "pathway-island-run.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.32243425
+      }
+    },
+    {
+      "id": "5f38052e6f5e6e8681c50c131eea78811cab418058564a750f0961cb0a3f8891",
+      "type": "text",
+      "score": 0.30027,
+      "text": "# Slice of Life\nType: Spaces & Places\nBuilder stage: ZERO → ONE\nLocation: 1636 Venables St · Grandview-Woodland\nFixed venue: yes - you can walk in\nCoordinates: 49.2765511, -123.0704529\nWebsite: https://www.slicevancouver.ca/\nDirectory rank: 9 of 46\nLast verified: 2026-08\nArt gallery, studios and clubhouse giving 100+ local artists room to exhibit — plus thrift, pinball, life drawing, clay club and coworking days. Open daily, free entry.",
+      "item": {
+        "key": "slice.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.30027
+      }
+    }
+  ]
+}

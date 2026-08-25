@@ -1,0 +1,23 @@
+{
+  "query_kind": "text",
+  "search_query": "SR&ED tax credits",
+  "chunks": [
+    {
+      "id": "46d571d48ae7be1b86e3352aa9a54eebe2e77a39c0ab7466e817a73b7a974d27",
+      "type": "text",
+      "score": 0.3717068,
+      "text": "# FoundedIn Canada\nType: Community & Events\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: Vancouver · Nation-wide\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundedincanada.com/\nDirectory rank: 41 of 46\nLast verified: 2026-08\nSovereign intelligence infrastructure for Canada's innovation economy — founders, capital, talent, programs and government connected in context by its Arctyk AI, on Canadian models and compute that never leave the country.\nFor funding and grant discovery, the SR&ED estimator, investor-readiness scoring, name and trademark checks, and the national picture beyond BC, go to FoundedIn Canada. builderworkshop.ca does not duplicate those tools.",
+      "item": {
+        "key": "foundedincanada.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3717068
+      }
+    }
+  ]
+}

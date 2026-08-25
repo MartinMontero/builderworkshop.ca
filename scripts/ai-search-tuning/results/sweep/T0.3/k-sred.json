@@ -1,0 +1,108 @@
+{
+  "query_kind": "text",
+  "search_query": "SR&ED tax credits",
+  "chunks": [
+    {
+      "id": "46d571d48ae7be1b86e3352aa9a54eebe2e77a39c0ab7466e817a73b7a974d27",
+      "type": "text",
+      "score": 0.3717068,
+      "text": "# FoundedIn Canada\nType: Community & Events\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: Vancouver · Nation-wide\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundedincanada.com/\nDirectory rank: 41 of 46\nLast verified: 2026-08\nSovereign intelligence infrastructure for Canada's innovation economy — founders, capital, talent, programs and government connected in context by its Arctyk AI, on Canadian models and compute that never leave the country.\nFor funding and grant discovery, the SR&ED estimator, investor-readiness scoring, name and trademark checks, and the national picture beyond BC, go to FoundedIn Canada. builderworkshop.ca does not duplicate those tools.",
+      "item": {
+        "key": "foundedincanada.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3717068
+      }
+    },
+    {
+      "id": "7061cdb38c80d3382b462d4a5f482e615d21d7ffa7f7eba20717df59b41b9550",
+      "type": "text",
+      "score": 0.32512552,
+      "text": "# Victory Square Technologies\nType: Capital & Venture\nBuilder stage: MVP → SCALE\nLocation: 800–1500 W Georgia St · Coal Harbour\nFixed venue: yes - you can walk in\nCoordinates: 49.2901038, -123.1307386\nWebsite: https://victorysquare.com/\nDirectory rank: 31 of 46\nLast verified: 2026-08\nPublicly traded venture builder (CSE: VST) investing in, developing and supporting companies across digital health, AI, Web3, VR/AR, gaming and climate tech.",
+      "item": {
+        "key": "vst.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.32512552
+      }
+    },
+    {
+      "id": "fd226f4052b1cc3146951d732e2eff2c60e2004993c4abcc5c12b7bb238cfa63",
+      "type": "text",
+      "score": 0.32491872,
+      "text": "# SFU Surrey\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 250–13450 102 Ave · Surrey Central\nFixed venue: yes - you can walk in\nCoordinates: 49.1866, -122.849\nWebsite: https://www.sfu.ca/surrey/about/our-locations/sfu-surrey-plaza.html\nDirectory rank: 22 of 46\nLast verified: 2026-08\nSFU's Surrey campus at Central City — the award-winning Bing Thom-designed hub for applied sciences, engineering, business and the Sustainable Energy Engineering school, anchoring one of Canada's fastest-growing city centres.",
+      "item": {
+        "key": "sfusurrey.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.32491872
+      }
+    },
+    {
+      "id": "fa2f18ff18aa04eeb2f09cbe9aea7874da8e05ce3677730818e42d18b92322cb",
+      "type": "text",
+      "score": 0.31656948,
+      "text": "# Althra\nType: Programs & Accelerators\nBuilder stage: ONE → MVP\nLocation: Downtown Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://althra.ca/\nDirectory rank: 17 of 46\nLast verified: 2026-08\nWestern Canada's full-time, in-person pre-seed incubator — $12.5K day-one investment with up to $50K follow-on, a 24/7 downtown workspace and an investor trip to San Francisco.",
+      "item": {
+        "key": "althra.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.31656948
+      }
+    },
+    {
+      "id": "fe8537f736dff9812625219e7f929e827d7b20194bb3397b8bc9b269ebc70ac7",
+      "type": "text",
+      "score": 0.31401655,
+      "text": "# DCTRL\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 328 W Hastings St · Gastown\nFixed venue: yes - you can walk in\nCoordinates: 49.2829423, -123.1107804\nWebsite: https://www.dctrl.wtf/\nDirectory rank: 1 of 46\nLast verified: 2026-08\nVancouver's longest-running home for Bitcoin, crypto and decentralized tech — a member-run, non-profit cypherpunk coworking and event studio operating since 2013.",
+      "item": {
+        "key": "dctrl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.31401655
+      }
+    },
+    {
+      "id": "fc1b255b3530f8a2f9c85f1b3ee504ac933bc0e25fe2cffaf01a24b3b6f591aa",
+      "type": "text",
+      "score": 0.31256956,
+      "text": "# Alacrity Canada\nType: Programs & Accelerators\nBuilder stage: MVP → SCALE\nLocation: Province-wide · HQ Victoria\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.alacritycanada.com\nDirectory rank: 20 of 46\nLast verified: 2026-08\nScale-up programs and investment-readiness support for Canadian technology companies — its APEX program helps BC SMEs break into global markets.",
+      "item": {
+        "key": "alacrity.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.31256956
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "query_kind": "text",
+  "search_query": "laser cutting",
+  "chunks": [
+    {
+      "id": "123eb08cf70ac3ff361684cb930a4038cb5a9548d6eeabe07f1251d2cabd4b87",
+      "type": "text",
+      "score": 0.4912862181663513,
+      "text": "# MakerLabs\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 780 E Cordova St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2818969, -123.0875456\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://www.makerlabs.com/\nDirectory rank: 32 of 46\nLast verified: 2026-08\nVancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, ceramics, CNC routers, laser cutters and a fab team that can build almost anything.",
+      "item": {
+        "key": "makerlabs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.42415962,
+        "keyword_score": 9.025784175664725,
+        "vector_rank": 2,
+        "keyword_rank": 3,
+        "fusion_method": "rrf",
+        "reranking_score": 0.4912862181663513
+      }
+    },
+    {
+      "id": "938fd0422f02172c5b5cebd41c36e00b7071c03c824740cc71a3a03814dfaf64",
+      "type": "text",
+      "score": 0.44866156578063965,
+      "text": "# Maker Cube\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 104B–5947 206A St · Langley\nFixed venue: yes - you can walk in\nCoordinates: 49.0889, -122.6503\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://makercube.ca/\nDirectory rank: 33 of 46\nLast verified: 2026-08\nLangley's premier makerspace — woodworking and welding shops, CNC and laser cutters, 3D printing, a ceramics studio, rentable studio 'cubes' and classes for every skill level.",
+      "item": {
+        "key": "makercube.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4468045,
+        "keyword_score": 9.284217082746002,
+        "vector_rank": 1,
+        "keyword_rank": 2,
+        "fusion_method": "rrf",
+        "reranking_score": 0.44866156578063965
+      }
+    },
+    {
+      "id": "5e196d4b42f6b8809e37bc18b7c99f5275d198e7a5da67b2a24d55f5fb42996c",
+      "type": "text",
+      "score": 0.4002297818660736,
+      "text": "# Vancouver Hack Space\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 1601 Venables St · Grandview-Woodland\nFixed venue: yes - you can walk in\nCoordinates: 49.2769261, -123.0725869\nEquipment and facilities on site: 3D Printing, Laser Cutting, Woodshop, Metalshop, Electronics, Robotics\nWebsite: https://vanhack.ca/\nDirectory rank: 10 of 46\nLast verified: 2026-08\nCommunity-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting, woodworking, machining, robotics, welding, electronics and more.",
+      "item": {
+        "key": "vhs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.36660984,
+        "keyword_score": 11.469889841180095,
+        "vector_rank": 4,
+        "keyword_rank": 1,
+        "fusion_method": "rrf",
+        "reranking_score": 0.4002297818660736
+      }
+    }
+  ],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector",
+      "keyword"
+    ],
+    "vector_result_count": 39,
+    "keyword_result_count": 5
+  }
+}

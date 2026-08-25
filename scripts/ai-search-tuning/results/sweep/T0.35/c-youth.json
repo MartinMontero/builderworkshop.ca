@@ -1,0 +1,40 @@
+{
+  "query_kind": "text",
+  "search_query": "my kid is 12 and into robotics",
+  "chunks": [
+    {
+      "id": "5544db0bc06d1609cc0a5863edb079f50547bd3ccde3601329855c72409b8900",
+      "type": "text",
+      "score": 0.3994864,
+      "text": "# Ethọ́s Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 177 E 3rd Ave · Mount Pleasant\nFixed venue: yes - you can walk in\nCoordinates: 49.2683654, -123.1012334\nEquipment and facilities on site: 3D Printing, Robotics\nWebsite: https://ethoslab.ca/\nDirectory rank: 7 of 46\nLast verified: 2026-08\nNon-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in Ubuntu, building the next generation of diverse creators.",
+      "item": {
+        "key": "ethoslab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3994864
+      }
+    },
+    {
+      "id": "86d2ce0ca3898404b4ef687183fd08b16d4285eb17844f480b562f7a3b099c63",
+      "type": "text",
+      "score": 0.35239393,
+      "text": "# Zen Maker Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 224–125 Victory Ship Way · The Shipyards, North Van\nFixed venue: yes - you can walk in\nCoordinates: 49.30955, -123.07851\nEquipment and facilities on site: 3D Printing, Laser Cutting, Robotics\nWebsite: https://www.zenmakerlab.com/\nDirectory rank: 35 of 46\nLast verified: 2026-08\nNorth Shore maker lab making technology accessible since 2013 — STEAM programs, camps and after-school clubs in coding, robotics, 3D printing and design for kids, youth and adults.",
+      "item": {
+        "key": "zenmakerlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.35239393
+      }
+    }
+  ]
+}

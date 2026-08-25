@@ -1,0 +1,616 @@
+[
+ {
+  "key": "dctrl.md",
+  "name": "DCTRL",
+  "category": "Spaces & Places",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "328 W Hastings St · Gastown",
+  "blurb": "Vancouver's longest-running home for Bitcoin, crypto and decentralized tech — a member-run, non-profit cypherp"
+ },
+ {
+  "key": "launch.md",
+  "name": "Launch Academy",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP",
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "350–128 W Hastings St · Gastown",
+  "blurb": "Non-profit incubator that has supported 6,000+ entrepreneurs since 2012 — alumni include Thinkific and have co"
+ },
+ {
+  "key": "friendsquarters.md",
+  "name": "FriendsQuarters",
+  "category": "Spaces & Places",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [
+   "Recording & Podcast"
+  ],
+  "location": "200–116 W Hastings St · Gastown",
+  "blurb": "Vancouver's friendliest coworking, connection and media space — 5,500 sq ft with hot desks, a podcast room and"
+ },
+ {
+  "key": "dwebyvr.md",
+  "name": "DWeb Vancouver",
+  "category": "Community & Events",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "Around town · Lu.ma calendar",
+  "blurb": "The official Vancouver node of the global DWeb movement sparked by the Internet Archive — volunteer-run meetup"
+ },
+ {
+  "key": "internetarchive.md",
+  "name": "Internet Archive Canada",
+  "category": "Learning & Talent",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [
+   "Digitization"
+  ],
+  "location": "330 W Pender St · Crosstown",
+  "blurb": "The Canadian arm of the Internet Archive — a non-profit digital library headquartered at The Permanent on West"
+ },
+ {
+  "key": "basecamp.md",
+  "name": "Basecamp",
+  "category": "Spaces & Places",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "1515 Discovery St · Jericho Beach",
+  "blurb": "A live-and-build residency for creators, entrepreneurs and community builders at HI Jericho Beach — focused, a"
+ },
+ {
+  "key": "ethoslab.md",
+  "name": "Ethọ́s Lab",
+  "category": "Learning & Talent",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [
+   "3D Printing",
+   "Robotics"
+  ],
+  "location": "177 E 3rd Ave · Mount Pleasant",
+  "blurb": "Non-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in "
+ },
+ {
+  "key": "funk.md",
+  "name": "FUNK Coffee Bar",
+  "category": "Spaces & Places",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "1025 Dunsmuir St · Downtown",
+  "blurb": "Coffee-centric downtown bar from the House of Funk crew — the unofficial third place where half the ecosystem’"
+ },
+ {
+  "key": "slice.md",
+  "name": "Slice of Life",
+  "category": "Spaces & Places",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "1636 Venables St · Grandview-Woodland",
+  "blurb": "Art gallery, studios and clubhouse giving 100+ local artists room to exhibit — plus thrift, pinball, life draw"
+ },
+ {
+  "key": "vhs.md",
+  "name": "Vancouver Hack Space",
+  "category": "Spaces & Places",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [
+   "3D Printing",
+   "Laser Cutting",
+   "Woodshop",
+   "Metalshop",
+   "Electronics",
+   "Robotics"
+  ],
+  "location": "1601 Venables St · Grandview-Woodland",
+  "blurb": "Community-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting"
+ },
+ {
+  "key": "flowstatefounder.md",
+  "name": "Flow State Founder",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "ONE → MVP",
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "Cohort-based · Vancouver",
+  "blurb": "An 11-week accelerator built for women founders — cohorts of just six, landing podcast features, nailing the p"
+ },
+ {
+  "key": "bcai.md",
+  "name": "BC + AI Ecosystem",
+  "category": "Community & Events",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "Province-wide",
+  "blurb": "Member-supported nonprofit AI community — recurring meetups, working groups and a public-interest voice for re"
+ },
+ {
+  "key": "northhouse.md",
+  "name": "North House",
+  "category": "Spaces & Places",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "111 E 5th Ave · Mount Pleasant",
+  "blurb": "An 8,000 sq ft founder space in Mount Pleasant operated by League of Innovators — desks, booths, 24/7 access, "
+ },
+ {
+  "key": "bcfoundersday.md",
+  "name": "BC Founders Day",
+  "category": "Community & Events",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "Vancouver Convention Centre · Annual",
+  "blurb": "The annual founders-only day built by founders, for founders — master classes from operators like Clio and Koh"
+ },
+ {
+  "key": "frontiercollective.md",
+  "name": "Frontier Collective",
+  "category": "Community & Events",
+  "stages": [
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "HQ Vancouver · Operating globally",
+  "blurb": "Vancouver-headquartered global innovation platform for frontier tech — the Frontier Summit, Vancity Innovation"
+ },
+ {
+  "key": "venturelabs.md",
+  "name": "SFU VentureLabs",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "1200–555 W Hastings St · Downtown",
+  "blurb": "Simon Fraser University's technology accelerator in Harbour Centre — scale-up programs, AccelerateIP, and cowo"
+ },
+ {
+  "key": "althra.md",
+  "name": "Althra",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "Downtown Vancouver",
+  "blurb": "Western Canada's full-time, in-person pre-seed incubator — $12.5K day-one investment with up to $50K follow-on"
+ },
+ {
+  "key": "foundersboost.md",
+  "name": "FoundersBoost Vancouver",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "Cohort-based · Vancouver",
+  "blurb": "The Vancouver chapter of a global 6-week pre-accelerator — no equity, no fees. 600+ alumni startups have raise"
+ },
+ {
+  "key": "foundersquest.md",
+  "name": "Founder's Quest",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "Vancouver",
+  "blurb": "A gamified founder journey built on the Genesis Framework — validate real problems beat by beat, from the Call"
+ },
+ {
+  "key": "alacrity.md",
+  "name": "Alacrity Canada",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "Province-wide · HQ Victoria",
+  "blurb": "Scale-up programs and investment-readiness support for Canadian technology companies — its APEX program helps "
+ },
+ {
+  "key": "cdm.md",
+  "name": "Centre for Digital Media",
+  "category": "Learning & Talent",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "685 Great Northern Way · False Creek Flats",
+  "blurb": "Graduate institution on Great Northern Way Campus — the project-based Master of Digital Media program, jointly"
+ },
+ {
+  "key": "sfusurrey.md",
+  "name": "SFU Surrey",
+  "category": "Learning & Talent",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "250–13450 102 Ave · Surrey Central",
+  "blurb": "SFU's Surrey campus at Central City — the award-winning Bing Thom-designed hub for applied sciences, engineeri"
+ },
+ {
+  "key": "civicinnovationlab.md",
+  "name": "Civic Innovation Lab",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "Christine Sinclair Community Centre · Burnaby",
+  "blurb": "A City of Burnaby × SFU research lab turning civic challenges — climate action, mobility, equity, reconciliati"
+ },
+ {
+  "key": "youngguns.md",
+  "name": "Young Guns Studio",
+  "category": "Learning & Talent",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "Vancouver",
+  "blurb": "Vancouver's premier art & design institute for ambitious students — portfolio programs and creative-intelligen"
+ },
+ {
+  "key": "vsw.md",
+  "name": "Vancouver Startup Week",
+  "category": "Community & Events",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "Citywide · Annual",
+  "blurb": "The annual week when BC's whole startup scene shows up — 85+ community-led events, thousands of founders, drea"
+ },
+ {
+  "key": "womentransformingcities.md",
+  "name": "Women Transforming Cities",
+  "category": "Community & Events",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "Vancouver",
+  "blurb": "Registered charity founded by former Vancouver city councillor Ellen Woodsworth — building civic power for equ"
+ },
+ {
+  "key": "buildrs.md",
+  "name": "buildrs.dev",
+  "category": "Community & Events",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "Online · Vancouver",
+  "blurb": "Every tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of "
+ },
+ {
+  "key": "aistartuphub.md",
+  "name": "AI Startup Hub",
+  "category": "Community & Events",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "Online · LinkedIn",
+  "blurb": "A LinkedIn community connecting AI founders, builders and investors across the region — deal flow, demos and d"
+ },
+ {
+  "key": "vtj.md",
+  "name": "Vancouver Tech Journal",
+  "category": "Media & Storytelling",
+  "stages": [
+   "ONE → MVP",
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "6060 Silver Dr · Burnaby",
+  "blurb": "The most complete coverage of Vancouver's innovation ecosystem — the Sunday Briefing, Midweek Memo and events "
+ },
+ {
+  "key": "mml.md",
+  "name": "Multimodal Media Lab",
+  "category": "Media & Storytelling",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "British Columbia",
+  "blurb": "AI film production studio, academy and pipeline tools — multimodal media at the intersection of AI and cinema,"
+ },
+ {
+  "key": "vst.md",
+  "name": "Victory Square Technologies",
+  "category": "Capital & Venture",
+  "stages": [
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "800–1500 W Georgia St · Coal Harbour",
+  "blurb": "Publicly traded venture builder (CSE: VST) investing in, developing and supporting companies across digital he"
+ },
+ {
+  "key": "makerlabs.md",
+  "name": "MakerLabs",
+  "category": "Spaces & Places",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [
+   "Laser Cutting",
+   "CNC",
+   "3D Printing",
+   "Woodshop",
+   "Metalshop",
+   "Ceramics"
+  ],
+  "location": "780 E Cordova St · Strathcona",
+  "blurb": "Vancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, "
+ },
+ {
+  "key": "makercube.md",
+  "name": "Maker Cube",
+  "category": "Spaces & Places",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [
+   "Laser Cutting",
+   "CNC",
+   "3D Printing",
+   "Woodshop",
+   "Metalshop",
+   "Ceramics"
+  ],
+  "location": "104B–5947 206A St · Langley",
+  "blurb": "Langley's premier makerspace — woodworking and welding shops, CNC and laser cutters, 3D printing, a ceramics s"
+ },
+ {
+  "key": "vtl.md",
+  "name": "Vancouver Tool Library",
+  "category": "Spaces & Places",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [
+   "Woodshop"
+  ],
+  "location": "3448 Commercial St · The Drive",
+  "blurb": "Canada's original tool-lending library — a member-run co-op on the Drive lending 1,700+ tools for home repair,"
+ },
+ {
+  "key": "zenmakerlab.md",
+  "name": "Zen Maker Lab",
+  "category": "Learning & Talent",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [
+   "3D Printing",
+   "Laser Cutting",
+   "Robotics"
+  ],
+  "location": "224–125 Victory Ship Way · The Shipyards, North Van",
+  "blurb": "North Shore maker lab making technology accessible since 2013 — STEAM programs, camps and after-school clubs i"
+ },
+ {
+  "key": "tcglass.md",
+  "name": "Terminal City Glass Co-op",
+  "category": "Spaces & Places",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [
+   "Glass"
+  ],
+  "location": "1191 Parker St · Strathcona",
+  "blurb": "Canada's first non-profit co-operative glass studio — shared furnaces, kilns and cold-working gear plus public"
+ },
+ {
+  "key": "inspirationlab.md",
+  "name": "VPL Inspiration Lab",
+  "category": "Spaces & Places",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [
+   "Recording & Podcast",
+   "Digitization"
+  ],
+  "location": "350 W Georgia St · Downtown",
+  "blurb": "The city's free digital creation space on Level 3 of the Central Library — recording studios, digitization sta"
+ },
+ {
+  "key": "vivo.md",
+  "name": "VIVO Media Arts",
+  "category": "Media & Storytelling",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [
+   "Recording & Podcast"
+  ],
+  "location": "2625 Kaslo St · Renfrew-Collingwood",
+  "blurb": "Artist-run media arts centre since 1973 — production studios, equipment access, exhibitions, residencies and t"
+ },
+ {
+  "key": "artsfactory.md",
+  "name": "The Arts Factory",
+  "category": "Spaces & Places",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [
+   "Woodshop",
+   "Ceramics"
+  ],
+  "location": "281 Industrial Ave · Strathcona",
+  "blurb": "A 21,000 sq ft cultural hub in a transformed industrial warehouse — affordable studios, workshops and coworkin"
+ },
+ {
+  "key": "victoria-makerspace.md",
+  "name": "Victoria Makerspace",
+  "category": "Spaces & Places",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [
+   "Laser Cutting",
+   "CNC",
+   "3D Printing",
+   "Woodshop",
+   "Metalshop",
+   "Electronics"
+  ],
+  "location": "4A–4476 Markham St · Saanich",
+  "blurb": "Vancouver Island's member-operated makerspace at the Technology Park — a collaborative workshop where makers o"
+ },
+ {
+  "key": "foundedincanada.md",
+  "name": "FoundedIn Canada",
+  "category": "Community & Events",
+  "stages": [
+   "ONE → MVP",
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "Vancouver · Nation-wide",
+  "blurb": "Sovereign intelligence infrastructure for Canada's innovation economy — founders, capital, talent, programs an"
+ },
+ {
+  "key": "bitdevs.md",
+  "name": "BitDevs Vancouver",
+  "category": "Community & Events",
+  "stages": [
+   "ZERO → ONE"
+  ],
+  "caps": [],
+  "location": "Monthly Socratic Seminar · Vancouver",
+  "blurb": "Vancouver's chapter of the global BitDevs network — monthly Socratic Seminars where Bitcoin and protocol devel"
+ },
+ {
+  "key": "futurpreneur.md",
+  "name": "Futurpreneur",
+  "category": "Capital & Venture",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "Nation-wide · Serving BC",
+  "blurb": "Canada’s launchpad for young founders since 1996 — up to $75K in collateral-free startup loans plus two years "
+ },
+ {
+  "key": "zspace.md",
+  "name": "Z-Space",
+  "category": "Spaces & Places",
+  "stages": [
+   "ZERO → ONE",
+   "ONE → MVP"
+  ],
+  "caps": [],
+  "location": "301–505 Hamilton St · Victory Square",
+  "blurb": "Non-profit arts and technology society in the historic Odd Fellows Hall — coworking, an event stage, media gal"
+ },
+ {
+  "key": "makerspace-nanaimo.md",
+  "name": "Makerspace Nanaimo",
+  "category": "Spaces & Places",
+  "stages": [
+   "ONE → MVP"
+  ],
+  "caps": [
+   "3D Printing",
+   "Woodshop",
+   "Metalshop",
+   "Robotics"
+  ],
+  "location": "2221A McGarrigle Rd · Nanaimo",
+  "blurb": "Mid-Island's open community lab since 2013 — workshop, studio and social hub with 24/7 member access, from 3D "
+ },
+ {
+  "key": "zenlaunchpad.md",
+  "name": "Zen LaunchPad",
+  "category": "Programs & Accelerators",
+  "stages": [
+   "ONE → MVP",
+   "MVP → SCALE"
+  ],
+  "caps": [],
+  "location": "North Vancouver",
+  "blurb": "North Vancouver venture studio and incubator for robotics, IoT and AR/VR ventures — taking teams from idea to "
+ },
+ {
+  "key": "pathway-gastown-crawl.md",
+  "name": "The Gastown Founder Crawl",
+  "category": "Pathway",
+  "stages": [],
+  "caps": [],
+  "location": "",
+  "blurb": "Five rooms, one afternoon: coworking, an incubator, the cypherpunk clubhouse, the national memory bank and the"
+ },
+ {
+  "key": "pathway-maker-mile.md",
+  "name": "The Strathcona Maker Mile",
+  "category": "Pathway",
+  "stages": [],
+  "caps": [],
+  "location": "",
+  "blurb": "The densest making corridor in BC — hack space to artist clubhouse to 26,000 sq ft of fabrication to a glass f"
+ },
+ {
+  "key": "pathway-free-build.md",
+  "name": "The Free-Build Circuit",
+  "category": "Pathway",
+  "stages": [],
+  "caps": [],
+  "location": "",
+  "blurb": "Zero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Dr"
+ },
+ {
+  "key": "pathway-island-run.md",
+  "name": "The Island Maker Run",
+  "category": "Pathway",
+  "stages": [],
+  "caps": [],
+  "location": "",
+  "blurb": "Vancouver Island's two community labs, one highway apart — Saanich's Technology Park to Nanaimo's 24/7 open wo"
+ }
+]

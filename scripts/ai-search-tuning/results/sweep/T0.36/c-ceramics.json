@@ -1,0 +1,57 @@
+{
+  "query_kind": "text",
+  "search_query": "I want to try pottery, where do I go",
+  "chunks": [
+    {
+      "id": "c5f4b3b2fe373e653508fc1a3bcbf652d4f9969a03b25e96bdd3b055bfeb02f4",
+      "type": "text",
+      "score": 0.38899845,
+      "text": "# The Free-Build Circuit\n\nType: Pathway - a curated route through several venues\nStops in order: VPL Inspiration Lab -> Vancouver Tool Library -> Vancouver Hack Space\n\nZero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Drive, then show your work at open hack night.",
+      "item": {
+        "key": "pathway-free-build.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.38899845
+      }
+    },
+    {
+      "id": "87d0d637075a8657dd0348e9b8519de1c7e91343eaca90c99226d67dd83b2b0d",
+      "type": "text",
+      "score": 0.38753203,
+      "text": "# The Island Maker Run\n\nType: Pathway - a curated route through several venues\nStops in order: Victoria Makerspace -> Makerspace Nanaimo\n\nVancouver Island's two community labs, one highway apart — Saanich's Technology Park to Nanaimo's 24/7 open workshop.",
+      "item": {
+        "key": "pathway-island-run.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.38753203
+      }
+    },
+    {
+      "id": "8a9aafca8d4619b06d97358a3f4fefd02a20fac38dba55593fcacb960b0666ad",
+      "type": "text",
+      "score": 0.38428473,
+      "text": "# The Gastown Founder Crawl\n\nType: Pathway - a curated route through several venues\nStops in order: FriendsQuarters -> Launch Academy -> DCTRL -> Internet Archive Canada -> FUNK Coffee Bar\n\nFive rooms, one afternoon: coworking, an incubator, the cypherpunk clubhouse, the national memory bank and the coffee bar where first meetings actually happen.",
+      "item": {
+        "key": "pathway-gastown-crawl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.38428473
+      }
+    }
+  ]
+}

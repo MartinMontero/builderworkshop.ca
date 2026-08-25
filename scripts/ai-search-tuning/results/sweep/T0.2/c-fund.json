@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "who funds early stage founders in BC",
+  "chunks": [
+    {
+      "id": "e44ca9ad397a1f89dfdc844f878e1496810c0c19cb9025b4ee5343c7d2cc0928",
+      "type": "text",
+      "score": 0.6094937,
+      "text": "# FoundersBoost Vancouver\nType: Programs & Accelerators\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: Cohort-based · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.foundersboost.com/programs/vancouver\nDirectory rank: 18 of 46\nLast verified: 2026-08\nThe Vancouver chapter of a global 6-week pre-accelerator — no equity, no fees. 600+ alumni startups have raised $400M+ and gone on to Y Combinator, Techstars and a16z.",
+      "item": {
+        "key": "foundersboost.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.6094937
+      }
+    },
+    {
+      "id": "46d571d48ae7be1b86e3352aa9a54eebe2e77a39c0ab7466e817a73b7a974d27",
+      "type": "text",
+      "score": 0.59029096,
+      "text": "# FoundedIn Canada\nType: Community & Events\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: Vancouver · Nation-wide\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundedincanada.com/\nDirectory rank: 41 of 46\nLast verified: 2026-08\nSovereign intelligence infrastructure for Canada's innovation economy — founders, capital, talent, programs and government connected in context by its Arctyk AI, on Canadian models and compute that never leave the country.\nFor funding and grant discovery, the SR&ED estimator, investor-readiness scoring, name and trademark checks, and the national picture beyond BC, go to FoundedIn Canada. builderworkshop.ca does not duplicate those tools.",
+      "item": {
+        "key": "foundedincanada.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.59029096
+      }
+    },
+    {
+      "id": "8e12a231d1311f9c4f7e202446313822099f97fc7b5a95a9df5a46f07ebca957",
+      "type": "text",
+      "score": 0.5865139,
+      "text": "# Futurpreneur\nType: Capital & Venture\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: Nation-wide · Serving BC\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://futurpreneur.ca/\nDirectory rank: 43 of 46\nLast verified: 2026-08\nCanada’s launchpad for young founders since 1996 — up to $75K in collateral-free startup loans plus two years of hand-matched mentorship for entrepreneurs aged 18–39. 21,000+ founders backed, $259M lent, 80% five-year survival.",
+      "item": {
+        "key": "futurpreneur.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.5865139
+      }
+    },
+    {
+      "id": "95e247e42a68a790397796e2cbbb97b22cb47a61b7260c11aae854f714155c7a",
+      "type": "text",
+      "score": 0.55353075,
+      "text": "# BC Founders Day\nType: Community & Events\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: Vancouver Convention Centre · Annual\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.bcfoundersday.com/\nDirectory rank: 14 of 46\nLast verified: 2026-08\nThe annual founders-only day built by founders, for founders — master classes from operators like Clio and Koho, office hours with lei-wearing veteran founders, and a networking close. Free, thanks to Fasken, Google Cloud, RBCx and Launch.",
+      "item": {
+        "key": "bcfoundersday.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.55353075
+      }
+    },
+    {
+      "id": "84182b323bade0f9a19e46359084a1c56bc611564b514365de488bf2c6ed4ca7",
+      "type": "text",
+      "score": 0.54646635,
+      "text": "# Founder's Quest\nType: Programs & Accelerators\nBuilder stage: ZERO → ONE\nLocation: Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundersquest.ca/\nDirectory rank: 19 of 46\nLast verified: 2026-08\nA gamified founder journey built on the Genesis Framework — validate real problems beat by beat, from the Call to Adventure to a launched venture.",
+      "item": {
+        "key": "foundersquest.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.54646635
+      }
+    },
+    {
+      "id": "fa2f18ff18aa04eeb2f09cbe9aea7874da8e05ce3677730818e42d18b92322cb",
+      "type": "text",
+      "score": 0.54087603,
+      "text": "# Althra\nType: Programs & Accelerators\nBuilder stage: ONE → MVP\nLocation: Downtown Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://althra.ca/\nDirectory rank: 17 of 46\nLast verified: 2026-08\nWestern Canada's full-time, in-person pre-seed incubator — $12.5K day-one investment with up to $50K follow-on, a 24/7 downtown workspace and an investor trip to San Francisco.",
+      "item": {
+        "key": "althra.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.54087603
+      }
+    },
+    {
+      "id": "3efa7c3fcdf71b23dd605e256c2fd6bba3cf4e608144423f2340cd57883d7097",
+      "type": "text",
+      "score": 0.52326226,
+      "text": "# Flow State Founder\nType: Programs & Accelerators\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: Cohort-based · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://flowstatefounder.ca/\nDirectory rank: 11 of 46\nLast verified: 2026-08\nAn 11-week accelerator built for women founders — cohorts of just six, landing podcast features, nailing the pitch, and winning grant funding ($850K+ secured) with zero equity taken.",
+      "item": {
+        "key": "flowstatefounder.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.52326226
+      }
+    },
+    {
+      "id": "07ba733789450124058a8a5677a87c4344a813a9215fa9f5d2e0c5932db8700b",
+      "type": "text",
+      "score": 0.5225556,
+      "text": "# BC + AI Ecosystem\nType: Community & Events\nBuilder stage: ZERO → ONE\nLocation: Province-wide\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://bc-ai.ca/\nDirectory rank: 12 of 46\nLast verified: 2026-08\nMember-supported nonprofit AI community — recurring meetups, working groups and a public-interest voice for responsible, human-centric AI in British Columbia.",
+      "item": {
+        "key": "bcai.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.5225556
+      }
+    },
+    {
+      "id": "5c84d8c415b4ef659a7843757d70c56f747b9917f2c2036491e8d3ab1abb222b",
+      "type": "text",
+      "score": 0.52129626,
+      "text": "# Vancouver Startup Week\nType: Community & Events\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: Citywide · Annual\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.vanstartupweek.ca/\nDirectory rank: 25 of 46\nLast verified: 2026-08\nThe annual week when BC's whole startup scene shows up — 85+ community-led events, thousands of founders, dreamers and doers, every spring across the city.",
+      "item": {
+        "key": "vsw.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.52129626
+      }
+    },
+    {
+      "id": "fc1b255b3530f8a2f9c85f1b3ee504ac933bc0e25fe2cffaf01a24b3b6f591aa",
+      "type": "text",
+      "score": 0.49073595,
+      "text": "# Alacrity Canada\nType: Programs & Accelerators\nBuilder stage: MVP → SCALE\nLocation: Province-wide · HQ Victoria\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.alacritycanada.com\nDirectory rank: 20 of 46\nLast verified: 2026-08\nScale-up programs and investment-readiness support for Canadian technology companies — its APEX program helps BC SMEs break into global markets.",
+      "item": {
+        "key": "alacrity.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.49073595
+      }
+    }
+  ]
+}

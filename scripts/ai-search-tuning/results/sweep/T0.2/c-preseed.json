@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "I have an idea but no product yet, who helps",
+  "chunks": [
+    {
+      "id": "84182b323bade0f9a19e46359084a1c56bc611564b514365de488bf2c6ed4ca7",
+      "type": "text",
+      "score": 0.37422806,
+      "text": "# Founder's Quest\nType: Programs & Accelerators\nBuilder stage: ZERO → ONE\nLocation: Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundersquest.ca/\nDirectory rank: 19 of 46\nLast verified: 2026-08\nA gamified founder journey built on the Genesis Framework — validate real problems beat by beat, from the Call to Adventure to a launched venture.",
+      "item": {
+        "key": "foundersquest.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.37422806
+      }
+    },
+    {
+      "id": "c5f4b3b2fe373e653508fc1a3bcbf652d4f9969a03b25e96bdd3b055bfeb02f4",
+      "type": "text",
+      "score": 0.35787654,
+      "text": "# The Free-Build Circuit\n\nType: Pathway - a curated route through several venues\nStops in order: VPL Inspiration Lab -> Vancouver Tool Library -> Vancouver Hack Space\n\nZero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Drive, then show your work at open hack night.",
+      "item": {
+        "key": "pathway-free-build.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.35787654
+      }
+    },
+    {
+      "id": "dde6e7e4db22d7ed89e6565344349b721a7395f0c5d5a9def21497358d34b73d",
+      "type": "text",
+      "score": 0.35427245,
+      "text": "# AI Startup Hub\nType: Community & Events\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: Online · LinkedIn\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.linkedin.com/company/ai-startup-hub/\nDirectory rank: 28 of 46\nLast verified: 2026-08\nA LinkedIn community connecting AI founders, builders and investors across the region — deal flow, demos and discussion for the local AI scene.",
+      "item": {
+        "key": "aistartuphub.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.35427245
+      }
+    },
+    {
+      "id": "46d571d48ae7be1b86e3352aa9a54eebe2e77a39c0ab7466e817a73b7a974d27",
+      "type": "text",
+      "score": 0.3483744,
+      "text": "# FoundedIn Canada\nType: Community & Events\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: Vancouver · Nation-wide\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundedincanada.com/\nDirectory rank: 41 of 46\nLast verified: 2026-08\nSovereign intelligence infrastructure for Canada's innovation economy — founders, capital, talent, programs and government connected in context by its Arctyk AI, on Canadian models and compute that never leave the country.\nFor funding and grant discovery, the SR&ED estimator, investor-readiness scoring, name and trademark checks, and the national picture beyond BC, go to FoundedIn Canada. builderworkshop.ca does not duplicate those tools.",
+      "item": {
+        "key": "foundedincanada.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3483744
+      }
+    },
+    {
+      "id": "a09d7595d91efbe09ac7b71fbdebabe2c342dce7bdd46a0c1ff18fc1f3b51ef2",
+      "type": "text",
+      "score": 0.34797606,
+      "text": "# Zen LaunchPad\nType: Programs & Accelerators\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: North Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.zenlaunchpad.com/\nDirectory rank: 46 of 46\nLast verified: 2026-08\nNorth Vancouver venture studio and incubator for robotics, IoT and AR/VR ventures — taking teams from idea to prototype, with Canada Startup Visa access and direct funding.",
+      "item": {
+        "key": "zenlaunchpad.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.34797606
+      }
+    },
+    {
+      "id": "8e12a231d1311f9c4f7e202446313822099f97fc7b5a95a9df5a46f07ebca957",
+      "type": "text",
+      "score": 0.33640528,
+      "text": "# Futurpreneur\nType: Capital & Venture\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: Nation-wide · Serving BC\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://futurpreneur.ca/\nDirectory rank: 43 of 46\nLast verified: 2026-08\nCanada’s launchpad for young founders since 1996 — up to $75K in collateral-free startup loans plus two years of hand-matched mentorship for entrepreneurs aged 18–39. 21,000+ founders backed, $259M lent, 80% five-year survival.",
+      "item": {
+        "key": "futurpreneur.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.33640528
+      }
+    },
+    {
+      "id": "a8635e46ab03156d19f6670ff09e72fcba9622ca5c018a3b4063265857b40bde",
+      "type": "text",
+      "score": 0.3292888,
+      "text": "# VPL Inspiration Lab\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 350 W Georgia St · Downtown\nFixed venue: yes - you can walk in\nCoordinates: 49.279659, -123.115614\nEquipment and facilities on site: Recording & Podcast, Digitization\nWebsite: https://www.vpl.ca/branches/central/level-3/inspiration-lab\nDirectory rank: 37 of 46\nLast verified: 2026-08\nThe city's free digital creation space on Level 3 of the Central Library — recording studios, digitization stations, video editing and self-publishing tools, open to everyone.",
+      "item": {
+        "key": "inspirationlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3292888
+      }
+    },
+    {
+      "id": "e44ca9ad397a1f89dfdc844f878e1496810c0c19cb9025b4ee5343c7d2cc0928",
+      "type": "text",
+      "score": 0.32056248,
+      "text": "# FoundersBoost Vancouver\nType: Programs & Accelerators\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: Cohort-based · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.foundersboost.com/programs/vancouver\nDirectory rank: 18 of 46\nLast verified: 2026-08\nThe Vancouver chapter of a global 6-week pre-accelerator — no equity, no fees. 600+ alumni startups have raised $400M+ and gone on to Y Combinator, Techstars and a16z.",
+      "item": {
+        "key": "foundersboost.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.32056248
+      }
+    },
+    {
+      "id": "3efa7c3fcdf71b23dd605e256c2fd6bba3cf4e608144423f2340cd57883d7097",
+      "type": "text",
+      "score": 0.3189006,
+      "text": "# Flow State Founder\nType: Programs & Accelerators\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: Cohort-based · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://flowstatefounder.ca/\nDirectory rank: 11 of 46\nLast verified: 2026-08\nAn 11-week accelerator built for women founders — cohorts of just six, landing podcast features, nailing the pitch, and winning grant funding ($850K+ secured) with zero equity taken.",
+      "item": {
+        "key": "flowstatefounder.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3189006
+      }
+    },
+    {
+      "id": "fa2f18ff18aa04eeb2f09cbe9aea7874da8e05ce3677730818e42d18b92322cb",
+      "type": "text",
+      "score": 0.30405226,
+      "text": "# Althra\nType: Programs & Accelerators\nBuilder stage: ONE → MVP\nLocation: Downtown Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://althra.ca/\nDirectory rank: 17 of 46\nLast verified: 2026-08\nWestern Canada's full-time, in-person pre-seed incubator — $12.5K day-one investment with up to $50K follow-on, a 24/7 downtown workspace and an investor trip to San Francisco.",
+      "item": {
+        "key": "althra.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.30405226
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "query_kind": "text",
+  "search_query": "I have an idea but no product yet, who helps",
+  "chunks": [],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector"
+    ],
+    "vector_result_count": 47,
+    "keyword_result_count": 0
+  }
+}

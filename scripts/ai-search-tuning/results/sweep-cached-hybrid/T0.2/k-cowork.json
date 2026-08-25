@@ -1,0 +1,80 @@
+{
+  "query_kind": "text",
+  "search_query": "coworking Gastown",
+  "chunks": [
+    {
+      "id": "fe8537f736dff9812625219e7f929e827d7b20194bb3397b8bc9b269ebc70ac7",
+      "type": "text",
+      "score": 0.976127028465271,
+      "text": "# DCTRL\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 328 W Hastings St · Gastown\nFixed venue: yes - you can walk in\nCoordinates: 49.2829423, -123.1107804\nWebsite: https://www.dctrl.wtf/\nDirectory rank: 1 of 46\nLast verified: 2026-08\nVancouver's longest-running home for Bitcoin, crypto and decentralized tech — a member-run, non-profit cypherpunk coworking and event studio operating since 2013.",
+      "item": {
+        "key": "dctrl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.51279783,
+        "keyword_score": 5.768865412766069,
+        "vector_rank": 3,
+        "keyword_rank": 2,
+        "fusion_method": "rrf",
+        "reranking_score": 0.976127028465271
+      }
+    },
+    {
+      "id": "e15d0a674a38b3464b6009e9486f727403b8a84713cd8a25770f67d67fbbf8a4",
+      "type": "text",
+      "score": 0.9617151021957397,
+      "text": "# FriendsQuarters\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 200–116 W Hastings St · Gastown\nFixed venue: yes - you can walk in\nCoordinates: 49.2818562, -123.107943\nEquipment and facilities on site: Recording & Podcast\nWebsite: https://www.friendsquarters.com/\nDirectory rank: 3 of 46\nLast verified: 2026-08\nVancouver's friendliest coworking, connection and media space — 5,500 sq ft with hot desks, a podcast room and an atrium, steps from Waterfront Station.",
+      "item": {
+        "key": "friendsquarters.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.56712663,
+        "keyword_score": 5.479188513732455,
+        "vector_rank": 2,
+        "keyword_rank": 3,
+        "fusion_method": "rrf",
+        "reranking_score": 0.9617151021957397
+      }
+    },
+    {
+      "id": "8a9aafca8d4619b06d97358a3f4fefd02a20fac38dba55593fcacb960b0666ad",
+      "type": "text",
+      "score": 0.9461801648139954,
+      "text": "# The Gastown Founder Crawl\n\nType: Pathway - a curated route through several venues\nStops in order: FriendsQuarters -> Launch Academy -> DCTRL -> Internet Archive Canada -> FUNK Coffee Bar\n\nFive rooms, one afternoon: coworking, an incubator, the cypherpunk clubhouse, the national memory bank and the coffee bar where first meetings actually happen.",
+      "item": {
+        "key": "pathway-gastown-crawl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.65323377,
+        "keyword_score": 6.450972928911323,
+        "vector_rank": 1,
+        "keyword_rank": 1,
+        "fusion_method": "rrf",
+        "reranking_score": 0.9461801648139954
+      }
+    }
+  ],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector",
+      "keyword"
+    ],
+    "vector_result_count": 50,
+    "keyword_result_count": 3
+  }
+}

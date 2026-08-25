@@ -1,0 +1,12 @@
+{
+  "query_kind": "text",
+  "search_query": "somewhere downtown to sit and work",
+  "chunks": [],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector"
+    ],
+    "vector_result_count": 50,
+    "keyword_result_count": 0
+  }
+}

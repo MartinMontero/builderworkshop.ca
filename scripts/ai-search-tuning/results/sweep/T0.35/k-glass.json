@@ -1,0 +1,23 @@
+{
+  "query_kind": "text",
+  "search_query": "glass blowing",
+  "chunks": [
+    {
+      "id": "b4c93142e577a5dbd4af1accc8c1992cbb27ce5aa7222ae9290f67773c997b5a",
+      "type": "text",
+      "score": 0.3641055,
+      "text": "# Terminal City Glass Co-op\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 1191 Parker St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.275975, -123.0792044\nEquipment and facilities on site: Glass\nWebsite: https://terminalcityglass.com/\nDirectory rank: 36 of 46\nLast verified: 2026-08\nCanada's first non-profit co-operative glass studio — shared furnaces, kilns and cold-working gear plus public classes, keeping an expensive craft accessible in Strathcona.",
+      "item": {
+        "key": "tcglass.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3641055
+      }
+    }
+  ]
+}

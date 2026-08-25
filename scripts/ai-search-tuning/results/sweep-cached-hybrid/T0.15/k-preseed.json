@@ -1,0 +1,36 @@
+{
+  "query_kind": "text",
+  "search_query": "pre-seed accelerator",
+  "chunks": [
+    {
+      "id": "fa2f18ff18aa04eeb2f09cbe9aea7874da8e05ce3677730818e42d18b92322cb",
+      "type": "text",
+      "score": 0.9526160955429077,
+      "text": "# Althra\nType: Programs & Accelerators\nBuilder stage: ONE → MVP\nLocation: Downtown Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://althra.ca/\nDirectory rank: 17 of 46\nLast verified: 2026-08\nWestern Canada's full-time, in-person pre-seed incubator — $12.5K day-one investment with up to $50K follow-on, a 24/7 downtown workspace and an investor trip to San Francisco.",
+      "item": {
+        "key": "althra.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4529874,
+        "keyword_score": 6.481331066368154,
+        "vector_rank": 1,
+        "keyword_rank": 1,
+        "fusion_method": "rrf",
+        "reranking_score": 0.9526160955429077
+      }
+    }
+  ],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector",
+      "keyword"
+    ],
+    "vector_result_count": 50,
+    "keyword_result_count": 1
+  }
+}

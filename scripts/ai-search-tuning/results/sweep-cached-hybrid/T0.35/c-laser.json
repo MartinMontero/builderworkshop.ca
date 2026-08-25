@@ -1,0 +1,12 @@
+{
+  "query_kind": "text",
+  "search_query": "where can I laser cut something",
+  "chunks": [],
+  "hybrid_meta": {
+    "search_methods": [
+      "vector"
+    ],
+    "vector_result_count": 43,
+    "keyword_result_count": 0
+  }
+}

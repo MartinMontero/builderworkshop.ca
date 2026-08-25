@@ -1,0 +1,57 @@
+{
+  "query_kind": "text",
+  "search_query": "laser cutting",
+  "chunks": [
+    {
+      "id": "938fd0422f02172c5b5cebd41c36e00b7071c03c824740cc71a3a03814dfaf64",
+      "type": "text",
+      "score": 0.4468045,
+      "text": "# Maker Cube\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 104B–5947 206A St · Langley\nFixed venue: yes - you can walk in\nCoordinates: 49.0889, -122.6503\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://makercube.ca/\nDirectory rank: 33 of 46\nLast verified: 2026-08\nLangley's premier makerspace — woodworking and welding shops, CNC and laser cutters, 3D printing, a ceramics studio, rentable studio 'cubes' and classes for every skill level.",
+      "item": {
+        "key": "makercube.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4468045
+      }
+    },
+    {
+      "id": "123eb08cf70ac3ff361684cb930a4038cb5a9548d6eeabe07f1251d2cabd4b87",
+      "type": "text",
+      "score": 0.42415962,
+      "text": "# MakerLabs\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 780 E Cordova St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2818969, -123.0875456\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://www.makerlabs.com/\nDirectory rank: 32 of 46\nLast verified: 2026-08\nVancouver's largest makerspace and fabrication studio — 26,000 sq ft in Strathcona with wood and metal shops, ceramics, CNC routers, laser cutters and a fab team that can build almost anything.",
+      "item": {
+        "key": "makerlabs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.42415962
+      }
+    },
+    {
+      "id": "aa951a06bcbf31dca75308cd2254120dfeeb848120d99e05841af5a6b4995c73",
+      "type": "text",
+      "score": 0.40277982,
+      "text": "# Victoria Makerspace\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 4A–4476 Markham St · Saanich\nFixed venue: yes - you can walk in\nCoordinates: 48.4941015, -123.4131897\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Electronics\nWebsite: https://makerspace.ca/\nDirectory rank: 40 of 46\nLast verified: 2026-08\nVancouver Island's member-operated makerspace at the Technology Park — a collaborative workshop where makers of every background share tools, knowledge and 24/7 access.",
+      "item": {
+        "key": "victoria-makerspace.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.40277982
+      }
+    }
+  ]
+}

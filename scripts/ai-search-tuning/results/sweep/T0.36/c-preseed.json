@@ -1,0 +1,23 @@
+{
+  "query_kind": "text",
+  "search_query": "I have an idea but no product yet, who helps",
+  "chunks": [
+    {
+      "id": "84182b323bade0f9a19e46359084a1c56bc611564b514365de488bf2c6ed4ca7",
+      "type": "text",
+      "score": 0.37422806,
+      "text": "# Founder's Quest\nType: Programs & Accelerators\nBuilder stage: ZERO → ONE\nLocation: Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://foundersquest.ca/\nDirectory rank: 19 of 46\nLast verified: 2026-08\nA gamified founder journey built on the Genesis Framework — validate real problems beat by beat, from the Call to Adventure to a launched venture.",
+      "item": {
+        "key": "foundersquest.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.37422806
+      }
+    }
+  ]
+}

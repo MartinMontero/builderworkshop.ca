@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "coworking Gastown",
+  "chunks": [
+    {
+      "id": "8a9aafca8d4619b06d97358a3f4fefd02a20fac38dba55593fcacb960b0666ad",
+      "type": "text",
+      "score": 0.65323377,
+      "text": "# The Gastown Founder Crawl\n\nType: Pathway - a curated route through several venues\nStops in order: FriendsQuarters -> Launch Academy -> DCTRL -> Internet Archive Canada -> FUNK Coffee Bar\n\nFive rooms, one afternoon: coworking, an incubator, the cypherpunk clubhouse, the national memory bank and the coffee bar where first meetings actually happen.",
+      "item": {
+        "key": "pathway-gastown-crawl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.65323377
+      }
+    },
+    {
+      "id": "e15d0a674a38b3464b6009e9486f727403b8a84713cd8a25770f67d67fbbf8a4",
+      "type": "text",
+      "score": 0.56712663,
+      "text": "# FriendsQuarters\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 200–116 W Hastings St · Gastown\nFixed venue: yes - you can walk in\nCoordinates: 49.2818562, -123.107943\nEquipment and facilities on site: Recording & Podcast\nWebsite: https://www.friendsquarters.com/\nDirectory rank: 3 of 46\nLast verified: 2026-08\nVancouver's friendliest coworking, connection and media space — 5,500 sq ft with hot desks, a podcast room and an atrium, steps from Waterfront Station.",
+      "item": {
+        "key": "friendsquarters.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.56712663
+      }
+    },
+    {
+      "id": "fe8537f736dff9812625219e7f929e827d7b20194bb3397b8bc9b269ebc70ac7",
+      "type": "text",
+      "score": 0.51279783,
+      "text": "# DCTRL\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 328 W Hastings St · Gastown\nFixed venue: yes - you can walk in\nCoordinates: 49.2829423, -123.1107804\nWebsite: https://www.dctrl.wtf/\nDirectory rank: 1 of 46\nLast verified: 2026-08\nVancouver's longest-running home for Bitcoin, crypto and decentralized tech — a member-run, non-profit cypherpunk coworking and event studio operating since 2013.",
+      "item": {
+        "key": "dctrl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.51279783
+      }
+    },
+    {
+      "id": "8daa3761c6b2964c70a83772d0c7db4638f17522e180ae18ae4dc766da211beb",
+      "type": "text",
+      "score": 0.50998443,
+      "text": "# FUNK Coffee Bar\nType: Spaces & Places\nBuilder stage: ZERO → ONE\nLocation: 1025 Dunsmuir St · Downtown\nFixed venue: yes - you can walk in\nCoordinates: 49.2863433, -123.120525\nWebsite: https://funk.coffee\nDirectory rank: 8 of 46\nLast verified: 2026-08\nCoffee-centric downtown bar from the House of Funk crew — the unofficial third place where half the ecosystem’s first meetings actually happen.",
+      "item": {
+        "key": "funk.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.50998443
+      }
+    },
+    {
+      "id": "b4c93142e577a5dbd4af1accc8c1992cbb27ce5aa7222ae9290f67773c997b5a",
+      "type": "text",
+      "score": 0.5092999,
+      "text": "# Terminal City Glass Co-op\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 1191 Parker St · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.275975, -123.0792044\nEquipment and facilities on site: Glass\nWebsite: https://terminalcityglass.com/\nDirectory rank: 36 of 46\nLast verified: 2026-08\nCanada's first non-profit co-operative glass studio — shared furnaces, kilns and cold-working gear plus public classes, keeping an expensive craft accessible in Strathcona.",
+      "item": {
+        "key": "tcglass.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.5092999
+      }
+    },
+    {
+      "id": "84f9097ebd4b11ae39a4559af8b08337ae1854c17ffa4a24d118bf21cebe3d15",
+      "type": "text",
+      "score": 0.4980225,
+      "text": "# The Strathcona Maker Mile\n\nType: Pathway - a curated route through several venues\nStops in order: Vancouver Hack Space -> Slice of Life -> MakerLabs -> Terminal City Glass Co-op -> The Arts Factory\n\nThe densest making corridor in BC — hack space to artist clubhouse to 26,000 sq ft of fabrication to a glass furnace to a warehouse of studios, all inside one square mile.",
+      "item": {
+        "key": "pathway-maker-mile.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4980225
+      }
+    },
+    {
+      "id": "d6f42912f7c4b84337fab70b7989aa7b7e4030518211f92dd31205456e64dffd",
+      "type": "text",
+      "score": 0.49417865,
+      "text": "# Z-Space\nType: Spaces & Places\nBuilder stage: ZERO → ONE, ONE → MVP\nLocation: 301–505 Hamilton St · Victory Square\nFixed venue: yes - you can walk in\nCoordinates: 49.2819714, -123.1114556\nWebsite: https://z-space.ca/\nDirectory rank: 44 of 46\nLast verified: 2026-08\nNon-profit arts and technology society in the historic Odd Fellows Hall — coworking, an event stage, media gallery and café for creative technologists and indie builders.",
+      "item": {
+        "key": "zspace.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.49417865
+      }
+    },
+    {
+      "id": "b121d38f4805c0adec0a9dca72366fb479bf7cd596593af9244a7c1f85c4d4a8",
+      "type": "text",
+      "score": 0.4907822,
+      "text": "# North House\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 111 E 5th Ave · Mount Pleasant\nFixed venue: yes - you can walk in\nCoordinates: 49.266589, -123.1022425\nWebsite: https://www.joinnorthhouse.com/\nDirectory rank: 13 of 46\nLast verified: 2026-08\nAn 8,000 sq ft founder space in Mount Pleasant operated by League of Innovators — desks, booths, 24/7 access, and a community built around founders who 10x you.",
+      "item": {
+        "key": "northhouse.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.4907822
+      }
+    },
+    {
+      "id": "91aac0aaa892964c678611e13c432f6fd473cd77efae130364151d47c230e183",
+      "type": "text",
+      "score": 0.48471832,
+      "text": "# The Arts Factory\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 281 Industrial Ave · Strathcona\nFixed venue: yes - you can walk in\nCoordinates: 49.2704431, -123.0990799\nEquipment and facilities on site: Woodshop, Ceramics\nWebsite: https://www.artsfactorysociety.ca/\nDirectory rank: 39 of 46\nLast verified: 2026-08\nA 21,000 sq ft cultural hub in a transformed industrial warehouse — affordable studios, workshops and coworking for artists working in sculpture, paint, fabric, wood and ceramics.",
+      "item": {
+        "key": "artsfactory.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.48471832
+      }
+    },
+    {
+      "id": "2a1a105e0e3c674e164725e405ba6760b6405bd1c17d836aafcfd254ab739e50",
+      "type": "text",
+      "score": 0.47737327,
+      "text": "# Vancouver Tool Library\nType: Spaces & Places\nBuilder stage: ZERO → ONE\nLocation: 3448 Commercial St · The Drive\nFixed venue: yes - you can walk in\nCoordinates: 49.2536988, -123.0678595\nEquipment and facilities on site: Woodshop\nWebsite: https://vancouvertoollibrary.com/\nDirectory rank: 34 of 46\nLast verified: 2026-08\nCanada's original tool-lending library — a member-run co-op on the Drive lending 1,700+ tools for home repair, gardening and bike maintenance, plus affordable public workshops.",
+      "item": {
+        "key": "vtl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.47737327
+      }
+    }
+  ]
+}

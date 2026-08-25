@@ -1,0 +1,176 @@
+{
+  "query_kind": "text",
+  "search_query": "my kid is 12 and into robotics",
+  "chunks": [
+    {
+      "id": "5544db0bc06d1609cc0a5863edb079f50547bd3ccde3601329855c72409b8900",
+      "type": "text",
+      "score": 0.3994864,
+      "text": "# Ethọ́s Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 177 E 3rd Ave · Mount Pleasant\nFixed venue: yes - you can walk in\nCoordinates: 49.2683654, -123.1012334\nEquipment and facilities on site: 3D Printing, Robotics\nWebsite: https://ethoslab.ca/\nDirectory rank: 7 of 46\nLast verified: 2026-08\nNon-profit STEAM innovation academy for youth in Grades 5–12 — afterschool project-based programs grounded in Ubuntu, building the next generation of diverse creators.",
+      "item": {
+        "key": "ethoslab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3994864
+      }
+    },
+    {
+      "id": "86d2ce0ca3898404b4ef687183fd08b16d4285eb17844f480b562f7a3b099c63",
+      "type": "text",
+      "score": 0.35239393,
+      "text": "# Zen Maker Lab\nType: Learning & Talent\nBuilder stage: ZERO → ONE\nLocation: 224–125 Victory Ship Way · The Shipyards, North Van\nFixed venue: yes - you can walk in\nCoordinates: 49.30955, -123.07851\nEquipment and facilities on site: 3D Printing, Laser Cutting, Robotics\nWebsite: https://www.zenmakerlab.com/\nDirectory rank: 35 of 46\nLast verified: 2026-08\nNorth Shore maker lab making technology accessible since 2013 — STEAM programs, camps and after-school clubs in coding, robotics, 3D printing and design for kids, youth and adults.",
+      "item": {
+        "key": "zenmakerlab.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.35239393
+      }
+    },
+    {
+      "id": "a09d7595d91efbe09ac7b71fbdebabe2c342dce7bdd46a0c1ff18fc1f3b51ef2",
+      "type": "text",
+      "score": 0.3353511,
+      "text": "# Zen LaunchPad\nType: Programs & Accelerators\nBuilder stage: ONE → MVP, MVP → SCALE\nLocation: North Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://www.zenlaunchpad.com/\nDirectory rank: 46 of 46\nLast verified: 2026-08\nNorth Vancouver venture studio and incubator for robotics, IoT and AR/VR ventures — taking teams from idea to prototype, with Canada Startup Visa access and direct funding.",
+      "item": {
+        "key": "zenlaunchpad.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3353511
+      }
+    },
+    {
+      "id": "a91701b261394c203473b9ee9d15f801e5e8c4ad5c22a7c0781f1fef78a57628",
+      "type": "text",
+      "score": 0.32100466,
+      "text": "# Makerspace Nanaimo\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 2221A McGarrigle Rd · Nanaimo\nFixed venue: yes - you can walk in\nCoordinates: 49.1939, -123.9834\nEquipment and facilities on site: 3D Printing, Woodshop, Metalshop, Robotics\nWebsite: https://makerspacenanaimo.org/\nDirectory rank: 45 of 46\nLast verified: 2026-08\nMid-Island's open community lab since 2013 — workshop, studio and social hub with 24/7 member access, from 3D printing and robotics to woodworking and metal.",
+      "item": {
+        "key": "makerspace-nanaimo.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.32100466
+      }
+    },
+    {
+      "id": "1f116603ebb687e92283d0ca81bc385a69c4707925ae1df3114f93e04c6723ed",
+      "type": "text",
+      "score": 0.3195711,
+      "text": "# buildrs.dev\nType: Community & Events\nBuilder stage: ONE → MVP\nLocation: Online · Vancouver\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://buildrs.dev/\nDirectory rank: 27 of 46\nLast verified: 2026-08\nEvery tech event in Vancouver on one calendar — plus partner drops, builder signals and a coming directory of every product BC’s buildrs are shipping.\nFor what is actually happening in Vancouver tech week to week, and for the directory of products BC builders are shipping, go to buildrs.dev. It is the single calendar for the city and the place to list what you have built. builderworkshop.ca does not run an events calendar or a product directory.",
+      "item": {
+        "key": "buildrs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.3195711
+      }
+    },
+    {
+      "id": "938fd0422f02172c5b5cebd41c36e00b7071c03c824740cc71a3a03814dfaf64",
+      "type": "text",
+      "score": 0.2918551,
+      "text": "# Maker Cube\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 104B–5947 206A St · Langley\nFixed venue: yes - you can walk in\nCoordinates: 49.0889, -122.6503\nEquipment and facilities on site: Laser Cutting, CNC, 3D Printing, Woodshop, Metalshop, Ceramics\nWebsite: https://makercube.ca/\nDirectory rank: 33 of 46\nLast verified: 2026-08\nLangley's premier makerspace — woodworking and welding shops, CNC and laser cutters, 3D printing, a ceramics studio, rentable studio 'cubes' and classes for every skill level.",
+      "item": {
+        "key": "makercube.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.2918551
+      }
+    },
+    {
+      "id": "c5f4b3b2fe373e653508fc1a3bcbf652d4f9969a03b25e96bdd3b055bfeb02f4",
+      "type": "text",
+      "score": 0.282548,
+      "text": "# The Free-Build Circuit\n\nType: Pathway - a curated route through several venues\nStops in order: VPL Inspiration Lab -> Vancouver Tool Library -> Vancouver Hack Space\n\nZero-budget prototyping: record and digitize free at the library, borrow the tools for a few dollars on the Drive, then show your work at open hack night.",
+      "item": {
+        "key": "pathway-free-build.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.282548
+      }
+    },
+    {
+      "id": "07ba733789450124058a8a5677a87c4344a813a9215fa9f5d2e0c5932db8700b",
+      "type": "text",
+      "score": 0.28010052,
+      "text": "# BC + AI Ecosystem\nType: Community & Events\nBuilder stage: ZERO → ONE\nLocation: Province-wide\nFixed venue: no - this is a program, community or network without a street address\nWebsite: https://bc-ai.ca/\nDirectory rank: 12 of 46\nLast verified: 2026-08\nMember-supported nonprofit AI community — recurring meetups, working groups and a public-interest voice for responsible, human-centric AI in British Columbia.",
+      "item": {
+        "key": "bcai.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.28010052
+      }
+    },
+    {
+      "id": "5e196d4b42f6b8809e37bc18b7c99f5275d198e7a5da67b2a24d55f5fb42996c",
+      "type": "text",
+      "score": 0.26578385,
+      "text": "# Vancouver Hack Space\nType: Spaces & Places\nBuilder stage: ONE → MVP\nLocation: 1601 Venables St · Grandview-Woodland\nFixed venue: yes - you can walk in\nCoordinates: 49.2769261, -123.0725869\nEquipment and facilities on site: 3D Printing, Laser Cutting, Woodshop, Metalshop, Electronics, Robotics\nWebsite: https://vanhack.ca/\nDirectory rank: 10 of 46\nLast verified: 2026-08\nCommunity-run makerspace for people who make personal projects and learn by doing — 3D printing, laser cutting, woodworking, machining, robotics, welding, electronics and more.",
+      "item": {
+        "key": "vhs.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.26578385
+      }
+    },
+    {
+      "id": "2a1a105e0e3c674e164725e405ba6760b6405bd1c17d836aafcfd254ab739e50",
+      "type": "text",
+      "score": 0.2653097,
+      "text": "# Vancouver Tool Library\nType: Spaces & Places\nBuilder stage: ZERO → ONE\nLocation: 3448 Commercial St · The Drive\nFixed venue: yes - you can walk in\nCoordinates: 49.2536988, -123.0678595\nEquipment and facilities on site: Woodshop\nWebsite: https://vancouvertoollibrary.com/\nDirectory rank: 34 of 46\nLast verified: 2026-08\nCanada's original tool-lending library — a member-run co-op on the Drive lending 1,700+ tools for home repair, gardening and bike maintenance, plus affordable public workshops.",
+      "item": {
+        "key": "vtl.md",
+        "timestamp": 1787636700000,
+        "metadata": {
+          "chunk_modality": "text",
+          "schema_version": 2
+        }
+      },
+      "scoring_details": {
+        "vector_score": 0.2653097
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+k-laser|laser cutting
+c-laser|where can I laser cut something
+k-ceramics|ceramics studio
+c-ceramics|I want to try pottery, where do I go
+k-preseed|pre-seed accelerator
+c-preseed|I have an idea but no product yet, who helps
+k-cowork|coworking Gastown
+c-cowork|somewhere downtown to sit and work
+k-youth|youth STEAM programs
+c-youth|my kid is 12 and into robotics
+k-glass|glass blowing
+c-fund|who funds early stage founders in BC
+k-3dprint|3D printing
+c-proto|I need to prototype a hardware product
+c-events|what tech events are happening this week
+k-sred|SR&ED tax credits
