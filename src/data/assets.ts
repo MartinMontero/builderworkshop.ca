@@ -418,6 +418,17 @@ export const ASSETS: Asset[] = [
     verified: '2026-08',
   },
   {
+    id: 'lume',
+    stages: ['ZERO → ONE', 'ONE → MVP', 'MVP → SCALE'],
+    name: 'LUME',
+    category: 'Community & Events',
+    url: 'https://lume.builderworkshop.ca',
+    blurb:
+      'Standing rooms for the city — recurring gatherings with a named host, a fixed day and time, anchored to a venue on this map. Open one, or find one to walk into.',
+    location: 'Online · anchored to venues here',
+    verified: '2026-08',
+  },
+  {
     id: 'aistartuphub',
     stages: ['ZERO → ONE', 'ONE → MVP'],
     name: 'AI Startup Hub',

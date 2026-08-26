@@ -8,12 +8,32 @@ import {
   onQuery,
   type QueryState,
 } from '../lib/guide';
+import { describeRooms, fetchRoomCounts, type RoomSummary } from '../lib/lume';
 
 export default function Directory() {
   const [stage, setStage] = useState<Stage | null>(null);
   const [query, setQuery] = useState<QueryState>(null);
 
   useEffect(() => onQuery(setQuery), []);
+
+  // Live counts for a handoff we built. Fetched only when that card is showing,
+  // and never blocking it: null means the card renders without numbers rather
+  // than waiting on, or failing with, LUME.
+  const [rooms, setRooms] = useState<RoomSummary | null>(null);
+  const [roomsLoaded, setRoomsLoaded] = useState(false);
+  const showingOurTool = query?.status === 'intent' && query.handoff?.ownedByUs === true;
+  useEffect(() => {
+    if (!showingOurTool || roomsLoaded) return;
+    let live = true;
+    fetchRoomCounts().then((summary) => {
+      if (!live) return;
+      setRooms(summary);
+      setRoomsLoaded(true);
+    });
+    return () => {
+      live = false;
+    };
+  }, [showingOurTool, roomsLoaded]);
 
   const active = query?.status === 'done' ? query : null;
   const intent = query?.status === 'intent' ? query : null;
@@ -91,6 +111,20 @@ export default function Directory() {
             <p className="mt-3 max-w-2xl text-[13.5px] leading-relaxed text-[var(--ink)]/70">
               {intent.handoff.note}
             </p>
+
+            {/* Live counts, or nothing. A stale number is never shown as current. */}
+            {intent.handoff.ownedByUs && roomsLoaded && describeRooms(rooms) && (
+              <p className="mt-3 max-w-2xl font-mono2 text-[11.5px] tracking-[0.04em] leading-relaxed text-[var(--accent)]">
+                {describeRooms(rooms)}
+              </p>
+            )}
+
+            {/* The disclosure. Same treatment as a partner handoff, so say whose it is. */}
+            {intent.handoff.ownedByUs && (
+              <p className="mt-4 font-mono2 text-[10px] tracking-[0.14em] uppercase text-[var(--ink)]/45">
+                Built by builderworkshop.ca
+              </p>
+            )}
           </a>
         )}
 

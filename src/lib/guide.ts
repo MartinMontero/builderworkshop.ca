@@ -38,7 +38,20 @@ export interface IntentState {
   categories: Category[];
   stage: Stage | null; // additionally require this stage
   focus?: 'map'; // scroll target beyond #players
-  handoff?: { name: string; url: string; note: string }; // partner routing
+  handoff?: {
+    name: string;
+    url: string;
+    note: string;
+    /**
+     * Set when the handoff points at something builderworkshop.ca built.
+     *
+     * The GO HERE FIRST treatment is trustworthy on the funding card precisely
+     * because it sends traffic away — it costs us something. Reusing that
+     * treatment for our own tool without saying so borrows credibility the
+     * card has not earned. Where this is set, the card discloses it plainly.
+     */
+    ownedByUs?: boolean;
+  };
 }
 
 export type QueryState =

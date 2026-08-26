@@ -53,6 +53,13 @@ const INTENTS: Card[] = [
     note: 'Communities and meetups. For the physical third-places, walk a pathway below.',
     categories: ['Community & Events'],
     stage: null,
+    // Our own tool, disclosed as such — see IntentState.handoff.ownedByUs.
+    handoff: {
+      name: 'LUME',
+      url: 'https://lume.builderworkshop.ca',
+      note: 'Standing rooms for the city: a recurring gathering with a named host, a fixed day and time, at a venue on this map. Open one, or find one to walk into.',
+      ownedByUs: true,
+    },
   },
   {
     status: 'intent',
