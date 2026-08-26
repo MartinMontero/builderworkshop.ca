@@ -12,7 +12,11 @@ export default function Pathways() {
   return (
     <section id="paths" className="relative bg-[var(--bg-raise)] py-20 md:py-28 border-t border-[var(--line)]">
       <div className="px-5 md:px-10 max-w-[1400px] mx-auto">
-        {/* The Stack — how to use this site with friends & collaborators */}
+        {/* The Stack — how to use this site with friends & collaborators.
+            Its own anchor: it shares a <section> with the pathways, so #paths
+            alone cannot distinguish them and the nav would land both links
+            in the same place. */}
+        <div id="stack" className="scroll-anchor">
         <div className="mb-16 reveal">
           <div className="eyebrow mb-4">HOW TO USE THIS</div>
           <h3 className="font-display uppercase text-3xl md:text-5xl leading-[0.95] max-w-3xl">
@@ -59,6 +63,13 @@ export default function Pathways() {
           </div>
         </div>
 
+        </div>
+
+        {/* The anchor sits on a plain wrapper, not on the .reveal element.
+            A reveal animates translateY after the scroll has settled, which
+            drags the target back under the fixed nav by ~28px. #stack works
+            because its anchor is likewise on a non-animated wrapper. */}
+        <div id="pathways" className="scroll-anchor">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
           <div>
             <div className="eyebrow mb-4">PATHWAYS</div>
@@ -70,6 +81,8 @@ export default function Pathways() {
             The ecosystem isn't a list — it's a set of routes. Curated trails that chain the rooms,
             tools and people into one afternoon, one skill, or one first prototype.
           </p>
+        </div>
+
         </div>
 
         <div className="grid md:grid-cols-2 gap-4">

@@ -1,11 +1,26 @@
 import { useEffect, useState } from 'react';
 
+/*
+  `id` is the React key, deliberately separate from `href`.
+
+  Two links may legitimately share a destination, so keying on href made a
+  duplicate key inevitable — and React's response to that is to render one of
+  them wrong rather than to complain loudly. Keying on an explicit id means a
+  future collision is a duplicated id, which is visible in this array and
+  caught by the nav test.
+
+  THE STACK and THE PATHS previously both pointed at #paths, which is the
+  section wrapper. The Stack sits at the top of that section, so BOTH links
+  landed on the Stack and the pathways were unreachable from the nav. They now
+  target the two anchors inside it. #paths itself is still a valid anchor and
+  is referenced by public/sitemap.xml — do not remove it.
+*/
 const LINKS = [
-  { n: '00', label: 'THE STACK', href: '#paths' },
-  { n: '01', label: 'THE MAP', href: '#map' },
-  { n: '02', label: 'THE PLAYERS', href: '#players' },
-  { n: '03', label: 'THE PATHS', href: '#paths' },
-  { n: '04', label: 'THE MISSION', href: '#mission' },
+  { id: 'stack', n: '00', label: 'THE STACK', href: '#stack' },
+  { id: 'map', n: '01', label: 'THE MAP', href: '#map' },
+  { id: 'players', n: '02', label: 'THE PLAYERS', href: '#players' },
+  { id: 'pathways', n: '03', label: 'THE PATHS', href: '#pathways' },
+  { id: 'mission', n: '04', label: 'THE MISSION', href: '#mission' },
 ];
 
 const PARTNERS = [
@@ -62,7 +77,7 @@ export default function Nav() {
           <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
             {LINKS.map((l) => (
               <a
-                key={l.href}
+                key={l.id}
                 href={l.href}
                 className="font-mono2 text-[11px] tracking-[0.18em] text-[var(--ink)]/75 hover:text-[var(--ink)] transition-colors"
               >
@@ -72,7 +87,7 @@ export default function Nav() {
             <span className="hidden xl:block w-px h-5 bg-[var(--line)]" />
             {PARTNERS.map((p) => (
               <a
-                key={p.href}
+                key={p.label}
                 href={p.href}
                 target="_blank"
                 rel="noreferrer"
@@ -118,7 +133,7 @@ export default function Nav() {
         <nav aria-label="Mobile">
           {LINKS.map((l) => (
             <a
-              key={l.href}
+              key={l.id}
               href={l.href}
               onClick={() => setOpen(false)}
               className="flex items-baseline gap-4 py-4 border-t border-[var(--line)] last:border-b group"
@@ -135,7 +150,7 @@ export default function Nav() {
           <div className="flex flex-wrap gap-2">
             {PARTNERS.map((p) => (
               <a
-                key={p.href}
+                key={p.label}
                 href={p.href}
                 target="_blank"
                 rel="noreferrer"
