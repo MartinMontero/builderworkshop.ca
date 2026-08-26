@@ -31,9 +31,12 @@ Closed entries stay in `players` (the export is what existed; the map is what st
 | `geometry.coordinates` | `[lng, lat]` — longitude first, per GeoJSON |
 | `properties.id` | `string` — joins to `ecosystem.json` `players[].id` |
 | `properties.name` | `string` |
+| `properties.capabilities` | `string[] \| absent` — values are keys of `ecosystem.json` `capabilityLabels` |
 | `features` | mapped, **active** entries only |
 
-That last row is the reason to choose this file: it is pre-filtered, so a map consumer never needs the `closed` filter `ecosystem.json` requires.
+`capabilities` is the "where can I actually make X?" field — laser cutters, kilns, CNC. Its vocabulary is closed and published as `capabilityLabels` in `ecosystem.json`; a value outside it fails the build rather than reaching you as a raw key.
+
+The `features` row is the reason to choose this file: it is pre-filtered, so a map consumer never needs the `closed` filter `ecosystem.json` requires.
 
 Anything not in those tables may change shape without notice. Breaking one of these means bumping the relevant `schemaVersion`; `scripts/ecosystem-contract.test.mjs` fails the build otherwise, and asserts both published files against their own declared contracts on every run.
 

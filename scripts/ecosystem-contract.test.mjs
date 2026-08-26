@@ -48,6 +48,7 @@ const GEOJSON_CONTRACT = {
   'geometry.coordinates': '[lng, lat]',
   'properties.id': 'string — joins to ecosystem.json players[].id',
   'properties.name': 'string',
+  'properties.capabilities': 'string[] | absent — values are keys of ecosystem.json capabilityLabels',
   features: 'mapped, active entries only — closed are excluded, no filtering needed',
 };
 
@@ -196,4 +197,67 @@ test('the geojson never carries a closed field — it has nothing to filter', ()
   for (const f of geojson.features) {
     assert.ok(!('closed' in f.properties), `${f.properties.id} carries closed; the file promises it cannot`);
   }
+});
+
+/*
+  capabilities is pinned because it is the most distinctive data in the set and
+  the thing a third consumer is likeliest to build on: the guide's capability
+  queries resolve against it, and the map's "I want to make X" filter is built
+  on it. Pinning presentational fields while leaving this free was backwards.
+
+  The vocabulary is closed. An asset gaining a capability with no label is a
+  half-finished edit — the value would render as a raw key in every consumer,
+  including this site's own map — so it fails here rather than shipping.
+*/
+
+test('the capability vocabulary is published, so the contract can be resolved', () => {
+  assert.equal(typeof dataset.capabilityLabels, 'object');
+  assert.ok(dataset.capabilityLabels !== null);
+  const keys = Object.keys(dataset.capabilityLabels);
+  assert.ok(keys.length > 0, 'a contract that names a vocabulary must ship the vocabulary');
+  for (const [key, label] of Object.entries(dataset.capabilityLabels)) {
+    assert.match(key, /^[a-z0-9-]+$/, `capability key "${key}" must be a slug`);
+    assert.equal(typeof label, 'string');
+    assert.ok(label.trim().length > 0, `capability "${key}" has no label`);
+  }
+});
+
+test('every capability in the geojson is a known key', () => {
+  const known = new Set(Object.keys(dataset.capabilityLabels));
+  for (const f of geojson.features) {
+    if (!('capabilities' in f.properties)) continue;
+    assert.ok(Array.isArray(f.properties.capabilities), `${f.properties.id}.capabilities must be an array`);
+    assert.ok(f.properties.capabilities.length > 0, `${f.properties.id} carries an empty capabilities array — omit the field instead`);
+    for (const c of f.properties.capabilities) {
+      assert.equal(typeof c, 'string');
+      assert.ok(
+        known.has(c),
+        `${f.properties.id} claims capability "${c}", which has no entry in capabilityLabels — ` +
+          'add the label, or fix the typo. It would render as a raw key downstream.',
+      );
+    }
+  }
+});
+
+test('every capability in the JSON is a known key, mapped or not', () => {
+  // The geojson only carries mapped entries, so an unlabelled capability on an
+  // unmapped asset would slip past the check above. The requirement is that
+  // adding a capability without its label fails the build, wherever it lands.
+  const known = new Set(Object.keys(dataset.capabilityLabels));
+  for (const p of dataset.players) {
+    if (!('capabilities' in p)) continue;
+    assert.ok(Array.isArray(p.capabilities), `${p.id}.capabilities must be an array`);
+    for (const c of p.capabilities) {
+      assert.ok(known.has(c), `${p.id} claims capability "${c}" with no entry in capabilityLabels`);
+    }
+  }
+});
+
+test('the published vocabulary has no unused entries', () => {
+  // Not a contract violation, but a label nothing claims is either a typo or a
+  // capability that was removed and left behind.
+  const used = new Set();
+  for (const p of dataset.players) for (const c of p.capabilities ?? []) used.add(c);
+  const orphans = Object.keys(dataset.capabilityLabels).filter((k) => !used.has(k));
+  assert.deepEqual(orphans, [], `capabilityLabels entries claimed by nothing: ${orphans.join(', ')}`);
 });

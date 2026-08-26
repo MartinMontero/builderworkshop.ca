@@ -11,7 +11,7 @@ const result = await build({
   write: false,
 });
 const code = result.outputFiles[0].text;
-const { ASSETS, PATHWAYS, CATEGORIES, CATEGORY_COLORS, STAGES, STAGE_COLORS } = await import(
+const { ASSETS, PATHWAYS, CATEGORIES, CATEGORY_COLORS, STAGES, STAGE_COLORS, CAPABILITY_LABELS } = await import(
   'data:text/javascript;base64,' + Buffer.from(code).toString('base64')
 );
 
@@ -61,6 +61,10 @@ const dataset = {
   categoryColors: CATEGORY_COLORS,
   stages: STAGES,
   stageColors: STAGE_COLORS,
+  // The vocabulary `capabilities` draws from. Published because the geojson
+  // contract pins capability values as keys of this map — a contract that
+  // names a vocabulary has to ship the vocabulary.
+  capabilityLabels: CAPABILITY_LABELS,
   players,
   pathways: PATHWAYS.map((p) => ({
     id: p.id,
@@ -87,6 +91,7 @@ const GEOJSON_CONTRACT = {
   'geometry.coordinates': '[lng, lat]',
   'properties.id': 'string — joins to ecosystem.json players[].id',
   'properties.name': 'string',
+  'properties.capabilities': 'string[] | absent — values are keys of ecosystem.json capabilityLabels',
   features: 'mapped, active entries only — closed are excluded, no filtering needed',
 };
 
