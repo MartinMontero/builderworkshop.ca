@@ -37,11 +37,24 @@ const players = ASSETS.map((a, i) => ({
 
 const active = players.filter((p) => !p.closed);
 
+// The fields downstream consumers may build on. Anything not listed here may
+// change shape without notice. Breaking one of these means bumping
+// schemaVersion — scripts/ecosystem-contract.test.mjs fails the build otherwise.
+const SCHEMA_VERSION = 1;
+const CONTRACT = {
+  id: 'string',
+  lat: 'number | absent',
+  lng: 'number | absent',
+  closed: '{ date: "YYYY-MM", note: string } | absent',
+};
+
 const dataset = {
   name: 'Builder Workshop — BC innovation ecosystem directory',
   url: site,
   generated,
   license: 'CC BY 4.0 — credit builderworkshop.ca',
+  schemaVersion: SCHEMA_VERSION,
+  contract: CONTRACT,
   count: active.length,
   closedCount: players.length - active.length,
   categories: CATEGORIES,

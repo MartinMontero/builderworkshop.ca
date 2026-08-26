@@ -10,7 +10,23 @@ A practical map and directory of British Columbia's innovation ecosystem — the
 - **The Players** — a ranked directory of ecosystem players; array order in `src/data/assets.ts` is the printed ranking.
 - **The Pathways** — curated walking trails that chain venues into routes (e.g. The Strathcona Maker Mile), drawable on the map; plus **The Orbit** — the players with no fixed venue, and how to plug into each. And **The Builder's Stack** — how to use this site alongside friends & collaborators (buildrs.dev for events/shipping, FoundedIn Canada for funding/the national layer), zero → one → MVP → scale.
 - **Light / dark themes** — token-based, defaults to your OS `prefers-color-scheme`, manual toggle in the nav (persisted).
-- **Open data** — the whole directory is published as [`public/ecosystem.json`](public/ecosystem.json) (full directory, CC BY 4.0) and [`public/ecosystem.geojson`](public/ecosystem.geojson) (mapped venues as GeoJSON points), regenerated on every build by `scripts/export-data.mjs`. Take the data and build with it.
+- **Open data** — the whole directory is published as [`public/ecosystem.json`](public/ecosystem.json) (full directory, CC BY 4.0) and [`public/ecosystem.geojson`](public/ecosystem.geojson) (mapped venues as GeoJSON points), regenerated on every build by `scripts/export-data.mjs`. Take the data and build with it. Both are served with `Access-Control-Allow-Origin: *`, so you can read them straight from a browser.
+
+### The data contract
+
+`ecosystem.json` declares a `schemaVersion` and a `contract` naming the fields you can build on:
+
+| field | shape | means |
+| --- | --- | --- |
+| `id` | `string` | stable, unique — key on this, not on `name` or `rank` |
+| `lat` / `lng` | `number \| absent` | always paired. Absent = a program or network with no fixed address |
+| `closed` | `{ date: "YYYY-MM", note: string } \| absent` | **absent means open.** An object — never a boolean or a string |
+
+Closed entries stay in `players` (the export is what existed; the map is what still exists) and are excluded from `ecosystem.geojson`. Filter them yourself if you only want places you can walk into.
+
+Anything not in that table may change shape without notice. Breaking one of these means bumping `schemaVersion`; `scripts/ecosystem-contract.test.mjs` fails the build otherwise, and asserts the published file against its own declared contract on every run.
+
+Known consumers: **LUME** (city mode anchors gatherings to venue ids) and this repo's own guide Worker.
 
 ## Stack
 

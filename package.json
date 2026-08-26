@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "index": "node --env-file-if-exists=.env scripts/index-ai-search.mjs",
     "index:dry": "node scripts/index-ai-search.mjs --dry-run",
-    "test": "node --test --experimental-strip-types worker/test/*.test.ts"
+    "test": "node --test \"worker/test/*.test.ts\" \"scripts/*.test.mjs\""
   },
   "dependencies": {
     "@types/leaflet": "^1.9.22",
