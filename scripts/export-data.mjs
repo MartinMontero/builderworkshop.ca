@@ -72,10 +72,30 @@ const dataset = {
 
 writeFileSync('public/ecosystem.json', JSON.stringify(dataset, null, 2) + '\n');
 
+/*
+  The geojson carries its own version, deliberately not shared with the JSON's.
+  The two files can diverge — a change to one need not touch the other — and a
+  single version would either force a meaningless bump or imply a coupling that
+  does not exist.
+
+  The asymmetry in `features` is the point of this file: it is pre-filtered to
+  mapped, active entries, so a map consumer never needs the closed filter that
+  ecosystem.json requires. That is the reason to choose this file over that one.
+*/
+const GEOJSON_SCHEMA_VERSION = 1;
+const GEOJSON_CONTRACT = {
+  'geometry.coordinates': '[lng, lat]',
+  'properties.id': 'string — joins to ecosystem.json players[].id',
+  'properties.name': 'string',
+  features: 'mapped, active entries only — closed are excluded, no filtering needed',
+};
+
 const geojson = {
   type: 'FeatureCollection',
   name: 'builderworkshop.ca asset map',
   generated,
+  schemaVersion: GEOJSON_SCHEMA_VERSION,
+  contract: GEOJSON_CONTRACT,
   features: active
     .filter((p) => p.lat !== undefined)
     .map((p) => ({

@@ -24,7 +24,18 @@ A practical map and directory of British Columbia's innovation ecosystem — the
 
 Closed entries stay in `players` (the export is what existed; the map is what still exists) and are excluded from `ecosystem.geojson`. Filter them yourself if you only want places you can walk into.
 
-Anything not in that table may change shape without notice. Breaking one of these means bumping `schemaVersion`; `scripts/ecosystem-contract.test.mjs` fails the build otherwise, and asserts the published file against its own declared contract on every run.
+`ecosystem.geojson` declares its own `schemaVersion` and `contract`, versioned independently — the two files can diverge, and one number for both would imply a coupling that does not exist:
+
+| field | shape |
+| --- | --- |
+| `geometry.coordinates` | `[lng, lat]` — longitude first, per GeoJSON |
+| `properties.id` | `string` — joins to `ecosystem.json` `players[].id` |
+| `properties.name` | `string` |
+| `features` | mapped, **active** entries only |
+
+That last row is the reason to choose this file: it is pre-filtered, so a map consumer never needs the `closed` filter `ecosystem.json` requires.
+
+Anything not in those tables may change shape without notice. Breaking one of these means bumping the relevant `schemaVersion`; `scripts/ecosystem-contract.test.mjs` fails the build otherwise, and asserts both published files against their own declared contracts on every run.
 
 Known consumers: **LUME** (city mode anchors gatherings to venue ids) and this repo's own guide Worker.
 

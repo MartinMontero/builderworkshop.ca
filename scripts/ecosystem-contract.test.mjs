@@ -22,6 +22,7 @@ import { readFileSync } from 'node:fs';
 // whatever happens to be on disk.
 execFileSync(process.execPath, ['scripts/export-data.mjs'], { stdio: 'ignore' });
 const dataset = JSON.parse(readFileSync('public/ecosystem.json', 'utf8'));
+const geojson = JSON.parse(readFileSync('public/ecosystem.geojson', 'utf8'));
 
 /*
   Pinned. Editing either of these is the signal that a consumer-visible shape
@@ -34,6 +35,20 @@ const CONTRACT = {
   lat: 'number | absent',
   lng: 'number | absent',
   closed: '{ date: "YYYY-MM", note: string } | absent',
+};
+
+/*
+  Pinned separately, on purpose. The two files version independently: a change
+  to one does not imply a change to the other, and sharing a number would either
+  force meaningless bumps or assert a coupling that is not real. These being
+  equal today is a coincidence, not an invariant.
+*/
+const GEOJSON_SCHEMA_VERSION = 1;
+const GEOJSON_CONTRACT = {
+  'geometry.coordinates': '[lng, lat]',
+  'properties.id': 'string — joins to ecosystem.json players[].id',
+  'properties.name': 'string',
+  features: 'mapped, active entries only — closed are excluded, no filtering needed',
 };
 
 test('the file declares the contract it is pinned to', () => {
@@ -112,5 +127,73 @@ test('closed entries stay in players but never in the geojson', () => {
     if ('closed' in p) {
       assert.ok(!geoIds.has(p.id), `${p.id} is closed but still mapped`);
     }
+  }
+});
+
+/* -------------------------------------------------------------------------
+ * ecosystem.geojson — versioned and pinned independently of the JSON
+ * ----------------------------------------------------------------------- */
+
+test('the geojson declares the contract it is pinned to', () => {
+  assert.equal(geojson.schemaVersion, GEOJSON_SCHEMA_VERSION);
+  assert.deepEqual(
+    geojson.contract,
+    GEOJSON_CONTRACT,
+    'the declared geojson contract changed — bump its schemaVersion and notify consumers',
+  );
+});
+
+test('the two files version independently', () => {
+  // Not an assertion that they differ — an assertion that nothing in the build
+  // ties them together. Each is read from its own file and pinned separately.
+  const source = readFileSync('scripts/export-data.mjs', 'utf8');
+  assert.match(source, /const SCHEMA_VERSION = \d+;/);
+  assert.match(source, /const GEOJSON_SCHEMA_VERSION = \d+;/);
+  assert.ok(
+    !/GEOJSON_SCHEMA_VERSION = SCHEMA_VERSION/.test(source),
+    'the geojson version must not be derived from the JSON version',
+  );
+});
+
+test('coordinates are [lng, lat] on every feature', () => {
+  // The classic GeoJSON footgun: longitude first. Pinned because a consumer
+  // that gets it backwards puts every venue in the wrong hemisphere.
+  for (const f of geojson.features) {
+    assert.equal(f.geometry.type, 'Point');
+    const [lng, lat] = f.geometry.coordinates;
+    assert.equal(typeof lng, 'number');
+    assert.equal(typeof lat, 'number');
+    // British Columbia: latitude ~48-60N, longitude ~-139 to -114.
+    assert.ok(lat > 0 && lat < 90, `${f.properties.id}: latitude out of range — coordinates may be swapped`);
+    assert.ok(lng < 0 && lng > -180, `${f.properties.id}: longitude out of range — coordinates may be swapped`);
+  }
+});
+
+test('properties.id is a string that joins to the JSON', () => {
+  const jsonIds = new Set(dataset.players.map((p) => p.id));
+  for (const f of geojson.features) {
+    assert.equal(typeof f.properties.id, 'string');
+    assert.ok(f.properties.id.length > 0);
+    assert.ok(jsonIds.has(f.properties.id), `${f.properties.id} is not in ecosystem.json`);
+    assert.equal(typeof f.properties.name, 'string');
+    assert.ok(f.properties.name.length > 0);
+  }
+});
+
+test('features are pre-filtered — the asymmetry that makes this file worth choosing', () => {
+  const byId = new Map(dataset.players.map((p) => [p.id, p]));
+  for (const f of geojson.features) {
+    const player = byId.get(f.properties.id);
+    assert.ok(!('closed' in player), `${f.properties.id} is closed but present in the geojson`);
+    assert.ok('lat' in player, `${f.properties.id} is mapped here but has no coordinates in the JSON`);
+  }
+  // And nothing mapped-and-active is missing, or the filter is over-eager.
+  const expected = dataset.players.filter((p) => !('closed' in p) && 'lat' in p).length;
+  assert.equal(geojson.features.length, expected);
+});
+
+test('the geojson never carries a closed field — it has nothing to filter', () => {
+  for (const f of geojson.features) {
+    assert.ok(!('closed' in f.properties), `${f.properties.id} carries closed; the file promises it cannot`);
   }
 });
